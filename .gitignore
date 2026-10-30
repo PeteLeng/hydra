@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+.uv-cache/
+__marimo__/
+.artifacts/
+docs/.build/
+tmp/
