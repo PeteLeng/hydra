@@ -1,0 +1,50 @@
+{"text":"Could you start a showroom demo for me?","intent":"request_flow","slots":[]}
+{"text":"Let's see what this vehicle can demonstrate","intent":"request_flow","slots":[]}
+{"text":"Can I check out the DLP headlights?","intent":"request_flow","slots":[{"type":"flow_ref","start":20,"end":34}]}
+{"text":"Please run the in-car cinema presentation","intent":"request_flow","slots":[{"type":"flow_ref","start":15,"end":28}]}
+{"text":"I'd love to try the massaging seats","intent":"request_flow","slots":[{"type":"flow_ref","start":20,"end":35}]}
+{"text":"Show me the privacy glass on the outside","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":25},{"type":"part","start":33,"end":40}]}
+{"text":"Demonstrate something in the cabin","intent":"request_flow","slots":[{"type":"part","start":29,"end":34}]}
+{"text":"What exterior demos can you show me?","intent":"request_flow","slots":[{"type":"part","start":5,"end":13}]}
+{"text":"Show me some family-friendly features","intent":"request_flow","slots":[{"type":"theme","start":13,"end":28}]}
+{"text":"Let's preview the entertainment options","intent":"request_flow","slots":[{"type":"theme","start":18,"end":31}]}
+{"text":"Can you run a demo focused on privacy?","intent":"request_flow","slots":[{"type":"theme","start":30,"end":37}]}
+{"text":"Let's see the interior entertainment demos","intent":"request_flow","slots":[{"type":"part","start":14,"end":22},{"type":"theme","start":23,"end":36}]}
+{"text":"Do you have any exterior demos for families?","intent":"request_flow","slots":[{"type":"part","start":16,"end":24},{"type":"theme","start":35,"end":43}]}
+{"text":"Show me privacy features on the outside","intent":"request_flow","slots":[{"type":"theme","start":8,"end":15},{"type":"part","start":32,"end":39}]}
+{"text":"My name is Elena Rostova","intent":"inform","slots":[{"type":"name","start":11,"end":24}]}
+{"text":"You can call me Marcus","intent":"inform","slots":[{"type":"name","start":16,"end":22}]}
+{"text":"The DLP lights","intent":"inform","slots":[{"type":"flow_ref","start":4,"end":14}]}
+{"text":"Cabin cinema please","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":12}]}
+{"text":"I'm interested in the seat massage","intent":"inform","slots":[{"type":"flow_ref","start":22,"end":34}]}
+{"text":"I'd rather look at the interior","intent":"inform","slots":[{"type":"part","start":23,"end":31}]}
+{"text":"The exterior please","intent":"inform","slots":[{"type":"part","start":4,"end":12}]}
+{"text":"Inside the car","intent":"inform","slots":[{"type":"part","start":0,"end":6}]}
+{"text":"Something for families","intent":"inform","slots":[{"type":"theme","start":14,"end":22}]}
+{"text":"I care most about entertainment","intent":"inform","slots":[{"type":"theme","start":18,"end":31}]}
+{"text":"Privacy is my priority","intent":"inform","slots":[{"type":"theme","start":0,"end":7}]}
+{"text":"I'll take option one","intent":"inform","slots":[{"type":"choice","start":10,"end":20}]}
+{"text":"Show me the 3rd option","intent":"inform","slots":[{"type":"choice","start":12,"end":22}]}
+{"text":"Number 4","intent":"inform","slots":[{"type":"choice","start":0,"end":8}]}
+{"text":"Good morning","intent":"greet","slots":[]}
+{"text":"Hey there, how's it going?","intent":"greet","slots":[]}
+{"text":"Hello, I'm Tariq Mahmood","intent":"greet","slots":[{"type":"name","start":11,"end":24}]}
+{"text":"Hi there, my name is Chloe","intent":"greet","slots":[{"type":"name","start":21,"end":26}]}
+{"text":"Sounds good to me","intent":"affirm","slots":[]}
+{"text":"Yeah, go ahead","intent":"affirm","slots":[]}
+{"text":"Correct","intent":"affirm","slots":[]}
+{"text":"Nope, not that","intent":"deny","slots":[]}
+{"text":"I don't think so","intent":"deny","slots":[]}
+{"text":"No, that's wrong","intent":"deny","slots":[]}
+{"text":"Hold on, pause the demo","intent":"request_stop","slots":[]}
+{"text":"Stop right there","intent":"request_stop","slots":[]}
+{"text":"Can you freeze the presentation?","intent":"request_stop","slots":[]}
+{"text":"Okay, keep going","intent":"request_resume","slots":[]}
+{"text":"Continue the demonstration","intent":"request_resume","slots":[]}
+{"text":"You can unpause it now","intent":"request_resume","slots":[]}
+{"text":"I'm done with the showroom tour","intent":"request_quit","slots":[]}
+{"text":"Let's wrap up and exit","intent":"request_quit","slots":[]}
+{"text":"Close the session please","intent":"request_quit","slots":[]}
+{"text":"What is the APR financing rate for 60 months?","intent":"UNK","slots":[]}
+{"text":"Order two pepperoni pizzas to my house","intent":"UNK","slots":[]}
+{"text":"blorp fizzlevelvet seven cloud wrench","intent":"UNK","slots":[]}

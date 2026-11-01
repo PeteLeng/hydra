@@ -1,0 +1,50 @@
+{"text":"definitely","intent":"affirm","slots":[]}
+{"text":"that works","intent":"affirm","slots":[]}
+{"text":"confirmed","intent":"affirm","slots":[]}
+{"text":"yes that's fine","intent":"affirm","slots":[]}
+{"text":"yeah sure","intent":"affirm","slots":[]}
+{"text":"of course","intent":"affirm","slots":[]}
+{"text":"you bet","intent":"affirm","slots":[]}
+{"text":"alright","intent":"affirm","slots":[]}
+{"text":"exactly","intent":"affirm","slots":[]}
+{"text":"that's it","intent":"affirm","slots":[]}
+{"text":"perfect","intent":"affirm","slots":[]}
+{"text":"will do","intent":"affirm","slots":[]}
+{"text":"sure thing","intent":"affirm","slots":[]}
+{"text":"yes I agree","intent":"affirm","slots":[]}
+{"text":"affirmative","intent":"affirm","slots":[]}
+{"text":"indeed","intent":"affirm","slots":[]}
+{"text":"great","intent":"affirm","slots":[]}
+{"text":"yes correct","intent":"affirm","slots":[]}
+{"text":"ok","intent":"affirm","slots":[]}
+{"text":"right","intent":"affirm","slots":[]}
+{"text":"no","intent":"deny","slots":[]}
+{"text":"nope","intent":"deny","slots":[]}
+{"text":"nah","intent":"deny","slots":[]}
+{"text":"no way","intent":"deny","slots":[]}
+{"text":"incorrect","intent":"deny","slots":[]}
+{"text":"that's wrong","intent":"deny","slots":[]}
+{"text":"not really","intent":"deny","slots":[]}
+{"text":"I disagree","intent":"deny","slots":[]}
+{"text":"negative","intent":"deny","slots":[]}
+{"text":"no I don't","intent":"deny","slots":[]}
+{"text":"that's incorrect","intent":"deny","slots":[]}
+{"text":"absolutely not","intent":"deny","slots":[]}
+{"text":"no that's wrong","intent":"deny","slots":[]}
+{"text":"I don't think so","intent":"deny","slots":[]}
+{"text":"not quite","intent":"deny","slots":[]}
+{"text":"wrong","intent":"deny","slots":[]}
+{"text":"false","intent":"deny","slots":[]}
+{"text":"not at all","intent":"deny","slots":[]}
+{"text":"I'd rather not","intent":"deny","slots":[]}
+{"text":"no thank you","intent":"deny","slots":[]}
+{"text":"no chance","intent":"deny","slots":[]}
+{"text":"no that's not it","intent":"deny","slots":[]}
+{"text":"I said no","intent":"deny","slots":[]}
+{"text":"definitely not","intent":"deny","slots":[]}
+{"text":"no I disagree","intent":"deny","slots":[]}
+{"text":"that's not it","intent":"deny","slots":[]}
+{"text":"nope not that","intent":"deny","slots":[]}
+{"text":"I don't agree","intent":"deny","slots":[]}
+{"text":"no definitely not","intent":"deny","slots":[]}
+{"text":"not correct","intent":"deny","slots":[]}

@@ -1,1 +1,4 @@
 notebooks/m6_showroom_data/generate.sh text eol=lf
+data/showroom/** text eol=lf
+# Preserve the original bytes referenced by the raw-batch SHA-256 audit.
+data/showroom/raw/*.jsonl -text

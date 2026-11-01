@@ -1,0 +1,50 @@
+{"text":"flibber the widget zorch","intent":"UNK","slots":[]}
+{"text":"asdf qwerty banana moon","intent":"UNK","slots":[]}
+{"text":"translate this to French","intent":"UNK","slots":[]}
+{"text":"what's the capital of Peru","intent":"UNK","slots":[]}
+{"text":"send an email to my boss","intent":"UNK","slots":[]}
+{"text":"turn on the kitchen lights","intent":"UNK","slots":[]}
+{"text":"I need financing options","intent":"UNK","slots":[]}
+{"text":"compare insurance quotes","intent":"UNK","slots":[]}
+{"text":"blorp snizzle wumpus","intent":"UNK","slots":[]}
+{"text":"check my bank balance","intent":"UNK","slots":[]}
+{"text":"reserve a hotel room","intent":"UNK","slots":[]}
+{"text":"what's seventeen times forty","intent":"UNK","slots":[]}
+{"text":"open the trunk remotely","intent":"UNK","slots":[]}
+{"text":"adjust the tire pressure","intent":"UNK","slots":[]}
+{"text":"xyzzy plugh nothing","intent":"UNK","slots":[]}
+{"text":"tell me a joke","intent":"UNK","slots":[]}
+{"text":"I want the red paint package","intent":"UNK","slots":[]}
+{"text":"sync my calendar","intent":"UNK","slots":[]}
+{"text":"who won the game last night","intent":"UNK","slots":[]}
+{"text":"purchase the vehicle today","intent":"UNK","slots":[]}
+{"text":"my name is Sam Rivera","intent":"inform","slots":[{"type":"name","start":11,"end":21}]}
+{"text":"I'm Olivia Grant","intent":"inform","slots":[{"type":"name","start":4,"end":16}]}
+{"text":"call me Ben","intent":"inform","slots":[{"type":"name","start":8,"end":11}]}
+{"text":"the name is Fatima Hassan","intent":"inform","slots":[{"type":"name","start":12,"end":25}]}
+{"text":"I go by Leo","intent":"inform","slots":[{"type":"name","start":8,"end":11}]}
+{"text":"name's Naomi Park","intent":"inform","slots":[{"type":"name","start":7,"end":17}]}
+{"text":"you can call me Diego Alvarez","intent":"inform","slots":[{"type":"name","start":16,"end":29}]}
+{"text":"it's Pat","intent":"inform","slots":[{"type":"name","start":5,"end":8}]}
+{"text":"I'm Grace","intent":"inform","slots":[{"type":"name","start":4,"end":9}]}
+{"text":"my name is Wei Zhang","intent":"inform","slots":[{"type":"name","start":11,"end":20}]}
+{"text":"please call me Camille","intent":"inform","slots":[{"type":"name","start":15,"end":22}]}
+{"text":"I am Omar","intent":"inform","slots":[{"type":"name","start":5,"end":9}]}
+{"text":"my name's Lila Brooks","intent":"inform","slots":[{"type":"name","start":10,"end":21}]}
+{"text":"call me Theo","intent":"inform","slots":[{"type":"name","start":8,"end":12}]}
+{"text":"I'm Hannah Kim","intent":"inform","slots":[{"type":"name","start":4,"end":14}]}
+{"text":"the name's Marcus","intent":"inform","slots":[{"type":"name","start":11,"end":17}]}
+{"text":"you can call me Sasha Nair","intent":"inform","slots":[{"type":"name","start":16,"end":26}]}
+{"text":"I go by Kenji","intent":"inform","slots":[{"type":"name","start":8,"end":13}]}
+{"text":"it's Rosa","intent":"inform","slots":[{"type":"name","start":5,"end":9}]}
+{"text":"my name is Elliot Ward","intent":"inform","slots":[{"type":"name","start":11,"end":22}]}
+{"text":"call me Mina","intent":"inform","slots":[{"type":"name","start":8,"end":12}]}
+{"text":"I'm Andre","intent":"inform","slots":[{"type":"name","start":4,"end":9}]}
+{"text":"name is Chloe Bennett","intent":"inform","slots":[{"type":"name","start":8,"end":21}]}
+{"text":"I am Yusuf","intent":"inform","slots":[{"type":"name","start":5,"end":10}]}
+{"text":"please call me Nina","intent":"inform","slots":[{"type":"name","start":15,"end":19}]}
+{"text":"my name is Cole","intent":"inform","slots":[{"type":"name","start":11,"end":15}]}
+{"text":"you can call me Aisha Rahman","intent":"inform","slots":[{"type":"name","start":16,"end":28}]}
+{"text":"I go by Felix","intent":"inform","slots":[{"type":"name","start":8,"end":13}]}
+{"text":"DLP Headlights","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":14}]}
+{"text":"DLP lights","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":10}]}

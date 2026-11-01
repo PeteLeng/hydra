@@ -1,0 +1,50 @@
+{"text":"my name is Diego Alvarez","intent":"inform","slots":[{"type":"name","start":11,"end":24}]}
+{"text":"I'm Chloe","intent":"inform","slots":[{"type":"name","start":4,"end":9}]}
+{"text":"call me Fatima Rahman","intent":"inform","slots":[{"type":"name","start":8,"end":21}]}
+{"text":"it's Owen","intent":"inform","slots":[{"type":"name","start":5,"end":9}]}
+{"text":"the name is Mei Chen","intent":"inform","slots":[{"type":"name","start":12,"end":20}]}
+{"text":"I go by Harper Quinn","intent":"inform","slots":[{"type":"name","start":8,"end":20}]}
+{"text":"you can call me Yusuf","intent":"inform","slots":[{"type":"name","start":16,"end":21}]}
+{"text":"my name's Anika Patel","intent":"inform","slots":[{"type":"name","start":10,"end":21}]}
+{"text":"this is Theo","intent":"inform","slots":[{"type":"name","start":8,"end":12}]}
+{"text":"please call me Rosa Delgado","intent":"inform","slots":[{"type":"name","start":15,"end":27}]}
+{"text":"name's Caleb","intent":"inform","slots":[{"type":"name","start":7,"end":12}]}
+{"text":"I'm Ingrid Holm","intent":"inform","slots":[{"type":"name","start":4,"end":15}]}
+{"text":"just call me Naomi","intent":"inform","slots":[{"type":"name","start":13,"end":18}]}
+{"text":"my name is Luis Ortega","intent":"inform","slots":[{"type":"name","start":11,"end":22}]}
+{"text":"it's Quinn","intent":"inform","slots":[{"type":"name","start":5,"end":10}]}
+{"text":"call me Aisha Bello","intent":"inform","slots":[{"type":"name","start":8,"end":19}]}
+{"text":"I am Ben","intent":"inform","slots":[{"type":"name","start":5,"end":8}]}
+{"text":"the name's Soren Lind","intent":"inform","slots":[{"type":"name","start":11,"end":21}]}
+{"text":"headlights","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":10}]}
+{"text":"I prefer DLP lights","intent":"inform","slots":[{"type":"flow_ref","start":9,"end":19}]}
+{"text":"DLP Headlights","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":14}]}
+{"text":"let's go with the DLP headlamps","intent":"inform","slots":[{"type":"flow_ref","start":18,"end":31}],"alias_proposals":[{"slot":0,"value":"dlp_headlights"}]}
+{"text":"my pick is mobile theater","intent":"inform","slots":[{"type":"flow_ref","start":11,"end":25}]}
+{"text":"I prefer Cabin Cinema","intent":"inform","slots":[{"type":"flow_ref","start":9,"end":21}]}
+{"text":"theater","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":7}]}
+{"text":"movie theater works for me","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":13}],"alias_proposals":[{"slot":0,"value":"cabin_cinema"}]}
+{"text":"massage seats","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":13}]}
+{"text":"I prefer seat massage","intent":"inform","slots":[{"type":"flow_ref","start":9,"end":21}]}
+{"text":"Massaging Seats","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":15}]}
+{"text":"I'll take the seat massager","intent":"inform","slots":[{"type":"flow_ref","start":14,"end":27}],"alias_proposals":[{"slot":0,"value":"massage_seats"}]}
+{"text":"privacy glass","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":13}]}
+{"text":"I prefer privacy windows","intent":"inform","slots":[{"type":"flow_ref","start":9,"end":24}]}
+{"text":"Privacy Window","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":14}]}
+{"text":"privacy tint is my pick","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":12}],"alias_proposals":[{"slot":0,"value":"privacy_window"}]}
+{"text":"inside","intent":"inform","slots":[{"type":"part","start":0,"end":6}]}
+{"text":"interior","intent":"inform","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"cabin","intent":"inform","slots":[{"type":"part","start":0,"end":5}]}
+{"text":"I prefer the interior","intent":"inform","slots":[{"type":"part","start":13,"end":21}]}
+{"text":"cabin is the one","intent":"inform","slots":[{"type":"part","start":0,"end":5}]}
+{"text":"let's use inside","intent":"inform","slots":[{"type":"part","start":10,"end":16}]}
+{"text":"make it the interior","intent":"inform","slots":[{"type":"part","start":12,"end":20}]}
+{"text":"indoors is fine","intent":"inform","slots":[{"type":"part","start":0,"end":7}],"alias_proposals":[{"slot":0,"value":"inside"}]}
+{"text":"outside is better","intent":"inform","slots":[{"type":"part","start":0,"end":7}]}
+{"text":"exterior","intent":"inform","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"I prefer outside","intent":"inform","slots":[{"type":"part","start":9,"end":16}]}
+{"text":"go with the exterior","intent":"inform","slots":[{"type":"part","start":12,"end":20}]}
+{"text":"let's use the outside","intent":"inform","slots":[{"type":"part","start":14,"end":21}]}
+{"text":"exterior works for me","intent":"inform","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"I'll go with outside","intent":"inform","slots":[{"type":"part","start":13,"end":20}]}
+{"text":"outdoors is my choice","intent":"inform","slots":[{"type":"part","start":0,"end":8}],"alias_proposals":[{"slot":0,"value":"outside"}]}

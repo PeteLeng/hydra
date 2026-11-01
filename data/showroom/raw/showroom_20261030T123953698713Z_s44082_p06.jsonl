@@ -1,0 +1,50 @@
+{"text":"headlights","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":10}]}
+{"text":"the DLP Headlights","intent":"inform","slots":[{"type":"flow_ref","start":4,"end":18}]}
+{"text":"I prefer headlights","intent":"inform","slots":[{"type":"flow_ref","start":9,"end":19}]}
+{"text":"let's use DLP lights","intent":"inform","slots":[{"type":"flow_ref","start":10,"end":20}]}
+{"text":"I'll pick the headlights","intent":"inform","slots":[{"type":"flow_ref","start":14,"end":24}]}
+{"text":"Cabin Cinema","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":12}]}
+{"text":"the mobile theater","intent":"inform","slots":[{"type":"flow_ref","start":4,"end":18}]}
+{"text":"theater","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":7}]}
+{"text":"in-car cinema","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":13}]}
+{"text":"I like the Cabin Cinema","intent":"inform","slots":[{"type":"flow_ref","start":11,"end":23}]}
+{"text":"mobile theater for me","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":14}]}
+{"text":"for me it's the theater","intent":"inform","slots":[{"type":"flow_ref","start":16,"end":23}]}
+{"text":"Massaging Seats","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":15}]}
+{"text":"massage seats","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":13}]}
+{"text":"seat massage","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":12}]}
+{"text":"the massage seats","intent":"inform","slots":[{"type":"flow_ref","start":4,"end":17}]}
+{"text":"give me seat massage","intent":"inform","slots":[{"type":"flow_ref","start":8,"end":20}]}
+{"text":"Massaging Seats for sure","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":15}]}
+{"text":"seat massage works for me","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":12}]}
+{"text":"Privacy Window","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":14}]}
+{"text":"privacy windows","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":15}]}
+{"text":"privacy glass","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":13}]}
+{"text":"the privacy glass","intent":"inform","slots":[{"type":"flow_ref","start":4,"end":17}]}
+{"text":"Privacy Window sounds good","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":14}]}
+{"text":"privacy windows it is","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":15}]}
+{"text":"I'll stick with privacy glass","intent":"inform","slots":[{"type":"flow_ref","start":16,"end":29}]}
+{"text":"inside","intent":"inform","slots":[{"type":"part","start":0,"end":6}]}
+{"text":"interior","intent":"inform","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"cabin","intent":"inform","slots":[{"type":"part","start":0,"end":5}]}
+{"text":"the inside","intent":"inform","slots":[{"type":"part","start":4,"end":10}]}
+{"text":"the interior","intent":"inform","slots":[{"type":"part","start":4,"end":12}]}
+{"text":"the cabin","intent":"inform","slots":[{"type":"part","start":4,"end":9}]}
+{"text":"I prefer inside","intent":"inform","slots":[{"type":"part","start":9,"end":15}]}
+{"text":"I prefer the interior","intent":"inform","slots":[{"type":"part","start":13,"end":21}]}
+{"text":"I like the cabin","intent":"inform","slots":[{"type":"part","start":11,"end":16}]}
+{"text":"let's do inside","intent":"inform","slots":[{"type":"part","start":9,"end":15}]}
+{"text":"interior is my call","intent":"inform","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"cabin for me","intent":"inform","slots":[{"type":"part","start":0,"end":5}]}
+{"text":"exterior","intent":"inform","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"the outside","intent":"inform","slots":[{"type":"part","start":4,"end":11}]}
+{"text":"the exterior","intent":"inform","slots":[{"type":"part","start":4,"end":12}]}
+{"text":"outside is fine","intent":"inform","slots":[{"type":"part","start":0,"end":7}]}
+{"text":"the exterior is good","intent":"inform","slots":[{"type":"part","start":4,"end":12}]}
+{"text":"outside is what I want","intent":"inform","slots":[{"type":"part","start":0,"end":7}]}
+{"text":"exterior would be nice","intent":"inform","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"put me down for outside","intent":"inform","slots":[{"type":"part","start":16,"end":23}]}
+{"text":"I'd say exterior","intent":"inform","slots":[{"type":"part","start":8,"end":16}]}
+{"text":"mark it outside","intent":"inform","slots":[{"type":"part","start":8,"end":15}]}
+{"text":"outside works","intent":"inform","slots":[{"type":"part","start":0,"end":7}]}
+{"text":"for me it's exterior","intent":"inform","slots":[{"type":"part","start":12,"end":20}]}

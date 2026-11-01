@@ -1,0 +1,7680 @@
+{
+  "policy": {
+    "review": "All 1500 annotated utterances read; semantic acceptance and manual family merges are arbiter judgments.",
+    "template_matching": "Replace spans with slot-type placeholders; NFKC/case/whitespace/punctuation folding; expand selected contractions; ignore articles/please/for me/now; fold can/could/would/may questions, I/we questions, and demo/demonstration/presentation/walkthrough nouns.",
+    "manual_merges": "Named links below join reviewed close paraphrases across template keys; shared intent/feature alone does not establish a link.",
+    "duplicate_links": "Eligible duplicate sources participate in group union before one accepted copy is retained.",
+    "similarity_audit": "SequenceMatcher >=0.88 on normalized templates flagged cross-group pairs for manual inspection only; scores never made a grouping decision.",
+    "limits": "Conservative template-held-out evaluation policy; manual paraphrase boundaries are subjective and revisable."
+  },
+  "manual_families": {
+    "demo-discovery": [
+      "A005",
+      "A017",
+      "B364",
+      "C102",
+      "C152"
+    ],
+    "demo-view-generic": [
+      "A001",
+      "A008",
+      "A013",
+      "A020",
+      "B365",
+      "B367",
+      "C452"
+    ],
+    "demo-request-generic": [
+      "A002",
+      "A016",
+      "B379",
+      "C201"
+    ],
+    "demo-start-generic": [
+      "A007",
+      "B370",
+      "B375",
+      "C001",
+      "C151",
+      "C301",
+      "C351",
+      "C402"
+    ],
+    "demo-run-generic": [
+      "A003",
+      "B380",
+      "C051",
+      "C252",
+      "C451"
+    ],
+    "demo-show-capabilities": [
+      "A012",
+      "B376",
+      "C002",
+      "C302"
+    ],
+    "demo-play-generic": [
+      "A009",
+      "C101"
+    ],
+    "demo-try-generic": [
+      "A014",
+      "B368",
+      "B377",
+      "C052",
+      "C352"
+    ],
+    "demo-guide-generic": [
+      "A006",
+      "B369"
+    ],
+    "demo-any-generic": [
+      "A011",
+      "B371",
+      "B372",
+      "B373",
+      "B374"
+    ],
+    "feature-show": [
+      "A022",
+      "A031",
+      "A057",
+      "C053",
+      "C205",
+      "C453"
+    ],
+    "feature-see-request": [
+      "A023",
+      "A029",
+      "A058",
+      "B406",
+      "C003"
+    ],
+    "feature-explore": [
+      "A026",
+      "A038",
+      "A052",
+      "B393",
+      "C153",
+      "C355",
+      "C405"
+    ],
+    "feature-try-request": [
+      "A021",
+      "A032",
+      "B392",
+      "B397",
+      "C303"
+    ],
+    "feature-want-try": [
+      "A037",
+      "A056",
+      "B395",
+      "C005",
+      "C104"
+    ],
+    "feature-lets-try": [
+      "B387",
+      "C055",
+      "C305",
+      "C454"
+    ],
+    "feature-demo-verb": [
+      "A028",
+      "B381",
+      "C054",
+      "C254"
+    ],
+    "feature-run-demo": [
+      "B384",
+      "B389",
+      "C004",
+      "C404"
+    ],
+    "feature-start-demo": [
+      "B394",
+      "B399",
+      "B412",
+      "C103",
+      "C154",
+      "C353"
+    ],
+    "feature-bring-up": [
+      "A025",
+      "A030",
+      "B407",
+      "B418"
+    ],
+    "feature-switch-on": [
+      "A054",
+      "B388",
+      "C105",
+      "C403"
+    ],
+    "feature-show-part": [
+      "A041",
+      "B403",
+      "C006",
+      "C156"
+    ],
+    "feature-demo-part-theme": [
+      "A043",
+      "B405",
+      "C106",
+      "C356",
+      "C406"
+    ],
+    "feature-try-part": [
+      "A044",
+      "C256"
+    ],
+    "feature-show-theme": [
+      "B404",
+      "B409",
+      "B415",
+      "B420",
+      "C056",
+      "C206",
+      "C306",
+      "C456"
+    ],
+    "part-show-features": [
+      "A061",
+      "A066",
+      "B431",
+      "B442",
+      "C107",
+      "C258",
+      "C308",
+      "C407"
+    ],
+    "part-show-around": [
+      "A069",
+      "A077",
+      "C158",
+      "C357",
+      "C457"
+    ],
+    "part-demo-verb": [
+      "B437",
+      "C007",
+      "C208"
+    ],
+    "part-discovery": [
+      "A062",
+      "A070",
+      "A071",
+      "A073",
+      "A076",
+      "A105",
+      "B423",
+      "B433",
+      "B441",
+      "C057",
+      "C259"
+    ],
+    "part-demo-discovery": [
+      "A063",
+      "B422",
+      "B430",
+      "B435",
+      "B443",
+      "C008",
+      "C207",
+      "C307"
+    ],
+    "part-demo-fragment": [
+      "A064",
+      "A102",
+      "A104"
+    ],
+    "part-demo-desire": [
+      "A068",
+      "A080",
+      "B427",
+      "B444",
+      "C157"
+    ],
+    "part-browse": [
+      "A065",
+      "A101",
+      "B426",
+      "B445",
+      "C108",
+      "C309",
+      "C359"
+    ],
+    "part-tour": [
+      "A075",
+      "B434",
+      "B438"
+    ],
+    "part-run-demo": [
+      "B425",
+      "B428",
+      "B440",
+      "C058",
+      "C257",
+      "C358",
+      "C409"
+    ],
+    "part-see-demo": [
+      "A074",
+      "B436",
+      "C458"
+    ],
+    "theme-demo-discovery": [
+      "A081",
+      "A085",
+      "A090",
+      "A093",
+      "A097",
+      "B447",
+      "B453",
+      "B454",
+      "B459",
+      "B470",
+      "C060"
+    ],
+    "theme-discovery": [
+      "A087",
+      "A094",
+      "B468"
+    ],
+    "theme-demo-fragment": [
+      "A083",
+      "A096"
+    ],
+    "theme-demo-desire": [
+      "A084",
+      "B457",
+      "B463",
+      "B466",
+      "C059"
+    ],
+    "theme-show-features": [
+      "A086",
+      "A088",
+      "B465",
+      "C109",
+      "C210",
+      "C260",
+      "C361"
+    ],
+    "theme-see-request": [
+      "A100",
+      "C160",
+      "C311",
+      "C360"
+    ],
+    "theme-explore": [
+      "A091",
+      "B450",
+      "C010",
+      "C111",
+      "C159"
+    ],
+    "theme-try": [
+      "A098",
+      "B467",
+      "C211"
+    ],
+    "theme-bring-up": [
+      "A092",
+      "B458",
+      "B469"
+    ],
+    "theme-demo-request": [
+      "B455",
+      "B462",
+      "C011",
+      "C411"
+    ],
+    "theme-run-demo": [
+      "B449",
+      "B452",
+      "B460",
+      "B461",
+      "C110",
+      "C161",
+      "C209",
+      "C261",
+      "C461"
+    ],
+    "theme-show-demo": [
+      "C310",
+      "C410"
+    ],
+    "theme-part-show": [
+      "A112",
+      "A119",
+      "A125",
+      "A128",
+      "A134",
+      "A138",
+      "B471",
+      "B485",
+      "B490",
+      "C014",
+      "C112",
+      "C162",
+      "C213",
+      "C263",
+      "C364",
+      "C414"
+    ],
+    "theme-part-discovery": [
+      "A113",
+      "A118",
+      "A122",
+      "A129",
+      "A133",
+      "A139",
+      "B474",
+      "B476",
+      "B482",
+      "B489",
+      "C262",
+      "C363",
+      "C464"
+    ],
+    "theme-part-demo-fragment": [
+      "A115",
+      "A126",
+      "A130",
+      "B473",
+      "B475",
+      "B479",
+      "B483",
+      "B488",
+      "B492"
+    ],
+    "theme-part-demo-discovery": [
+      "B499",
+      "C013",
+      "C064",
+      "C113",
+      "C163",
+      "C214",
+      "C312"
+    ],
+    "theme-part-explore": [
+      "A120",
+      "B495",
+      "C063",
+      "C314",
+      "C412"
+    ],
+    "theme-part-run": [
+      "B480",
+      "C212",
+      "C313",
+      "C362",
+      "C413",
+      "C463"
+    ],
+    "theme-part-try": [
+      "C062",
+      "C164"
+    ],
+    "theme-part-see": [
+      "B493",
+      "C114",
+      "C264",
+      "C462"
+    ],
+    "theme-part-show-demo": [
+      "B494",
+      "B498",
+      "C012"
+    ],
+    "preference-feature": [
+      "A170",
+      "B260",
+      "C319",
+      "C418"
+    ],
+    "preference-part": [
+      "A188",
+      "B285",
+      "C020",
+      "C072",
+      "C272",
+      "C372",
+      "C473"
+    ],
+    "preference-theme": [
+      "A228",
+      "A232",
+      "B312",
+      "B327",
+      "C374"
+    ],
+    "want-feature": [
+      "A027",
+      "A033"
+    ],
+    "want-part": [
+      "A214",
+      "B294",
+      "C421"
+    ],
+    "want-theme": [
+      "A240",
+      "A241",
+      "A243",
+      "C074",
+      "C175"
+    ],
+    "interested-part": [
+      "B301",
+      "C323",
+      "C422"
+    ],
+    "interested-theme": [
+      "B316",
+      "B319",
+      "B330",
+      "C075",
+      "C273",
+      "C475"
+    ],
+    "pick-feature": [
+      "A173",
+      "A203",
+      "A206",
+      "A208",
+      "C068"
+    ],
+    "pick-part": [
+      "A217",
+      "B287"
+    ],
+    "pick-theme": [
+      "A231",
+      "A236",
+      "C124",
+      "C426"
+    ],
+    "feature-go-with": [
+      "A172",
+      "A209",
+      "B254",
+      "C220",
+      "C368"
+    ],
+    "part-go-with": [
+      "A190",
+      "A196",
+      "A199",
+      "B286"
+    ],
+    "theme-go-with": [
+      "A237",
+      "B320",
+      "B323"
+    ],
+    "feature-take": [
+      "A180",
+      "B255",
+      "B267"
+    ],
+    "part-stick-with": [
+      "A216",
+      "C172"
+    ],
+    "feature-works": [
+      "A176",
+      "B274"
+    ],
+    "part-works": [
+      "A193",
+      "A198",
+      "B292",
+      "B293",
+      "B295",
+      "C373"
+    ],
+    "theme-works": [
+      "A239",
+      "A251",
+      "B318",
+      "B331"
+    ],
+    "feature-my-one": [
+      "A212",
+      "B275"
+    ],
+    "part-my-one": [
+      "A189",
+      "A215"
+    ],
+    "theme-my-one": [
+      "B311",
+      "B321"
+    ],
+    "theme-something": [
+      "A082",
+      "A099",
+      "A107",
+      "C023",
+      "C125",
+      "C325"
+    ],
+    "theme-features": [
+      "A106",
+      "A110",
+      "C123"
+    ],
+    "theme-focus": [
+      "C024",
+      "C025",
+      "C324",
+      "C375",
+      "C425"
+    ],
+    "theme-definite": [
+      "C073",
+      "C225",
+      "C274"
+    ],
+    "feature-definite": [
+      "B268",
+      "C119"
+    ],
+    "choice-pick": [
+      "A259",
+      "A267",
+      "C226",
+      "C277"
+    ],
+    "choice-go-with": [
+      "A262",
+      "C126",
+      "C477"
+    ],
+    "choice-take": [
+      "A258",
+      "A265",
+      "C177"
+    ],
+    "self-name": [
+      "A141",
+      "A144",
+      "A148",
+      "A161",
+      "A168",
+      "B226",
+      "B243",
+      "C117",
+      "C217"
+    ],
+    "self-call-me": [
+      "A143",
+      "A147",
+      "A150",
+      "A163",
+      "C016"
+    ],
+    "self-go-by": [
+      "A145",
+      "C165"
+    ],
+    "greet-im": [
+      "A301",
+      "A302",
+      "A303",
+      "A304",
+      "A306",
+      "A309",
+      "A315",
+      "A319",
+      "B029",
+      "B030",
+      "B032",
+      "C082",
+      "C281",
+      "C381"
+    ],
+    "greet-my-name": [
+      "A305",
+      "A312",
+      "C032",
+      "C132",
+      "C181",
+      "C282",
+      "C332",
+      "C382",
+      "C482"
+    ],
+    "greet-how-going": [
+      "A292",
+      "A296",
+      "A299",
+      "B017",
+      "C030",
+      "C330",
+      "C379",
+      "C479"
+    ],
+    "greet-meet-you": [
+      "B018",
+      "C080",
+      "C329",
+      "C429"
+    ],
+    "greet-good-see": [
+      "A295",
+      "C279"
+    ],
+    "greet-glad-here": [
+      "C180",
+      "C230"
+    ],
+    "greet-hello": [
+      "A281",
+      "A290",
+      "A300"
+    ],
+    "greet-hi": [
+      "A282",
+      "A297",
+      "B002",
+      "B016"
+    ],
+    "greet-hey": [
+      "A283",
+      "A289"
+    ],
+    "greet-morning": [
+      "A284",
+      "A293",
+      "C430"
+    ],
+    "greet-evening": [
+      "A286",
+      "A294"
+    ],
+    "greet-group": [
+      "B019",
+      "B020",
+      "C280"
+    ],
+    "affirm-yes": [
+      "A321",
+      "A341",
+      "A348",
+      "C133",
+      "C333"
+    ],
+    "affirm-yeah": [
+      "A322",
+      "B055",
+      "C485"
+    ],
+    "affirm-yep": [
+      "A323",
+      "A346",
+      "C084",
+      "C383"
+    ],
+    "affirm-okay": [
+      "A325",
+      "A326",
+      "A327",
+      "A347"
+    ],
+    "affirm-correct": [
+      "A328",
+      "A329",
+      "A349",
+      "B068"
+    ],
+    "affirm-agree": [
+      "A336",
+      "B050",
+      "B064"
+    ],
+    "affirm-sounds-good": [
+      "A330",
+      "C033",
+      "C385",
+      "C433"
+    ],
+    "affirm-sounds-right": [
+      "A333",
+      "A345",
+      "C134"
+    ],
+    "affirm-that-works": [
+      "A340",
+      "A350",
+      "C185",
+      "C235"
+    ],
+    "affirm-sure": [
+      "A324",
+      "A337",
+      "C135",
+      "C335"
+    ],
+    "affirm-go-ahead": [
+      "A344",
+      "C034",
+      "C283",
+      "C483"
+    ],
+    "affirm-please-do": [
+      "A343",
+      "C234"
+    ],
+    "affirm-thats-it": [
+      "B060",
+      "C184",
+      "C334"
+    ],
+    "deny-no": [
+      "A351",
+      "A366",
+      "A377",
+      "A379",
+      "C388"
+    ],
+    "deny-nope": [
+      "A352",
+      "A372"
+    ],
+    "deny-wrong": [
+      "A356",
+      "A364",
+      "A367",
+      "B083"
+    ],
+    "deny-incorrect": [
+      "A355",
+      "A361",
+      "A373",
+      "A380",
+      "C287"
+    ],
+    "deny-disagree": [
+      "A357",
+      "A369",
+      "B095"
+    ],
+    "deny-not-that": [
+      "A368",
+      "A371",
+      "A374",
+      "B092",
+      "B097",
+      "C036",
+      "C238",
+      "C486",
+      "C488"
+    ],
+    "deny-not-wanted": [
+      "A375",
+      "C188",
+      "C387",
+      "C437"
+    ],
+    "deny-false": [
+      "A378",
+      "B087"
+    ],
+    "deny-not-now": [
+      "B089",
+      "C236",
+      "C286",
+      "C336"
+    ],
+    "stop-bare": [
+      "A381",
+      "A382",
+      "A383",
+      "A386",
+      "A395",
+      "B111",
+      "C289",
+      "C489"
+    ],
+    "stop-demo": [
+      "A384",
+      "A402",
+      "B127",
+      "C139",
+      "C440",
+      "C491"
+    ],
+    "stop-current-demo": [
+      "A389",
+      "C340",
+      "C441"
+    ],
+    "stop-this-demo": [
+      "A386",
+      "A397",
+      "B128",
+      "C439"
+    ],
+    "stop-pause-bare": [
+      "A388",
+      "A393",
+      "A396",
+      "A408",
+      "B103",
+      "B104",
+      "B129",
+      "C190",
+      "C240"
+    ],
+    "stop-halt": [
+      "A385",
+      "A398",
+      "A409",
+      "B105",
+      "B116",
+      "B125"
+    ],
+    "stop-freeze": [
+      "A391",
+      "B113",
+      "C041",
+      "C241",
+      "C490"
+    ],
+    "stop-playback": [
+      "A392",
+      "A400",
+      "B123"
+    ],
+    "stop-running": [
+      "A403",
+      "B120"
+    ],
+    "stop-want": [
+      "A404",
+      "B122"
+    ],
+    "stop-brief-pause": [
+      "A405",
+      "C090"
+    ],
+    "stop-hold-stop": [
+      "A390",
+      "C039",
+      "C189",
+      "C391"
+    ],
+    "stop-right-there": [
+      "A407",
+      "C140",
+      "C390",
+      "C339"
+    ],
+    "stop-enough": [
+      "A401",
+      "A410",
+      "B126"
+    ],
+    "stop-cut": [
+      "A394",
+      "A406",
+      "B109",
+      "C191"
+    ],
+    "stop-hold-demo": [
+      "B124",
+      "C291",
+      "C341"
+    ],
+    "stop-stop-show": [
+      "B117",
+      "C239"
+    ],
+    "resume-bare": [
+      "A411",
+      "A414",
+      "A423",
+      "A437",
+      "B148",
+      "C492"
+    ],
+    "resume-continue": [
+      "A412",
+      "A420",
+      "A422",
+      "A427",
+      "B152",
+      "C344"
+    ],
+    "resume-carry-on": [
+      "A413",
+      "A424",
+      "A434",
+      "A439",
+      "B141"
+    ],
+    "resume-continue-demo": [
+      "A416",
+      "B156",
+      "B160",
+      "C193"
+    ],
+    "resume-resume-demo": [
+      "A418",
+      "B144",
+      "C342",
+      "C442"
+    ],
+    "resume-keep-going": [
+      "A415",
+      "A438",
+      "B159",
+      "C143"
+    ],
+    "resume-left-off": [
+      "A417",
+      "A428",
+      "A436",
+      "C093",
+      "C142",
+      "C294"
+    ],
+    "resume-pick-up": [
+      "B149",
+      "B155",
+      "C242"
+    ],
+    "resume-unpause": [
+      "A421",
+      "A433",
+      "B139",
+      "C044",
+      "C243",
+      "C444"
+    ],
+    "resume-go-ahead": [
+      "A429",
+      "C292"
+    ],
+    "resume-from-here": [
+      "A431",
+      "B158",
+      "C443"
+    ],
+    "resume-keep-playing": [
+      "A425",
+      "C293",
+      "C393"
+    ],
+    "resume-start-back": [
+      "A426",
+      "C494"
+    ],
+    "quit-quit": [
+      "A441",
+      "A455",
+      "A459"
+    ],
+    "quit-exit": [
+      "A442",
+      "A457",
+      "A462",
+      "A470",
+      "C397",
+      "C447"
+    ],
+    "quit-want": [
+      "A443",
+      "A448",
+      "B177",
+      "C195",
+      "C246",
+      "C347"
+    ],
+    "quit-end-session": [
+      "A444",
+      "A450",
+      "A468",
+      "B164",
+      "B181",
+      "C096",
+      "C446"
+    ],
+    "quit-close-session": [
+      "A445",
+      "A460",
+      "B189",
+      "C047",
+      "C346"
+    ],
+    "quit-session": [
+      "A447",
+      "A469",
+      "C395"
+    ],
+    "quit-leave-session": [
+      "A449",
+      "B173"
+    ],
+    "quit-done-session": [
+      "A463",
+      "B174"
+    ],
+    "quit-showroom": [
+      "A446",
+      "B188",
+      "C097",
+      "C345"
+    ],
+    "quit-close-showroom": [
+      "A453",
+      "C445"
+    ],
+    "quit-done": [
+      "A451",
+      "B166",
+      "C296",
+      "C396"
+    ],
+    "quit-done-showroom": [
+      "B185",
+      "C045"
+    ],
+    "quit-sign-out": [
+      "A452",
+      "A464",
+      "B168",
+      "B175",
+      "C247"
+    ],
+    "quit-leaving": [
+      "A456",
+      "A458",
+      "A465",
+      "A467",
+      "B163",
+      "B178",
+      "B183",
+      "B184",
+      "B186",
+      "B190"
+    ],
+    "quit-close-out": [
+      "A461",
+      "B165",
+      "B180"
+    ],
+    "quit-exit-session": [
+      "A466",
+      "C245"
+    ],
+    "quit-wrap-up": [
+      "A454",
+      "C046",
+      "C095",
+      "C496"
+    ],
+    "quit-end-tour": [
+      "C147",
+      "C297",
+      "C495"
+    ],
+    "unk-food-order": [
+      "B193",
+      "C049"
+    ],
+    "unk-weather": [
+      "A472",
+      "B192",
+      "C149"
+    ],
+    "unk-navigation": [
+      "A473",
+      "B200"
+    ],
+    "unk-play-music": [
+      "A474",
+      "B195",
+      "C249"
+    ],
+    "unk-call-person": [
+      "A475",
+      "B199"
+    ],
+    "unk-alarm": [
+      "A476",
+      "C349"
+    ],
+    "unk-reminder": [
+      "A481",
+      "B194",
+      "C099"
+    ],
+    "unk-translate": [
+      "A482",
+      "B203"
+    ],
+    "unk-buy-car": [
+      "A483",
+      "B196",
+      "B220"
+    ],
+    "unk-price": [
+      "A484",
+      "B197"
+    ],
+    "unk-test-drive": [
+      "A485",
+      "B198",
+      "C498"
+    ],
+    "unk-financing": [
+      "A486",
+      "B207",
+      "C048"
+    ],
+    "unk-paint-order": [
+      "A490",
+      "B217",
+      "C199"
+    ],
+    "unk-flight": [
+      "B191",
+      "C299"
+    ],
+    "unk-capital": [
+      "B204",
+      "C449"
+    ],
+    "unk-gibberish-asdf": [
+      "A498",
+      "B202"
+    ],
+    "unk-gibberish-xyzzy": [
+      "A495",
+      "B215"
+    ],
+    "unk-gibberish-snizzle": [
+      "A494",
+      "B209"
+    ],
+    "unk-gibberish-number": [
+      "C050",
+      "C100",
+      "C150",
+      "C200",
+      "C250",
+      "C300",
+      "C350",
+      "C400",
+      "C450",
+      "C500"
+    ],
+    "near-greet-introduction": [
+      "B032",
+      "C331"
+    ],
+    "near-affirm-thats-it": [
+      "A346",
+      "C184"
+    ],
+    "near-definitely-not": [
+      "B094",
+      "B099"
+    ],
+    "near-part-selection": [
+      "A191",
+      "B298"
+    ],
+    "part-locative": [
+      "A224",
+      "C022",
+      "C070",
+      "C221",
+      "C222",
+      "C322"
+    ],
+    "part-features": [
+      "A078",
+      "B439"
+    ],
+    "near-feature-modal-view-try": [
+      "A023",
+      "A029",
+      "A032",
+      "A037",
+      "A038",
+      "A058",
+      "B387",
+      "B392"
+    ],
+    "near-feature-pick": [
+      "B255",
+      "C068"
+    ],
+    "near-feature-how-about": [
+      "A024",
+      "B417"
+    ],
+    "near-theme-explore": [
+      "A098",
+      "B450"
+    ],
+    "near-feature-filter-request": [
+      "C208",
+      "C360"
+    ],
+    "near-theme-demo-ideas": [
+      "A083",
+      "B454"
+    ],
+    "near-filtered-demo-show": [
+      "A134",
+      "B498",
+      "C162",
+      "C462"
+    ],
+    "near-filtered-demo-start": [
+      "B480",
+      "C012",
+      "C164",
+      "C463"
+    ]
+  },
+  "groups": [
+    {
+      "group_id": "showroom-a001",
+      "accepted_review_ids": [
+        "A001",
+        "A008",
+        "A013",
+        "A020",
+        "B365",
+        "B367",
+        "C452"
+      ],
+      "all_eligible_review_ids": [
+        "A001",
+        "A008",
+        "A013",
+        "A020",
+        "B361",
+        "B365",
+        "B367",
+        "C452"
+      ],
+      "template_keys": [
+        "request_flow | can i look at demo",
+        "request_flow | can i see demo",
+        "request_flow | can i watch feature demo",
+        "request_flow | i want to see demo",
+        "request_flow | i would like to watch feature demo",
+        "request_flow | let us see demo",
+        "request_flow | mind showing me demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a002",
+      "accepted_review_ids": [
+        "A002",
+        "A016",
+        "B379",
+        "C201"
+      ],
+      "all_eligible_review_ids": [
+        "A002",
+        "A016",
+        "B362",
+        "B379",
+        "C201"
+      ],
+      "template_keys": [
+        "request_flow | give me quick feature demo",
+        "request_flow | i want demo",
+        "request_flow | i want quick tour",
+        "request_flow | i would like demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a003",
+      "accepted_review_ids": [
+        "A003",
+        "B380",
+        "C051",
+        "C252",
+        "C451"
+      ],
+      "all_eligible_review_ids": [
+        "A003",
+        "B363",
+        "B380",
+        "C051",
+        "C252",
+        "C451"
+      ],
+      "template_keys": [
+        "request_flow | let us run through demo",
+        "request_flow | mind running demo",
+        "request_flow | run demo",
+        "request_flow | run showroom demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a004",
+      "accepted_review_ids": [
+        "A004"
+      ],
+      "all_eligible_review_ids": [
+        "A004"
+      ],
+      "template_keys": [
+        "request_flow | let us see showroom demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a005",
+      "accepted_review_ids": [
+        "A005",
+        "A017",
+        "B364",
+        "C102",
+        "C152"
+      ],
+      "all_eligible_review_ids": [
+        "A005",
+        "A017",
+        "B364",
+        "C102",
+        "C152"
+      ],
+      "template_keys": [
+        "request_flow | can you show me what features are available",
+        "request_flow | got any demos i can see",
+        "request_flow | what demos can you run",
+        "request_flow | what demos do you have",
+        "request_flow | what kind of demo can i start with"
+      ]
+    },
+    {
+      "group_id": "showroom-a006",
+      "accepted_review_ids": [
+        "A006",
+        "B369"
+      ],
+      "all_eligible_review_ids": [
+        "A006",
+        "B369"
+      ],
+      "template_keys": [
+        "request_flow | can you walk me through feature",
+        "request_flow | walk me through demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a007",
+      "accepted_review_ids": [
+        "A007",
+        "B370",
+        "B375",
+        "C001",
+        "C151",
+        "C301",
+        "C351",
+        "C402"
+      ],
+      "all_eligible_review_ids": [
+        "A007",
+        "B366",
+        "B370",
+        "B375",
+        "C001",
+        "C151",
+        "C301",
+        "C351",
+        "C402"
+      ],
+      "template_keys": [
+        "request_flow | can i launch demo",
+        "request_flow | can you start showroom demo",
+        "request_flow | kick off demo",
+        "request_flow | let us start feature demo",
+        "request_flow | let us start show",
+        "request_flow | start demo",
+        "request_flow | start showroom demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a009",
+      "accepted_review_ids": [
+        "A009",
+        "C101"
+      ],
+      "all_eligible_review_ids": [
+        "A009",
+        "B378",
+        "C101"
+      ],
+      "template_keys": [
+        "request_flow | play demo",
+        "request_flow | play feature demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a010",
+      "accepted_review_ids": [
+        "A010"
+      ],
+      "all_eligible_review_ids": [
+        "A010"
+      ],
+      "template_keys": [
+        "request_flow | i would like to browse showroom"
+      ]
+    },
+    {
+      "group_id": "showroom-a011",
+      "accepted_review_ids": [
+        "A011",
+        "B371",
+        "B372",
+        "B373",
+        "B374"
+      ],
+      "all_eligible_review_ids": [
+        "A011",
+        "B371",
+        "B372",
+        "B373",
+        "B374"
+      ],
+      "template_keys": [
+        "request_flow | any demo is fine",
+        "request_flow | anything interesting to try",
+        "request_flow | run whatever demo you like",
+        "request_flow | show me whatever you recommend",
+        "request_flow | surprise me with demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a012",
+      "accepted_review_ids": [
+        "A012",
+        "B376",
+        "C002"
+      ],
+      "all_eligible_review_ids": [
+        "A012",
+        "B376",
+        "C002",
+        "C302"
+      ],
+      "template_keys": [
+        "request_flow | let us see what this vehicle can demonstrate",
+        "request_flow | show me what this car can do",
+        "request_flow | show me what you've got"
+      ]
+    },
+    {
+      "group_id": "showroom-a014",
+      "accepted_review_ids": [
+        "A014",
+        "B368",
+        "B377",
+        "C052",
+        "C352"
+      ],
+      "all_eligible_review_ids": [
+        "A014",
+        "B368",
+        "B377",
+        "C052",
+        "C352"
+      ],
+      "template_keys": [
+        "request_flow | can i try demo",
+        "request_flow | can i try one of demos",
+        "request_flow | i want to try one of showroom demos",
+        "request_flow | let us try demo",
+        "request_flow | let us try something out"
+      ]
+    },
+    {
+      "group_id": "showroom-a015",
+      "accepted_review_ids": [
+        "A015"
+      ],
+      "all_eligible_review_ids": [
+        "A015"
+      ],
+      "template_keys": [
+        "request_flow | pull up demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a018",
+      "accepted_review_ids": [
+        "A018"
+      ],
+      "all_eligible_review_ids": [
+        "A018"
+      ],
+      "template_keys": [
+        "request_flow | what should we look at"
+      ]
+    },
+    {
+      "group_id": "showroom-a019",
+      "accepted_review_ids": [
+        "A019"
+      ],
+      "all_eligible_review_ids": [
+        "A019"
+      ],
+      "template_keys": [
+        "request_flow | can you demo something"
+      ]
+    },
+    {
+      "group_id": "showroom-a021",
+      "accepted_review_ids": [
+        "A021",
+        "A023",
+        "A026",
+        "A029",
+        "A032",
+        "A037",
+        "A038",
+        "A051",
+        "A052",
+        "A053",
+        "A055",
+        "A056",
+        "A058",
+        "A059",
+        "B382",
+        "B383",
+        "B385",
+        "B386",
+        "B387",
+        "B391",
+        "B392",
+        "B393",
+        "B395",
+        "B397",
+        "B398",
+        "B400",
+        "B406",
+        "C003",
+        "C005",
+        "C055",
+        "C104",
+        "C153",
+        "C255",
+        "C303",
+        "C305",
+        "C355",
+        "C405",
+        "C454",
+        "C455"
+      ],
+      "all_eligible_review_ids": [
+        "A021",
+        "A023",
+        "A026",
+        "A029",
+        "A032",
+        "A037",
+        "A038",
+        "A051",
+        "A052",
+        "A053",
+        "A055",
+        "A056",
+        "A058",
+        "A059",
+        "B382",
+        "B383",
+        "B385",
+        "B386",
+        "B387",
+        "B391",
+        "B392",
+        "B393",
+        "B395",
+        "B397",
+        "B398",
+        "B400",
+        "B406",
+        "C003",
+        "C005",
+        "C055",
+        "C104",
+        "C153",
+        "C255",
+        "C303",
+        "C305",
+        "C355",
+        "C405",
+        "C454",
+        "C455"
+      ],
+      "template_keys": [
+        "request_flow | can i check out slotflowref",
+        "request_flow | can i see slotflowref",
+        "request_flow | can i test out slotflowref",
+        "request_flow | can i test slotflowref",
+        "request_flow | can i try slotflowref",
+        "request_flow | i want to experience slotflowref",
+        "request_flow | i would like to experience slotflowref",
+        "request_flow | i would like to see slotflowref",
+        "request_flow | i would like to try slotflowref",
+        "request_flow | i would love to try slotflowref",
+        "request_flow | let me see slotflowref",
+        "request_flow | let me try slotflowref",
+        "request_flow | let us check out slotflowref",
+        "request_flow | let us experience slotflowref",
+        "request_flow | let us look at slotflowref",
+        "request_flow | let us see slotflowref",
+        "request_flow | let us see slotflowref in action",
+        "request_flow | let us see slotflowref work",
+        "request_flow | let us try out slotflowref",
+        "request_flow | let us try slotflowref",
+        "request_flow | let us view slotflowref",
+        "request_flow | mind showing slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-a022",
+      "accepted_review_ids": [
+        "A022",
+        "A031",
+        "A036",
+        "A057",
+        "B396",
+        "C053",
+        "C205",
+        "C453"
+      ],
+      "all_eligible_review_ids": [
+        "A022",
+        "A031",
+        "A036",
+        "A057",
+        "B396",
+        "C053",
+        "C205",
+        "C453"
+      ],
+      "template_keys": [
+        "request_flow | show me how slotflowref work",
+        "request_flow | show me slotflowref",
+        "request_flow | show me slotflowref feature",
+        "request_flow | show me what slotflowref can do",
+        "request_flow | show slotflowref",
+        "request_flow | show slotflowref next"
+      ]
+    },
+    {
+      "group_id": "showroom-a024",
+      "accepted_review_ids": [
+        "A024",
+        "A034",
+        "B417"
+      ],
+      "all_eligible_review_ids": [
+        "A024",
+        "A034",
+        "B417"
+      ],
+      "template_keys": [
+        "inform | how about slotflowref",
+        "inform | what about slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-a025",
+      "accepted_review_ids": [
+        "A025",
+        "A030",
+        "A035",
+        "A060",
+        "B407",
+        "B411",
+        "B416",
+        "B418"
+      ],
+      "all_eligible_review_ids": [
+        "A025",
+        "A030",
+        "A035",
+        "A060",
+        "B407",
+        "B411",
+        "B416",
+        "B418"
+      ],
+      "template_keys": [
+        "request_flow | bring up slotflowref",
+        "request_flow | pull up slotflowref",
+        "request_flow | queue slotflowref",
+        "request_flow | queue up slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-a027",
+      "accepted_review_ids": [
+        "A027",
+        "A033",
+        "A039",
+        "C169",
+        "C269",
+        "C420"
+      ],
+      "all_eligible_review_ids": [
+        "A027",
+        "A033",
+        "A039",
+        "C169",
+        "C269",
+        "C420"
+      ],
+      "template_keys": [
+        "inform | i want slotflowref",
+        "inform | i would like slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-a028",
+      "accepted_review_ids": [
+        "A028",
+        "B381",
+        "C054",
+        "C254"
+      ],
+      "all_eligible_review_ids": [
+        "A028",
+        "B381",
+        "C054",
+        "C254"
+      ],
+      "template_keys": [
+        "request_flow | can you demo slotflowref",
+        "request_flow | can you demonstrate slotflowref",
+        "request_flow | demo slotflowref",
+        "request_flow | demonstrate slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-a040",
+      "accepted_review_ids": [
+        "A040",
+        "B402"
+      ],
+      "all_eligible_review_ids": [
+        "A040",
+        "B402"
+      ],
+      "template_keys": [
+        "request_flow | walk me through slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-a041",
+      "accepted_review_ids": [
+        "A041",
+        "B403",
+        "C006",
+        "C156"
+      ],
+      "all_eligible_review_ids": [
+        "A041",
+        "B403",
+        "C006",
+        "C156"
+      ],
+      "template_keys": [
+        "request_flow | demonstrate slotflowref on slotpart",
+        "request_flow | show me slotflowref on slotpart",
+        "request_flow | show me slotflowref slotpart",
+        "request_flow | show slotflowref on slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a043",
+      "accepted_review_ids": [
+        "A043",
+        "B405",
+        "C106",
+        "C356",
+        "C406"
+      ],
+      "all_eligible_review_ids": [
+        "A043",
+        "B405",
+        "C106",
+        "C356",
+        "C406"
+      ],
+      "template_keys": [
+        "request_flow | can i try slotflowref slotpart for slottheme",
+        "request_flow | demo slotflowref slotpart for slottheme",
+        "request_flow | demonstrate slotflowref slotpart for slottheme",
+        "request_flow | run slotflowref slotpart for slottheme",
+        "request_flow | try slotflowref slotpart for slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-a044",
+      "accepted_review_ids": [
+        "A044",
+        "C256"
+      ],
+      "all_eligible_review_ids": [
+        "A044",
+        "C256"
+      ],
+      "template_keys": [
+        "request_flow | let us try slotflowref slotpart car",
+        "request_flow | try slotflowref slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a054",
+      "accepted_review_ids": [
+        "A054",
+        "B388",
+        "B413",
+        "C105",
+        "C403"
+      ],
+      "all_eligible_review_ids": [
+        "A054",
+        "B388",
+        "B413",
+        "C105",
+        "C403"
+      ],
+      "template_keys": [
+        "request_flow | can you start slotflowref",
+        "request_flow | fire up slotflowref",
+        "request_flow | put on slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-a061",
+      "accepted_review_ids": [
+        "A061",
+        "A066",
+        "A072",
+        "B431",
+        "B442",
+        "C107",
+        "C258",
+        "C308",
+        "C407"
+      ],
+      "all_eligible_review_ids": [
+        "A061",
+        "A066",
+        "A072",
+        "B421",
+        "B431",
+        "B442",
+        "C107",
+        "C258",
+        "C308",
+        "C407"
+      ],
+      "template_keys": [
+        "request_flow | show me features slotpart",
+        "request_flow | show me slotpart feature",
+        "request_flow | show me slotpart features",
+        "request_flow | show me something on slotpart",
+        "request_flow | show slotpart features",
+        "request_flow | show slotpart stuff"
+      ]
+    },
+    {
+      "group_id": "showroom-a062",
+      "accepted_review_ids": [
+        "A062",
+        "A070",
+        "A071",
+        "A073",
+        "A076",
+        "A105",
+        "B423",
+        "B433",
+        "B441",
+        "C057",
+        "C259"
+      ],
+      "all_eligible_review_ids": [
+        "A062",
+        "A070",
+        "A071",
+        "A073",
+        "A076",
+        "A105",
+        "B423",
+        "B433",
+        "B441",
+        "C057",
+        "C259"
+      ],
+      "template_keys": [
+        "request_flow | anything for slotpart",
+        "request_flow | anything in slotpart",
+        "request_flow | anything on slotpart",
+        "request_flow | anything slotpart today",
+        "request_flow | can i check out what is in slotpart",
+        "request_flow | can i see what is available slotpart",
+        "request_flow | got anything for slotpart",
+        "request_flow | what is available on slotpart",
+        "request_flow | what is available slotpart",
+        "request_flow | what is out there on slotpart",
+        "request_flow | what is there on slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a063",
+      "accepted_review_ids": [
+        "A063",
+        "B422",
+        "B430",
+        "B435",
+        "B443",
+        "C008",
+        "C207",
+        "C307"
+      ],
+      "all_eligible_review_ids": [
+        "A063",
+        "B422",
+        "B430",
+        "B435",
+        "B443",
+        "C008",
+        "C207",
+        "C307"
+      ],
+      "template_keys": [
+        "request_flow | any slotpart demo you recommend",
+        "request_flow | are there slotpart demos",
+        "request_flow | got any demos for slotpart",
+        "request_flow | what can i try in slotpart",
+        "request_flow | what demos are in slotpart",
+        "request_flow | what demos can i try slotpart car",
+        "request_flow | what demos do you have on slotpart",
+        "request_flow | what slotpart demos can you show me"
+      ]
+    },
+    {
+      "group_id": "showroom-a064",
+      "accepted_review_ids": [
+        "A064",
+        "A102",
+        "A104",
+        "B432"
+      ],
+      "all_eligible_review_ids": [
+        "A064",
+        "A102",
+        "A104",
+        "B432"
+      ],
+      "template_keys": [
+        "request_flow | demos for slotpart",
+        "request_flow | slotpart demos",
+        "request_flow | slotpart tour"
+      ]
+    },
+    {
+      "group_id": "showroom-a065",
+      "accepted_review_ids": [
+        "A065",
+        "A101",
+        "B426",
+        "B445",
+        "C108",
+        "C309",
+        "C359"
+      ],
+      "all_eligible_review_ids": [
+        "A065",
+        "A101",
+        "B426",
+        "B445",
+        "C108",
+        "C309",
+        "C359"
+      ],
+      "template_keys": [
+        "request_flow | browse slotpart",
+        "request_flow | let us check out slotpart demos",
+        "request_flow | let us explore slotpart options",
+        "request_flow | let us look at slotpart features",
+        "request_flow | let us look slotpart",
+        "request_flow | let us tour slotpart",
+        "request_flow | let us try slotpart demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a068",
+      "accepted_review_ids": [
+        "A068",
+        "A080",
+        "B427",
+        "B444",
+        "C157"
+      ],
+      "all_eligible_review_ids": [
+        "A068",
+        "A080",
+        "B427",
+        "B444",
+        "C157"
+      ],
+      "template_keys": [
+        "request_flow | i fancy slotpart demo",
+        "request_flow | i want slotpart demos",
+        "request_flow | i would like slotpart demo",
+        "request_flow | i would like slotpart tour",
+        "request_flow | i would like to try slotpart demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a069",
+      "accepted_review_ids": [
+        "A069",
+        "A077",
+        "C158",
+        "C357",
+        "C457"
+      ],
+      "all_eligible_review_ids": [
+        "A069",
+        "A077",
+        "C158",
+        "C357",
+        "C457"
+      ],
+      "template_keys": [
+        "request_flow | can you show slotpart",
+        "request_flow | demonstrate what is slotpart",
+        "request_flow | show me slotpart of car",
+        "request_flow | show me what is on slotpart",
+        "request_flow | show me what is slotpart vehicle"
+      ]
+    },
+    {
+      "group_id": "showroom-a074",
+      "accepted_review_ids": [
+        "A074",
+        "B424",
+        "B436",
+        "C408",
+        "C458"
+      ],
+      "all_eligible_review_ids": [
+        "A074",
+        "B424",
+        "B436",
+        "C408",
+        "C458"
+      ],
+      "template_keys": [
+        "request_flow | can i see slotpart demos",
+        "request_flow | can i see slotpart features",
+        "request_flow | i want to see slotpart ones"
+      ]
+    },
+    {
+      "group_id": "showroom-a075",
+      "accepted_review_ids": [
+        "A075",
+        "B429",
+        "B434",
+        "B438"
+      ],
+      "all_eligible_review_ids": [
+        "A075",
+        "B429",
+        "B434",
+        "B438"
+      ],
+      "template_keys": [
+        "request_flow | can i do slotpart demo",
+        "request_flow | take me through slotpart options",
+        "request_flow | walk me through slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a078",
+      "accepted_review_ids": [
+        "A078",
+        "B439"
+      ],
+      "all_eligible_review_ids": [
+        "A078",
+        "B439"
+      ],
+      "template_keys": [
+        "inform | slotpart features",
+        "inform | slotpart features if you have them"
+      ]
+    },
+    {
+      "group_id": "showroom-a081",
+      "accepted_review_ids": [
+        "A081",
+        "A083",
+        "A085",
+        "A090",
+        "A093",
+        "A096",
+        "A097",
+        "B447",
+        "B448",
+        "B453",
+        "B454",
+        "B459",
+        "B470",
+        "C060"
+      ],
+      "all_eligible_review_ids": [
+        "A081",
+        "A083",
+        "A085",
+        "A090",
+        "A093",
+        "A096",
+        "A097",
+        "B447",
+        "B448",
+        "B453",
+        "B454",
+        "B459",
+        "B470",
+        "C060"
+      ],
+      "template_keys": [
+        "request_flow | any slottheme demos",
+        "request_flow | any slottheme features to try",
+        "request_flow | demo ideas for slottheme",
+        "request_flow | demos focused on slottheme",
+        "request_flow | demos for slottheme",
+        "request_flow | do you have slottheme demos",
+        "request_flow | got any slottheme features",
+        "request_flow | got slottheme demo",
+        "request_flow | what demos do you have for slottheme",
+        "request_flow | what do you have for slottheme",
+        "request_flow | what is good for slottheme",
+        "request_flow | what slottheme options are there"
+      ]
+    },
+    {
+      "group_id": "showroom-a082",
+      "accepted_review_ids": [
+        "A082",
+        "A099",
+        "A107",
+        "A229",
+        "A249",
+        "C023",
+        "C125",
+        "C325"
+      ],
+      "all_eligible_review_ids": [
+        "A082",
+        "A099",
+        "A107",
+        "A229",
+        "A249",
+        "C023",
+        "C125",
+        "C325",
+        "C424"
+      ],
+      "template_keys": [
+        "inform | something for slottheme",
+        "inform | something for whole slottheme",
+        "inform | something more slottheme",
+        "inform | something slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-a084",
+      "accepted_review_ids": [
+        "A084",
+        "A089",
+        "A095",
+        "B457",
+        "B463",
+        "B466",
+        "C059"
+      ],
+      "all_eligible_review_ids": [
+        "A084",
+        "A089",
+        "A095",
+        "B457",
+        "B463",
+        "B466",
+        "C059"
+      ],
+      "template_keys": [
+        "request_flow | i need slottheme demo",
+        "request_flow | i want slottheme demo",
+        "request_flow | i would like slottheme themed demos",
+        "request_flow | i would like to see demo for slottheme",
+        "request_flow | looking for slottheme demos"
+      ]
+    },
+    {
+      "group_id": "showroom-a086",
+      "accepted_review_ids": [
+        "A086",
+        "A088",
+        "B446",
+        "B465",
+        "C009",
+        "C061",
+        "C109",
+        "C210",
+        "C260",
+        "C361"
+      ],
+      "all_eligible_review_ids": [
+        "A086",
+        "A088",
+        "B446",
+        "B465",
+        "C009",
+        "C061",
+        "C109",
+        "C210",
+        "C260",
+        "C361"
+      ],
+      "template_keys": [
+        "request_flow | can you demonstrate slottheme features",
+        "request_flow | can you show slottheme options",
+        "request_flow | demonstrate slottheme options",
+        "request_flow | show me slottheme features",
+        "request_flow | show me something built for slottheme",
+        "request_flow | show me what you have for slottheme",
+        "request_flow | show slottheme demos"
+      ]
+    },
+    {
+      "group_id": "showroom-a087",
+      "accepted_review_ids": [
+        "A087",
+        "A094",
+        "B468"
+      ],
+      "all_eligible_review_ids": [
+        "A087",
+        "A094",
+        "B468"
+      ],
+      "template_keys": [
+        "request_flow | anything about slottheme",
+        "request_flow | anything for slottheme",
+        "request_flow | anything with slottheme angle"
+      ]
+    },
+    {
+      "group_id": "showroom-a091",
+      "accepted_review_ids": [
+        "A091",
+        "A098",
+        "B450",
+        "B467",
+        "C010",
+        "C111",
+        "C159",
+        "C211"
+      ],
+      "all_eligible_review_ids": [
+        "A091",
+        "A098",
+        "B450",
+        "B467",
+        "C010",
+        "C111",
+        "C159",
+        "C211"
+      ],
+      "template_keys": [
+        "request_flow | i would like to try slottheme feature",
+        "request_flow | let us check out what you have for slottheme",
+        "request_flow | let us look at slottheme options",
+        "request_flow | let us preview slottheme options",
+        "request_flow | let us see slottheme options",
+        "request_flow | let us see slottheme stuff",
+        "request_flow | let us try slottheme demo",
+        "request_flow | let us try slottheme options"
+      ]
+    },
+    {
+      "group_id": "showroom-a092",
+      "accepted_review_ids": [
+        "A092",
+        "B458",
+        "B469"
+      ],
+      "all_eligible_review_ids": [
+        "A092",
+        "B458",
+        "B469"
+      ],
+      "template_keys": [
+        "request_flow | bring up slottheme stuff",
+        "request_flow | pull up slottheme demos",
+        "request_flow | pull up slottheme stuff"
+      ]
+    },
+    {
+      "group_id": "showroom-a100",
+      "accepted_review_ids": [
+        "A100",
+        "B437",
+        "C007",
+        "C160",
+        "C208",
+        "C311",
+        "C360"
+      ],
+      "all_eligible_review_ids": [
+        "A100",
+        "B437",
+        "C007",
+        "C160",
+        "C208",
+        "C311",
+        "C360"
+      ],
+      "template_keys": [
+        "request_flow | can i experience slottheme features",
+        "request_flow | can i see slottheme demos",
+        "request_flow | can i see something for slottheme",
+        "request_flow | can you show me slotpart feature",
+        "request_flow | can you show me slottheme feature",
+        "request_flow | demo something on slotpart",
+        "request_flow | demonstrate something in slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a106",
+      "accepted_review_ids": [
+        "A106",
+        "A110",
+        "B456",
+        "C123"
+      ],
+      "all_eligible_review_ids": [
+        "A106",
+        "A110",
+        "B456",
+        "C123"
+      ],
+      "template_keys": [
+        "inform | slottheme features",
+        "inform | slottheme options",
+        "inform | slottheme stuff"
+      ]
+    },
+    {
+      "group_id": "showroom-a108",
+      "accepted_review_ids": [
+        "A108",
+        "A225",
+        "A226",
+        "A227",
+        "A234",
+        "A238",
+        "A242",
+        "A245",
+        "B314",
+        "C275"
+      ],
+      "all_eligible_review_ids": [
+        "A108",
+        "A225",
+        "A226",
+        "A227",
+        "A234",
+        "A238",
+        "A242",
+        "A245",
+        "B305",
+        "B306",
+        "B307",
+        "B314",
+        "B315",
+        "B324",
+        "C174",
+        "C275"
+      ],
+      "template_keys": [
+        "inform | slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-a109",
+      "accepted_review_ids": [
+        "A109",
+        "B322"
+      ],
+      "all_eligible_review_ids": [
+        "A109",
+        "B322"
+      ],
+      "template_keys": [
+        "inform | how about slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-a112",
+      "accepted_review_ids": [
+        "A112",
+        "A119",
+        "A125",
+        "A128",
+        "A134",
+        "A138",
+        "B471",
+        "B480",
+        "B485",
+        "B490",
+        "B493",
+        "B494",
+        "B498",
+        "C012",
+        "C014",
+        "C062",
+        "C112",
+        "C114",
+        "C162",
+        "C164",
+        "C212",
+        "C213",
+        "C263",
+        "C264",
+        "C313",
+        "C362",
+        "C364",
+        "C413",
+        "C414",
+        "C462",
+        "C463"
+      ],
+      "all_eligible_review_ids": [
+        "A112",
+        "A119",
+        "A125",
+        "A128",
+        "A134",
+        "A138",
+        "B471",
+        "B480",
+        "B485",
+        "B490",
+        "B493",
+        "B494",
+        "B498",
+        "C012",
+        "C014",
+        "C062",
+        "C112",
+        "C114",
+        "C162",
+        "C164",
+        "C212",
+        "C213",
+        "C263",
+        "C264",
+        "C313",
+        "C362",
+        "C364",
+        "C413",
+        "C414",
+        "C462",
+        "C463"
+      ],
+      "template_keys": [
+        "request_flow | can i see slotpart demos for slottheme",
+        "request_flow | can i see slotpart slottheme",
+        "request_flow | can i see slotpart slottheme options",
+        "request_flow | can i try slottheme demo in slotpart",
+        "request_flow | can you run slotpart demo for slottheme",
+        "request_flow | can you run slottheme demo on slotpart",
+        "request_flow | can you show me slotpart features for slottheme",
+        "request_flow | let us do slotpart slottheme demo",
+        "request_flow | let us see slotpart slottheme demos",
+        "request_flow | let us try slotpart demo for slottheme",
+        "request_flow | play slottheme demo in slotpart",
+        "request_flow | pull up slotpart slottheme",
+        "request_flow | run slottheme demo slotpart",
+        "request_flow | show me slotpart features focused on slottheme",
+        "request_flow | show me slotpart features for slottheme",
+        "request_flow | show me slotpart slottheme",
+        "request_flow | show me slotpart slottheme choices",
+        "request_flow | show me slotpart slottheme demos",
+        "request_flow | show me slottheme features in slotpart",
+        "request_flow | show me slottheme features on slotpart",
+        "request_flow | show me slottheme features slotpart",
+        "request_flow | show me slottheme options on slotpart",
+        "request_flow | show me slottheme stuff on slotpart",
+        "request_flow | show slotpart features for slottheme",
+        "request_flow | show slotpart for slottheme",
+        "request_flow | show slotpart slottheme",
+        "request_flow | show slottheme features in slotpart",
+        "request_flow | show slottheme in slotpart",
+        "request_flow | show slottheme on slotpart",
+        "request_flow | try slotpart demo for slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-a113",
+      "accepted_review_ids": [
+        "A113",
+        "A118",
+        "A122",
+        "A124",
+        "A129",
+        "A133",
+        "A139",
+        "B474",
+        "B476",
+        "B482",
+        "B489",
+        "C262",
+        "C363",
+        "C464"
+      ],
+      "all_eligible_review_ids": [
+        "A113",
+        "A118",
+        "A122",
+        "A124",
+        "A129",
+        "A133",
+        "A139",
+        "B474",
+        "B476",
+        "B482",
+        "B489",
+        "C262",
+        "C363",
+        "C464"
+      ],
+      "template_keys": [
+        "request_flow | anything for slottheme in slotpart",
+        "request_flow | anything slotpart with slottheme",
+        "request_flow | anything slottheme in slotpart",
+        "request_flow | anything slottheme on slotpart",
+        "request_flow | can i get slottheme in slotpart",
+        "request_flow | got slottheme options on slotpart",
+        "request_flow | is there slottheme in slotpart",
+        "request_flow | what slotpart features are for slottheme",
+        "request_flow | what slotpart options are slottheme",
+        "request_flow | what slottheme features do you have slotpart",
+        "request_flow | what slottheme is in slotpart",
+        "request_flow | what slottheme is slotpart",
+        "request_flow | what slottheme options do you have slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a115",
+      "accepted_review_ids": [
+        "A115",
+        "A126",
+        "A130",
+        "B473",
+        "B475",
+        "B479",
+        "B483",
+        "B487",
+        "B488",
+        "B492"
+      ],
+      "all_eligible_review_ids": [
+        "A115",
+        "A126",
+        "A130",
+        "B473",
+        "B475",
+        "B479",
+        "B483",
+        "B487",
+        "B488",
+        "B492"
+      ],
+      "template_keys": [
+        "request_flow | slotpart demo for slottheme",
+        "request_flow | slotpart demos focused on slottheme",
+        "request_flow | slotpart demos for slottheme",
+        "request_flow | slotpart demos slottheme would like",
+        "request_flow | slotpart demos that are slottheme",
+        "request_flow | slotpart demos with slottheme",
+        "request_flow | slotpart tour for slottheme",
+        "request_flow | slottheme slotpart tour",
+        "request_flow | slottheme themed slotpart tour"
+      ]
+    },
+    {
+      "group_id": "showroom-a120",
+      "accepted_review_ids": [
+        "A120",
+        "B495",
+        "C063",
+        "C314",
+        "C412"
+      ],
+      "all_eligible_review_ids": [
+        "A120",
+        "B495",
+        "C063",
+        "C314",
+        "C412"
+      ],
+      "template_keys": [
+        "request_flow | let us check out slotpart slottheme features",
+        "request_flow | let us find slottheme slotpart",
+        "request_flow | let us see slotpart features for slottheme",
+        "request_flow | let us tour slottheme slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a141",
+      "accepted_review_ids": [
+        "A141",
+        "A144",
+        "A148",
+        "A151",
+        "A155",
+        "A158",
+        "A161",
+        "A164",
+        "A168",
+        "B221",
+        "B224",
+        "B226",
+        "B230",
+        "B233",
+        "B236",
+        "B240",
+        "B243",
+        "B246",
+        "C015",
+        "C116",
+        "C117",
+        "C166",
+        "C215",
+        "C217",
+        "C267",
+        "C315",
+        "C367",
+        "C415",
+        "C466"
+      ],
+      "all_eligible_review_ids": [
+        "A141",
+        "A144",
+        "A148",
+        "A151",
+        "A155",
+        "A158",
+        "A161",
+        "A164",
+        "A168",
+        "B221",
+        "B224",
+        "B226",
+        "B230",
+        "B233",
+        "B236",
+        "B240",
+        "B243",
+        "B246",
+        "C015",
+        "C116",
+        "C117",
+        "C166",
+        "C215",
+        "C217",
+        "C267",
+        "C315",
+        "C367",
+        "C415",
+        "C466"
+      ],
+      "template_keys": [
+        "inform | my name is slotname",
+        "inform | name is slotname"
+      ]
+    },
+    {
+      "group_id": "showroom-a142",
+      "accepted_review_ids": [
+        "A142",
+        "A152",
+        "A162",
+        "A167",
+        "B222",
+        "B229",
+        "B232",
+        "B235",
+        "B242",
+        "B244",
+        "C065",
+        "C115",
+        "C216",
+        "C265",
+        "C316",
+        "C365",
+        "C416",
+        "C465"
+      ],
+      "all_eligible_review_ids": [
+        "A142",
+        "A152",
+        "A162",
+        "A167",
+        "B222",
+        "B229",
+        "B232",
+        "B235",
+        "B242",
+        "B244",
+        "C065",
+        "C115",
+        "C216",
+        "C265",
+        "C316",
+        "C365",
+        "C416",
+        "C465"
+      ],
+      "template_keys": [
+        "inform | i am slotname"
+      ]
+    },
+    {
+      "group_id": "showroom-a143",
+      "accepted_review_ids": [
+        "A143",
+        "A147",
+        "A150",
+        "A153",
+        "A157",
+        "A160",
+        "A163",
+        "A166",
+        "B223",
+        "B227",
+        "B231",
+        "B234",
+        "B237",
+        "B241",
+        "B245",
+        "B247",
+        "C016",
+        "C066",
+        "C266",
+        "C317",
+        "C366",
+        "C417",
+        "C467"
+      ],
+      "all_eligible_review_ids": [
+        "A143",
+        "A147",
+        "A150",
+        "A153",
+        "A157",
+        "A160",
+        "A163",
+        "A166",
+        "B223",
+        "B227",
+        "B231",
+        "B234",
+        "B237",
+        "B241",
+        "B245",
+        "B247",
+        "C016",
+        "C066",
+        "C266",
+        "C317",
+        "C366",
+        "C417",
+        "C467"
+      ],
+      "template_keys": [
+        "inform | call me slotname",
+        "inform | just call me slotname",
+        "inform | you can call me slotname"
+      ]
+    },
+    {
+      "group_id": "showroom-a145",
+      "accepted_review_ids": [
+        "A145",
+        "A156",
+        "B225",
+        "B238",
+        "B248",
+        "C165"
+      ],
+      "all_eligible_review_ids": [
+        "A145",
+        "A156",
+        "B225",
+        "B238",
+        "B248",
+        "C165"
+      ],
+      "template_keys": [
+        "inform | i go by slotname",
+        "inform | people call me slotname"
+      ]
+    },
+    {
+      "group_id": "showroom-a146",
+      "accepted_review_ids": [
+        "A146",
+        "A154",
+        "A165",
+        "B228",
+        "B239",
+        "C167"
+      ],
+      "all_eligible_review_ids": [
+        "A146",
+        "A154",
+        "A165",
+        "B228",
+        "B239",
+        "C167"
+      ],
+      "template_keys": [
+        "inform | it is slotname"
+      ]
+    },
+    {
+      "group_id": "showroom-a149",
+      "accepted_review_ids": [
+        "A149",
+        "A159"
+      ],
+      "all_eligible_review_ids": [
+        "A149",
+        "A159"
+      ],
+      "template_keys": [
+        "inform | this is slotname"
+      ]
+    },
+    {
+      "group_id": "showroom-a169",
+      "accepted_review_ids": [
+        "A169",
+        "A171",
+        "A175",
+        "A177",
+        "A179",
+        "A181",
+        "A183",
+        "A201",
+        "A202",
+        "A204",
+        "A205",
+        "A207",
+        "A210",
+        "A211",
+        "B250",
+        "B252",
+        "B256",
+        "B259",
+        "B261",
+        "B265",
+        "B266",
+        "C017",
+        "C018",
+        "C069",
+        "C219",
+        "C270",
+        "C318",
+        "C369",
+        "C468",
+        "C469"
+      ],
+      "all_eligible_review_ids": [
+        "A169",
+        "A171",
+        "A175",
+        "A177",
+        "A179",
+        "A181",
+        "A183",
+        "A201",
+        "A202",
+        "A204",
+        "A205",
+        "A207",
+        "A210",
+        "A211",
+        "B249",
+        "B250",
+        "B251",
+        "B252",
+        "B256",
+        "B257",
+        "B258",
+        "B259",
+        "B261",
+        "B263",
+        "B264",
+        "B265",
+        "B266",
+        "B270",
+        "B271",
+        "B272",
+        "B273",
+        "C017",
+        "C018",
+        "C067",
+        "C069",
+        "C118",
+        "C168",
+        "C218",
+        "C219",
+        "C268",
+        "C270",
+        "C318",
+        "C320",
+        "C369",
+        "C370",
+        "C468",
+        "C469"
+      ],
+      "template_keys": [
+        "inform | slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-a170",
+      "accepted_review_ids": [
+        "A170",
+        "A174",
+        "A178",
+        "A182",
+        "B253",
+        "B260",
+        "C319",
+        "C418"
+      ],
+      "all_eligible_review_ids": [
+        "A170",
+        "A174",
+        "A178",
+        "A182",
+        "B253",
+        "B260",
+        "C319",
+        "C418"
+      ],
+      "template_keys": [
+        "inform | i like slotflowref",
+        "inform | i prefer slotflowref",
+        "inform | i would prefer slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-a172",
+      "accepted_review_ids": [
+        "A172",
+        "A209",
+        "B254",
+        "C220",
+        "C368"
+      ],
+      "all_eligible_review_ids": [
+        "A172",
+        "A209",
+        "B254",
+        "C220",
+        "C368"
+      ],
+      "template_keys": [
+        "inform | i will go with slotflowref",
+        "inform | i would go with slotflowref",
+        "inform | let us do slotflowref",
+        "inform | let us go with slotflowref",
+        "inform | let us use slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-a173",
+      "accepted_review_ids": [
+        "A173",
+        "A180",
+        "A203",
+        "A206",
+        "A208",
+        "B255",
+        "B267",
+        "C068"
+      ],
+      "all_eligible_review_ids": [
+        "A173",
+        "A180",
+        "A203",
+        "A206",
+        "A208",
+        "B255",
+        "B267",
+        "C068"
+      ],
+      "template_keys": [
+        "inform | give me slotflowref",
+        "inform | i will pick slotflowref",
+        "inform | i will take slotflowref",
+        "inform | i would pick slotflowref",
+        "inform | my choice is slotflowref",
+        "inform | my pick is slotflowref",
+        "inform | slotflowref is my choice",
+        "inform | slotflowref is my pick"
+      ]
+    },
+    {
+      "group_id": "showroom-a176",
+      "accepted_review_ids": [
+        "A176",
+        "B269",
+        "B274"
+      ],
+      "all_eligible_review_ids": [
+        "A176",
+        "B269",
+        "B274"
+      ],
+      "template_keys": [
+        "inform | slotflowref sounds good",
+        "inform | slotflowref works"
+      ]
+    },
+    {
+      "group_id": "showroom-a185",
+      "accepted_review_ids": [
+        "A185",
+        "A186",
+        "A187",
+        "A194",
+        "A213",
+        "A219",
+        "B281",
+        "B282",
+        "B288",
+        "B291",
+        "C021",
+        "C120",
+        "C423",
+        "C471"
+      ],
+      "all_eligible_review_ids": [
+        "A185",
+        "A186",
+        "A187",
+        "A194",
+        "A213",
+        "A219",
+        "B277",
+        "B278",
+        "B279",
+        "B280",
+        "B281",
+        "B282",
+        "B288",
+        "B289",
+        "B290",
+        "B291",
+        "C021",
+        "C071",
+        "C120",
+        "C170",
+        "C371",
+        "C423",
+        "C471",
+        "C472"
+      ],
+      "template_keys": [
+        "inform | slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a188",
+      "accepted_review_ids": [
+        "A188",
+        "A195",
+        "B283",
+        "B285",
+        "C020",
+        "C072",
+        "C272",
+        "C372",
+        "C473"
+      ],
+      "all_eligible_review_ids": [
+        "A188",
+        "A195",
+        "B283",
+        "B284",
+        "B285",
+        "C020",
+        "C072",
+        "C272",
+        "C372",
+        "C473"
+      ],
+      "template_keys": [
+        "inform | i like slotpart",
+        "inform | i prefer slotpart",
+        "inform | i prefer slotpart features",
+        "inform | i would like slotpart",
+        "inform | i would prefer slotpart",
+        "inform | i would rather look at slotpart",
+        "inform | i would rather see slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a189",
+      "accepted_review_ids": [
+        "A189",
+        "A215",
+        "A221"
+      ],
+      "all_eligible_review_ids": [
+        "A189",
+        "A215",
+        "A221"
+      ],
+      "template_keys": [
+        "inform | slotpart is one",
+        "inform | slotpart it is"
+      ]
+    },
+    {
+      "group_id": "showroom-a190",
+      "accepted_review_ids": [
+        "A190",
+        "A196",
+        "A197",
+        "A199",
+        "B286"
+      ],
+      "all_eligible_review_ids": [
+        "A190",
+        "A196",
+        "A197",
+        "A199",
+        "B286"
+      ],
+      "template_keys": [
+        "inform | go with slotpart",
+        "inform | i will go with slotpart",
+        "inform | let us do slotpart",
+        "inform | let us use slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a191",
+      "accepted_review_ids": [
+        "A191",
+        "B298"
+      ],
+      "all_eligible_review_ids": [
+        "A191",
+        "B298"
+      ],
+      "template_keys": [
+        "inform | make it slotpart",
+        "inform | mark it slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a193",
+      "accepted_review_ids": [
+        "A193",
+        "A198",
+        "A218",
+        "B292",
+        "B293",
+        "B295",
+        "B299",
+        "C373"
+      ],
+      "all_eligible_review_ids": [
+        "A193",
+        "A198",
+        "A218",
+        "B292",
+        "B293",
+        "B295",
+        "B299",
+        "C373"
+      ],
+      "template_keys": [
+        "inform | slotpart is better",
+        "inform | slotpart is fine",
+        "inform | slotpart is good",
+        "inform | slotpart works",
+        "inform | slotpart would be nice"
+      ]
+    },
+    {
+      "group_id": "showroom-a212",
+      "accepted_review_ids": [
+        "A212",
+        "B275"
+      ],
+      "all_eligible_review_ids": [
+        "A212",
+        "B275"
+      ],
+      "template_keys": [
+        "inform | slotflowref is one",
+        "inform | slotflowref it is"
+      ]
+    },
+    {
+      "group_id": "showroom-a214",
+      "accepted_review_ids": [
+        "A214",
+        "B294",
+        "C121",
+        "C421"
+      ],
+      "all_eligible_review_ids": [
+        "A214",
+        "B294",
+        "C121",
+        "C421"
+      ],
+      "template_keys": [
+        "inform | i want slotpart",
+        "inform | slotpart is what i want"
+      ]
+    },
+    {
+      "group_id": "showroom-a216",
+      "accepted_review_ids": [
+        "A216",
+        "A222",
+        "C172"
+      ],
+      "all_eligible_review_ids": [
+        "A216",
+        "A222",
+        "C172"
+      ],
+      "template_keys": [
+        "inform | let us stick to slotpart",
+        "inform | stick with slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a217",
+      "accepted_review_ids": [
+        "A217",
+        "A223",
+        "B287"
+      ],
+      "all_eligible_review_ids": [
+        "A217",
+        "A223",
+        "B287"
+      ],
+      "template_keys": [
+        "inform | slotpart is my call",
+        "inform | slotpart is my pick"
+      ]
+    },
+    {
+      "group_id": "showroom-a220",
+      "accepted_review_ids": [
+        "A220",
+        "B303"
+      ],
+      "all_eligible_review_ids": [
+        "A220",
+        "B303"
+      ],
+      "template_keys": [
+        "inform | i will take slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a224",
+      "accepted_review_ids": [
+        "A224",
+        "C022",
+        "C070",
+        "C221",
+        "C222",
+        "C322"
+      ],
+      "all_eligible_review_ids": [
+        "A224",
+        "C022",
+        "C070",
+        "C221",
+        "C222",
+        "C322"
+      ],
+      "template_keys": [
+        "inform | car's slotpart",
+        "inform | in slotpart",
+        "inform | on slotpart",
+        "inform | slotpart car",
+        "inform | somewhere on slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-a228",
+      "accepted_review_ids": [
+        "A228",
+        "A232",
+        "A235",
+        "B309",
+        "B312",
+        "B327",
+        "C374"
+      ],
+      "all_eligible_review_ids": [
+        "A228",
+        "A232",
+        "A235",
+        "B308",
+        "B309",
+        "B312",
+        "B327",
+        "C224",
+        "C374"
+      ],
+      "template_keys": [
+        "inform | i like slottheme",
+        "inform | i like slottheme things",
+        "inform | i prefer slottheme",
+        "inform | i prefer slottheme options",
+        "inform | i would rather have slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-a230",
+      "accepted_review_ids": [
+        "A230",
+        "A252",
+        "C223"
+      ],
+      "all_eligible_review_ids": [
+        "A230",
+        "A252",
+        "C223",
+        "C474"
+      ],
+      "template_keys": [
+        "inform | for slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-a231",
+      "accepted_review_ids": [
+        "A231",
+        "A236",
+        "B328",
+        "C124",
+        "C426"
+      ],
+      "all_eligible_review_ids": [
+        "A231",
+        "A236",
+        "B328",
+        "C124",
+        "C426"
+      ],
+      "template_keys": [
+        "inform | i would choose slottheme",
+        "inform | i would go with slottheme",
+        "inform | slottheme is my pick",
+        "inform | slottheme is my preference"
+      ]
+    },
+    {
+      "group_id": "showroom-a237",
+      "accepted_review_ids": [
+        "A237",
+        "A244",
+        "B320",
+        "B323"
+      ],
+      "all_eligible_review_ids": [
+        "A237",
+        "A244",
+        "B320",
+        "B323"
+      ],
+      "template_keys": [
+        "inform | go with slottheme",
+        "inform | pick slottheme",
+        "inform | we should do slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-a239",
+      "accepted_review_ids": [
+        "A239",
+        "A246",
+        "A251",
+        "B318",
+        "B331"
+      ],
+      "all_eligible_review_ids": [
+        "A239",
+        "A246",
+        "A251",
+        "B318",
+        "B331"
+      ],
+      "template_keys": [
+        "inform | slottheme is fine",
+        "inform | slottheme sounds right",
+        "inform | slottheme works",
+        "inform | slottheme works better"
+      ]
+    },
+    {
+      "group_id": "showroom-a240",
+      "accepted_review_ids": [
+        "A240",
+        "A241",
+        "A243",
+        "A247",
+        "A250",
+        "C074",
+        "C173",
+        "C175"
+      ],
+      "all_eligible_review_ids": [
+        "A240",
+        "A241",
+        "A243",
+        "A247",
+        "A250",
+        "C074",
+        "C173",
+        "C175",
+        "C476"
+      ],
+      "template_keys": [
+        "inform | i am after slottheme",
+        "inform | i am looking for slottheme",
+        "inform | i want slottheme",
+        "inform | slottheme is what i am looking for",
+        "inform | slottheme is what i want"
+      ]
+    },
+    {
+      "group_id": "showroom-a248",
+      "accepted_review_ids": [
+        "A248",
+        "B317"
+      ],
+      "all_eligible_review_ids": [
+        "A248",
+        "B317"
+      ],
+      "template_keys": [
+        "inform | make it slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-a253",
+      "accepted_review_ids": [
+        "A253",
+        "A254",
+        "A255",
+        "A256",
+        "A257",
+        "A260",
+        "A261",
+        "A263",
+        "A264",
+        "A266",
+        "A268",
+        "A269",
+        "A270",
+        "A271",
+        "A273",
+        "A274",
+        "A275",
+        "A279",
+        "A280",
+        "B333",
+        "B335",
+        "B336",
+        "B338",
+        "B339",
+        "B340",
+        "B341",
+        "B343",
+        "B344",
+        "B347",
+        "B349",
+        "B351",
+        "B355",
+        "B358",
+        "B359",
+        "C028",
+        "C077",
+        "C128",
+        "C178",
+        "C227",
+        "C228",
+        "C278",
+        "C326",
+        "C328",
+        "C378",
+        "C428",
+        "C478"
+      ],
+      "all_eligible_review_ids": [
+        "A253",
+        "A254",
+        "A255",
+        "A256",
+        "A257",
+        "A260",
+        "A261",
+        "A263",
+        "A264",
+        "A266",
+        "A268",
+        "A269",
+        "A270",
+        "A271",
+        "A273",
+        "A274",
+        "A275",
+        "A279",
+        "A280",
+        "B333",
+        "B334",
+        "B335",
+        "B336",
+        "B337",
+        "B338",
+        "B339",
+        "B340",
+        "B341",
+        "B342",
+        "B343",
+        "B344",
+        "B345",
+        "B346",
+        "B347",
+        "B348",
+        "B349",
+        "B350",
+        "B351",
+        "B355",
+        "B358",
+        "B359",
+        "C028",
+        "C077",
+        "C078",
+        "C128",
+        "C178",
+        "C227",
+        "C228",
+        "C278",
+        "C326",
+        "C328",
+        "C378",
+        "C428",
+        "C478"
+      ],
+      "template_keys": [
+        "inform | slotchoice"
+      ]
+    },
+    {
+      "group_id": "showroom-a258",
+      "accepted_review_ids": [
+        "A258",
+        "A265",
+        "A277",
+        "B353",
+        "B357",
+        "C026",
+        "C176",
+        "C177",
+        "C376"
+      ],
+      "all_eligible_review_ids": [
+        "A258",
+        "A265",
+        "A277",
+        "B353",
+        "B357",
+        "C026",
+        "C176",
+        "C177",
+        "C376"
+      ],
+      "template_keys": [
+        "inform | give me slotchoice",
+        "inform | i will take slotchoice",
+        "inform | i would like slotchoice"
+      ]
+    },
+    {
+      "group_id": "showroom-a259",
+      "accepted_review_ids": [
+        "A259",
+        "A267",
+        "A276",
+        "B352",
+        "B356",
+        "C076",
+        "C127",
+        "C226",
+        "C277",
+        "C377"
+      ],
+      "all_eligible_review_ids": [
+        "A259",
+        "A267",
+        "A276",
+        "B352",
+        "B356",
+        "C076",
+        "C127",
+        "C226",
+        "C277",
+        "C377"
+      ],
+      "template_keys": [
+        "inform | choose slotchoice",
+        "inform | i will choose slotchoice",
+        "inform | pick slotchoice",
+        "inform | select slotchoice"
+      ]
+    },
+    {
+      "group_id": "showroom-a262",
+      "accepted_review_ids": [
+        "A262",
+        "A278",
+        "B354",
+        "C126",
+        "C276",
+        "C477"
+      ],
+      "all_eligible_review_ids": [
+        "A262",
+        "A278",
+        "B354",
+        "C126",
+        "C276",
+        "C477"
+      ],
+      "template_keys": [
+        "inform | go with slotchoice",
+        "inform | let us go with slotchoice",
+        "inform | let us try slotchoice"
+      ]
+    },
+    {
+      "group_id": "showroom-a272",
+      "accepted_review_ids": [
+        "A272",
+        "B360",
+        "C027",
+        "C327",
+        "C427"
+      ],
+      "all_eligible_review_ids": [
+        "A272",
+        "B360",
+        "C027",
+        "C327",
+        "C427"
+      ],
+      "template_keys": [
+        "inform | show me slotchoice"
+      ]
+    },
+    {
+      "group_id": "showroom-a281",
+      "accepted_review_ids": [
+        "A281",
+        "A290",
+        "A300"
+      ],
+      "all_eligible_review_ids": [
+        "A281",
+        "A290",
+        "A300",
+        "B001",
+        "B015"
+      ],
+      "template_keys": [
+        "greet | hello",
+        "greet | hello again",
+        "greet | well hello"
+      ]
+    },
+    {
+      "group_id": "showroom-a282",
+      "accepted_review_ids": [
+        "A282",
+        "A297",
+        "B002",
+        "B016"
+      ],
+      "all_eligible_review_ids": [
+        "A282",
+        "A297",
+        "B002",
+        "B008",
+        "B016",
+        "C229"
+      ],
+      "template_keys": [
+        "greet | hi",
+        "greet | hi again",
+        "greet | hi friend",
+        "greet | hi there"
+      ]
+    },
+    {
+      "group_id": "showroom-a283",
+      "accepted_review_ids": [
+        "A283",
+        "A289"
+      ],
+      "all_eligible_review_ids": [
+        "A283",
+        "A289",
+        "B003",
+        "B007"
+      ],
+      "template_keys": [
+        "greet | hey",
+        "greet | hey there"
+      ]
+    },
+    {
+      "group_id": "showroom-a284",
+      "accepted_review_ids": [
+        "A284",
+        "A293",
+        "C430"
+      ],
+      "all_eligible_review_ids": [
+        "A284",
+        "A293",
+        "B004",
+        "B012",
+        "C029",
+        "C430"
+      ],
+      "template_keys": [
+        "greet | good morning",
+        "greet | hey good morning",
+        "greet | morning"
+      ]
+    },
+    {
+      "group_id": "showroom-a285",
+      "accepted_review_ids": [
+        "A285"
+      ],
+      "all_eligible_review_ids": [
+        "A285",
+        "B005",
+        "C079"
+      ],
+      "template_keys": [
+        "greet | good afternoon"
+      ]
+    },
+    {
+      "group_id": "showroom-a286",
+      "accepted_review_ids": [
+        "A286",
+        "A294"
+      ],
+      "all_eligible_review_ids": [
+        "A286",
+        "A294",
+        "B006",
+        "C129"
+      ],
+      "template_keys": [
+        "greet | evening",
+        "greet | good evening"
+      ]
+    },
+    {
+      "group_id": "showroom-a287",
+      "accepted_review_ids": [
+        "A287"
+      ],
+      "all_eligible_review_ids": [
+        "A287",
+        "B011"
+      ],
+      "template_keys": [
+        "greet | hiya"
+      ]
+    },
+    {
+      "group_id": "showroom-a288",
+      "accepted_review_ids": [
+        "A288"
+      ],
+      "all_eligible_review_ids": [
+        "A288",
+        "B009",
+        "C179"
+      ],
+      "template_keys": [
+        "greet | howdy"
+      ]
+    },
+    {
+      "group_id": "showroom-a291",
+      "accepted_review_ids": [
+        "A291"
+      ],
+      "all_eligible_review_ids": [
+        "A291",
+        "B010",
+        "C130"
+      ],
+      "template_keys": [
+        "greet | greetings"
+      ]
+    },
+    {
+      "group_id": "showroom-a292",
+      "accepted_review_ids": [
+        "A292",
+        "A296",
+        "A299",
+        "B017",
+        "C030",
+        "C330",
+        "C379",
+        "C479"
+      ],
+      "all_eligible_review_ids": [
+        "A292",
+        "A296",
+        "A299",
+        "B017",
+        "C030",
+        "C330",
+        "C379",
+        "C479"
+      ],
+      "template_keys": [
+        "greet | hello how are you",
+        "greet | hey how are things",
+        "greet | hey how's it going",
+        "greet | hey there how's it going",
+        "greet | hey what is up",
+        "greet | hi how's it going",
+        "greet | hi how's your day going",
+        "greet | hi there how are you"
+      ]
+    },
+    {
+      "group_id": "showroom-a295",
+      "accepted_review_ids": [
+        "A295"
+      ],
+      "all_eligible_review_ids": [
+        "A295",
+        "C279"
+      ],
+      "template_keys": [
+        "greet | hey good to see you"
+      ]
+    },
+    {
+      "group_id": "showroom-a298",
+      "accepted_review_ids": [
+        "A298"
+      ],
+      "all_eligible_review_ids": [
+        "A298",
+        "B013"
+      ],
+      "template_keys": [
+        "greet | yo"
+      ]
+    },
+    {
+      "group_id": "showroom-a301",
+      "accepted_review_ids": [
+        "A301",
+        "A302",
+        "A303",
+        "A304",
+        "A306",
+        "A307",
+        "A308",
+        "A309",
+        "A310",
+        "A311",
+        "A314",
+        "A315",
+        "A316",
+        "A317",
+        "A318",
+        "A319",
+        "B021",
+        "B022",
+        "B023",
+        "B024",
+        "B025",
+        "B026",
+        "B027",
+        "B028",
+        "B029",
+        "B030",
+        "B031",
+        "B032",
+        "B033",
+        "B034",
+        "B035",
+        "B036",
+        "B037",
+        "B038",
+        "B039",
+        "B040",
+        "C031",
+        "C081",
+        "C082",
+        "C131",
+        "C182",
+        "C231",
+        "C232",
+        "C281",
+        "C331",
+        "C381",
+        "C431",
+        "C432",
+        "C481"
+      ],
+      "all_eligible_review_ids": [
+        "A301",
+        "A302",
+        "A303",
+        "A304",
+        "A306",
+        "A307",
+        "A308",
+        "A309",
+        "A310",
+        "A311",
+        "A314",
+        "A315",
+        "A316",
+        "A317",
+        "A318",
+        "A319",
+        "B021",
+        "B022",
+        "B023",
+        "B024",
+        "B025",
+        "B026",
+        "B027",
+        "B028",
+        "B029",
+        "B030",
+        "B031",
+        "B032",
+        "B033",
+        "B034",
+        "B035",
+        "B036",
+        "B037",
+        "B038",
+        "B039",
+        "B040",
+        "C031",
+        "C081",
+        "C082",
+        "C131",
+        "C182",
+        "C231",
+        "C232",
+        "C281",
+        "C331",
+        "C381",
+        "C431",
+        "C432",
+        "C481"
+      ],
+      "template_keys": [
+        "greet | good afternoon i am slotname",
+        "greet | good evening i am slotname",
+        "greet | good morning i am slotname",
+        "greet | greetings i am slotname",
+        "greet | hello i am slotname",
+        "greet | hey i am slotname",
+        "greet | hey there i am slotname",
+        "greet | hi i am slotname",
+        "greet | hi there i am slotname",
+        "greet | hiya i am slotname",
+        "greet | morning i am slotname"
+      ]
+    },
+    {
+      "group_id": "showroom-a305",
+      "accepted_review_ids": [
+        "A305",
+        "A312",
+        "A320",
+        "C032",
+        "C132",
+        "C181",
+        "C282",
+        "C332",
+        "C382",
+        "C482"
+      ],
+      "all_eligible_review_ids": [
+        "A305",
+        "A312",
+        "A320",
+        "C032",
+        "C132",
+        "C181",
+        "C282",
+        "C332",
+        "C382",
+        "C482"
+      ],
+      "template_keys": [
+        "greet | good afternoon my name is slotname",
+        "greet | hello my name is slotname",
+        "greet | hello there my name is slotname",
+        "greet | hey my name is slotname",
+        "greet | hi my name is slotname",
+        "greet | hi there my name is slotname"
+      ]
+    },
+    {
+      "group_id": "showroom-a313",
+      "accepted_review_ids": [
+        "A313"
+      ],
+      "all_eligible_review_ids": [
+        "A313"
+      ],
+      "template_keys": [
+        "greet | hey this is slotname"
+      ]
+    },
+    {
+      "group_id": "showroom-a321",
+      "accepted_review_ids": [
+        "A321",
+        "A341",
+        "A348",
+        "C133",
+        "C333"
+      ],
+      "all_eligible_review_ids": [
+        "A321",
+        "A341",
+        "A348",
+        "B041",
+        "C133",
+        "C333"
+      ],
+      "template_keys": [
+        "affirm | yes",
+        "affirm | yes definitely",
+        "affirm | yes i do",
+        "affirm | yes indeed",
+        "affirm | yes of course"
+      ]
+    },
+    {
+      "group_id": "showroom-a322",
+      "accepted_review_ids": [
+        "A322",
+        "B055"
+      ],
+      "all_eligible_review_ids": [
+        "A322",
+        "B042",
+        "B055",
+        "C485"
+      ],
+      "template_keys": [
+        "affirm | yeah",
+        "affirm | yeah sure"
+      ]
+    },
+    {
+      "group_id": "showroom-a323",
+      "accepted_review_ids": [
+        "A323",
+        "A346",
+        "B060",
+        "C084",
+        "C184",
+        "C334",
+        "C383"
+      ],
+      "all_eligible_review_ids": [
+        "A323",
+        "A346",
+        "B043",
+        "B060",
+        "C084",
+        "C184",
+        "C334",
+        "C383"
+      ],
+      "template_keys": [
+        "affirm | that is it",
+        "affirm | that is one",
+        "affirm | yep",
+        "affirm | yep that is it",
+        "affirm | yep that works",
+        "affirm | yes that is it",
+        "affirm | yup"
+      ]
+    },
+    {
+      "group_id": "showroom-a324",
+      "accepted_review_ids": [
+        "A324",
+        "A337",
+        "C135",
+        "C335"
+      ],
+      "all_eligible_review_ids": [
+        "A324",
+        "A337",
+        "B044",
+        "B063",
+        "C085",
+        "C135",
+        "C335"
+      ],
+      "template_keys": [
+        "affirm | for sure",
+        "affirm | sure",
+        "affirm | sure thing",
+        "affirm | sure why not"
+      ]
+    },
+    {
+      "group_id": "showroom-a325",
+      "accepted_review_ids": [
+        "A325",
+        "A326",
+        "A327",
+        "A347"
+      ],
+      "all_eligible_review_ids": [
+        "A325",
+        "A326",
+        "A327",
+        "A347",
+        "B045",
+        "B058",
+        "B069"
+      ],
+      "template_keys": [
+        "affirm | alright",
+        "affirm | ok",
+        "affirm | okay",
+        "affirm | okay then"
+      ]
+    },
+    {
+      "group_id": "showroom-a328",
+      "accepted_review_ids": [
+        "A328",
+        "A329",
+        "A349",
+        "B068"
+      ],
+      "all_eligible_review_ids": [
+        "A328",
+        "A329",
+        "A349",
+        "B046",
+        "B047",
+        "B068",
+        "C035",
+        "C233"
+      ],
+      "template_keys": [
+        "affirm | correct",
+        "affirm | correct thanks",
+        "affirm | that is correct",
+        "affirm | yes correct"
+      ]
+    },
+    {
+      "group_id": "showroom-a330",
+      "accepted_review_ids": [
+        "A330",
+        "C033",
+        "C385",
+        "C433"
+      ],
+      "all_eligible_review_ids": [
+        "A330",
+        "B049",
+        "C033",
+        "C385",
+        "C433"
+      ],
+      "template_keys": [
+        "affirm | sounds good",
+        "affirm | sounds good to me",
+        "affirm | yes sounds good",
+        "affirm | yes that sounds great"
+      ]
+    },
+    {
+      "group_id": "showroom-a331",
+      "accepted_review_ids": [
+        "A331"
+      ],
+      "all_eligible_review_ids": [
+        "A331",
+        "B048",
+        "C083"
+      ],
+      "template_keys": [
+        "affirm | absolutely"
+      ]
+    },
+    {
+      "group_id": "showroom-a332",
+      "accepted_review_ids": [
+        "A332"
+      ],
+      "all_eligible_review_ids": [
+        "A332",
+        "B056"
+      ],
+      "template_keys": [
+        "affirm | of course"
+      ]
+    },
+    {
+      "group_id": "showroom-a333",
+      "accepted_review_ids": [
+        "A333",
+        "A345",
+        "C134"
+      ],
+      "all_eligible_review_ids": [
+        "A333",
+        "A345",
+        "B070",
+        "C134"
+      ],
+      "template_keys": [
+        "affirm | right",
+        "affirm | right on",
+        "affirm | sounds right"
+      ]
+    },
+    {
+      "group_id": "showroom-a334",
+      "accepted_review_ids": [
+        "A334"
+      ],
+      "all_eligible_review_ids": [
+        "A334",
+        "B054"
+      ],
+      "template_keys": [
+        "affirm | yes that is fine"
+      ]
+    },
+    {
+      "group_id": "showroom-a335",
+      "accepted_review_ids": [
+        "A335"
+      ],
+      "all_eligible_review_ids": [
+        "A335",
+        "B053"
+      ],
+      "template_keys": [
+        "affirm | confirmed"
+      ]
+    },
+    {
+      "group_id": "showroom-a336",
+      "accepted_review_ids": [
+        "A336",
+        "B050",
+        "B064"
+      ],
+      "all_eligible_review_ids": [
+        "A336",
+        "B050",
+        "B064",
+        "C384"
+      ],
+      "template_keys": [
+        "affirm | agreed",
+        "affirm | i agree",
+        "affirm | yes i agree"
+      ]
+    },
+    {
+      "group_id": "showroom-a338",
+      "accepted_review_ids": [
+        "A338"
+      ],
+      "all_eligible_review_ids": [
+        "A338",
+        "B057",
+        "C183"
+      ],
+      "template_keys": [
+        "affirm | you bet"
+      ]
+    },
+    {
+      "group_id": "showroom-a339",
+      "accepted_review_ids": [
+        "A339"
+      ],
+      "all_eligible_review_ids": [
+        "A339",
+        "B051"
+      ],
+      "template_keys": [
+        "affirm | definitely"
+      ]
+    },
+    {
+      "group_id": "showroom-a340",
+      "accepted_review_ids": [
+        "A340",
+        "A350",
+        "C185",
+        "C235"
+      ],
+      "all_eligible_review_ids": [
+        "A340",
+        "A350",
+        "B052",
+        "C185",
+        "C235"
+      ],
+      "template_keys": [
+        "affirm | fine by me",
+        "affirm | i am good with that",
+        "affirm | that works",
+        "affirm | works"
+      ]
+    },
+    {
+      "group_id": "showroom-a342",
+      "accepted_review_ids": [
+        "A342"
+      ],
+      "all_eligible_review_ids": [
+        "A342",
+        "B065",
+        "C435"
+      ],
+      "template_keys": [
+        "affirm | affirmative"
+      ]
+    },
+    {
+      "group_id": "showroom-a343",
+      "accepted_review_ids": [
+        "A343",
+        "C234"
+      ],
+      "all_eligible_review_ids": [
+        "A343",
+        "C234"
+      ],
+      "template_keys": [
+        "affirm | do",
+        "affirm | yes do"
+      ]
+    },
+    {
+      "group_id": "showroom-a344",
+      "accepted_review_ids": [
+        "A344",
+        "C034",
+        "C283",
+        "C483"
+      ],
+      "all_eligible_review_ids": [
+        "A344",
+        "C034",
+        "C283",
+        "C483"
+      ],
+      "template_keys": [
+        "affirm | go ahead",
+        "affirm | yeah go ahead",
+        "affirm | yes go for it",
+        "affirm | yes let us do it"
+      ]
+    },
+    {
+      "group_id": "showroom-a351",
+      "accepted_review_ids": [
+        "A351",
+        "A366",
+        "A377",
+        "A379",
+        "C388"
+      ],
+      "all_eligible_review_ids": [
+        "A351",
+        "A366",
+        "A377",
+        "A379",
+        "B071",
+        "B080",
+        "C388"
+      ],
+      "template_keys": [
+        "deny | no",
+        "deny | no i don't",
+        "deny | no sir",
+        "deny | uh no",
+        "deny | uh-uh no"
+      ]
+    },
+    {
+      "group_id": "showroom-a352",
+      "accepted_review_ids": [
+        "A352",
+        "A372"
+      ],
+      "all_eligible_review_ids": [
+        "A352",
+        "A372",
+        "B072",
+        "C288"
+      ],
+      "template_keys": [
+        "deny | nope",
+        "deny | nope sorry"
+      ]
+    },
+    {
+      "group_id": "showroom-a353",
+      "accepted_review_ids": [
+        "A353"
+      ],
+      "all_eligible_review_ids": [
+        "A353",
+        "B073"
+      ],
+      "template_keys": [
+        "deny | nah"
+      ]
+    },
+    {
+      "group_id": "showroom-a354",
+      "accepted_review_ids": [
+        "A354"
+      ],
+      "all_eligible_review_ids": [
+        "A354",
+        "B074",
+        "C086"
+      ],
+      "template_keys": [
+        "deny | no way"
+      ]
+    },
+    {
+      "group_id": "showroom-a355",
+      "accepted_review_ids": [
+        "A355",
+        "A361",
+        "A373",
+        "A380",
+        "C287"
+      ],
+      "all_eligible_review_ids": [
+        "A355",
+        "A361",
+        "A373",
+        "A380",
+        "B075",
+        "B081",
+        "B100",
+        "C137",
+        "C287"
+      ],
+      "template_keys": [
+        "deny | incorrect",
+        "deny | no incorrect",
+        "deny | not correct",
+        "deny | that is inaccurate",
+        "deny | that is incorrect"
+      ]
+    },
+    {
+      "group_id": "showroom-a356",
+      "accepted_review_ids": [
+        "A356",
+        "A364",
+        "A367"
+      ],
+      "all_eligible_review_ids": [
+        "A356",
+        "A364",
+        "A367",
+        "B076",
+        "B083",
+        "B086",
+        "C038"
+      ],
+      "template_keys": [
+        "deny | no that is wrong",
+        "deny | that is wrong",
+        "deny | wrong"
+      ]
+    },
+    {
+      "group_id": "showroom-a357",
+      "accepted_review_ids": [
+        "A357",
+        "A369",
+        "B095"
+      ],
+      "all_eligible_review_ids": [
+        "A357",
+        "A369",
+        "B078",
+        "B095",
+        "B098",
+        "C338"
+      ],
+      "template_keys": [
+        "deny | i disagree",
+        "deny | i don't agree",
+        "deny | no i disagree"
+      ]
+    },
+    {
+      "group_id": "showroom-a358",
+      "accepted_review_ids": [
+        "A358"
+      ],
+      "all_eligible_review_ids": [
+        "A358",
+        "B077",
+        "C087"
+      ],
+      "template_keys": [
+        "deny | not really"
+      ]
+    },
+    {
+      "group_id": "showroom-a359",
+      "accepted_review_ids": [
+        "A359"
+      ],
+      "all_eligible_review_ids": [
+        "A359",
+        "B090",
+        "C136"
+      ],
+      "template_keys": [
+        "deny | no thank you"
+      ]
+    },
+    {
+      "group_id": "showroom-a360",
+      "accepted_review_ids": [
+        "A360"
+      ],
+      "all_eligible_review_ids": [
+        "A360",
+        "B079",
+        "C237"
+      ],
+      "template_keys": [
+        "deny | negative"
+      ]
+    },
+    {
+      "group_id": "showroom-a362",
+      "accepted_review_ids": [
+        "A362"
+      ],
+      "all_eligible_review_ids": [
+        "A362",
+        "B084",
+        "C037"
+      ],
+      "template_keys": [
+        "deny | i don't think so"
+      ]
+    },
+    {
+      "group_id": "showroom-a363",
+      "accepted_review_ids": [
+        "A363"
+      ],
+      "all_eligible_review_ids": [
+        "A363",
+        "B085",
+        "C337"
+      ],
+      "template_keys": [
+        "deny | not quite"
+      ]
+    },
+    {
+      "group_id": "showroom-a365",
+      "accepted_review_ids": [
+        "A365"
+      ],
+      "all_eligible_review_ids": [
+        "A365",
+        "B082"
+      ],
+      "template_keys": [
+        "deny | absolutely not"
+      ]
+    },
+    {
+      "group_id": "showroom-a368",
+      "accepted_review_ids": [
+        "A368",
+        "A371",
+        "A374",
+        "B092",
+        "B097",
+        "C238",
+        "C486",
+        "C488"
+      ],
+      "all_eligible_review_ids": [
+        "A368",
+        "A371",
+        "A374",
+        "B092",
+        "B096",
+        "B097",
+        "C036",
+        "C238",
+        "C486",
+        "C488"
+      ],
+      "template_keys": [
+        "deny | no not that",
+        "deny | no not that one",
+        "deny | no that is not it",
+        "deny | nope not that",
+        "deny | not that one no",
+        "deny | not this one",
+        "deny | that is not it",
+        "deny | wrong one no"
+      ]
+    },
+    {
+      "group_id": "showroom-a370",
+      "accepted_review_ids": [
+        "A370"
+      ],
+      "all_eligible_review_ids": [
+        "A370",
+        "B091"
+      ],
+      "template_keys": [
+        "deny | no chance"
+      ]
+    },
+    {
+      "group_id": "showroom-a375",
+      "accepted_review_ids": [
+        "A375",
+        "C188",
+        "C387",
+        "C437"
+      ],
+      "all_eligible_review_ids": [
+        "A375",
+        "C188",
+        "C387",
+        "C437"
+      ],
+      "template_keys": [
+        "deny | i don't want that",
+        "deny | not what i wanted",
+        "deny | that is not what i asked for",
+        "deny | that is not what i meant"
+      ]
+    },
+    {
+      "group_id": "showroom-a376",
+      "accepted_review_ids": [
+        "A376"
+      ],
+      "all_eligible_review_ids": [
+        "A376",
+        "B088",
+        "C138"
+      ],
+      "template_keys": [
+        "deny | not at all"
+      ]
+    },
+    {
+      "group_id": "showroom-a378",
+      "accepted_review_ids": [
+        "A378",
+        "B087"
+      ],
+      "all_eligible_review_ids": [
+        "A378",
+        "B087"
+      ],
+      "template_keys": [
+        "deny | false",
+        "deny | that is false"
+      ]
+    },
+    {
+      "group_id": "showroom-a381",
+      "accepted_review_ids": [
+        "A381",
+        "A382",
+        "A383",
+        "A386",
+        "A389",
+        "A395",
+        "A397",
+        "B111",
+        "B128",
+        "C289",
+        "C340",
+        "C439",
+        "C441",
+        "C489"
+      ],
+      "all_eligible_review_ids": [
+        "A381",
+        "A382",
+        "A383",
+        "A386",
+        "A389",
+        "A395",
+        "A397",
+        "B101",
+        "B102",
+        "B111",
+        "B114",
+        "B128",
+        "C289",
+        "C340",
+        "C439",
+        "C441",
+        "C489"
+      ],
+      "template_keys": [
+        "request_stop | can you stop demo",
+        "request_stop | stop",
+        "request_stop | stop current demo",
+        "request_stop | stop it",
+        "request_stop | stop it for second",
+        "request_stop | stop that demo",
+        "request_stop | stop this",
+        "request_stop | stop this demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a384",
+      "accepted_review_ids": [
+        "A384",
+        "A402",
+        "B127",
+        "C139",
+        "C440",
+        "C491"
+      ],
+      "all_eligible_review_ids": [
+        "A384",
+        "A402",
+        "B127",
+        "C139",
+        "C440",
+        "C491"
+      ],
+      "template_keys": [
+        "request_stop | pause demo",
+        "request_stop | pause showroom demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a385",
+      "accepted_review_ids": [
+        "A385",
+        "A398",
+        "A409",
+        "B105",
+        "B116",
+        "B125"
+      ],
+      "all_eligible_review_ids": [
+        "A385",
+        "A398",
+        "A409",
+        "B105",
+        "B116",
+        "B125"
+      ],
+      "template_keys": [
+        "request_stop | bring demo to halt",
+        "request_stop | halt",
+        "request_stop | halt demo",
+        "request_stop | halt it"
+      ]
+    },
+    {
+      "group_id": "showroom-a387",
+      "accepted_review_ids": [
+        "A387",
+        "B106"
+      ],
+      "all_eligible_review_ids": [
+        "A387",
+        "B106",
+        "B110"
+      ],
+      "template_keys": [
+        "request_stop | can you stop"
+      ]
+    },
+    {
+      "group_id": "showroom-a388",
+      "accepted_review_ids": [
+        "A388",
+        "A393",
+        "A396",
+        "A408",
+        "B103",
+        "B104",
+        "B129",
+        "C190",
+        "C240"
+      ],
+      "all_eligible_review_ids": [
+        "A388",
+        "A393",
+        "A396",
+        "A408",
+        "B103",
+        "B104",
+        "B115",
+        "B129",
+        "C190",
+        "C240"
+      ],
+      "template_keys": [
+        "request_stop | can i pause",
+        "request_stop | can i pause this for bit",
+        "request_stop | can you pause",
+        "request_stop | can you pause it",
+        "request_stop | pause",
+        "request_stop | pause it",
+        "request_stop | pause it for moment",
+        "request_stop | pause this"
+      ]
+    },
+    {
+      "group_id": "showroom-a390",
+      "accepted_review_ids": [
+        "A390",
+        "C039",
+        "C189",
+        "C391"
+      ],
+      "all_eligible_review_ids": [
+        "A390",
+        "C039",
+        "C189",
+        "C391"
+      ],
+      "template_keys": [
+        "request_stop | hold on pause demo",
+        "request_stop | hold on second stop",
+        "request_stop | hold on stop",
+        "request_stop | hold up stop demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a391",
+      "accepted_review_ids": [
+        "A391",
+        "B113",
+        "C041",
+        "C241",
+        "C490"
+      ],
+      "all_eligible_review_ids": [
+        "A391",
+        "B113",
+        "C041",
+        "C241",
+        "C490"
+      ],
+      "template_keys": [
+        "request_stop | can you freeze demo",
+        "request_stop | freeze current demo",
+        "request_stop | freeze demo",
+        "request_stop | freeze it",
+        "request_stop | hold on freeze demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a392",
+      "accepted_review_ids": [
+        "A392",
+        "A400",
+        "B123"
+      ],
+      "all_eligible_review_ids": [
+        "A392",
+        "A400",
+        "B107",
+        "B123"
+      ],
+      "template_keys": [
+        "request_stop | stop playback",
+        "request_stop | stop playing"
+      ]
+    },
+    {
+      "group_id": "showroom-a394",
+      "accepted_review_ids": [
+        "A394",
+        "A406",
+        "B109",
+        "C191"
+      ],
+      "all_eligible_review_ids": [
+        "A394",
+        "A406",
+        "B109",
+        "C191"
+      ],
+      "template_keys": [
+        "request_stop | cut demo",
+        "request_stop | cut it off",
+        "request_stop | kill demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a399",
+      "accepted_review_ids": [
+        "A399"
+      ],
+      "all_eligible_review_ids": [
+        "A399",
+        "B112"
+      ],
+      "template_keys": [
+        "request_stop | pause show"
+      ]
+    },
+    {
+      "group_id": "showroom-a401",
+      "accepted_review_ids": [
+        "A401",
+        "A410",
+        "B126"
+      ],
+      "all_eligible_review_ids": [
+        "A401",
+        "A410",
+        "B126"
+      ],
+      "template_keys": [
+        "request_stop | enough of demo",
+        "request_stop | enough stop",
+        "request_stop | that is enough pause"
+      ]
+    },
+    {
+      "group_id": "showroom-a403",
+      "accepted_review_ids": [
+        "A403",
+        "B120"
+      ],
+      "all_eligible_review_ids": [
+        "A403",
+        "B120"
+      ],
+      "template_keys": [
+        "request_stop | stop running it",
+        "request_stop | stop running that"
+      ]
+    },
+    {
+      "group_id": "showroom-a404",
+      "accepted_review_ids": [
+        "A404",
+        "B122"
+      ],
+      "all_eligible_review_ids": [
+        "A404",
+        "B122"
+      ],
+      "template_keys": [
+        "request_stop | i need this to stop",
+        "request_stop | i want this to stop"
+      ]
+    },
+    {
+      "group_id": "showroom-a405",
+      "accepted_review_ids": [
+        "A405",
+        "C090"
+      ],
+      "all_eligible_review_ids": [
+        "A405",
+        "C090"
+      ],
+      "template_keys": [
+        "request_stop | pause for second",
+        "request_stop | wait second pause"
+      ]
+    },
+    {
+      "group_id": "showroom-a407",
+      "accepted_review_ids": [
+        "A407",
+        "C140",
+        "C339",
+        "C390"
+      ],
+      "all_eligible_review_ids": [
+        "A407",
+        "C040",
+        "C140",
+        "C339",
+        "C390"
+      ],
+      "template_keys": [
+        "request_stop | hold it right there",
+        "request_stop | pause right there",
+        "request_stop | pause video right here",
+        "request_stop | stop right there"
+      ]
+    },
+    {
+      "group_id": "showroom-a411",
+      "accepted_review_ids": [
+        "A411",
+        "A414",
+        "A423",
+        "A437",
+        "B148",
+        "C492"
+      ],
+      "all_eligible_review_ids": [
+        "A411",
+        "A414",
+        "A423",
+        "A437",
+        "B131",
+        "B148",
+        "B153",
+        "C492"
+      ],
+      "template_keys": [
+        "request_resume | resume",
+        "request_resume | resume it"
+      ]
+    },
+    {
+      "group_id": "showroom-a412",
+      "accepted_review_ids": [
+        "A412",
+        "A420",
+        "A422",
+        "A427",
+        "B152",
+        "C344"
+      ],
+      "all_eligible_review_ids": [
+        "A412",
+        "A420",
+        "A422",
+        "A427",
+        "B132",
+        "B142",
+        "B152",
+        "C344"
+      ],
+      "template_keys": [
+        "request_resume | continue",
+        "request_resume | continue on",
+        "request_resume | let us continue",
+        "request_resume | you can continue"
+      ]
+    },
+    {
+      "group_id": "showroom-a413",
+      "accepted_review_ids": [
+        "A413",
+        "A424",
+        "A434",
+        "A439",
+        "B141"
+      ],
+      "all_eligible_review_ids": [
+        "A413",
+        "A424",
+        "A434",
+        "A439",
+        "B141",
+        "B145",
+        "B157",
+        "C094",
+        "C244"
+      ],
+      "template_keys": [
+        "request_resume | carry on",
+        "request_resume | carry on with demo",
+        "request_resume | carry on with it",
+        "request_resume | go on with demo",
+        "request_resume | on with demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a415",
+      "accepted_review_ids": [
+        "A415",
+        "A438",
+        "B159",
+        "C143"
+      ],
+      "all_eligible_review_ids": [
+        "A415",
+        "A438",
+        "B133",
+        "B159",
+        "C143"
+      ],
+      "template_keys": [
+        "request_resume | keep demo going",
+        "request_resume | keep demo rolling",
+        "request_resume | keep going"
+      ]
+    },
+    {
+      "group_id": "showroom-a416",
+      "accepted_review_ids": [
+        "A416",
+        "B156",
+        "B160",
+        "C193"
+      ],
+      "all_eligible_review_ids": [
+        "A416",
+        "B135",
+        "B156",
+        "B160",
+        "C043",
+        "C193"
+      ],
+      "template_keys": [
+        "request_resume | continue demo",
+        "request_resume | let us continue tour"
+      ]
+    },
+    {
+      "group_id": "showroom-a417",
+      "accepted_review_ids": [
+        "A417",
+        "A428",
+        "A436",
+        "C093",
+        "C142",
+        "C294"
+      ],
+      "all_eligible_review_ids": [
+        "A417",
+        "A428",
+        "A436",
+        "B136",
+        "C093",
+        "C142",
+        "C294"
+      ],
+      "template_keys": [
+        "request_resume | continue where we left off",
+        "request_resume | pick up where we left off",
+        "request_resume | restart from where we paused",
+        "request_resume | resume where it stopped",
+        "request_resume | resume where we stopped"
+      ]
+    },
+    {
+      "group_id": "showroom-a418",
+      "accepted_review_ids": [
+        "A418",
+        "B144",
+        "C342",
+        "C442"
+      ],
+      "all_eligible_review_ids": [
+        "A418",
+        "B144",
+        "C342",
+        "C442"
+      ],
+      "template_keys": [
+        "request_resume | let us resume demo",
+        "request_resume | resume demo",
+        "request_resume | resume show"
+      ]
+    },
+    {
+      "group_id": "showroom-a419",
+      "accepted_review_ids": [
+        "A419"
+      ],
+      "all_eligible_review_ids": [
+        "A419",
+        "B137"
+      ],
+      "template_keys": [
+        "request_resume | go on"
+      ]
+    },
+    {
+      "group_id": "showroom-a421",
+      "accepted_review_ids": [
+        "A421",
+        "A433",
+        "B139",
+        "C044",
+        "C243",
+        "C444"
+      ],
+      "all_eligible_review_ids": [
+        "A421",
+        "A433",
+        "B138",
+        "B139",
+        "B154",
+        "C044",
+        "C243",
+        "C444"
+      ],
+      "template_keys": [
+        "request_resume | unpause",
+        "request_resume | unpause demo",
+        "request_resume | unpause it",
+        "request_resume | you can unpause it"
+      ]
+    },
+    {
+      "group_id": "showroom-a425",
+      "accepted_review_ids": [
+        "A425",
+        "C293",
+        "C393"
+      ],
+      "all_eligible_review_ids": [
+        "A425",
+        "B146",
+        "C293",
+        "C393"
+      ],
+      "template_keys": [
+        "request_resume | continue playing it",
+        "request_resume | keep playing",
+        "request_resume | keep playing demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a426",
+      "accepted_review_ids": [
+        "A426",
+        "C494"
+      ],
+      "all_eligible_review_ids": [
+        "A426",
+        "B143",
+        "C092",
+        "C494"
+      ],
+      "template_keys": [
+        "request_resume | start demo back up",
+        "request_resume | start it back up"
+      ]
+    },
+    {
+      "group_id": "showroom-a429",
+      "accepted_review_ids": [
+        "A429",
+        "C292"
+      ],
+      "all_eligible_review_ids": [
+        "A429",
+        "C292"
+      ],
+      "template_keys": [
+        "request_resume | go ahead and continue",
+        "request_resume | go ahead and resume"
+      ]
+    },
+    {
+      "group_id": "showroom-a430",
+      "accepted_review_ids": [
+        "A430"
+      ],
+      "all_eligible_review_ids": [
+        "A430",
+        "B134"
+      ],
+      "template_keys": [
+        "request_resume | back to demo"
+      ]
+    },
+    {
+      "group_id": "showroom-a431",
+      "accepted_review_ids": [
+        "A431",
+        "B158",
+        "C443"
+      ],
+      "all_eligible_review_ids": [
+        "A431",
+        "B147",
+        "B158",
+        "C443"
+      ],
+      "template_keys": [
+        "request_resume | continue from here",
+        "request_resume | continue from there",
+        "request_resume | resume from here"
+      ]
+    },
+    {
+      "group_id": "showroom-a432",
+      "accepted_review_ids": [
+        "A432"
+      ],
+      "all_eligible_review_ids": [
+        "A432"
+      ],
+      "template_keys": [
+        "request_resume | let us resume"
+      ]
+    },
+    {
+      "group_id": "showroom-a435",
+      "accepted_review_ids": [
+        "A435"
+      ],
+      "all_eligible_review_ids": [
+        "A435",
+        "B140"
+      ],
+      "template_keys": [
+        "request_resume | resume playback"
+      ]
+    },
+    {
+      "group_id": "showroom-a440",
+      "accepted_review_ids": [
+        "A440"
+      ],
+      "all_eligible_review_ids": [
+        "A440",
+        "B150"
+      ],
+      "template_keys": [
+        "request_resume | i would like to continue"
+      ]
+    },
+    {
+      "group_id": "showroom-a441",
+      "accepted_review_ids": [
+        "A441",
+        "A455",
+        "A459"
+      ],
+      "all_eligible_review_ids": [
+        "A441",
+        "A455",
+        "A459",
+        "B161"
+      ],
+      "template_keys": [
+        "request_quit | quit"
+      ]
+    },
+    {
+      "group_id": "showroom-a442",
+      "accepted_review_ids": [
+        "A442",
+        "A457",
+        "A462",
+        "A470",
+        "C397",
+        "C447"
+      ],
+      "all_eligible_review_ids": [
+        "A442",
+        "A457",
+        "A462",
+        "A470",
+        "B162",
+        "B171",
+        "B176",
+        "C397",
+        "C447"
+      ],
+      "template_keys": [
+        "request_quit | exit",
+        "request_quit | let us exit"
+      ]
+    },
+    {
+      "group_id": "showroom-a443",
+      "accepted_review_ids": [
+        "A443",
+        "A448",
+        "B177",
+        "C195",
+        "C246",
+        "C347"
+      ],
+      "all_eligible_review_ids": [
+        "A443",
+        "A448",
+        "B170",
+        "B177",
+        "B182",
+        "C195",
+        "C246",
+        "C347"
+      ],
+      "template_keys": [
+        "request_quit | i am ready to exit",
+        "request_quit | i need to exit",
+        "request_quit | i want to quit",
+        "request_quit | i would like to exit",
+        "request_quit | i would like to quit"
+      ]
+    },
+    {
+      "group_id": "showroom-a444",
+      "accepted_review_ids": [
+        "A444",
+        "A450",
+        "A468",
+        "B164",
+        "B181",
+        "C096",
+        "C446"
+      ],
+      "all_eligible_review_ids": [
+        "A444",
+        "A450",
+        "A468",
+        "B164",
+        "B169",
+        "B181",
+        "C096",
+        "C196",
+        "C446"
+      ],
+      "template_keys": [
+        "request_quit | end demo session",
+        "request_quit | end our session",
+        "request_quit | end session",
+        "request_quit | end showroom session",
+        "request_quit | i would like to end session",
+        "request_quit | terminate session"
+      ]
+    },
+    {
+      "group_id": "showroom-a445",
+      "accepted_review_ids": [
+        "A445",
+        "A460",
+        "B189",
+        "C047",
+        "C346"
+      ],
+      "all_eligible_review_ids": [
+        "A445",
+        "A460",
+        "B189",
+        "C047",
+        "C346"
+      ],
+      "template_keys": [
+        "request_quit | close session",
+        "request_quit | close this session",
+        "request_quit | shut down demo session",
+        "request_quit | shut this session down"
+      ]
+    },
+    {
+      "group_id": "showroom-a446",
+      "accepted_review_ids": [
+        "A446",
+        "C097",
+        "C345"
+      ],
+      "all_eligible_review_ids": [
+        "A446",
+        "B188",
+        "C097",
+        "C145",
+        "C345"
+      ],
+      "template_keys": [
+        "request_quit | exit showroom",
+        "request_quit | i would like to leave showroom mode",
+        "request_quit | let us exit showroom experience"
+      ]
+    },
+    {
+      "group_id": "showroom-a447",
+      "accepted_review_ids": [
+        "A447",
+        "A469",
+        "C395"
+      ],
+      "all_eligible_review_ids": [
+        "A447",
+        "A469",
+        "C395"
+      ],
+      "template_keys": [
+        "request_quit | i want out of this session",
+        "request_quit | quit session",
+        "request_quit | quit showroom session"
+      ]
+    },
+    {
+      "group_id": "showroom-a449",
+      "accepted_review_ids": [
+        "A449",
+        "B173"
+      ],
+      "all_eligible_review_ids": [
+        "A449",
+        "B173"
+      ],
+      "template_keys": [
+        "request_quit | leave session",
+        "request_quit | leave this session"
+      ]
+    },
+    {
+      "group_id": "showroom-a451",
+      "accepted_review_ids": [
+        "A451",
+        "B166",
+        "C296",
+        "C396"
+      ],
+      "all_eligible_review_ids": [
+        "A451",
+        "B166",
+        "C296",
+        "C396"
+      ],
+      "template_keys": [
+        "request_quit | i am all done close it",
+        "request_quit | i am done",
+        "request_quit | i am done here",
+        "request_quit | we can end it here"
+      ]
+    },
+    {
+      "group_id": "showroom-a452",
+      "accepted_review_ids": [
+        "A452",
+        "A464",
+        "B168",
+        "C247"
+      ],
+      "all_eligible_review_ids": [
+        "A452",
+        "A464",
+        "B168",
+        "B175",
+        "C247"
+      ],
+      "template_keys": [
+        "request_quit | log me out",
+        "request_quit | log out",
+        "request_quit | log out of showroom",
+        "request_quit | sign me out"
+      ]
+    },
+    {
+      "group_id": "showroom-a453",
+      "accepted_review_ids": [
+        "A453",
+        "C445"
+      ],
+      "all_eligible_review_ids": [
+        "A453",
+        "B172",
+        "C445"
+      ],
+      "template_keys": [
+        "request_quit | close out showroom demo",
+        "request_quit | close showroom"
+      ]
+    },
+    {
+      "group_id": "showroom-a454",
+      "accepted_review_ids": [
+        "A454",
+        "C046",
+        "C095",
+        "C496"
+      ],
+      "all_eligible_review_ids": [
+        "A454",
+        "C046",
+        "C095",
+        "C496"
+      ],
+      "template_keys": [
+        "request_quit | i am done exit",
+        "request_quit | let us wrap up and exit",
+        "request_quit | that is all for today quit",
+        "request_quit | that is all goodbye"
+      ]
+    },
+    {
+      "group_id": "showroom-a456",
+      "accepted_review_ids": [
+        "A456",
+        "A458",
+        "A465",
+        "A467",
+        "B163",
+        "B178",
+        "B183",
+        "B184",
+        "B186",
+        "B190"
+      ],
+      "all_eligible_review_ids": [
+        "A456",
+        "A458",
+        "A465",
+        "A467",
+        "B163",
+        "B167",
+        "B178",
+        "B179",
+        "B183",
+        "B184",
+        "B186",
+        "B190"
+      ],
+      "template_keys": [
+        "request_quit | i am heading out",
+        "request_quit | i am out",
+        "request_quit | i need to go",
+        "request_quit | i want out",
+        "request_quit | i want to leave",
+        "request_quit | i would like to leave",
+        "request_quit | leave",
+        "request_quit | let me out",
+        "request_quit | ready to leave",
+        "request_quit | time to leave"
+      ]
+    },
+    {
+      "group_id": "showroom-a461",
+      "accepted_review_ids": [
+        "A461",
+        "B165",
+        "B180"
+      ],
+      "all_eligible_review_ids": [
+        "A461",
+        "B165",
+        "B180"
+      ],
+      "template_keys": [
+        "request_quit | close out",
+        "request_quit | close this",
+        "request_quit | i want to close out"
+      ]
+    },
+    {
+      "group_id": "showroom-a463",
+      "accepted_review_ids": [
+        "A463",
+        "B174"
+      ],
+      "all_eligible_review_ids": [
+        "A463",
+        "B174"
+      ],
+      "template_keys": [
+        "request_quit | done with this session",
+        "request_quit | session over"
+      ]
+    },
+    {
+      "group_id": "showroom-a466",
+      "accepted_review_ids": [
+        "A466",
+        "C245"
+      ],
+      "all_eligible_review_ids": [
+        "A466",
+        "C245"
+      ],
+      "template_keys": [
+        "request_quit | exit session",
+        "request_quit | stop session and exit"
+      ]
+    },
+    {
+      "group_id": "showroom-a471",
+      "accepted_review_ids": [
+        "A471"
+      ],
+      "all_eligible_review_ids": [
+        "A471"
+      ],
+      "template_keys": [
+        "UNK | book table for dinner"
+      ]
+    },
+    {
+      "group_id": "showroom-a472",
+      "accepted_review_ids": [
+        "A472",
+        "C149"
+      ],
+      "all_eligible_review_ids": [
+        "A472",
+        "B192",
+        "C149"
+      ],
+      "template_keys": [
+        "UNK | what is weather forecast for tomorrow morning",
+        "UNK | what is weather tomorrow"
+      ]
+    },
+    {
+      "group_id": "showroom-a473",
+      "accepted_review_ids": [
+        "A473",
+        "B200"
+      ],
+      "all_eligible_review_ids": [
+        "A473",
+        "B200"
+      ],
+      "template_keys": [
+        "UNK | navigate to airport",
+        "UNK | navigate to dealership"
+      ]
+    },
+    {
+      "group_id": "showroom-a474",
+      "accepted_review_ids": [
+        "A474",
+        "B195",
+        "C249"
+      ],
+      "all_eligible_review_ids": [
+        "A474",
+        "B195",
+        "C249"
+      ],
+      "template_keys": [
+        "UNK | play jazz music on spotify",
+        "UNK | play music",
+        "UNK | play music on radio"
+      ]
+    },
+    {
+      "group_id": "showroom-a475",
+      "accepted_review_ids": [
+        "A475",
+        "B199"
+      ],
+      "all_eligible_review_ids": [
+        "A475",
+        "B199"
+      ],
+      "template_keys": [
+        "UNK | call my mechanic",
+        "UNK | call my mom"
+      ]
+    },
+    {
+      "group_id": "showroom-a476",
+      "accepted_review_ids": [
+        "A476",
+        "C349"
+      ],
+      "all_eligible_review_ids": [
+        "A476",
+        "C349"
+      ],
+      "template_keys": [
+        "UNK | set alarm for 6 30 am",
+        "UNK | set alarm for seven"
+      ]
+    },
+    {
+      "group_id": "showroom-a477",
+      "accepted_review_ids": [
+        "A477"
+      ],
+      "all_eligible_review_ids": [
+        "A477"
+      ],
+      "template_keys": [
+        "UNK | text jordan that i am late"
+      ]
+    },
+    {
+      "group_id": "showroom-a478",
+      "accepted_review_ids": [
+        "A478"
+      ],
+      "all_eligible_review_ids": [
+        "A478"
+      ],
+      "template_keys": [
+        "UNK | find coffee shop nearby"
+      ]
+    },
+    {
+      "group_id": "showroom-a479",
+      "accepted_review_ids": [
+        "A479"
+      ],
+      "all_eligible_review_ids": [
+        "A479"
+      ],
+      "template_keys": [
+        "UNK | what is traffic like"
+      ]
+    },
+    {
+      "group_id": "showroom-a480",
+      "accepted_review_ids": [
+        "A480"
+      ],
+      "all_eligible_review_ids": [
+        "A480"
+      ],
+      "template_keys": [
+        "UNK | turn up volume"
+      ]
+    },
+    {
+      "group_id": "showroom-a481",
+      "accepted_review_ids": [
+        "A481",
+        "B194",
+        "C099"
+      ],
+      "all_eligible_review_ids": [
+        "A481",
+        "B194",
+        "C099"
+      ],
+      "template_keys": [
+        "UNK | remind me to buy milk",
+        "UNK | remind me to call my dentist at four",
+        "UNK | set reminder for three"
+      ]
+    },
+    {
+      "group_id": "showroom-a482",
+      "accepted_review_ids": [
+        "A482",
+        "B203"
+      ],
+      "all_eligible_review_ids": [
+        "A482",
+        "B203"
+      ],
+      "template_keys": [
+        "UNK | translate this to french",
+        "UNK | translate this to spanish"
+      ]
+    },
+    {
+      "group_id": "showroom-a483",
+      "accepted_review_ids": [
+        "A483",
+        "B220"
+      ],
+      "all_eligible_review_ids": [
+        "A483",
+        "B196",
+        "B220"
+      ],
+      "template_keys": [
+        "UNK | i want to buy this car",
+        "UNK | purchase vehicle today"
+      ]
+    },
+    {
+      "group_id": "showroom-a484",
+      "accepted_review_ids": [
+        "A484",
+        "B197"
+      ],
+      "all_eligible_review_ids": [
+        "A484",
+        "B197"
+      ],
+      "template_keys": [
+        "UNK | how much does car cost",
+        "UNK | what is price"
+      ]
+    },
+    {
+      "group_id": "showroom-a485",
+      "accepted_review_ids": [
+        "A485",
+        "B198",
+        "C498"
+      ],
+      "all_eligible_review_ids": [
+        "A485",
+        "B198",
+        "C498"
+      ],
+      "template_keys": [
+        "UNK | can i schedule test drive",
+        "UNK | can i take this car out on freeway",
+        "UNK | schedule test drive"
+      ]
+    },
+    {
+      "group_id": "showroom-a486",
+      "accepted_review_ids": [
+        "A486",
+        "B207",
+        "C048"
+      ],
+      "all_eligible_review_ids": [
+        "A486",
+        "B207",
+        "C048"
+      ],
+      "template_keys": [
+        "UNK | finance options",
+        "UNK | i need financing options",
+        "UNK | what is apr financing rate for 60 months"
+      ]
+    },
+    {
+      "group_id": "showroom-a487",
+      "accepted_review_ids": [
+        "A487"
+      ],
+      "all_eligible_review_ids": [
+        "A487"
+      ],
+      "template_keys": [
+        "UNK | is this model in stock"
+      ]
+    },
+    {
+      "group_id": "showroom-a488",
+      "accepted_review_ids": [
+        "A488"
+      ],
+      "all_eligible_review_ids": [
+        "A488"
+      ],
+      "template_keys": [
+        "UNK | compare it to last year's model"
+      ]
+    },
+    {
+      "group_id": "showroom-a489",
+      "accepted_review_ids": [
+        "A489"
+      ],
+      "all_eligible_review_ids": [
+        "A489"
+      ],
+      "template_keys": [
+        "UNK | what is warranty"
+      ]
+    },
+    {
+      "group_id": "showroom-a490",
+      "accepted_review_ids": [
+        "A490",
+        "B217",
+        "C199"
+      ],
+      "all_eligible_review_ids": [
+        "A490",
+        "B217",
+        "C199"
+      ],
+      "template_keys": [
+        "UNK | can i get this suv in matte silver",
+        "UNK | i want red paint package",
+        "UNK | order one in blue"
+      ]
+    },
+    {
+      "group_id": "showroom-a491",
+      "accepted_review_ids": [
+        "A491"
+      ],
+      "all_eligible_review_ids": [
+        "A491"
+      ],
+      "template_keys": [
+        "UNK | can i talk to salesperson"
+      ]
+    },
+    {
+      "group_id": "showroom-a492",
+      "accepted_review_ids": [
+        "A492"
+      ],
+      "all_eligible_review_ids": [
+        "A492"
+      ],
+      "template_keys": [
+        "UNK | reserve this vehicle"
+      ]
+    },
+    {
+      "group_id": "showroom-a493",
+      "accepted_review_ids": [
+        "A493"
+      ],
+      "all_eligible_review_ids": [
+        "A493"
+      ],
+      "template_keys": [
+        "UNK | purple suitcase quantum bagel"
+      ]
+    },
+    {
+      "group_id": "showroom-a494",
+      "accepted_review_ids": [
+        "A494",
+        "B209"
+      ],
+      "all_eligible_review_ids": [
+        "A494",
+        "B209"
+      ],
+      "template_keys": [
+        "UNK | blorp snizzle wumpus",
+        "UNK | florb snizzle lamppost"
+      ]
+    },
+    {
+      "group_id": "showroom-a495",
+      "accepted_review_ids": [
+        "A495",
+        "B215"
+      ],
+      "all_eligible_review_ids": [
+        "A495",
+        "B215"
+      ],
+      "template_keys": [
+        "UNK | xyzzy plugh",
+        "UNK | xyzzy plugh nothing"
+      ]
+    },
+    {
+      "group_id": "showroom-a496",
+      "accepted_review_ids": [
+        "A496"
+      ],
+      "all_eligible_review_ids": [
+        "A496"
+      ],
+      "template_keys": [
+        "UNK | seventeen bananas sing sideways"
+      ]
+    },
+    {
+      "group_id": "showroom-a497",
+      "accepted_review_ids": [
+        "A497"
+      ],
+      "all_eligible_review_ids": [
+        "A497"
+      ],
+      "template_keys": [
+        "UNK | blip blop marble moon"
+      ]
+    },
+    {
+      "group_id": "showroom-a498",
+      "accepted_review_ids": [
+        "A498",
+        "B202"
+      ],
+      "all_eligible_review_ids": [
+        "A498",
+        "B202"
+      ],
+      "template_keys": [
+        "UNK | asdf qwerty banana moon",
+        "UNK | asdf qwerty noise"
+      ]
+    },
+    {
+      "group_id": "showroom-a499",
+      "accepted_review_ids": [
+        "A499"
+      ],
+      "all_eligible_review_ids": [
+        "A499"
+      ],
+      "template_keys": [
+        "UNK | turquoise kettle orbit"
+      ]
+    },
+    {
+      "group_id": "showroom-a500",
+      "accepted_review_ids": [
+        "A500"
+      ],
+      "all_eligible_review_ids": [
+        "A500"
+      ],
+      "template_keys": [
+        "UNK | wibble wobble under thursday"
+      ]
+    },
+    {
+      "group_id": "showroom-b014",
+      "accepted_review_ids": [
+        "B014"
+      ],
+      "all_eligible_review_ids": [
+        "B014",
+        "C380"
+      ],
+      "template_keys": [
+        "greet | good day"
+      ]
+    },
+    {
+      "group_id": "showroom-b018",
+      "accepted_review_ids": [
+        "B018",
+        "C080",
+        "C429"
+      ],
+      "all_eligible_review_ids": [
+        "B018",
+        "C080",
+        "C329",
+        "C429"
+      ],
+      "template_keys": [
+        "greet | hello nice to meet you",
+        "greet | hello pleasure to meet you",
+        "greet | hi nice to meet you"
+      ]
+    },
+    {
+      "group_id": "showroom-b019",
+      "accepted_review_ids": [
+        "B019",
+        "B020",
+        "C280"
+      ],
+      "all_eligible_review_ids": [
+        "B019",
+        "B020",
+        "C280"
+      ],
+      "template_keys": [
+        "greet | hello everyone",
+        "greet | hey folks",
+        "greet | hi everyone"
+      ]
+    },
+    {
+      "group_id": "showroom-b059",
+      "accepted_review_ids": [
+        "B059"
+      ],
+      "all_eligible_review_ids": [
+        "B059",
+        "C434"
+      ],
+      "template_keys": [
+        "affirm | exactly"
+      ]
+    },
+    {
+      "group_id": "showroom-b061",
+      "accepted_review_ids": [
+        "B061"
+      ],
+      "all_eligible_review_ids": [
+        "B061"
+      ],
+      "template_keys": [
+        "affirm | perfect"
+      ]
+    },
+    {
+      "group_id": "showroom-b062",
+      "accepted_review_ids": [
+        "B062"
+      ],
+      "all_eligible_review_ids": [
+        "B062"
+      ],
+      "template_keys": [
+        "affirm | will do"
+      ]
+    },
+    {
+      "group_id": "showroom-b066",
+      "accepted_review_ids": [
+        "B066"
+      ],
+      "all_eligible_review_ids": [
+        "B066",
+        "C285"
+      ],
+      "template_keys": [
+        "affirm | indeed"
+      ]
+    },
+    {
+      "group_id": "showroom-b067",
+      "accepted_review_ids": [
+        "B067"
+      ],
+      "all_eligible_review_ids": [
+        "B067"
+      ],
+      "template_keys": [
+        "affirm | great"
+      ]
+    },
+    {
+      "group_id": "showroom-b089",
+      "accepted_review_ids": [
+        "B089",
+        "C236",
+        "C286",
+        "C336"
+      ],
+      "all_eligible_review_ids": [
+        "B089",
+        "C236",
+        "C286",
+        "C336",
+        "C487"
+      ],
+      "template_keys": [
+        "deny | i would rather not",
+        "deny | no i would rather not",
+        "deny | no let us not",
+        "deny | no not"
+      ]
+    },
+    {
+      "group_id": "showroom-b093",
+      "accepted_review_ids": [
+        "B093"
+      ],
+      "all_eligible_review_ids": [
+        "B093"
+      ],
+      "template_keys": [
+        "deny | i said no"
+      ]
+    },
+    {
+      "group_id": "showroom-b094",
+      "accepted_review_ids": [
+        "B094",
+        "B099"
+      ],
+      "all_eligible_review_ids": [
+        "B094",
+        "B099",
+        "C186"
+      ],
+      "template_keys": [
+        "deny | definitely not",
+        "deny | no definitely not"
+      ]
+    },
+    {
+      "group_id": "showroom-b108",
+      "accepted_review_ids": [
+        "B108"
+      ],
+      "all_eligible_review_ids": [
+        "B108"
+      ],
+      "template_keys": [
+        "request_stop | end demo"
+      ]
+    },
+    {
+      "group_id": "showroom-b117",
+      "accepted_review_ids": [
+        "B117",
+        "C089",
+        "C239"
+      ],
+      "all_eligible_review_ids": [
+        "B117",
+        "C089",
+        "C239"
+      ],
+      "template_keys": [
+        "request_stop | stop demo"
+      ]
+    },
+    {
+      "group_id": "showroom-b118",
+      "accepted_review_ids": [
+        "B118"
+      ],
+      "all_eligible_review_ids": [
+        "B118"
+      ],
+      "template_keys": [
+        "request_stop | turn it off"
+      ]
+    },
+    {
+      "group_id": "showroom-b119",
+      "accepted_review_ids": [
+        "B119"
+      ],
+      "all_eligible_review_ids": [
+        "B119"
+      ],
+      "template_keys": [
+        "request_stop | cancel demo"
+      ]
+    },
+    {
+      "group_id": "showroom-b121",
+      "accepted_review_ids": [
+        "B121"
+      ],
+      "all_eligible_review_ids": [
+        "B121"
+      ],
+      "template_keys": [
+        "request_stop | pause everything"
+      ]
+    },
+    {
+      "group_id": "showroom-b124",
+      "accepted_review_ids": [
+        "B124",
+        "C341"
+      ],
+      "all_eligible_review_ids": [
+        "B124",
+        "C291",
+        "C341"
+      ],
+      "template_keys": [
+        "request_stop | hold demo",
+        "request_stop | wait hold demo"
+      ]
+    },
+    {
+      "group_id": "showroom-b130",
+      "accepted_review_ids": [
+        "B130"
+      ],
+      "all_eligible_review_ids": [
+        "B130"
+      ],
+      "template_keys": [
+        "request_stop | halt playback"
+      ]
+    },
+    {
+      "group_id": "showroom-b149",
+      "accepted_review_ids": [
+        "B149",
+        "B155",
+        "C242"
+      ],
+      "all_eligible_review_ids": [
+        "B149",
+        "B155",
+        "C242"
+      ],
+      "template_keys": [
+        "request_resume | let us pick back up",
+        "request_resume | let us pick it back up",
+        "request_resume | let us pick up again"
+      ]
+    },
+    {
+      "group_id": "showroom-b151",
+      "accepted_review_ids": [
+        "B151"
+      ],
+      "all_eligible_review_ids": [
+        "B151"
+      ],
+      "template_keys": [
+        "request_resume | can i resume"
+      ]
+    },
+    {
+      "group_id": "showroom-b185",
+      "accepted_review_ids": [
+        "B185",
+        "C045"
+      ],
+      "all_eligible_review_ids": [
+        "B185",
+        "C045"
+      ],
+      "template_keys": [
+        "request_quit | done with showroom",
+        "request_quit | i am done with showroom tour"
+      ]
+    },
+    {
+      "group_id": "showroom-b187",
+      "accepted_review_ids": [
+        "B187"
+      ],
+      "all_eligible_review_ids": [
+        "B187"
+      ],
+      "template_keys": [
+        "request_quit | end showroom"
+      ]
+    },
+    {
+      "group_id": "showroom-b191",
+      "accepted_review_ids": [
+        "B191",
+        "C299"
+      ],
+      "all_eligible_review_ids": [
+        "B191",
+        "C299"
+      ],
+      "template_keys": [
+        "UNK | book flight to chicago for next tuesday",
+        "UNK | book flight to denver"
+      ]
+    },
+    {
+      "group_id": "showroom-b193",
+      "accepted_review_ids": [
+        "B193",
+        "C049"
+      ],
+      "all_eligible_review_ids": [
+        "B193",
+        "C049"
+      ],
+      "template_keys": [
+        "UNK | order me pizza",
+        "UNK | order two pepperoni pizzas to my house"
+      ]
+    },
+    {
+      "group_id": "showroom-b201",
+      "accepted_review_ids": [
+        "B201"
+      ],
+      "all_eligible_review_ids": [
+        "B201"
+      ],
+      "template_keys": [
+        "UNK | flibber widget zorch"
+      ]
+    },
+    {
+      "group_id": "showroom-b204",
+      "accepted_review_ids": [
+        "B204",
+        "C449"
+      ],
+      "all_eligible_review_ids": [
+        "B204",
+        "C449"
+      ],
+      "template_keys": [
+        "UNK | what is capital of mongolia",
+        "UNK | what is capital of peru"
+      ]
+    },
+    {
+      "group_id": "showroom-b205",
+      "accepted_review_ids": [
+        "B205"
+      ],
+      "all_eligible_review_ids": [
+        "B205"
+      ],
+      "template_keys": [
+        "UNK | send email to my boss"
+      ]
+    },
+    {
+      "group_id": "showroom-b206",
+      "accepted_review_ids": [
+        "B206"
+      ],
+      "all_eligible_review_ids": [
+        "B206"
+      ],
+      "template_keys": [
+        "UNK | turn on kitchen lights"
+      ]
+    },
+    {
+      "group_id": "showroom-b208",
+      "accepted_review_ids": [
+        "B208"
+      ],
+      "all_eligible_review_ids": [
+        "B208"
+      ],
+      "template_keys": [
+        "UNK | compare insurance quotes"
+      ]
+    },
+    {
+      "group_id": "showroom-b210",
+      "accepted_review_ids": [
+        "B210"
+      ],
+      "all_eligible_review_ids": [
+        "B210"
+      ],
+      "template_keys": [
+        "UNK | check my bank balance"
+      ]
+    },
+    {
+      "group_id": "showroom-b211",
+      "accepted_review_ids": [
+        "B211"
+      ],
+      "all_eligible_review_ids": [
+        "B211"
+      ],
+      "template_keys": [
+        "UNK | reserve hotel room"
+      ]
+    },
+    {
+      "group_id": "showroom-b212",
+      "accepted_review_ids": [
+        "B212"
+      ],
+      "all_eligible_review_ids": [
+        "B212"
+      ],
+      "template_keys": [
+        "UNK | what is seventeen times forty"
+      ]
+    },
+    {
+      "group_id": "showroom-b213",
+      "accepted_review_ids": [
+        "B213"
+      ],
+      "all_eligible_review_ids": [
+        "B213"
+      ],
+      "template_keys": [
+        "UNK | open trunk remotely"
+      ]
+    },
+    {
+      "group_id": "showroom-b214",
+      "accepted_review_ids": [
+        "B214"
+      ],
+      "all_eligible_review_ids": [
+        "B214"
+      ],
+      "template_keys": [
+        "UNK | adjust tire pressure"
+      ]
+    },
+    {
+      "group_id": "showroom-b216",
+      "accepted_review_ids": [
+        "B216"
+      ],
+      "all_eligible_review_ids": [
+        "B216"
+      ],
+      "template_keys": [
+        "UNK | tell me joke"
+      ]
+    },
+    {
+      "group_id": "showroom-b218",
+      "accepted_review_ids": [
+        "B218"
+      ],
+      "all_eligible_review_ids": [
+        "B218"
+      ],
+      "template_keys": [
+        "UNK | sync my calendar"
+      ]
+    },
+    {
+      "group_id": "showroom-b219",
+      "accepted_review_ids": [
+        "B219"
+      ],
+      "all_eligible_review_ids": [
+        "B219"
+      ],
+      "template_keys": [
+        "UNK | who won game last night"
+      ]
+    },
+    {
+      "group_id": "showroom-b262",
+      "accepted_review_ids": [
+        "B262"
+      ],
+      "all_eligible_review_ids": [
+        "B262"
+      ],
+      "template_keys": [
+        "inform | it is slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-b268",
+      "accepted_review_ids": [
+        "B268",
+        "C119"
+      ],
+      "all_eligible_review_ids": [
+        "B268",
+        "C119"
+      ],
+      "template_keys": [
+        "inform | definitely slotflowref",
+        "inform | slotflowref for sure"
+      ]
+    },
+    {
+      "group_id": "showroom-b276",
+      "accepted_review_ids": [
+        "B276"
+      ],
+      "all_eligible_review_ids": [
+        "B276"
+      ],
+      "template_keys": [
+        "inform | i will stick with slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-b296",
+      "accepted_review_ids": [
+        "B296"
+      ],
+      "all_eligible_review_ids": [
+        "B296"
+      ],
+      "template_keys": [
+        "inform | put me down for slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-b297",
+      "accepted_review_ids": [
+        "B297"
+      ],
+      "all_eligible_review_ids": [
+        "B297"
+      ],
+      "template_keys": [
+        "inform | i would say slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-b300",
+      "accepted_review_ids": [
+        "B300"
+      ],
+      "all_eligible_review_ids": [
+        "B300"
+      ],
+      "template_keys": [
+        "inform | it is slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-b301",
+      "accepted_review_ids": [
+        "B301",
+        "C323",
+        "C422"
+      ],
+      "all_eligible_review_ids": [
+        "B301",
+        "C323",
+        "C422"
+      ],
+      "template_keys": [
+        "inform | i am interested in slotpart",
+        "inform | i am looking at slotpart",
+        "inform | i am thinking slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-b311",
+      "accepted_review_ids": [
+        "B311",
+        "B321"
+      ],
+      "all_eligible_review_ids": [
+        "B311",
+        "B321"
+      ],
+      "template_keys": [
+        "inform | slottheme it is",
+        "inform | slottheme one"
+      ]
+    },
+    {
+      "group_id": "showroom-b316",
+      "accepted_review_ids": [
+        "B316",
+        "B319",
+        "B330",
+        "C075",
+        "C273",
+        "C475"
+      ],
+      "all_eligible_review_ids": [
+        "B316",
+        "B319",
+        "B330",
+        "C075",
+        "C273",
+        "C475"
+      ],
+      "template_keys": [
+        "inform | i am here for slottheme",
+        "inform | i am interested in slottheme features",
+        "inform | i am into slottheme",
+        "inform | leaning toward slottheme",
+        "inform | more interested in slottheme",
+        "inform | thinking slottheme today"
+      ]
+    },
+    {
+      "group_id": "showroom-b325",
+      "accepted_review_ids": [
+        "B325"
+      ],
+      "all_eligible_review_ids": [
+        "B325"
+      ],
+      "template_keys": [
+        "inform | just slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-b326",
+      "accepted_review_ids": [
+        "B326"
+      ],
+      "all_eligible_review_ids": [
+        "B326"
+      ],
+      "template_keys": [
+        "inform | let us stick with slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-b332",
+      "accepted_review_ids": [
+        "B332"
+      ],
+      "all_eligible_review_ids": [
+        "B332"
+      ],
+      "template_keys": [
+        "inform | slottheme all way"
+      ]
+    },
+    {
+      "group_id": "showroom-b384",
+      "accepted_review_ids": [
+        "B384",
+        "B389",
+        "C004",
+        "C204",
+        "C404"
+      ],
+      "all_eligible_review_ids": [
+        "B384",
+        "B389",
+        "C004",
+        "C204",
+        "C404"
+      ],
+      "template_keys": [
+        "request_flow | i want demo of slotflowref",
+        "request_flow | run demo of slotflowref",
+        "request_flow | run slotflowref demo"
+      ]
+    },
+    {
+      "group_id": "showroom-b390",
+      "accepted_review_ids": [
+        "B390"
+      ],
+      "all_eligible_review_ids": [
+        "B390"
+      ],
+      "template_keys": [
+        "request_flow | can you play slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-b394",
+      "accepted_review_ids": [
+        "B394",
+        "B399",
+        "B412",
+        "C103",
+        "C154",
+        "C353"
+      ],
+      "all_eligible_review_ids": [
+        "B394",
+        "B399",
+        "B412",
+        "C103",
+        "C154",
+        "C353"
+      ],
+      "template_keys": [
+        "request_flow | can you turn on slotflowref demo",
+        "request_flow | how about slotflowref demo",
+        "request_flow | start slotflowref demo",
+        "request_flow | turn on slotflowref demo"
+      ]
+    },
+    {
+      "group_id": "showroom-b401",
+      "accepted_review_ids": [
+        "B401"
+      ],
+      "all_eligible_review_ids": [
+        "B401"
+      ],
+      "template_keys": [
+        "request_flow | play slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-b404",
+      "accepted_review_ids": [
+        "B404",
+        "B409",
+        "B415",
+        "B420",
+        "C056",
+        "C206",
+        "C306",
+        "C456"
+      ],
+      "all_eligible_review_ids": [
+        "B404",
+        "B409",
+        "B415",
+        "B420",
+        "C056",
+        "C206",
+        "C306",
+        "C456"
+      ],
+      "template_keys": [
+        "request_flow | demo slotflowref for slottheme",
+        "request_flow | let us try slotflowref for slottheme",
+        "request_flow | run slotflowref for slottheme",
+        "request_flow | show me slotflowref for slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-b425",
+      "accepted_review_ids": [
+        "B425",
+        "B428",
+        "B440",
+        "C058",
+        "C257",
+        "C358",
+        "C409"
+      ],
+      "all_eligible_review_ids": [
+        "B425",
+        "B428",
+        "B440",
+        "C058",
+        "C257",
+        "C358",
+        "C409"
+      ],
+      "template_keys": [
+        "request_flow | can you run slotpart demo",
+        "request_flow | play slotpart demo",
+        "request_flow | play slotpart feature demo",
+        "request_flow | pull up slotpart demos",
+        "request_flow | run demo on slotpart",
+        "request_flow | run slotpart demo",
+        "request_flow | run something slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-b449",
+      "accepted_review_ids": [
+        "B449",
+        "B452",
+        "B460",
+        "B461",
+        "C110",
+        "C161",
+        "C209",
+        "C461"
+      ],
+      "all_eligible_review_ids": [
+        "B449",
+        "B452",
+        "B460",
+        "B461",
+        "C110",
+        "C161",
+        "C209",
+        "C261",
+        "C461"
+      ],
+      "template_keys": [
+        "request_flow | play something slottheme",
+        "request_flow | run slottheme demo",
+        "request_flow | run something related to slottheme",
+        "request_flow | start slottheme demo",
+        "request_flow | surprise me with slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-b455",
+      "accepted_review_ids": [
+        "B455",
+        "B462",
+        "C011",
+        "C411"
+      ],
+      "all_eligible_review_ids": [
+        "B455",
+        "B462",
+        "C011",
+        "C411"
+      ],
+      "template_keys": [
+        "request_flow | any chance of slottheme demo",
+        "request_flow | can i do slottheme demo",
+        "request_flow | can you run demo focused on slottheme",
+        "request_flow | can you run slottheme demo"
+      ]
+    },
+    {
+      "group_id": "showroom-b464",
+      "accepted_review_ids": [
+        "B464"
+      ],
+      "all_eligible_review_ids": [
+        "B464"
+      ],
+      "template_keys": [
+        "inform | slottheme themed if possible"
+      ]
+    },
+    {
+      "group_id": "showroom-b499",
+      "accepted_review_ids": [
+        "B499",
+        "C013",
+        "C064",
+        "C113",
+        "C163",
+        "C214",
+        "C312"
+      ],
+      "all_eligible_review_ids": [
+        "B499",
+        "C013",
+        "C064",
+        "C113",
+        "C163",
+        "C214",
+        "C312"
+      ],
+      "template_keys": [
+        "request_flow | any slottheme demo on slotpart",
+        "request_flow | are there any slottheme demos on slotpart",
+        "request_flow | are there any slottheme demos slotpart vehicle",
+        "request_flow | are there slottheme demos on slotpart",
+        "request_flow | do you have any slotpart demos for slottheme",
+        "request_flow | what slottheme demos are in slotpart",
+        "request_flow | what slottheme demos are on slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-b500",
+      "accepted_review_ids": [
+        "B500"
+      ],
+      "all_eligible_review_ids": [
+        "B500"
+      ],
+      "template_keys": [
+        "request_flow | walk me through slotpart slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-c019",
+      "accepted_review_ids": [
+        "C019"
+      ],
+      "all_eligible_review_ids": [
+        "C019"
+      ],
+      "template_keys": [
+        "inform | i am interested in slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-c024",
+      "accepted_review_ids": [
+        "C024",
+        "C025",
+        "C324",
+        "C375",
+        "C425"
+      ],
+      "all_eligible_review_ids": [
+        "C024",
+        "C025",
+        "C324",
+        "C375",
+        "C425"
+      ],
+      "template_keys": [
+        "inform | focus on slottheme",
+        "inform | i care most about slottheme",
+        "inform | my focus is slottheme",
+        "inform | slottheme is my priority",
+        "inform | slottheme is what matters to me"
+      ]
+    },
+    {
+      "group_id": "showroom-c050",
+      "accepted_review_ids": [
+        "C050",
+        "C100",
+        "C150",
+        "C200",
+        "C250",
+        "C300",
+        "C350",
+        "C400",
+        "C450",
+        "C500"
+      ],
+      "all_eligible_review_ids": [
+        "C050",
+        "C100",
+        "C150",
+        "C200",
+        "C250",
+        "C300",
+        "C350",
+        "C400",
+        "C450",
+        "C500"
+      ],
+      "template_keys": [
+        "UNK | blorp fizzlevelvet seven cloud wrench",
+        "UNK | flibble 8900 toaster wave",
+        "UNK | krelp 44 snorkel magnet",
+        "UNK | mumblethorp 12qz fizzy",
+        "UNK | plinth waffle 882flux",
+        "UNK | quasar 339 bingle hop",
+        "UNK | snickerdoodle 505 hypercube",
+        "UNK | vortigaunt 771 pasta nebula",
+        "UNK | zorbax 1940 marshmallow",
+        "UNK | zzxqv 9910 glorbins"
+      ]
+    },
+    {
+      "group_id": "showroom-c073",
+      "accepted_review_ids": [
+        "C073",
+        "C225",
+        "C274"
+      ],
+      "all_eligible_review_ids": [
+        "C073",
+        "C225",
+        "C274"
+      ],
+      "template_keys": [
+        "inform | definitely slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-c098",
+      "accepted_review_ids": [
+        "C098"
+      ],
+      "all_eligible_review_ids": [
+        "C098"
+      ],
+      "template_keys": [
+        "UNK | how much horsepower does twin-turbo engine make"
+      ]
+    },
+    {
+      "group_id": "showroom-c122",
+      "accepted_review_ids": [
+        "C122"
+      ],
+      "all_eligible_review_ids": [
+        "C122"
+      ],
+      "template_keys": [
+        "inform | slotpart is my preference"
+      ]
+    },
+    {
+      "group_id": "showroom-c141",
+      "accepted_review_ids": [
+        "C141"
+      ],
+      "all_eligible_review_ids": [
+        "C141"
+      ],
+      "template_keys": [
+        "request_stop | stop playing this demo"
+      ]
+    },
+    {
+      "group_id": "showroom-c144",
+      "accepted_review_ids": [
+        "C144"
+      ],
+      "all_eligible_review_ids": [
+        "C144"
+      ],
+      "template_keys": [
+        "request_resume | proceed with demo"
+      ]
+    },
+    {
+      "group_id": "showroom-c146",
+      "accepted_review_ids": [
+        "C146"
+      ],
+      "all_eligible_review_ids": [
+        "C146"
+      ],
+      "template_keys": [
+        "request_quit | we're finished here shut it down"
+      ]
+    },
+    {
+      "group_id": "showroom-c147",
+      "accepted_review_ids": [
+        "C147",
+        "C297",
+        "C495"
+      ],
+      "all_eligible_review_ids": [
+        "C147",
+        "C297",
+        "C495"
+      ],
+      "template_keys": [
+        "request_quit | end showroom tour",
+        "request_quit | end tour"
+      ]
+    },
+    {
+      "group_id": "showroom-c148",
+      "accepted_review_ids": [
+        "C148"
+      ],
+      "all_eligible_review_ids": [
+        "C148"
+      ],
+      "template_keys": [
+        "UNK | can i trade in my 2021 sedan today"
+      ]
+    },
+    {
+      "group_id": "showroom-c155",
+      "accepted_review_ids": [
+        "C155"
+      ],
+      "all_eligible_review_ids": [
+        "C155"
+      ],
+      "template_keys": [
+        "request_flow | preview slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-c171",
+      "accepted_review_ids": [
+        "C171"
+      ],
+      "all_eligible_review_ids": [
+        "C171"
+      ],
+      "template_keys": [
+        "inform | focus on slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-c180",
+      "accepted_review_ids": [
+        "C180",
+        "C230"
+      ],
+      "all_eligible_review_ids": [
+        "C180",
+        "C230"
+      ],
+      "template_keys": [
+        "greet | hello happy to be here",
+        "greet | hi there glad to be here"
+      ]
+    },
+    {
+      "group_id": "showroom-c187",
+      "accepted_review_ids": [
+        "C187"
+      ],
+      "all_eligible_review_ids": [
+        "C187"
+      ],
+      "template_keys": [
+        "deny | no don't do that"
+      ]
+    },
+    {
+      "group_id": "showroom-c194",
+      "accepted_review_ids": [
+        "C194"
+      ],
+      "all_eligible_review_ids": [
+        "C194"
+      ],
+      "template_keys": [
+        "request_resume | play rest of demo"
+      ]
+    },
+    {
+      "group_id": "showroom-c197",
+      "accepted_review_ids": [
+        "C197"
+      ],
+      "all_eligible_review_ids": [
+        "C197"
+      ],
+      "template_keys": [
+        "request_quit | quit demo app"
+      ]
+    },
+    {
+      "group_id": "showroom-c198",
+      "accepted_review_ids": [
+        "C198"
+      ],
+      "all_eligible_review_ids": [
+        "C198"
+      ],
+      "template_keys": [
+        "UNK | where is nearest restroom in dealership"
+      ]
+    },
+    {
+      "group_id": "showroom-c202",
+      "accepted_review_ids": [
+        "C202"
+      ],
+      "all_eligible_review_ids": [
+        "C202"
+      ],
+      "template_keys": [
+        "request_flow | i am ready to watch demo"
+      ]
+    },
+    {
+      "group_id": "showroom-c248",
+      "accepted_review_ids": [
+        "C248"
+      ],
+      "all_eligible_review_ids": [
+        "C248"
+      ],
+      "template_keys": [
+        "UNK | do you offer complimentary oil changes with lease"
+      ]
+    },
+    {
+      "group_id": "showroom-c251",
+      "accepted_review_ids": [
+        "C251"
+      ],
+      "all_eligible_review_ids": [
+        "C251"
+      ],
+      "template_keys": [
+        "request_flow | show me feature in showroom"
+      ]
+    },
+    {
+      "group_id": "showroom-c271",
+      "accepted_review_ids": [
+        "C271"
+      ],
+      "all_eligible_review_ids": [
+        "C271"
+      ],
+      "template_keys": [
+        "inform | something slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-c284",
+      "accepted_review_ids": [
+        "C284"
+      ],
+      "all_eligible_review_ids": [
+        "C284"
+      ],
+      "template_keys": [
+        "affirm | spot on"
+      ]
+    },
+    {
+      "group_id": "showroom-c295",
+      "accepted_review_ids": [
+        "C295"
+      ],
+      "all_eligible_review_ids": [
+        "C295"
+      ],
+      "template_keys": [
+        "request_quit | exit out of demo"
+      ]
+    },
+    {
+      "group_id": "showroom-c298",
+      "accepted_review_ids": [
+        "C298"
+      ],
+      "all_eligible_review_ids": [
+        "C298"
+      ],
+      "template_keys": [
+        "UNK | how big is cargo space with seats folded"
+      ]
+    },
+    {
+      "group_id": "showroom-c310",
+      "accepted_review_ids": [
+        "C310",
+        "C410"
+      ],
+      "all_eligible_review_ids": [
+        "C310",
+        "C410"
+      ],
+      "template_keys": [
+        "request_flow | show me demo about slottheme",
+        "request_flow | show me demo geared toward slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-c321",
+      "accepted_review_ids": [
+        "C321"
+      ],
+      "all_eligible_review_ids": [
+        "C321"
+      ],
+      "template_keys": [
+        "inform | definitely slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-c348",
+      "accepted_review_ids": [
+        "C348"
+      ],
+      "all_eligible_review_ids": [
+        "C348"
+      ],
+      "template_keys": [
+        "UNK | what is towing capacity of this model"
+      ]
+    },
+    {
+      "group_id": "showroom-c354",
+      "accepted_review_ids": [
+        "C354"
+      ],
+      "all_eligible_review_ids": [
+        "C354"
+      ],
+      "template_keys": [
+        "request_flow | can you show me slotflowref"
+      ]
+    },
+    {
+      "group_id": "showroom-c398",
+      "accepted_review_ids": [
+        "C398"
+      ],
+      "all_eligible_review_ids": [
+        "C398"
+      ],
+      "template_keys": [
+        "UNK | where do i sign purchase paperwork"
+      ]
+    },
+    {
+      "group_id": "showroom-c399",
+      "accepted_review_ids": [
+        "C399"
+      ],
+      "all_eligible_review_ids": [
+        "C399"
+      ],
+      "template_keys": [
+        "UNK | convert 100 euros to us dollars"
+      ]
+    },
+    {
+      "group_id": "showroom-c401",
+      "accepted_review_ids": [
+        "C401"
+      ],
+      "all_eligible_review_ids": [
+        "C401"
+      ],
+      "template_keys": [
+        "request_flow | show me one of interactive demos"
+      ]
+    },
+    {
+      "group_id": "showroom-c448",
+      "accepted_review_ids": [
+        "C448"
+      ],
+      "all_eligible_review_ids": [
+        "C448"
+      ],
+      "template_keys": [
+        "UNK | does this vehicle come with spare tire"
+      ]
+    },
+    {
+      "group_id": "showroom-c459",
+      "accepted_review_ids": [
+        "C459"
+      ],
+      "all_eligible_review_ids": [
+        "C459"
+      ],
+      "template_keys": [
+        "request_flow | show me demo in slotpart"
+      ]
+    },
+    {
+      "group_id": "showroom-c460",
+      "accepted_review_ids": [
+        "C460"
+      ],
+      "all_eligible_review_ids": [
+        "C460"
+      ],
+      "template_keys": [
+        "request_flow | let us see demo for slottheme"
+      ]
+    },
+    {
+      "group_id": "showroom-c480",
+      "accepted_review_ids": [
+        "C480"
+      ],
+      "all_eligible_review_ids": [
+        "C480"
+      ],
+      "template_keys": [
+        "greet | welcome hello"
+      ]
+    },
+    {
+      "group_id": "showroom-c484",
+      "accepted_review_ids": [
+        "C484"
+      ],
+      "all_eligible_review_ids": [
+        "C484"
+      ],
+      "template_keys": [
+        "affirm | by all means"
+      ]
+    },
+    {
+      "group_id": "showroom-c497",
+      "accepted_review_ids": [
+        "C497"
+      ],
+      "all_eligible_review_ids": [
+        "C497"
+      ],
+      "template_keys": [
+        "request_quit | quit demo"
+      ]
+    },
+    {
+      "group_id": "showroom-c499",
+      "accepted_review_ids": [
+        "C499"
+      ],
+      "all_eligible_review_ids": [
+        "C499"
+      ],
+      "template_keys": [
+        "UNK | how many ounces are in liter"
+      ]
+    }
+  ]
+}

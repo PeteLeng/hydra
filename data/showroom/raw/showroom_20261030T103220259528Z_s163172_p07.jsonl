@@ -1,0 +1,50 @@
+{"text":"hi I'm Maya Chen","intent":"greet","slots":[{"type":"name","start":7,"end":16}]}
+{"text":"hello, I'm Omar","intent":"greet","slots":[{"type":"name","start":11,"end":15}]}
+{"text":"hey I'm Elise Moreau","intent":"greet","slots":[{"type":"name","start":8,"end":20}]}
+{"text":"good morning, I'm Jack","intent":"greet","slots":[{"type":"name","start":18,"end":22}]}
+{"text":"hi, my name is Priyanka Shah","intent":"greet","slots":[{"type":"name","start":15,"end":28}]}
+{"text":"hey, I'm Leo Park","intent":"greet","slots":[{"type":"name","start":9,"end":17}]}
+{"text":"hello I'm Hannah","intent":"greet","slots":[{"type":"name","start":10,"end":16}]}
+{"text":"hi I'm Malik","intent":"greet","slots":[{"type":"name","start":7,"end":12}]}
+{"text":"good evening, I'm Sofia Reyes","intent":"greet","slots":[{"type":"name","start":18,"end":29}]}
+{"text":"hey I'm Evan","intent":"greet","slots":[{"type":"name","start":8,"end":12}]}
+{"text":"hi, I'm Grace Kim","intent":"greet","slots":[{"type":"name","start":8,"end":17}]}
+{"text":"hello, my name is Nico","intent":"greet","slots":[{"type":"name","start":18,"end":22}]}
+{"text":"hey, this is Talia Nguyen","intent":"greet","slots":[{"type":"name","start":13,"end":25}]}
+{"text":"hi I'm Andre","intent":"greet","slots":[{"type":"name","start":7,"end":12}]}
+{"text":"good afternoon, I'm Fiona Walsh","intent":"greet","slots":[{"type":"name","start":20,"end":31}]}
+{"text":"hello I'm Raj","intent":"greet","slots":[{"type":"name","start":10,"end":13}]}
+{"text":"hi, I'm Elena Costa","intent":"greet","slots":[{"type":"name","start":8,"end":19}]}
+{"text":"hey I'm Chris","intent":"greet","slots":[{"type":"name","start":8,"end":13}]}
+{"text":"morning, I'm Yara Hassan","intent":"greet","slots":[{"type":"name","start":13,"end":24}]}
+{"text":"hi, my name is Miles","intent":"greet","slots":[{"type":"name","start":15,"end":20}]}
+{"text":"yes","intent":"affirm","slots":[]}
+{"text":"yeah","intent":"affirm","slots":[]}
+{"text":"yep","intent":"affirm","slots":[]}
+{"text":"sure","intent":"affirm","slots":[]}
+{"text":"okay","intent":"affirm","slots":[]}
+{"text":"ok","intent":"affirm","slots":[]}
+{"text":"alright","intent":"affirm","slots":[]}
+{"text":"correct","intent":"affirm","slots":[]}
+{"text":"that's correct","intent":"affirm","slots":[]}
+{"text":"sounds good","intent":"affirm","slots":[]}
+{"text":"absolutely","intent":"affirm","slots":[]}
+{"text":"of course","intent":"affirm","slots":[]}
+{"text":"right","intent":"affirm","slots":[]}
+{"text":"yes that's fine","intent":"affirm","slots":[]}
+{"text":"confirmed","intent":"affirm","slots":[]}
+{"text":"I agree","intent":"affirm","slots":[]}
+{"text":"sure thing","intent":"affirm","slots":[]}
+{"text":"you bet","intent":"affirm","slots":[]}
+{"text":"definitely","intent":"affirm","slots":[]}
+{"text":"that works","intent":"affirm","slots":[]}
+{"text":"yes indeed","intent":"affirm","slots":[]}
+{"text":"affirmative","intent":"affirm","slots":[]}
+{"text":"please do","intent":"affirm","slots":[]}
+{"text":"go ahead","intent":"affirm","slots":[]}
+{"text":"sounds right","intent":"affirm","slots":[]}
+{"text":"yep that's it","intent":"affirm","slots":[]}
+{"text":"okay then","intent":"affirm","slots":[]}
+{"text":"yes I do","intent":"affirm","slots":[]}
+{"text":"correct, thanks","intent":"affirm","slots":[]}
+{"text":"I'm good with that","intent":"affirm","slots":[]}

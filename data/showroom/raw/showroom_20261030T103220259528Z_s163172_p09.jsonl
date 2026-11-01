@@ -1,0 +1,50 @@
+{"text":"enough, stop","intent":"request_stop","slots":[]}
+{"text":"please pause the demo","intent":"request_stop","slots":[]}
+{"text":"stop running it","intent":"request_stop","slots":[]}
+{"text":"I need this to stop","intent":"request_stop","slots":[]}
+{"text":"pause for a second","intent":"request_stop","slots":[]}
+{"text":"kill the demo","intent":"request_stop","slots":[]}
+{"text":"stop right there","intent":"request_stop","slots":[]}
+{"text":"can we pause","intent":"request_stop","slots":[]}
+{"text":"halt the demo now","intent":"request_stop","slots":[]}
+{"text":"that's enough, pause","intent":"request_stop","slots":[]}
+{"text":"resume","intent":"request_resume","slots":[]}
+{"text":"continue","intent":"request_resume","slots":[]}
+{"text":"carry on please","intent":"request_resume","slots":[]}
+{"text":"resume please","intent":"request_resume","slots":[]}
+{"text":"keep going","intent":"request_resume","slots":[]}
+{"text":"continue the demo","intent":"request_resume","slots":[]}
+{"text":"pick up where we left off","intent":"request_resume","slots":[]}
+{"text":"resume the demonstration","intent":"request_resume","slots":[]}
+{"text":"go on","intent":"request_resume","slots":[]}
+{"text":"let's continue","intent":"request_resume","slots":[]}
+{"text":"unpause","intent":"request_resume","slots":[]}
+{"text":"continue please","intent":"request_resume","slots":[]}
+{"text":"resume it","intent":"request_resume","slots":[]}
+{"text":"carry on with the demo","intent":"request_resume","slots":[]}
+{"text":"keep playing","intent":"request_resume","slots":[]}
+{"text":"start it back up","intent":"request_resume","slots":[]}
+{"text":"please continue","intent":"request_resume","slots":[]}
+{"text":"resume where we stopped","intent":"request_resume","slots":[]}
+{"text":"go ahead and continue","intent":"request_resume","slots":[]}
+{"text":"back to the demo","intent":"request_resume","slots":[]}
+{"text":"continue from there","intent":"request_resume","slots":[]}
+{"text":"let's resume","intent":"request_resume","slots":[]}
+{"text":"unpause the demo","intent":"request_resume","slots":[]}
+{"text":"carry on with it","intent":"request_resume","slots":[]}
+{"text":"resume playback","intent":"request_resume","slots":[]}
+{"text":"continue where we left off","intent":"request_resume","slots":[]}
+{"text":"please resume","intent":"request_resume","slots":[]}
+{"text":"keep the demo going","intent":"request_resume","slots":[]}
+{"text":"go on with the demo","intent":"request_resume","slots":[]}
+{"text":"I'd like to continue","intent":"request_resume","slots":[]}
+{"text":"quit","intent":"request_quit","slots":[]}
+{"text":"exit","intent":"request_quit","slots":[]}
+{"text":"I want to quit","intent":"request_quit","slots":[]}
+{"text":"end the session","intent":"request_quit","slots":[]}
+{"text":"close this session","intent":"request_quit","slots":[]}
+{"text":"exit the showroom","intent":"request_quit","slots":[]}
+{"text":"quit the session","intent":"request_quit","slots":[]}
+{"text":"I'd like to exit","intent":"request_quit","slots":[]}
+{"text":"leave this session","intent":"request_quit","slots":[]}
+{"text":"end our session","intent":"request_quit","slots":[]}

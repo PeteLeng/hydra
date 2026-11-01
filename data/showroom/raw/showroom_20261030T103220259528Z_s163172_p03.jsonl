@@ -1,0 +1,50 @@
+{"text":"browse the interior","intent":"request_flow","slots":[{"type":"part","start":11,"end":19}]}
+{"text":"cabin demos please","intent":"request_flow","slots":[{"type":"part","start":0,"end":5}]}
+{"text":"take me outside","intent":"request_flow","slots":[{"type":"part","start":8,"end":15}]}
+{"text":"exterior tour please","intent":"request_flow","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"what's out there on the outside","intent":"request_flow","slots":[{"type":"part","start":24,"end":31}]}
+{"text":"family stuff please","intent":"request_flow","slots":[{"type":"theme","start":0,"end":6}]}
+{"text":"something for the whole family","intent":"request_flow","slots":[{"type":"theme","start":24,"end":30}]}
+{"text":"entertainment please","intent":"request_flow","slots":[{"type":"theme","start":0,"end":13}]}
+{"text":"how about some entertainment","intent":"request_flow","slots":[{"type":"theme","start":15,"end":28}]}
+{"text":"privacy options please","intent":"request_flow","slots":[{"type":"theme","start":0,"end":7}]}
+{"text":"family features inside","intent":"request_flow","slots":[{"type":"theme","start":0,"end":6},{"type":"part","start":16,"end":22}]}
+{"text":"show the interior for families","intent":"request_flow","slots":[{"type":"part","start":9,"end":17},{"type":"theme","start":22,"end":30}]}
+{"text":"anything family-friendly in the cabin","intent":"request_flow","slots":[{"type":"theme","start":9,"end":24},{"type":"part","start":32,"end":37}]}
+{"text":"inside options for the family","intent":"request_flow","slots":[{"type":"part","start":0,"end":6},{"type":"theme","start":23,"end":29}]}
+{"text":"cabin demos the family would like","intent":"request_flow","slots":[{"type":"part","start":0,"end":5},{"type":"theme","start":16,"end":22}]}
+{"text":"entertainment inside the car","intent":"request_flow","slots":[{"type":"theme","start":0,"end":13},{"type":"part","start":14,"end":20}]}
+{"text":"interior entertainment please","intent":"request_flow","slots":[{"type":"part","start":0,"end":8},{"type":"theme","start":9,"end":22}]}
+{"text":"what entertainment is in the cabin","intent":"request_flow","slots":[{"type":"theme","start":5,"end":18},{"type":"part","start":29,"end":34}]}
+{"text":"show cabin entertainment","intent":"request_flow","slots":[{"type":"part","start":5,"end":10},{"type":"theme","start":11,"end":24}]}
+{"text":"let's find entertainment inside","intent":"request_flow","slots":[{"type":"theme","start":11,"end":24},{"type":"part","start":25,"end":31}]}
+{"text":"privacy features inside","intent":"request_flow","slots":[{"type":"theme","start":0,"end":7},{"type":"part","start":17,"end":23}]}
+{"text":"is there privacy in the cabin","intent":"request_flow","slots":[{"type":"theme","start":9,"end":16},{"type":"part","start":24,"end":29}]}
+{"text":"interior options with privacy","intent":"request_flow","slots":[{"type":"part","start":0,"end":8},{"type":"theme","start":22,"end":29}]}
+{"text":"anything private in the interior","intent":"request_flow","slots":[{"type":"theme","start":9,"end":16},{"type":"part","start":24,"end":32}],"alias_proposals":[{"slot":0,"value":"privacy"}]}
+{"text":"show me inside privacy choices","intent":"request_flow","slots":[{"type":"part","start":8,"end":14},{"type":"theme","start":15,"end":22}]}
+{"text":"outside demos for families","intent":"request_flow","slots":[{"type":"part","start":0,"end":7},{"type":"theme","start":18,"end":26}]}
+{"text":"family-friendly stuff on the exterior","intent":"request_flow","slots":[{"type":"theme","start":0,"end":15},{"type":"part","start":29,"end":37}]}
+{"text":"show exterior features for the family","intent":"request_flow","slots":[{"type":"part","start":5,"end":13},{"type":"theme","start":31,"end":37}]}
+{"text":"got family options on the outside","intent":"request_flow","slots":[{"type":"theme","start":4,"end":10},{"type":"part","start":26,"end":33}]}
+{"text":"exterior tour for families","intent":"request_flow","slots":[{"type":"part","start":0,"end":8},{"type":"theme","start":18,"end":26}]}
+{"text":"entertainment on the exterior","intent":"request_flow","slots":[{"type":"theme","start":0,"end":13},{"type":"part","start":21,"end":29}]}
+{"text":"outside entertainment please","intent":"request_flow","slots":[{"type":"part","start":0,"end":7},{"type":"theme","start":8,"end":21}]}
+{"text":"what entertainment is outside","intent":"request_flow","slots":[{"type":"theme","start":5,"end":18},{"type":"part","start":22,"end":29}]}
+{"text":"show me exterior entertainment","intent":"request_flow","slots":[{"type":"part","start":8,"end":16},{"type":"theme","start":17,"end":30}]}
+{"text":"let's browse entertainment outdoors","intent":"request_flow","slots":[{"type":"theme","start":13,"end":26},{"type":"part","start":27,"end":35}],"alias_proposals":[{"slot":1,"value":"outside"}]}
+{"text":"outside options for privacy","intent":"request_flow","slots":[{"type":"part","start":0,"end":7},{"type":"theme","start":20,"end":27}]}
+{"text":"exterior privacy please","intent":"request_flow","slots":[{"type":"part","start":0,"end":8},{"type":"theme","start":9,"end":16}]}
+{"text":"show privacy on the outside","intent":"request_flow","slots":[{"type":"theme","start":5,"end":12},{"type":"part","start":20,"end":27}]}
+{"text":"anything private on the exterior","intent":"request_flow","slots":[{"type":"theme","start":9,"end":16},{"type":"part","start":24,"end":32}],"alias_proposals":[{"slot":0,"value":"privacy"}]}
+{"text":"can we see outdoors privacy features","intent":"request_flow","slots":[{"type":"part","start":11,"end":19},{"type":"theme","start":20,"end":27}],"alias_proposals":[{"slot":0,"value":"outside"}]}
+{"text":"my name is Samira Cole","intent":"inform","slots":[{"type":"name","start":11,"end":22}]}
+{"text":"I'm Priya Nair","intent":"inform","slots":[{"type":"name","start":4,"end":14}]}
+{"text":"call me Jonah","intent":"inform","slots":[{"type":"name","start":8,"end":13}]}
+{"text":"the name is Helena Brooks","intent":"inform","slots":[{"type":"name","start":12,"end":25}]}
+{"text":"I go by Mateo","intent":"inform","slots":[{"type":"name","start":8,"end":13}]}
+{"text":"it's Amara Singh","intent":"inform","slots":[{"type":"name","start":5,"end":16}]}
+{"text":"you can call me Wes Okonkwo","intent":"inform","slots":[{"type":"name","start":16,"end":27}]}
+{"text":"my name's Lila","intent":"inform","slots":[{"type":"name","start":10,"end":14}]}
+{"text":"this is Kenji Watanabe","intent":"inform","slots":[{"type":"name","start":8,"end":22}]}
+{"text":"please call me Nora Blake","intent":"inform","slots":[{"type":"name","start":15,"end":25}]}

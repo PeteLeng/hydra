@@ -1,0 +1,50 @@
+{"text":"the headlights","intent":"inform","slots":[{"type":"flow_ref","start":4,"end":14}]}
+{"text":"DLP lights for me","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":10}]}
+{"text":"my choice is DLP Headlights","intent":"inform","slots":[{"type":"flow_ref","start":13,"end":27}]}
+{"text":"the mobile theater","intent":"inform","slots":[{"type":"flow_ref","start":4,"end":18}]}
+{"text":"cinema setup","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":12}],"alias_proposals":[{"slot":0,"value":"cabin_cinema"}]}
+{"text":"Cabin Cinema is my choice","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":12}]}
+{"text":"the seat massage","intent":"inform","slots":[{"type":"flow_ref","start":4,"end":16}]}
+{"text":"Massaging Seats is my pick","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":15}]}
+{"text":"I'll go with massage seats","intent":"inform","slots":[{"type":"flow_ref","start":13,"end":26}]}
+{"text":"the privacy glass","intent":"inform","slots":[{"type":"flow_ref","start":4,"end":17}]}
+{"text":"privacy windows","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":15}]}
+{"text":"Privacy Window is the one","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":14}]}
+{"text":"the inside","intent":"inform","slots":[{"type":"part","start":4,"end":10}]}
+{"text":"I want inside","intent":"inform","slots":[{"type":"part","start":7,"end":13}]}
+{"text":"interior it is","intent":"inform","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"stick with the cabin","intent":"inform","slots":[{"type":"part","start":15,"end":20}]}
+{"text":"inside is my pick","intent":"inform","slots":[{"type":"part","start":0,"end":6}]}
+{"text":"in-cabin is better","intent":"inform","slots":[{"type":"part","start":0,"end":8}],"alias_proposals":[{"slot":0,"value":"inside"}]}
+{"text":"the outside","intent":"inform","slots":[{"type":"part","start":4,"end":11}]}
+{"text":"I'll take the exterior","intent":"inform","slots":[{"type":"part","start":14,"end":22}]}
+{"text":"outside it is","intent":"inform","slots":[{"type":"part","start":0,"end":7}]}
+{"text":"stick with outside","intent":"inform","slots":[{"type":"part","start":11,"end":18}]}
+{"text":"exterior is my pick","intent":"inform","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"the car's exterior","intent":"inform","slots":[{"type":"part","start":10,"end":18}]}
+{"text":"family","intent":"inform","slots":[{"type":"theme","start":0,"end":6}]}
+{"text":"families","intent":"inform","slots":[{"type":"theme","start":0,"end":8}]}
+{"text":"family-friendly","intent":"inform","slots":[{"type":"theme","start":0,"end":15}]}
+{"text":"I prefer family","intent":"inform","slots":[{"type":"theme","start":9,"end":15}]}
+{"text":"something family-friendly","intent":"inform","slots":[{"type":"theme","start":10,"end":25}]}
+{"text":"for families","intent":"inform","slots":[{"type":"theme","start":4,"end":12}]}
+{"text":"family is my preference","intent":"inform","slots":[{"type":"theme","start":0,"end":6}]}
+{"text":"I like family-friendly things","intent":"inform","slots":[{"type":"theme","start":7,"end":22}]}
+{"text":"make it families","intent":"inform","slots":[{"type":"theme","start":8,"end":16}]}
+{"text":"entertainment","intent":"inform","slots":[{"type":"theme","start":0,"end":13}]}
+{"text":"I prefer entertainment","intent":"inform","slots":[{"type":"theme","start":9,"end":22}]}
+{"text":"entertainment is my pick","intent":"inform","slots":[{"type":"theme","start":0,"end":13}]}
+{"text":"go with entertainment","intent":"inform","slots":[{"type":"theme","start":8,"end":21}]}
+{"text":"entertainment for me","intent":"inform","slots":[{"type":"theme","start":0,"end":13}]}
+{"text":"entertainment works","intent":"inform","slots":[{"type":"theme","start":0,"end":13}]}
+{"text":"I want entertainment","intent":"inform","slots":[{"type":"theme","start":7,"end":20}]}
+{"text":"I'm after entertainment","intent":"inform","slots":[{"type":"theme","start":10,"end":23}]}
+{"text":"privacy","intent":"inform","slots":[{"type":"theme","start":0,"end":7}]}
+{"text":"privacy is what I want","intent":"inform","slots":[{"type":"theme","start":0,"end":7}]}
+{"text":"go with privacy","intent":"inform","slots":[{"type":"theme","start":8,"end":15}]}
+{"text":"privacy for me","intent":"inform","slots":[{"type":"theme","start":0,"end":7}]}
+{"text":"privacy works for me","intent":"inform","slots":[{"type":"theme","start":0,"end":7}]}
+{"text":"I want privacy","intent":"inform","slots":[{"type":"theme","start":7,"end":14}]}
+{"text":"make it privacy","intent":"inform","slots":[{"type":"theme","start":8,"end":15}]}
+{"text":"something private","intent":"inform","slots":[{"type":"theme","start":10,"end":17}],"alias_proposals":[{"slot":0,"value":"privacy"}]}
+{"text":"I'm after privacy","intent":"inform","slots":[{"type":"theme","start":10,"end":17}]}

@@ -1,0 +1,50 @@
+{"text":"I'm done here","intent":"request_quit","slots":[]}
+{"text":"sign me out","intent":"request_quit","slots":[]}
+{"text":"close the showroom","intent":"request_quit","slots":[]}
+{"text":"that's all, goodbye","intent":"request_quit","slots":[]}
+{"text":"quit please","intent":"request_quit","slots":[]}
+{"text":"I need to go","intent":"request_quit","slots":[]}
+{"text":"exit now","intent":"request_quit","slots":[]}
+{"text":"I'm out","intent":"request_quit","slots":[]}
+{"text":"please quit","intent":"request_quit","slots":[]}
+{"text":"shut this session down","intent":"request_quit","slots":[]}
+{"text":"I want to close out","intent":"request_quit","slots":[]}
+{"text":"let's exit","intent":"request_quit","slots":[]}
+{"text":"done with this session","intent":"request_quit","slots":[]}
+{"text":"log me out","intent":"request_quit","slots":[]}
+{"text":"I would like to leave","intent":"request_quit","slots":[]}
+{"text":"exit the session please","intent":"request_quit","slots":[]}
+{"text":"time to leave","intent":"request_quit","slots":[]}
+{"text":"end the showroom session","intent":"request_quit","slots":[]}
+{"text":"I want out of this session","intent":"request_quit","slots":[]}
+{"text":"please exit","intent":"request_quit","slots":[]}
+{"text":"book a table for dinner","intent":"UNK","slots":[]}
+{"text":"what's the weather tomorrow","intent":"UNK","slots":[]}
+{"text":"navigate to the airport","intent":"UNK","slots":[]}
+{"text":"play some music","intent":"UNK","slots":[]}
+{"text":"call my mom","intent":"UNK","slots":[]}
+{"text":"set an alarm for seven","intent":"UNK","slots":[]}
+{"text":"text Jordan that I'm late","intent":"UNK","slots":[]}
+{"text":"find a coffee shop nearby","intent":"UNK","slots":[]}
+{"text":"what's the traffic like","intent":"UNK","slots":[]}
+{"text":"turn up the volume","intent":"UNK","slots":[]}
+{"text":"remind me to buy milk","intent":"UNK","slots":[]}
+{"text":"translate this to Spanish","intent":"UNK","slots":[]}
+{"text":"I want to buy this car","intent":"UNK","slots":[]}
+{"text":"what's the price","intent":"UNK","slots":[]}
+{"text":"can I schedule a test drive","intent":"UNK","slots":[]}
+{"text":"finance options please","intent":"UNK","slots":[]}
+{"text":"is this model in stock","intent":"UNK","slots":[]}
+{"text":"compare it to last year's model","intent":"UNK","slots":[]}
+{"text":"what's the warranty","intent":"UNK","slots":[]}
+{"text":"order one in blue","intent":"UNK","slots":[]}
+{"text":"can I talk to a salesperson","intent":"UNK","slots":[]}
+{"text":"reserve this vehicle","intent":"UNK","slots":[]}
+{"text":"purple suitcase quantum bagel","intent":"UNK","slots":[]}
+{"text":"florb snizzle the lamppost","intent":"UNK","slots":[]}
+{"text":"xyzzy plugh","intent":"UNK","slots":[]}
+{"text":"seventeen bananas sing sideways","intent":"UNK","slots":[]}
+{"text":"blip blop the marble moon","intent":"UNK","slots":[]}
+{"text":"asdf qwerty noise","intent":"UNK","slots":[]}
+{"text":"turquoise kettle orbit","intent":"UNK","slots":[]}
+{"text":"wibble wobble under the Thursday","intent":"UNK","slots":[]}

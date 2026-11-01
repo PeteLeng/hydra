@@ -1,0 +1,50 @@
+{"text":"Play a feature walkthrough for me","intent":"request_flow","slots":[]}
+{"text":"What kind of demo can we start with?","intent":"request_flow","slots":[]}
+{"text":"Start the theater demo please","intent":"request_flow","slots":[{"type":"flow_ref","start":10,"end":17}]}
+{"text":"I'd like to experience the privacy window","intent":"request_flow","slots":[{"type":"flow_ref","start":27,"end":41}]}
+{"text":"Fire up the DLP lights","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":22}]}
+{"text":"Can I try the massage seats inside for entertainment?","intent":"request_flow","slots":[{"type":"flow_ref","start":14,"end":27},{"type":"part","start":28,"end":34},{"type":"theme","start":39,"end":52}]}
+{"text":"Show me the interior features","intent":"request_flow","slots":[{"type":"part","start":12,"end":20}]}
+{"text":"Let's explore the exterior options","intent":"request_flow","slots":[{"type":"part","start":18,"end":26}]}
+{"text":"Could you demonstrate the family features?","intent":"request_flow","slots":[{"type":"theme","start":26,"end":32}]}
+{"text":"Run an entertainment demo for me","intent":"request_flow","slots":[{"type":"theme","start":7,"end":20}]}
+{"text":"Let's check out what you have for privacy","intent":"request_flow","slots":[{"type":"theme","start":34,"end":41}]}
+{"text":"Show me family-friendly features on the outside","intent":"request_flow","slots":[{"type":"theme","start":8,"end":23},{"type":"part","start":40,"end":47}]}
+{"text":"What entertainment demos are in the cabin?","intent":"request_flow","slots":[{"type":"theme","start":5,"end":18},{"type":"part","start":36,"end":41}]}
+{"text":"Can I see the exterior privacy options?","intent":"request_flow","slots":[{"type":"part","start":14,"end":22},{"type":"theme","start":23,"end":30}]}
+{"text":"I'm Liam O'Connor","intent":"inform","slots":[{"type":"name","start":4,"end":17}]}
+{"text":"The name is Simone","intent":"inform","slots":[{"type":"name","start":12,"end":18}]}
+{"text":"My name's Jin-Soo Park","intent":"inform","slots":[{"type":"name","start":10,"end":22}]}
+{"text":"Massaging seats","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":15}]}
+{"text":"Definitely the privacy glass","intent":"inform","slots":[{"type":"flow_ref","start":15,"end":28}]}
+{"text":"Inside please","intent":"inform","slots":[{"type":"part","start":0,"end":6}]}
+{"text":"I want the outside","intent":"inform","slots":[{"type":"part","start":11,"end":18}]}
+{"text":"Interior is my preference","intent":"inform","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"Family features","intent":"inform","slots":[{"type":"theme","start":0,"end":6}]}
+{"text":"I'd go with entertainment","intent":"inform","slots":[{"type":"theme","start":12,"end":25}]}
+{"text":"Something for privacy","intent":"inform","slots":[{"type":"theme","start":14,"end":21}]}
+{"text":"Let's go with the first one","intent":"inform","slots":[{"type":"choice","start":18,"end":27}]}
+{"text":"Pick number 7","intent":"inform","slots":[{"type":"choice","start":5,"end":13}]}
+{"text":"The 8th option","intent":"inform","slots":[{"type":"choice","start":4,"end":14}]}
+{"text":"Good evening","intent":"greet","slots":[]}
+{"text":"Greetings!","intent":"greet","slots":[]}
+{"text":"Hi, I'm Mateo Silva","intent":"greet","slots":[{"type":"name","start":8,"end":19}]}
+{"text":"Hello there, my name is Freya","intent":"greet","slots":[{"type":"name","start":24,"end":29}]}
+{"text":"Yes, definitely","intent":"affirm","slots":[]}
+{"text":"Right on","intent":"affirm","slots":[]}
+{"text":"For sure","intent":"affirm","slots":[]}
+{"text":"No, thank you","intent":"deny","slots":[]}
+{"text":"Incorrect","intent":"deny","slots":[]}
+{"text":"Not at all","intent":"deny","slots":[]}
+{"text":"Pause the walkthrough","intent":"request_stop","slots":[]}
+{"text":"Hold it right there","intent":"request_stop","slots":[]}
+{"text":"Stop playing this demo","intent":"request_stop","slots":[]}
+{"text":"Resume where it stopped","intent":"request_resume","slots":[]}
+{"text":"Keep the demo rolling","intent":"request_resume","slots":[]}
+{"text":"Proceed with the presentation","intent":"request_resume","slots":[]}
+{"text":"Exit the showroom","intent":"request_quit","slots":[]}
+{"text":"We're finished here, shut it down","intent":"request_quit","slots":[]}
+{"text":"Please end the tour","intent":"request_quit","slots":[]}
+{"text":"Can I trade in my 2021 sedan today?","intent":"UNK","slots":[]}
+{"text":"What's the weather forecast for tomorrow morning?","intent":"UNK","slots":[]}
+{"text":"krelp 44 Snorkel magnet","intent":"UNK","slots":[]}

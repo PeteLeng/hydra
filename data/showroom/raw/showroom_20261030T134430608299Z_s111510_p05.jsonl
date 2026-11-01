@@ -1,0 +1,50 @@
+{"text":"Give me a quick feature demonstration","intent":"request_flow","slots":[]}
+{"text":"I'm ready to watch a demo","intent":"request_flow","slots":[]}
+{"text":"Can we test the projector headlights?","intent":"request_flow","slots":[{"type":"flow_ref","start":16,"end":36}],"alias_proposals":[{"slot":0,"value":"dlp_headlights"}]}
+{"text":"Run the mobile theater walkthrough","intent":"request_flow","slots":[{"type":"flow_ref","start":8,"end":22}]}
+{"text":"Show me what the massaging seats can do","intent":"request_flow","slots":[{"type":"flow_ref","start":17,"end":32}]}
+{"text":"Let's try the privacy window for privacy","intent":"request_flow","slots":[{"type":"flow_ref","start":14,"end":28},{"type":"theme","start":33,"end":40}]}
+{"text":"What demos can I try inside the car?","intent":"request_flow","slots":[{"type":"part","start":21,"end":27}]}
+{"text":"Could you show me an exterior feature?","intent":"request_flow","slots":[{"type":"part","start":21,"end":29}]}
+{"text":"Please start a family-friendly demo","intent":"request_flow","slots":[{"type":"theme","start":15,"end":30}]}
+{"text":"Show me something built for entertainment","intent":"request_flow","slots":[{"type":"theme","start":28,"end":41}]}
+{"text":"I'd like to try a privacy feature","intent":"request_flow","slots":[{"type":"theme","start":18,"end":25}]}
+{"text":"Can you run a family demo on the exterior?","intent":"request_flow","slots":[{"type":"theme","start":14,"end":20},{"type":"part","start":33,"end":41}]}
+{"text":"Show me entertainment features inside","intent":"request_flow","slots":[{"type":"theme","start":8,"end":21},{"type":"part","start":31,"end":37}]}
+{"text":"What privacy demos are on the outside?","intent":"request_flow","slots":[{"type":"theme","start":5,"end":12},{"type":"part","start":30,"end":37}]}
+{"text":"My name is Sofia Mendoza","intent":"inform","slots":[{"type":"name","start":11,"end":24}]}
+{"text":"I'm Kwame","intent":"inform","slots":[{"type":"name","start":4,"end":9}]}
+{"text":"Name's Astrid Lindholm","intent":"inform","slots":[{"type":"name","start":7,"end":22}]}
+{"text":"The seat massage","intent":"inform","slots":[{"type":"flow_ref","start":4,"end":16}]}
+{"text":"Privacy windows please","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":15}]}
+{"text":"Let's do the DLP lights","intent":"inform","slots":[{"type":"flow_ref","start":13,"end":23}]}
+{"text":"In the cabin","intent":"inform","slots":[{"type":"part","start":7,"end":12}]}
+{"text":"On the exterior","intent":"inform","slots":[{"type":"part","start":7,"end":15}]}
+{"text":"For the family","intent":"inform","slots":[{"type":"theme","start":8,"end":14}]}
+{"text":"I prefer entertainment","intent":"inform","slots":[{"type":"theme","start":9,"end":22}]}
+{"text":"Definitely privacy","intent":"inform","slots":[{"type":"theme","start":11,"end":18}]}
+{"text":"Select option 5","intent":"inform","slots":[{"type":"choice","start":7,"end":15}]}
+{"text":"The fourth one please","intent":"inform","slots":[{"type":"choice","start":4,"end":14}]}
+{"text":"Number two","intent":"inform","slots":[{"type":"choice","start":0,"end":10}]}
+{"text":"Hi there!","intent":"greet","slots":[]}
+{"text":"Hello, happy to be here","intent":"greet","slots":[]}
+{"text":"Morning, I'm Victor Chen","intent":"greet","slots":[{"type":"name","start":13,"end":24}]}
+{"text":"Hey there, I'm Zara","intent":"greet","slots":[{"type":"name","start":15,"end":19}]}
+{"text":"That's correct","intent":"affirm","slots":[]}
+{"text":"Yes, please do","intent":"affirm","slots":[]}
+{"text":"Works for me","intent":"affirm","slots":[]}
+{"text":"No, I'd rather not","intent":"deny","slots":[]}
+{"text":"Negative","intent":"deny","slots":[]}
+{"text":"Not that one, no","intent":"deny","slots":[]}
+{"text":"Stop the presentation right now","intent":"request_stop","slots":[]}
+{"text":"Can we pause this for a bit?","intent":"request_stop","slots":[]}
+{"text":"Freeze the current demo","intent":"request_stop","slots":[]}
+{"text":"Let's pick back up","intent":"request_resume","slots":[]}
+{"text":"Unpause the walkthrough","intent":"request_resume","slots":[]}
+{"text":"Carry on with the demo","intent":"request_resume","slots":[]}
+{"text":"Stop the session and exit","intent":"request_quit","slots":[]}
+{"text":"I want to quit now","intent":"request_quit","slots":[]}
+{"text":"Log out of the showroom","intent":"request_quit","slots":[]}
+{"text":"Do you offer complimentary oil changes with a lease?","intent":"UNK","slots":[]}
+{"text":"Play some jazz music on Spotify","intent":"UNK","slots":[]}
+{"text":"vortigaunt 771 pasta nebula","intent":"UNK","slots":[]}

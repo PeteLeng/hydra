@@ -1,0 +1,50 @@
+{"text":"the 5th option","intent":"inform","slots":[{"type":"choice","start":4,"end":14}]}
+{"text":"choose option six","intent":"inform","slots":[{"type":"choice","start":7,"end":17}]}
+{"text":"I'd like number 8","intent":"inform","slots":[{"type":"choice","start":9,"end":17}]}
+{"text":"go with the 1st option","intent":"inform","slots":[{"type":"choice","start":12,"end":22}]}
+{"text":"the ninth one","intent":"inform","slots":[{"type":"choice","start":4,"end":13}]}
+{"text":"pick number 9","intent":"inform","slots":[{"type":"choice","start":5,"end":13}]}
+{"text":"I'll take the sixth one","intent":"inform","slots":[{"type":"choice","start":14,"end":23}]}
+{"text":"option 1","intent":"inform","slots":[{"type":"choice","start":0,"end":8}]}
+{"text":"the 3rd option","intent":"inform","slots":[{"type":"choice","start":4,"end":14}]}
+{"text":"show me the tenth one","intent":"inform","slots":[{"type":"choice","start":12,"end":21}]}
+{"text":"can I see a demo","intent":"request_flow","slots":[]}
+{"text":"I'd like a demonstration","intent":"request_flow","slots":[]}
+{"text":"run a demo please","intent":"request_flow","slots":[]}
+{"text":"what demos can you run","intent":"request_flow","slots":[]}
+{"text":"let's see a demo","intent":"request_flow","slots":[]}
+{"text":"start a demonstration","intent":"request_flow","slots":[]}
+{"text":"I want to see a demo","intent":"request_flow","slots":[]}
+{"text":"can we try a demo","intent":"request_flow","slots":[]}
+{"text":"walk me through a demo","intent":"request_flow","slots":[]}
+{"text":"let's start the show","intent":"request_flow","slots":[]}
+{"text":"surprise me with a demo","intent":"request_flow","slots":[]}
+{"text":"any demo is fine","intent":"request_flow","slots":[]}
+{"text":"run whatever demo you like","intent":"request_flow","slots":[]}
+{"text":"show me whatever you recommend","intent":"request_flow","slots":[]}
+{"text":"please start a demo","intent":"request_flow","slots":[]}
+{"text":"show me what you've got","intent":"request_flow","slots":[]}
+{"text":"let's try a demonstration","intent":"request_flow","slots":[]}
+{"text":"play a demo for me","intent":"request_flow","slots":[]}
+{"text":"I want a walkthrough","intent":"request_flow","slots":[]}
+{"text":"mind running a demo","intent":"request_flow","slots":[]}
+{"text":"could you demo DLP Headlights","intent":"request_flow","slots":[{"type":"flow_ref","start":15,"end":29}]}
+{"text":"can I try the DLP lights","intent":"request_flow","slots":[{"type":"flow_ref","start":14,"end":24}]}
+{"text":"let's see headlights","intent":"request_flow","slots":[{"type":"flow_ref","start":10,"end":20}]}
+{"text":"run a demo of DLP Headlights","intent":"request_flow","slots":[{"type":"flow_ref","start":14,"end":28}]}
+{"text":"I'd like to see the headlights","intent":"request_flow","slots":[{"type":"flow_ref","start":20,"end":30}]}
+{"text":"can I see Cabin Cinema","intent":"request_flow","slots":[{"type":"flow_ref","start":10,"end":22}]}
+{"text":"let's try the mobile theater","intent":"request_flow","slots":[{"type":"flow_ref","start":14,"end":28}]}
+{"text":"fire up the movie setup","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":23}],"alias_proposals":[{"slot":0,"value":"cabin_cinema"}]}
+{"text":"I want a demo of in-car cinema","intent":"request_flow","slots":[{"type":"flow_ref","start":17,"end":30}]}
+{"text":"could you play Cabin Cinema","intent":"request_flow","slots":[{"type":"flow_ref","start":15,"end":27}]}
+{"text":"let me see Massaging Seats","intent":"request_flow","slots":[{"type":"flow_ref","start":11,"end":26}]}
+{"text":"may I test the massage seats","intent":"request_flow","slots":[{"type":"flow_ref","start":15,"end":28}]}
+{"text":"let's check out seat massage","intent":"request_flow","slots":[{"type":"flow_ref","start":16,"end":28}]}
+{"text":"start the Massaging Seats demo","intent":"request_flow","slots":[{"type":"flow_ref","start":10,"end":25}]}
+{"text":"I'd love to try massage seats","intent":"request_flow","slots":[{"type":"flow_ref","start":16,"end":29}]}
+{"text":"show me the Privacy Window","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":26}]}
+{"text":"could I test privacy windows","intent":"request_flow","slots":[{"type":"flow_ref","start":13,"end":28}]}
+{"text":"let's look at privacy glass","intent":"request_flow","slots":[{"type":"flow_ref","start":14,"end":27}]}
+{"text":"start a Privacy Window demo","intent":"request_flow","slots":[{"type":"flow_ref","start":8,"end":22}]}
+{"text":"I'd like to see privacy glass","intent":"request_flow","slots":[{"type":"flow_ref","start":16,"end":29}]}

@@ -1,0 +1,50 @@
+{"text":"Show me one of the interactive demos","intent":"request_flow","slots":[]}
+{"text":"Let's start a feature presentation","intent":"request_flow","slots":[]}
+{"text":"Could you start the cabin cinema?","intent":"request_flow","slots":[{"type":"flow_ref","start":20,"end":32}]}
+{"text":"Run a demo of the massage seats","intent":"request_flow","slots":[{"type":"flow_ref","start":18,"end":31}]}
+{"text":"Let's check out the DLP lights","intent":"request_flow","slots":[{"type":"flow_ref","start":20,"end":30}]}
+{"text":"Demonstrate the privacy glass outside for privacy","intent":"request_flow","slots":[{"type":"flow_ref","start":16,"end":29},{"type":"part","start":30,"end":37},{"type":"theme","start":42,"end":49}]}
+{"text":"Show me something on the exterior","intent":"request_flow","slots":[{"type":"part","start":25,"end":33}]}
+{"text":"Can I see the cabin demos?","intent":"request_flow","slots":[{"type":"part","start":14,"end":19}]}
+{"text":"Play an outside feature walkthrough","intent":"request_flow","slots":[{"type":"part","start":8,"end":15}]}
+{"text":"Show me a demo geared toward families","intent":"request_flow","slots":[{"type":"theme","start":29,"end":37}]}
+{"text":"Can you run a privacy walkthrough?","intent":"request_flow","slots":[{"type":"theme","start":14,"end":21}]}
+{"text":"Let's see outside features for the family","intent":"request_flow","slots":[{"type":"part","start":10,"end":17},{"type":"theme","start":35,"end":41}]}
+{"text":"Can you run an interior demo for entertainment?","intent":"request_flow","slots":[{"type":"part","start":15,"end":23},{"type":"theme","start":33,"end":46}]}
+{"text":"Show me exterior features focused on privacy","intent":"request_flow","slots":[{"type":"part","start":8,"end":16},{"type":"theme","start":37,"end":44}]}
+{"text":"My name is Ananya Sharma","intent":"inform","slots":[{"type":"name","start":11,"end":24}]}
+{"text":"I'm Sterling","intent":"inform","slots":[{"type":"name","start":4,"end":12}]}
+{"text":"Call me Lucia Fernandez","intent":"inform","slots":[{"type":"name","start":8,"end":23}]}
+{"text":"I'd prefer the massaging seats","intent":"inform","slots":[{"type":"flow_ref","start":15,"end":30}]}
+{"text":"The tinted glass","intent":"inform","slots":[{"type":"flow_ref","start":4,"end":16}],"alias_proposals":[{"slot":0,"value":"privacy_window"}]}
+{"text":"I want the DLP headlights","intent":"inform","slots":[{"type":"flow_ref","start":11,"end":25}]}
+{"text":"Inside is what I want","intent":"inform","slots":[{"type":"part","start":0,"end":6}]}
+{"text":"I'm looking at the exterior","intent":"inform","slots":[{"type":"part","start":19,"end":27}]}
+{"text":"Cabin please","intent":"inform","slots":[{"type":"part","start":0,"end":5}]}
+{"text":"Something family-friendly","intent":"inform","slots":[{"type":"theme","start":10,"end":25}]}
+{"text":"My focus is entertainment","intent":"inform","slots":[{"type":"theme","start":12,"end":25}]}
+{"text":"I'd choose privacy","intent":"inform","slots":[{"type":"theme","start":11,"end":18}]}
+{"text":"Show me the 4th option","intent":"inform","slots":[{"type":"choice","start":12,"end":22}]}
+{"text":"Option seven","intent":"inform","slots":[{"type":"choice","start":0,"end":12}]}
+{"text":"Hello! Pleasure to meet you","intent":"greet","slots":[]}
+{"text":"Hey, good morning","intent":"greet","slots":[]}
+{"text":"Hi, I'm Desmond Miles","intent":"greet","slots":[{"type":"name","start":8,"end":21}]}
+{"text":"Hello, I am Soraya","intent":"greet","slots":[{"type":"name","start":12,"end":18}]}
+{"text":"Yes, sounds good","intent":"affirm","slots":[]}
+{"text":"Exactly","intent":"affirm","slots":[]}
+{"text":"Affirmative","intent":"affirm","slots":[]}
+{"text":"No, skip it","intent":"deny","slots":[]}
+{"text":"That is not what I asked for","intent":"deny","slots":[]}
+{"text":"No, never mind","intent":"deny","slots":[]}
+{"text":"Can you stop the demo?","intent":"request_stop","slots":[]}
+{"text":"Pause the demonstration please","intent":"request_stop","slots":[]}
+{"text":"Stop this walkthrough","intent":"request_stop","slots":[]}
+{"text":"Let's resume the demo","intent":"request_resume","slots":[]}
+{"text":"Continue from here","intent":"request_resume","slots":[]}
+{"text":"Unpause it please","intent":"request_resume","slots":[]}
+{"text":"Close out the showroom demo","intent":"request_quit","slots":[]}
+{"text":"I'd like to end the session","intent":"request_quit","slots":[]}
+{"text":"Let's exit now","intent":"request_quit","slots":[]}
+{"text":"Does this vehicle come with a spare tire?","intent":"UNK","slots":[]}
+{"text":"What is the capital of Mongolia?","intent":"UNK","slots":[]}
+{"text":"flibble 8900 toaster wave","intent":"UNK","slots":[]}

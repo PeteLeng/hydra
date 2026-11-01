@@ -1,0 +1,50 @@
+{"text":"Kick off a demo","intent":"request_flow","slots":[]}
+{"text":"Can you show me what features are available?","intent":"request_flow","slots":[]}
+{"text":"Let's see the Cabin Cinema in action","intent":"request_flow","slots":[{"type":"flow_ref","start":14,"end":26}]}
+{"text":"Could you turn on the massage seats demo?","intent":"request_flow","slots":[{"type":"flow_ref","start":22,"end":35}]}
+{"text":"Preview the privacy glass for me","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":25}]}
+{"text":"Demonstrate the DLP headlights on the exterior","intent":"request_flow","slots":[{"type":"flow_ref","start":16,"end":30},{"type":"part","start":38,"end":46}]}
+{"text":"I'd like to try a cabin demo","intent":"request_flow","slots":[{"type":"part","start":18,"end":23}]}
+{"text":"Show me what's on the outside","intent":"request_flow","slots":[{"type":"part","start":22,"end":29}]}
+{"text":"Let's look at family options","intent":"request_flow","slots":[{"type":"theme","start":14,"end":20}]}
+{"text":"Can I experience the entertainment features?","intent":"request_flow","slots":[{"type":"theme","start":21,"end":34}]}
+{"text":"Run something related to privacy","intent":"request_flow","slots":[{"type":"theme","start":25,"end":32}]}
+{"text":"Show me interior features for families","intent":"request_flow","slots":[{"type":"part","start":8,"end":16},{"type":"theme","start":30,"end":38}]}
+{"text":"Are there entertainment demos on the outside?","intent":"request_flow","slots":[{"type":"theme","start":10,"end":23},{"type":"part","start":37,"end":44}]}
+{"text":"Let's try a cabin demo for privacy","intent":"request_flow","slots":[{"type":"part","start":12,"end":17},{"type":"theme","start":27,"end":34}]}
+{"text":"People call me Zack","intent":"inform","slots":[{"type":"name","start":15,"end":19}]}
+{"text":"My name is Amara Okafor","intent":"inform","slots":[{"type":"name","start":11,"end":23}]}
+{"text":"It's Hendrik","intent":"inform","slots":[{"type":"name","start":5,"end":12}]}
+{"text":"Headlights","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":10}]}
+{"text":"I'd like the in-car cinema","intent":"inform","slots":[{"type":"flow_ref","start":13,"end":26}]}
+{"text":"Exterior","intent":"inform","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"Focus on the cabin","intent":"inform","slots":[{"type":"part","start":13,"end":18}]}
+{"text":"Let's stick to the outside","intent":"inform","slots":[{"type":"part","start":19,"end":26}]}
+{"text":"I want family-friendly","intent":"inform","slots":[{"type":"theme","start":7,"end":22}]}
+{"text":"Entertainment please","intent":"inform","slots":[{"type":"theme","start":0,"end":13}]}
+{"text":"I'm looking for privacy","intent":"inform","slots":[{"type":"theme","start":16,"end":23}]}
+{"text":"I'd like option nine","intent":"inform","slots":[{"type":"choice","start":9,"end":20}]}
+{"text":"Give me the tenth one","intent":"inform","slots":[{"type":"choice","start":12,"end":21}]}
+{"text":"3rd one","intent":"inform","slots":[{"type":"choice","start":0,"end":7}]}
+{"text":"Howdy!","intent":"greet","slots":[]}
+{"text":"Hi there, glad to be here","intent":"greet","slots":[]}
+{"text":"Hi, my name is Hannah Abbott","intent":"greet","slots":[{"type":"name","start":15,"end":28}]}
+{"text":"Hello! I'm Kenji","intent":"greet","slots":[{"type":"name","start":11,"end":16}]}
+{"text":"You bet","intent":"affirm","slots":[]}
+{"text":"Yes, that's it","intent":"affirm","slots":[]}
+{"text":"Fine by me","intent":"affirm","slots":[]}
+{"text":"Definitely not","intent":"deny","slots":[]}
+{"text":"No, don't do that","intent":"deny","slots":[]}
+{"text":"That's not what I meant","intent":"deny","slots":[]}
+{"text":"Hold up, stop the demo","intent":"request_stop","slots":[]}
+{"text":"Pause it for a moment","intent":"request_stop","slots":[]}
+{"text":"Cut the presentation","intent":"request_stop","slots":[]}
+{"text":"All right, resume","intent":"request_resume","slots":[]}
+{"text":"Let's continue the tour","intent":"request_resume","slots":[]}
+{"text":"Play the rest of the demo","intent":"request_resume","slots":[]}
+{"text":"I'm ready to exit now","intent":"request_quit","slots":[]}
+{"text":"Terminate the session","intent":"request_quit","slots":[]}
+{"text":"Quit the demo app","intent":"request_quit","slots":[]}
+{"text":"Where is the nearest restroom in the dealership?","intent":"UNK","slots":[]}
+{"text":"Can I get this SUV in matte silver?","intent":"UNK","slots":[]}
+{"text":"plinth waffle 882flux","intent":"UNK","slots":[]}

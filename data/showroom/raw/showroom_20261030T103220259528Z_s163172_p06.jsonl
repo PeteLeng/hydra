@@ -1,0 +1,50 @@
+{"text":"family oriented is fine","intent":"inform","slots":[{"type":"theme","start":0,"end":15}],"alias_proposals":[{"slot":0,"value":"family"}]}
+{"text":"for entertainment","intent":"inform","slots":[{"type":"theme","start":4,"end":17}]}
+{"text":"two","intent":"inform","slots":[{"type":"choice","start":0,"end":3}]}
+{"text":"the second option","intent":"inform","slots":[{"type":"choice","start":4,"end":17}]}
+{"text":"option two","intent":"inform","slots":[{"type":"choice","start":0,"end":10}]}
+{"text":"number 3","intent":"inform","slots":[{"type":"choice","start":0,"end":8}]}
+{"text":"2nd option","intent":"inform","slots":[{"type":"choice","start":0,"end":10}]}
+{"text":"I'll take the first one","intent":"inform","slots":[{"type":"choice","start":14,"end":23}]}
+{"text":"choose option four","intent":"inform","slots":[{"type":"choice","start":7,"end":18}]}
+{"text":"number 5","intent":"inform","slots":[{"type":"choice","start":0,"end":8}]}
+{"text":"the third one","intent":"inform","slots":[{"type":"choice","start":4,"end":13}]}
+{"text":"go with the 4th option","intent":"inform","slots":[{"type":"choice","start":12,"end":22}]}
+{"text":"five","intent":"inform","slots":[{"type":"choice","start":0,"end":4}]}
+{"text":"option 6","intent":"inform","slots":[{"type":"choice","start":0,"end":8}]}
+{"text":"I'd like number 7","intent":"inform","slots":[{"type":"choice","start":9,"end":17}]}
+{"text":"the seventh one","intent":"inform","slots":[{"type":"choice","start":4,"end":15}]}
+{"text":"pick number 8","intent":"inform","slots":[{"type":"choice","start":5,"end":13}]}
+{"text":"9th option","intent":"inform","slots":[{"type":"choice","start":0,"end":10}]}
+{"text":"ten","intent":"inform","slots":[{"type":"choice","start":0,"end":3}]}
+{"text":"the 10th one","intent":"inform","slots":[{"type":"choice","start":4,"end":12}]}
+{"text":"option one","intent":"inform","slots":[{"type":"choice","start":0,"end":10}]}
+{"text":"show me the third one","intent":"inform","slots":[{"type":"choice","start":12,"end":21}]}
+{"text":"number ten","intent":"inform","slots":[{"type":"choice","start":0,"end":10}]}
+{"text":"the first option","intent":"inform","slots":[{"type":"choice","start":4,"end":16}]}
+{"text":"1","intent":"inform","slots":[{"type":"choice","start":0,"end":1}]}
+{"text":"choose the sixth one","intent":"inform","slots":[{"type":"choice","start":11,"end":20}]}
+{"text":"I'll take option 9","intent":"inform","slots":[{"type":"choice","start":10,"end":18}]}
+{"text":"go with number 10","intent":"inform","slots":[{"type":"choice","start":8,"end":17}]}
+{"text":"the eighth option","intent":"inform","slots":[{"type":"choice","start":4,"end":17}]}
+{"text":"5th one","intent":"inform","slots":[{"type":"choice","start":0,"end":7}]}
+{"text":"hello","intent":"greet","slots":[]}
+{"text":"hi there","intent":"greet","slots":[]}
+{"text":"hey","intent":"greet","slots":[]}
+{"text":"good morning","intent":"greet","slots":[]}
+{"text":"good afternoon","intent":"greet","slots":[]}
+{"text":"good evening","intent":"greet","slots":[]}
+{"text":"hiya","intent":"greet","slots":[]}
+{"text":"howdy","intent":"greet","slots":[]}
+{"text":"hey there","intent":"greet","slots":[]}
+{"text":"well hello","intent":"greet","slots":[]}
+{"text":"greetings","intent":"greet","slots":[]}
+{"text":"hi, how's it going","intent":"greet","slots":[]}
+{"text":"morning","intent":"greet","slots":[]}
+{"text":"evening","intent":"greet","slots":[]}
+{"text":"hey, good to see you","intent":"greet","slots":[]}
+{"text":"hello, how are you","intent":"greet","slots":[]}
+{"text":"hi friend","intent":"greet","slots":[]}
+{"text":"yo","intent":"greet","slots":[]}
+{"text":"hey, what's up","intent":"greet","slots":[]}
+{"text":"hello again","intent":"greet","slots":[]}

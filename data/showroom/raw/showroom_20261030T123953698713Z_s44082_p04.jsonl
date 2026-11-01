@@ -1,0 +1,50 @@
+{"text":"can we resume","intent":"request_resume","slots":[]}
+{"text":"continue on","intent":"request_resume","slots":[]}
+{"text":"resume it","intent":"request_resume","slots":[]}
+{"text":"unpause the demo","intent":"request_resume","slots":[]}
+{"text":"let's pick up again","intent":"request_resume","slots":[]}
+{"text":"please continue the demo","intent":"request_resume","slots":[]}
+{"text":"carry on with the demo","intent":"request_resume","slots":[]}
+{"text":"resume from here","intent":"request_resume","slots":[]}
+{"text":"keep going please","intent":"request_resume","slots":[]}
+{"text":"continue the demonstration","intent":"request_resume","slots":[]}
+{"text":"quit","intent":"request_quit","slots":[]}
+{"text":"exit","intent":"request_quit","slots":[]}
+{"text":"I want to leave","intent":"request_quit","slots":[]}
+{"text":"end session","intent":"request_quit","slots":[]}
+{"text":"close this","intent":"request_quit","slots":[]}
+{"text":"I'm done","intent":"request_quit","slots":[]}
+{"text":"time to leave","intent":"request_quit","slots":[]}
+{"text":"log out","intent":"request_quit","slots":[]}
+{"text":"end the session","intent":"request_quit","slots":[]}
+{"text":"I want to quit","intent":"request_quit","slots":[]}
+{"text":"please exit","intent":"request_quit","slots":[]}
+{"text":"close the showroom","intent":"request_quit","slots":[]}
+{"text":"leave the session","intent":"request_quit","slots":[]}
+{"text":"session over","intent":"request_quit","slots":[]}
+{"text":"sign me out","intent":"request_quit","slots":[]}
+{"text":"exit now","intent":"request_quit","slots":[]}
+{"text":"I need to exit","intent":"request_quit","slots":[]}
+{"text":"I'm heading out","intent":"request_quit","slots":[]}
+{"text":"I need to go","intent":"request_quit","slots":[]}
+{"text":"close out","intent":"request_quit","slots":[]}
+{"text":"terminate the session","intent":"request_quit","slots":[]}
+{"text":"I'd like to exit","intent":"request_quit","slots":[]}
+{"text":"let me out","intent":"request_quit","slots":[]}
+{"text":"ready to leave","intent":"request_quit","slots":[]}
+{"text":"done with the showroom","intent":"request_quit","slots":[]}
+{"text":"leave now","intent":"request_quit","slots":[]}
+{"text":"end showroom","intent":"request_quit","slots":[]}
+{"text":"exit the showroom","intent":"request_quit","slots":[]}
+{"text":"close the session","intent":"request_quit","slots":[]}
+{"text":"I want out","intent":"request_quit","slots":[]}
+{"text":"book a flight to Denver","intent":"UNK","slots":[]}
+{"text":"what's the weather tomorrow","intent":"UNK","slots":[]}
+{"text":"order me a pizza","intent":"UNK","slots":[]}
+{"text":"set a reminder for three","intent":"UNK","slots":[]}
+{"text":"play music on the radio","intent":"UNK","slots":[]}
+{"text":"I want to buy this car","intent":"UNK","slots":[]}
+{"text":"how much does the car cost","intent":"UNK","slots":[]}
+{"text":"schedule a test drive","intent":"UNK","slots":[]}
+{"text":"call my mechanic","intent":"UNK","slots":[]}
+{"text":"navigate to the dealership","intent":"UNK","slots":[]}

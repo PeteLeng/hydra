@@ -1,0 +1,50 @@
+{"text":"can I see a demo","intent":"request_flow","slots":[]}
+{"text":"I'd like a demonstration","intent":"request_flow","slots":[]}
+{"text":"run a demo please","intent":"request_flow","slots":[]}
+{"text":"let's see a showroom demo","intent":"request_flow","slots":[]}
+{"text":"what demos do you have","intent":"request_flow","slots":[]}
+{"text":"can you walk me through a feature","intent":"request_flow","slots":[]}
+{"text":"start a demonstration","intent":"request_flow","slots":[]}
+{"text":"could we look at a demo","intent":"request_flow","slots":[]}
+{"text":"play a demo for me","intent":"request_flow","slots":[]}
+{"text":"I'd like to browse the showroom","intent":"request_flow","slots":[]}
+{"text":"anything interesting to try","intent":"request_flow","slots":[]}
+{"text":"show me what this car can do","intent":"request_flow","slots":[]}
+{"text":"can I watch a feature demo","intent":"request_flow","slots":[]}
+{"text":"let's try something out","intent":"request_flow","slots":[]}
+{"text":"pull up a demo","intent":"request_flow","slots":[]}
+{"text":"I want a quick tour","intent":"request_flow","slots":[]}
+{"text":"got any demos I can see","intent":"request_flow","slots":[]}
+{"text":"what should we look at","intent":"request_flow","slots":[]}
+{"text":"could you demo something","intent":"request_flow","slots":[]}
+{"text":"mind showing me a demo","intent":"request_flow","slots":[]}
+{"text":"can I try the headlights","intent":"request_flow","slots":[{"type":"flow_ref","start":14,"end":24}]}
+{"text":"show the DLP lights","intent":"request_flow","slots":[{"type":"flow_ref","start":9,"end":19}]}
+{"text":"I'd like to see DLP Headlights","intent":"request_flow","slots":[{"type":"flow_ref","start":16,"end":30}]}
+{"text":"what about the headlights","intent":"request_flow","slots":[{"type":"flow_ref","start":15,"end":25}]}
+{"text":"pull up DLP lights for me","intent":"request_flow","slots":[{"type":"flow_ref","start":8,"end":18}]}
+{"text":"let's look at Cabin Cinema","intent":"request_flow","slots":[{"type":"flow_ref","start":14,"end":26}]}
+{"text":"I want the in-car cinema","intent":"request_flow","slots":[{"type":"flow_ref","start":11,"end":24}]}
+{"text":"demo the theater please","intent":"request_flow","slots":[{"type":"flow_ref","start":9,"end":16}]}
+{"text":"could we see the mobile theater","intent":"request_flow","slots":[{"type":"flow_ref","start":17,"end":31}]}
+{"text":"bring up the mobile theater","intent":"request_flow","slots":[{"type":"flow_ref","start":13,"end":27}]}
+{"text":"show me massage seats","intent":"request_flow","slots":[{"type":"flow_ref","start":8,"end":21}]}
+{"text":"let me try seat massage","intent":"request_flow","slots":[{"type":"flow_ref","start":11,"end":23}]}
+{"text":"I'd like Massaging Seats","intent":"request_flow","slots":[{"type":"flow_ref","start":9,"end":24}]}
+{"text":"what about seat massage","intent":"request_flow","slots":[{"type":"flow_ref","start":11,"end":23}]}
+{"text":"pull up the massage seats","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":25}]}
+{"text":"show me the privacy glass","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":25}]}
+{"text":"I'd like to try privacy windows","intent":"request_flow","slots":[{"type":"flow_ref","start":16,"end":31}]}
+{"text":"let's see the Privacy Window","intent":"request_flow","slots":[{"type":"flow_ref","start":14,"end":28}]}
+{"text":"I want privacy glass","intent":"request_flow","slots":[{"type":"flow_ref","start":7,"end":20}]}
+{"text":"walk me through privacy windows","intent":"request_flow","slots":[{"type":"flow_ref","start":16,"end":31}]}
+{"text":"show me the headlights outside","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":22},{"type":"part","start":23,"end":30}]}
+{"text":"I want family features like the headlights","intent":"request_flow","slots":[{"type":"theme","start":7,"end":13},{"type":"flow_ref","start":32,"end":42}]}
+{"text":"demo the headlights outside for entertainment","intent":"request_flow","slots":[{"type":"flow_ref","start":9,"end":19},{"type":"part","start":20,"end":27},{"type":"theme","start":32,"end":45}]}
+{"text":"try the mobile theater inside","intent":"request_flow","slots":[{"type":"flow_ref","start":8,"end":22},{"type":"part","start":23,"end":29}]}
+{"text":"Cabin Cinema for the family","intent":"request_flow","slots":[{"type":"flow_ref","start":0,"end":12},{"type":"theme","start":21,"end":27}]}
+{"text":"in-car cinema inside for entertainment","intent":"request_flow","slots":[{"type":"flow_ref","start":0,"end":13},{"type":"part","start":14,"end":20},{"type":"theme","start":25,"end":38}]}
+{"text":"massage seats in the cabin","intent":"request_flow","slots":[{"type":"flow_ref","start":0,"end":13},{"type":"part","start":21,"end":26}]}
+{"text":"seat massage for entertainment","intent":"request_flow","slots":[{"type":"flow_ref","start":0,"end":12},{"type":"theme","start":17,"end":30}]}
+{"text":"privacy glass on the exterior","intent":"request_flow","slots":[{"type":"flow_ref","start":0,"end":13},{"type":"part","start":21,"end":29}]}
+{"text":"Privacy Window for privacy","intent":"request_flow","slots":[{"type":"flow_ref","start":0,"end":14},{"type":"theme","start":19,"end":26}]}

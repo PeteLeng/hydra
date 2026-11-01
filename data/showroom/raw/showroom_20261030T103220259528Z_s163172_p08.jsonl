@@ -1,0 +1,50 @@
+{"text":"no","intent":"deny","slots":[]}
+{"text":"nope","intent":"deny","slots":[]}
+{"text":"nah","intent":"deny","slots":[]}
+{"text":"no way","intent":"deny","slots":[]}
+{"text":"incorrect","intent":"deny","slots":[]}
+{"text":"that's wrong","intent":"deny","slots":[]}
+{"text":"I disagree","intent":"deny","slots":[]}
+{"text":"not really","intent":"deny","slots":[]}
+{"text":"no thank you","intent":"deny","slots":[]}
+{"text":"negative","intent":"deny","slots":[]}
+{"text":"that's incorrect","intent":"deny","slots":[]}
+{"text":"I don't think so","intent":"deny","slots":[]}
+{"text":"not quite","intent":"deny","slots":[]}
+{"text":"no that's wrong","intent":"deny","slots":[]}
+{"text":"absolutely not","intent":"deny","slots":[]}
+{"text":"no I don't","intent":"deny","slots":[]}
+{"text":"wrong","intent":"deny","slots":[]}
+{"text":"not this one","intent":"deny","slots":[]}
+{"text":"I don't agree","intent":"deny","slots":[]}
+{"text":"no chance","intent":"deny","slots":[]}
+{"text":"that's not it","intent":"deny","slots":[]}
+{"text":"nope, sorry","intent":"deny","slots":[]}
+{"text":"not correct","intent":"deny","slots":[]}
+{"text":"no, not that","intent":"deny","slots":[]}
+{"text":"I don't want that","intent":"deny","slots":[]}
+{"text":"not at all","intent":"deny","slots":[]}
+{"text":"no sir","intent":"deny","slots":[]}
+{"text":"that's false","intent":"deny","slots":[]}
+{"text":"uh no","intent":"deny","slots":[]}
+{"text":"no, incorrect","intent":"deny","slots":[]}
+{"text":"stop","intent":"request_stop","slots":[]}
+{"text":"please stop","intent":"request_stop","slots":[]}
+{"text":"stop it","intent":"request_stop","slots":[]}
+{"text":"pause the demo","intent":"request_stop","slots":[]}
+{"text":"halt the demonstration","intent":"request_stop","slots":[]}
+{"text":"stop this demo","intent":"request_stop","slots":[]}
+{"text":"can you stop","intent":"request_stop","slots":[]}
+{"text":"pause please","intent":"request_stop","slots":[]}
+{"text":"stop the current demo","intent":"request_stop","slots":[]}
+{"text":"hold on, stop","intent":"request_stop","slots":[]}
+{"text":"freeze the demo","intent":"request_stop","slots":[]}
+{"text":"stop playing","intent":"request_stop","slots":[]}
+{"text":"pause this","intent":"request_stop","slots":[]}
+{"text":"cut the demo","intent":"request_stop","slots":[]}
+{"text":"stop now","intent":"request_stop","slots":[]}
+{"text":"would you pause","intent":"request_stop","slots":[]}
+{"text":"stop that demo","intent":"request_stop","slots":[]}
+{"text":"halt it please","intent":"request_stop","slots":[]}
+{"text":"pause the show","intent":"request_stop","slots":[]}
+{"text":"stop the playback","intent":"request_stop","slots":[]}

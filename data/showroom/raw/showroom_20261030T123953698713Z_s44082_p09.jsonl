@@ -1,0 +1,50 @@
+{"text":"play the DLP headlamps for me","intent":"request_flow","slots":[{"type":"flow_ref","start":9,"end":22}],"alias_proposals":[{"slot":0,"value":"dlp_headlights"}]}
+{"text":"walk me through the headlights","intent":"request_flow","slots":[{"type":"flow_ref","start":20,"end":30}]}
+{"text":"show DLP Headlights on the outside","intent":"request_flow","slots":[{"type":"flow_ref","start":5,"end":19},{"type":"part","start":27,"end":34}]}
+{"text":"demo the headlights for family","intent":"request_flow","slots":[{"type":"flow_ref","start":9,"end":19},{"type":"theme","start":24,"end":30}]}
+{"text":"try DLP lights outside for entertainment","intent":"request_flow","slots":[{"type":"flow_ref","start":4,"end":14},{"type":"part","start":15,"end":22},{"type":"theme","start":27,"end":40}]}
+{"text":"mind showing the mobile theater","intent":"request_flow","slots":[{"type":"flow_ref","start":17,"end":31}]}
+{"text":"queue up the in-cabin theater","intent":"request_flow","slots":[{"type":"flow_ref","start":13,"end":29}],"alias_proposals":[{"slot":0,"value":"cabin_cinema"}]}
+{"text":"Cabin Cinema inside would be great","intent":"request_flow","slots":[{"type":"flow_ref","start":0,"end":12},{"type":"part","start":13,"end":19}]}
+{"text":"demo the mobile theater for families","intent":"request_flow","slots":[{"type":"flow_ref","start":9,"end":23},{"type":"theme","start":28,"end":36}]}
+{"text":"in-car cinema inside for entertainment","intent":"request_flow","slots":[{"type":"flow_ref","start":0,"end":13},{"type":"part","start":14,"end":20},{"type":"theme","start":25,"end":38}]}
+{"text":"bring up the seat massager","intent":"request_flow","slots":[{"type":"flow_ref","start":13,"end":26}],"alias_proposals":[{"slot":0,"value":"massage_seats"}]}
+{"text":"how about a Massaging Seats demo","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":27}]}
+{"text":"put on the massage seats","intent":"request_flow","slots":[{"type":"flow_ref","start":11,"end":24}]}
+{"text":"seat massage in the cabin please","intent":"request_flow","slots":[{"type":"flow_ref","start":0,"end":12},{"type":"part","start":20,"end":25}]}
+{"text":"demo Massaging Seats for entertainment","intent":"request_flow","slots":[{"type":"flow_ref","start":5,"end":20},{"type":"theme","start":25,"end":38}]}
+{"text":"bring up the privacy windows","intent":"request_flow","slots":[{"type":"flow_ref","start":13,"end":28}]}
+{"text":"how about privacy glass","intent":"request_flow","slots":[{"type":"flow_ref","start":10,"end":23}]}
+{"text":"queue the Privacy Window","intent":"request_flow","slots":[{"type":"flow_ref","start":10,"end":24}]}
+{"text":"Privacy Window on the exterior","intent":"request_flow","slots":[{"type":"flow_ref","start":0,"end":14},{"type":"part","start":22,"end":30}]}
+{"text":"run privacy windows for privacy","intent":"request_flow","slots":[{"type":"flow_ref","start":4,"end":19},{"type":"theme","start":24,"end":31}]}
+{"text":"show me features inside","intent":"request_flow","slots":[{"type":"part","start":17,"end":23}]}
+{"text":"what demos are in the cabin","intent":"request_flow","slots":[{"type":"part","start":22,"end":27}]}
+{"text":"anything for the interior","intent":"request_flow","slots":[{"type":"part","start":17,"end":25}]}
+{"text":"can I see cabin demos","intent":"request_flow","slots":[{"type":"part","start":10,"end":15}]}
+{"text":"run something inside","intent":"request_flow","slots":[{"type":"part","start":14,"end":20}]}
+{"text":"let's look at interior features","intent":"request_flow","slots":[{"type":"part","start":14,"end":22}]}
+{"text":"I'd like an inside demo","intent":"request_flow","slots":[{"type":"part","start":12,"end":18}]}
+{"text":"play a cabin demonstration","intent":"request_flow","slots":[{"type":"part","start":7,"end":12}]}
+{"text":"walk me through the interior","intent":"request_flow","slots":[{"type":"part","start":20,"end":28}]}
+{"text":"got any demos for inside","intent":"request_flow","slots":[{"type":"part","start":18,"end":24}]}
+{"text":"show the cabin stuff","intent":"request_flow","slots":[{"type":"part","start":9,"end":14}]}
+{"text":"interior demos please","intent":"request_flow","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"anything inside today","intent":"request_flow","slots":[{"type":"part","start":9,"end":15}]}
+{"text":"take me through outside options","intent":"request_flow","slots":[{"type":"part","start":16,"end":23}]}
+{"text":"are there exterior demos","intent":"request_flow","slots":[{"type":"part","start":10,"end":18}]}
+{"text":"I want to see the outside ones","intent":"request_flow","slots":[{"type":"part","start":18,"end":25}]}
+{"text":"demo something on the exterior","intent":"request_flow","slots":[{"type":"part","start":22,"end":30}]}
+{"text":"could we do an outside walkthrough","intent":"request_flow","slots":[{"type":"part","start":15,"end":22}]}
+{"text":"exterior features if you have them","intent":"request_flow","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"pull up outside demonstrations","intent":"request_flow","slots":[{"type":"part","start":8,"end":15}]}
+{"text":"what's available on the exterior","intent":"request_flow","slots":[{"type":"part","start":24,"end":32}]}
+{"text":"show outside stuff please","intent":"request_flow","slots":[{"type":"part","start":5,"end":12}]}
+{"text":"any exterior demo you recommend","intent":"request_flow","slots":[{"type":"part","start":4,"end":12}]}
+{"text":"I fancy an outside demo","intent":"request_flow","slots":[{"type":"part","start":11,"end":18}]}
+{"text":"let's tour the exterior","intent":"request_flow","slots":[{"type":"part","start":15,"end":23}]}
+{"text":"show me the family features","intent":"request_flow","slots":[{"type":"theme","start":12,"end":18}]}
+{"text":"any family-friendly demos","intent":"request_flow","slots":[{"type":"theme","start":4,"end":19}]}
+{"text":"what do you have for families","intent":"request_flow","slots":[{"type":"theme","start":21,"end":29}]}
+{"text":"run a family demo","intent":"request_flow","slots":[{"type":"theme","start":6,"end":12}]}
+{"text":"let's see family-friendly options","intent":"request_flow","slots":[{"type":"theme","start":10,"end":25}]}

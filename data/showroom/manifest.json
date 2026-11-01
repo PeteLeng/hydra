@@ -1,0 +1,5066 @@
+{
+  "seed": 1234,
+  "ratios": {
+    "train": 0.8,
+    "dev": 0.1,
+    "test": 0.1
+  },
+  "strategy": "coverage-aware-group-search",
+  "search_trials": 2048,
+  "refinement_trials": 8192,
+  "splits": {
+    "train": {
+      "records": 995,
+      "intents": {
+        "request_resume": 50,
+        "request_flow": 283,
+        "affirm": 48,
+        "UNK": 71,
+        "inform": 300,
+        "greet": 77,
+        "request_stop": 64,
+        "deny": 40,
+        "request_quit": 62
+      },
+      "slots": {
+        "part": 172,
+        "flow_ref": 138,
+        "name": 109,
+        "theme": 177,
+        "choice": 62
+      },
+      "rows": [
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:29",
+          "group_id": "showroom-a429"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:25",
+          "group_id": "showroom-a075"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:3",
+          "group_id": "showroom-a022"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:18",
+          "group_id": "showroom-a018"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:47",
+          "group_id": "showroom-a325"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:18",
+          "group_id": "showroom-b218"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:48",
+          "group_id": "showroom-a193"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:29",
+          "group_id": "showroom-a328"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:30",
+          "group_id": "showroom-c180"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:46",
+          "group_id": "showroom-a388"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:5",
+          "group_id": "showroom-c155"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:27",
+          "group_id": "showroom-a014"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:15",
+          "group_id": "showroom-a365"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:34",
+          "group_id": "showroom-a343"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:31",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:23",
+          "group_id": "showroom-a082"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:10",
+          "group_id": "showroom-a445"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:11",
+          "group_id": "showroom-a086"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:37",
+          "group_id": "showroom-c187"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:25",
+          "group_id": "showroom-b316"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:9",
+          "group_id": "showroom-b059"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:24",
+          "group_id": "showroom-a368"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:16",
+          "group_id": "showroom-a351"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:49",
+          "group_id": "showroom-b094"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:1",
+          "group_id": "showroom-a065"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:36",
+          "group_id": "showroom-a074"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:31",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:22",
+          "group_id": "showroom-a188"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:26",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:40",
+          "group_id": "showroom-a384"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:23",
+          "group_id": "showroom-a217"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:12",
+          "group_id": "showroom-a412"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:28",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:6",
+          "group_id": "showroom-a041"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:45",
+          "group_id": "showroom-a295"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:18",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:23",
+          "group_id": "showroom-a355"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:16",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:12",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:23",
+          "group_id": "showroom-a392"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:3",
+          "group_id": "showroom-a022"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:23",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:39",
+          "group_id": "showroom-a390"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:32",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:3",
+          "group_id": "showroom-a453"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:30",
+          "group_id": "showroom-a284"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:26",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:23",
+          "group_id": "showroom-a115"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:49",
+          "group_id": "showroom-b449"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:39",
+          "group_id": "showroom-a027"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:7",
+          "group_id": "showroom-a100"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:41",
+          "group_id": "showroom-a291"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:13",
+          "group_id": "showroom-a413"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:44",
+          "group_id": "showroom-a494"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:23",
+          "group_id": "showroom-a173"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:38",
+          "group_id": "showroom-a188"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:39",
+          "group_id": "showroom-a445"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:1",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:6",
+          "group_id": "showroom-a259"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:7",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:12",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:20",
+          "group_id": "showroom-a027"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:47",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:45",
+          "group_id": "showroom-a193"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:37",
+          "group_id": "showroom-a100"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:1",
+          "group_id": "showroom-a239"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:22",
+          "group_id": "showroom-a188"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:1",
+          "group_id": "showroom-a003"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:34",
+          "group_id": "showroom-a334"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:25",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:35",
+          "group_id": "showroom-b185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:39",
+          "group_id": "showroom-b117"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:33",
+          "group_id": "showroom-a344"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:14",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:4",
+          "group_id": "showroom-b404"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:5",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:2",
+          "group_id": "showroom-a452"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:23",
+          "group_id": "showroom-a193"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:31",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:49",
+          "group_id": "showroom-a481"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:4",
+          "group_id": "showroom-b204"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:11",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:9",
+          "group_id": "showroom-a009"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:9",
+          "group_id": "showroom-a086"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:7",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:21",
+          "group_id": "showroom-a471"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:50",
+          "group_id": "showroom-a100"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:14",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:5",
+          "group_id": "showroom-b149"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:38",
+          "group_id": "showroom-a368"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:22",
+          "group_id": "showroom-a063"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:10",
+          "group_id": "showroom-a106"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:35",
+          "group_id": "showroom-a228"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:8",
+          "group_id": "showroom-b208"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:29",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:5",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:41",
+          "group_id": "showroom-a413"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:28",
+          "group_id": "showroom-a231"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:1",
+          "group_id": "showroom-b401"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:31",
+          "group_id": "showroom-a061"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:8",
+          "group_id": "showroom-b425"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:21",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:10",
+          "group_id": "showroom-c310"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:4",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:32",
+          "group_id": "showroom-a064"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:44",
+          "group_id": "showroom-a421"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:6",
+          "group_id": "showroom-a173"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:4",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:3",
+          "group_id": "showroom-a173"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:37",
+          "group_id": "showroom-a411"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:10",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:44",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:22",
+          "group_id": "showroom-a061"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:11",
+          "group_id": "showroom-b455"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:47",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:27",
+          "group_id": "showroom-a384"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:34",
+          "group_id": "showroom-a413"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:5",
+          "group_id": "showroom-a322"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:36",
+          "group_id": "showroom-a486"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:27",
+          "group_id": "showroom-a027"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:3",
+          "group_id": "showroom-a220"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:25",
+          "group_id": "showroom-a007"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:8",
+          "group_id": "showroom-a065"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:4",
+          "group_id": "showroom-a064"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:6",
+          "group_id": "showroom-a106"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:35",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:17",
+          "group_id": "showroom-b067"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:41",
+          "group_id": "showroom-a321"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:32",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:49",
+          "group_id": "showroom-a476"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:21",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:23",
+          "group_id": "showroom-b301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:23",
+          "group_id": "showroom-a411"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:8",
+          "group_id": "showroom-a001"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:18",
+          "group_id": "showroom-a328"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:29",
+          "group_id": "showroom-a075"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:34",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:1",
+          "group_id": "showroom-a003"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:12",
+          "group_id": "showroom-a442"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:18",
+          "group_id": "showroom-a068"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:6",
+          "group_id": "showroom-a106"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:39",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:12",
+          "group_id": "showroom-a228"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:21",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:20",
+          "group_id": "showroom-a170"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:22",
+          "group_id": "showroom-a172"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:22",
+          "group_id": "showroom-c122"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:20",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:4",
+          "group_id": "showroom-a388"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:18",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:30",
+          "group_id": "showroom-b019"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:27",
+          "group_id": "showroom-a443"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:10",
+          "group_id": "showroom-b449"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:34",
+          "group_id": "showroom-a456"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:41",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:46",
+          "group_id": "showroom-a451"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:21",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:43",
+          "group_id": "showroom-a388"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:35",
+          "group_id": "showroom-a330"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:3",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:15",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:37",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:33",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:27",
+          "group_id": "showroom-a068"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:4",
+          "group_id": "showroom-a262"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:2",
+          "group_id": "showroom-a384"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:46",
+          "group_id": "showroom-a022"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:16",
+          "group_id": "showroom-b066"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:9",
+          "group_id": "showroom-a091"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:47",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:41",
+          "group_id": "showroom-b191"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:2",
+          "group_id": "showroom-a040"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:6",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:43",
+          "group_id": "showroom-b193"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:48",
+          "group_id": "showroom-a321"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:48",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:42",
+          "group_id": "showroom-b149"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:8",
+          "group_id": "showroom-a431"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:9",
+          "group_id": "showroom-a086"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:3",
+          "group_id": "showroom-a388"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:14",
+          "group_id": "showroom-b014"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:19",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:27",
+          "group_id": "showroom-a108"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:44",
+          "group_id": "showroom-a426"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:24",
+          "group_id": "showroom-a170"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:42",
+          "group_id": "showroom-a193"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:42",
+          "group_id": "showroom-a429"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:19",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:4",
+          "group_id": "showroom-b384"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:9",
+          "group_id": "showroom-a441"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:48",
+          "group_id": "showroom-a443"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:1",
+          "group_id": "showroom-a351"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:47",
+          "group_id": "showroom-a447"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:35",
+          "group_id": "showroom-a335"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:33",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:34",
+          "group_id": "showroom-a384"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:39",
+          "group_id": "showroom-a489"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:22",
+          "group_id": "showroom-a022"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:43",
+          "group_id": "showroom-b093"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:46",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:39",
+          "group_id": "showroom-a078"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:20",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:31",
+          "group_id": "showroom-a231"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:27",
+          "group_id": "showroom-a259"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:47",
+          "group_id": "showroom-c147"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:34",
+          "group_id": "showroom-a284"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:13",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:11",
+          "group_id": "showroom-a100"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:44",
+          "group_id": "showroom-a417"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:10",
+          "group_id": "showroom-a091"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:41",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:16",
+          "group_id": "showroom-a466"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:33",
+          "group_id": "showroom-a323"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:47",
+          "group_id": "showroom-a442"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:18",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:16",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:15",
+          "group_id": "showroom-a146"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:40",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:43",
+          "group_id": "showroom-a443"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:48",
+          "group_id": "showroom-c448"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:4",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:28",
+          "group_id": "showroom-a378"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:45",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:28",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:42",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:38",
+          "group_id": "showroom-a415"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:35",
+          "group_id": "showroom-a285"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:49",
+          "group_id": "showroom-a399"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:23",
+          "group_id": "showroom-a237"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:28",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:22",
+          "group_id": "showroom-a188"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:11",
+          "group_id": "showroom-b211"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:49",
+          "group_id": "showroom-b193"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:7",
+          "group_id": "showroom-a442"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:46",
+          "group_id": "showroom-a239"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:19",
+          "group_id": "showroom-a027"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:7",
+          "group_id": "showroom-a068"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:2",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:47",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:14",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:34",
+          "group_id": "showroom-a075"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:17",
+          "group_id": "showroom-a173"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:6",
+          "group_id": "showroom-b404"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:44",
+          "group_id": "showroom-b094"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:3",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:12",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:25",
+          "group_id": "showroom-a475"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:13",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:9",
+          "group_id": "showroom-a494"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:5",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:11",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:15",
+          "group_id": "showroom-a115"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:29",
+          "group_id": "showroom-a479"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:5",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:30",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:37",
+          "group_id": "showroom-a378"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:20",
+          "group_id": "showroom-a370"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:2",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:2",
+          "group_id": "showroom-a498"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:44",
+          "group_id": "showroom-a044"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:1",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:12",
+          "group_id": "showroom-b062"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:44",
+          "group_id": "showroom-a481"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:16",
+          "group_id": "showroom-a061"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:14",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:34",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:11",
+          "group_id": "showroom-a086"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:12",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:22",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:22",
+          "group_id": "showroom-a216"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:43",
+          "group_id": "showroom-a063"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:28",
+          "group_id": "showroom-a417"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:24",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:8",
+          "group_id": "showroom-a074"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:36",
+          "group_id": "showroom-a286"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:13",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:14",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:20",
+          "group_id": "showroom-a403"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:21",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:42",
+          "group_id": "showroom-a417"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:29",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:2",
+          "group_id": "showroom-a005"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:26",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:6",
+          "group_id": "showroom-a456"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:16",
+          "group_id": "showroom-a451"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:15",
+          "group_id": "showroom-a086"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:28",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:20",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:40",
+          "group_id": "showroom-a456"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:43",
+          "group_id": "showroom-a415"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:25",
+          "group_id": "showroom-c024"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:10",
+          "group_id": "showroom-a360"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:33",
+          "group_id": "showroom-a321"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:28",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:16",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:24",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:42",
+          "group_id": "showroom-a442"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:49",
+          "group_id": "showroom-a475"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:6",
+          "group_id": "showroom-a387"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:2",
+          "group_id": "showroom-a014"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:37",
+          "group_id": "showroom-a237"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:3",
+          "group_id": "showroom-b394"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:19",
+          "group_id": "showroom-b019"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:20",
+          "group_id": "showroom-a007"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:49",
+          "group_id": "showroom-a082"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:45",
+          "group_id": "showroom-a443"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:21",
+          "group_id": "showroom-a421"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:46",
+          "group_id": "showroom-a443"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:17",
+          "group_id": "showroom-a217"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:31",
+          "group_id": "showroom-a022"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:9",
+          "group_id": "showroom-c459"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:26",
+          "group_id": "showroom-a376"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:10",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:17",
+          "group_id": "showroom-b117"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:19",
+          "group_id": "showroom-a357"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:26",
+          "group_id": "showroom-a426"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:49",
+          "group_id": "showroom-a193"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:33",
+          "group_id": "showroom-a333"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:23",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:35",
+          "group_id": "showroom-a188"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:3",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:36",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:32",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:41",
+          "group_id": "showroom-a091"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:42",
+          "group_id": "showroom-a368"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:5",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:3",
+          "group_id": "showroom-a041"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:2",
+          "group_id": "showroom-a003"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:31",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:39",
+          "group_id": "showroom-a283"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:20",
+          "group_id": "showroom-b404"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:7",
+          "group_id": "showroom-a407"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:27",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:39",
+          "group_id": "showroom-a390"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:4",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:35",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:20",
+          "group_id": "showroom-a442"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:21",
+          "group_id": "showroom-b311"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:16",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:24",
+          "group_id": "showroom-a228"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:9",
+          "group_id": "showroom-a259"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:38",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:16",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:14",
+          "group_id": "showroom-a336"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:32",
+          "group_id": "showroom-a282"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:2",
+          "group_id": "showroom-a064"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:2",
+          "group_id": "showroom-a001"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:49",
+          "group_id": "showroom-a149"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:31",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:11",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:8",
+          "group_id": "showroom-a061"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:6",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:38",
+          "group_id": "showroom-a075"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:10",
+          "group_id": "showroom-a100"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:38",
+          "group_id": "showroom-a086"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:26",
+          "group_id": "showroom-a262"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:11",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:16",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:43",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:47",
+          "group_id": "showroom-c147"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:43",
+          "group_id": "showroom-a284"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:27",
+          "group_id": "showroom-a351"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:12",
+          "group_id": "showroom-b455"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:26",
+          "group_id": "showroom-a259"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:14",
+          "group_id": "showroom-a064"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:10",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:22",
+          "group_id": "showroom-a109"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:31",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:20",
+          "group_id": "showroom-a172"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:11",
+          "group_id": "showroom-a091"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:9",
+          "group_id": "showroom-a149"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:39",
+          "group_id": "showroom-a189"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:30",
+          "group_id": "showroom-a480"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:38",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:18",
+          "group_id": "showroom-a452"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:8",
+          "group_id": "showroom-b108"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:15",
+          "group_id": "showroom-b404"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:1",
+          "group_id": "showroom-a009"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:28",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:44",
+          "group_id": "showroom-a412"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:48",
+          "group_id": "showroom-a091"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:17",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:8",
+          "group_id": "showroom-a388"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:12",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:18",
+          "group_id": "showroom-a418"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:37",
+          "group_id": "showroom-a387"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:28",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:21",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:11",
+          "group_id": "showroom-a355"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:30",
+          "group_id": "showroom-a173"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:30",
+          "group_id": "showroom-b018"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:5",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:19",
+          "group_id": "showroom-a027"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:9",
+          "group_id": "showroom-b404"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:28",
+          "group_id": "showroom-a028"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:1",
+          "group_id": "showroom-a007"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:12",
+          "group_id": "showroom-a262"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:24",
+          "group_id": "showroom-a413"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:13",
+          "group_id": "showroom-b213"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:2",
+          "group_id": "showroom-a012"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:44",
+          "group_id": "showroom-a418"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:36",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:31",
+          "group_id": "showroom-a431"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:29",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:45",
+          "group_id": "showroom-a474"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:41",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:17",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:25",
+          "group_id": "showroom-a325"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:30",
+          "group_id": "showroom-a355"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:32",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:28",
+          "group_id": "showroom-a170"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:28",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:17",
+          "group_id": "showroom-a456"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:48",
+          "group_id": "showroom-c398"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:48",
+          "group_id": "showroom-c298"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:7",
+          "group_id": "showroom-a082"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:22",
+          "group_id": "showroom-a412"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:21",
+          "group_id": "showroom-c271"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:6",
+          "group_id": "showroom-b404"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:18",
+          "group_id": "showroom-a368"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:36",
+          "group_id": "showroom-a368"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:22",
+          "group_id": "showroom-a011"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:37",
+          "group_id": "showroom-a487"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:9",
+          "group_id": "showroom-b449"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:49",
+          "group_id": "showroom-a328"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:12",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:29",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:38",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:6",
+          "group_id": "showroom-a041"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:31",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:40",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:24",
+          "group_id": "showroom-a011"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:49",
+          "group_id": "showroom-a472"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:47",
+          "group_id": "showroom-a445"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:46",
+          "group_id": "showroom-a454"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:47",
+          "group_id": "showroom-a282"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:21",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:18",
+          "group_id": "showroom-b018"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:14",
+          "group_id": "showroom-a452"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:46",
+          "group_id": "showroom-a146"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:33",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:20",
+          "group_id": "showroom-a237"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:36",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:26",
+          "group_id": "showroom-a065"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:33",
+          "group_id": "showroom-a188"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:42",
+          "group_id": "showroom-a418"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:20",
+          "group_id": "showroom-a001"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:33",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:2",
+          "group_id": "showroom-a005"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:44",
+          "group_id": "showroom-a394"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:47",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:25",
+          "group_id": "showroom-a108"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:9",
+          "group_id": "showroom-a065"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:33",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:20",
+          "group_id": "showroom-a483"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:37",
+          "group_id": "showroom-a115"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:39",
+          "group_id": "showroom-a384"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:37",
+          "group_id": "showroom-a355"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:36",
+          "group_id": "showroom-a456"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:25",
+          "group_id": "showroom-c024"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:28",
+          "group_id": "showroom-a146"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:46",
+          "group_id": "showroom-a445"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:21",
+          "group_id": "showroom-a321"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:13",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:45",
+          "group_id": "showroom-a108"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:40",
+          "group_id": "showroom-a490"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:31",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:20",
+          "group_id": "showroom-a188"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:41",
+          "group_id": "showroom-a441"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:22",
+          "group_id": "showroom-a224"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:1",
+          "group_id": "showroom-a451"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:36",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:23",
+          "group_id": "showroom-a011"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:48",
+          "group_id": "showroom-a498"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:16",
+          "group_id": "showroom-a282"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:16",
+          "group_id": "showroom-b316"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:39",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:13",
+          "group_id": "showroom-a063"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:39",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:48",
+          "group_id": "showroom-a411"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:11",
+          "group_id": "showroom-a461"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:32",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:5",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:39",
+          "group_id": "showroom-b384"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:42",
+          "group_id": "showroom-a108"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:1",
+          "group_id": "showroom-a007"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:46",
+          "group_id": "showroom-b296"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:40",
+          "group_id": "showroom-a388"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:9",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:2",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:45",
+          "group_id": "showroom-a454"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:4",
+          "group_id": "showroom-a354"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:44",
+          "group_id": "showroom-a421"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:4",
+          "group_id": "showroom-a404"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:33",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:12",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:6",
+          "group_id": "showroom-b404"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:4",
+          "group_id": "showroom-b384"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:24",
+          "group_id": "showroom-a074"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:17",
+          "group_id": "showroom-a001"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:4",
+          "group_id": "showroom-a028"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:42",
+          "group_id": "showroom-a418"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:3",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:18",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:35",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:47",
+          "group_id": "showroom-a452"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:34",
+          "group_id": "showroom-c284"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:10",
+          "group_id": "showroom-a086"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:4",
+          "group_id": "showroom-a028"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:47",
+          "group_id": "showroom-c197"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:23",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:33",
+          "group_id": "showroom-a330"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:24",
+          "group_id": "showroom-a474"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:9",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:8",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:33",
+          "group_id": "showroom-a027"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:49",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:50",
+          "group_id": "showroom-a336"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:40",
+          "group_id": "showroom-a281"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:23",
+          "group_id": "showroom-a106"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:28",
+          "group_id": "showroom-a078"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:45",
+          "group_id": "showroom-a333"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:28",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:21",
+          "group_id": "showroom-a189"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:21",
+          "group_id": "showroom-c171"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:18",
+          "group_id": "showroom-a239"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:39",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:2",
+          "group_id": "showroom-b449"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:32",
+          "group_id": "showroom-a228"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:50",
+          "group_id": "showroom-a473"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:15",
+          "group_id": "showroom-a065"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:1",
+          "group_id": "showroom-b151"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:17",
+          "group_id": "showroom-a146"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:43",
+          "group_id": "showroom-a431"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:39",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:29",
+          "group_id": "showroom-a115"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:25",
+          "group_id": "showroom-a108"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:5",
+          "group_id": "showroom-a405"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:33",
+          "group_id": "showroom-a115"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:17",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:1",
+          "group_id": "showroom-a007"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:41",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:17",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:23",
+          "group_id": "showroom-b316"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:9",
+          "group_id": "showroom-a228"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:9",
+          "group_id": "showroom-a172"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:40",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:27",
+          "group_id": "showroom-a259"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:33",
+          "group_id": "showroom-a344"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:19",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:6",
+          "group_id": "showroom-a044"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:6",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:13",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:5",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:28",
+          "group_id": "showroom-b425"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:4",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:11",
+          "group_id": "showroom-a011"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:2",
+          "group_id": "showroom-a007"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:46",
+          "group_id": "showroom-a323"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:31",
+          "group_id": "showroom-a281"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:36",
+          "group_id": "showroom-a231"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:9",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:34",
+          "group_id": "showroom-b384"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:31",
+          "group_id": "showroom-a481"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:36",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:26",
+          "group_id": "showroom-a259"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:19",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:38",
+          "group_id": "showroom-a288"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:24",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:29",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:5",
+          "group_id": "showroom-b455"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:34",
+          "group_id": "showroom-a333"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:36",
+          "group_id": "showroom-a086"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:35",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:22",
+          "group_id": "showroom-a472"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:19",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:11",
+          "group_id": "showroom-b061"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:42",
+          "group_id": "showroom-a342"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:4",
+          "group_id": "showroom-a172"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:2",
+          "group_id": "showroom-a014"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:33",
+          "group_id": "showroom-a330"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:25",
+          "group_id": "showroom-a082"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:45",
+          "group_id": "showroom-b185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:8",
+          "group_id": "showroom-a173"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:1",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:11",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:19",
+          "group_id": "showroom-b119"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:46",
+          "group_id": "showroom-a451"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:11",
+          "group_id": "showroom-b449"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:43",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:21",
+          "group_id": "showroom-a224"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:3",
+          "group_id": "showroom-b394"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:12",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:45",
+          "group_id": "showroom-a445"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:22",
+          "group_id": "showroom-a224"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:39",
+          "group_id": "showroom-a146"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:44",
+          "group_id": "showroom-a068"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:12",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:50",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:25",
+          "group_id": "showroom-a082"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:43",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:19",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:26",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:45",
+          "group_id": "showroom-a065"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:42",
+          "group_id": "showroom-a061"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:46",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:8",
+          "group_id": "showroom-a061"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:43",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:8",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:20",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:3",
+          "group_id": "showroom-a482"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:48",
+          "group_id": "showroom-c198"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:27",
+          "group_id": "showroom-a259"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:50",
+          "group_id": "showroom-a500"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:30",
+          "group_id": "showroom-a230"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:32",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:30",
+          "group_id": "showroom-a330"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:40",
+          "group_id": "showroom-b425"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:15",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:32",
+          "group_id": "showroom-a332"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:14",
+          "group_id": "showroom-b214"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:1",
+          "group_id": "showroom-a007"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:42",
+          "group_id": "showroom-a392"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:22",
+          "group_id": "showroom-a224"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:43",
+          "group_id": "showroom-a193"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:40",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:40",
+          "group_id": "showroom-a388"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:9",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:14",
+          "group_id": "showroom-a014"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:10",
+          "group_id": "showroom-a100"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:8",
+          "group_id": "showroom-a108"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:5",
+          "group_id": "showroom-b205"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:44",
+          "group_id": "showroom-c194"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:7",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:31",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:36",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:49",
+          "group_id": "showroom-b204"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:42",
+          "group_id": "showroom-a115"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:17",
+          "group_id": "showroom-a259"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:18",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:50",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:11",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:22",
+          "group_id": "showroom-a322"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:14",
+          "group_id": "showroom-a005"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:28",
+          "group_id": "showroom-a478"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:14",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:39",
+          "group_id": "showroom-a239"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:14",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:10",
+          "group_id": "showroom-b449"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:25",
+          "group_id": "showroom-b316"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:25",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:32",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:30",
+          "group_id": "showroom-a003"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:27",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:9",
+          "group_id": "showroom-a415"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:38",
+          "group_id": "showroom-a108"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:23",
+          "group_id": "showroom-a449"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:38",
+          "group_id": "showroom-a368"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:14",
+          "group_id": "showroom-a108"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:2",
+          "group_id": "showroom-a282"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:34",
+          "group_id": "showroom-a323"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:31",
+          "group_id": "showroom-a028"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:7",
+          "group_id": "showroom-b425"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:49",
+          "group_id": "showroom-a490"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:8",
+          "group_id": "showroom-a074"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:46",
+          "group_id": "showroom-a454"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:13",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:4",
+          "group_id": "showroom-b384"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:13",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:47",
+          "group_id": "showroom-a442"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:33",
+          "group_id": "showroom-a421"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:1",
+          "group_id": "showroom-b301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:16",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:2",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:24",
+          "group_id": "showroom-a231"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:16",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:11",
+          "group_id": "showroom-b311"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:48",
+          "group_id": "showroom-c248"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:28",
+          "group_id": "showroom-a456"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:34",
+          "group_id": "showroom-a323"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:3",
+          "group_id": "showroom-a403"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:28",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:29",
+          "group_id": "showroom-b018"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:45",
+          "group_id": "showroom-a466"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:31",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:30",
+          "group_id": "showroom-c180"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:13",
+          "group_id": "showroom-a001"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:34",
+          "group_id": "showroom-a344"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:35",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:27",
+          "group_id": "showroom-a477"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:27",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:39",
+          "group_id": "showroom-b117"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:39",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:37",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:9",
+          "group_id": "showroom-a394"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:3",
+          "group_id": "showroom-a170"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:7",
+          "group_id": "showroom-a063"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:45",
+          "group_id": "showroom-a495"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:43",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:2",
+          "group_id": "showroom-a412"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:45",
+          "group_id": "showroom-a447"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:15",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:50",
+          "group_id": "showroom-a392"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:11",
+          "group_id": "showroom-a091"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:27",
+          "group_id": "showroom-a325"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:20",
+          "group_id": "showroom-a220"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:17",
+          "group_id": "showroom-a490"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:26",
+          "group_id": "showroom-a401"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:45",
+          "group_id": "showroom-c147"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:41",
+          "group_id": "showroom-b124"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:14",
+          "group_id": "showroom-a356"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:25",
+          "group_id": "showroom-b425"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:23",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:7",
+          "group_id": "showroom-a063"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:16",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:7",
+          "group_id": "showroom-a007"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:41",
+          "group_id": "showroom-a384"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:26",
+          "group_id": "showroom-a259"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:39",
+          "group_id": "showroom-a421"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:44",
+          "group_id": "showroom-a237"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:18",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:24",
+          "group_id": "showroom-a224"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:33",
+          "group_id": "showroom-a483"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:43",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:43",
+          "group_id": "showroom-a493"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:19",
+          "group_id": "showroom-b316"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:22",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:15",
+          "group_id": "showroom-a456"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:30",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:49",
+          "group_id": "showroom-a449"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:45",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:34",
+          "group_id": "showroom-a323"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:45",
+          "group_id": "showroom-c295"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:50",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:18",
+          "group_id": "showroom-a173"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:21",
+          "group_id": "showroom-a011"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:38",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:24",
+          "group_id": "showroom-a074"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:10",
+          "group_id": "showroom-c310"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:28",
+          "group_id": "showroom-a262"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:12",
+          "group_id": "showroom-b394"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:14",
+          "group_id": "showroom-b464"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:49",
+          "group_id": "showroom-a499"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:25",
+          "group_id": "showroom-a115"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:28",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:30",
+          "group_id": "showroom-a068"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:35",
+          "group_id": "showroom-a063"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:13",
+          "group_id": "showroom-a456"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:48",
+          "group_id": "showroom-a486"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:16",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:47",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:41",
+          "group_id": "showroom-a041"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:3",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:11",
+          "group_id": "showroom-b449"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:36",
+          "group_id": "showroom-a417"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:12",
+          "group_id": "showroom-a012"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:15",
+          "group_id": "showroom-a495"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:4",
+          "group_id": "showroom-b394"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:44",
+          "group_id": "showroom-a344"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:37",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:2",
+          "group_id": "showroom-a259"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:15",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:33",
+          "group_id": "showroom-a456"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:23",
+          "group_id": "showroom-a473"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:44",
+          "group_id": "showroom-a286"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:34",
+          "group_id": "showroom-a108"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:5",
+          "group_id": "showroom-a355"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:45",
+          "group_id": "showroom-a188"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:10",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:25",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:47",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:36",
+          "group_id": "showroom-a336"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:35",
+          "group_id": "showroom-a435"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:24",
+          "group_id": "showroom-b124"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:18",
+          "group_id": "showroom-a170"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:50",
+          "group_id": "showroom-a091"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:19",
+          "group_id": "showroom-a170"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:5",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:47",
+          "group_id": "showroom-a368"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:19",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:8",
+          "group_id": "showroom-a063"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:5",
+          "group_id": "showroom-a005"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:7",
+          "group_id": "showroom-a357"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:38",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:46",
+          "group_id": "showroom-a496"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:13",
+          "group_id": "showroom-a363"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:30",
+          "group_id": "showroom-c480"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:25",
+          "group_id": "showroom-c024"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:14",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:13",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:17",
+          "group_id": "showroom-a005"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:37",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:6",
+          "group_id": "showroom-a394"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:6",
+          "group_id": "showroom-a356"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:19",
+          "group_id": "showroom-a447"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:27",
+          "group_id": "showroom-a228"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:45",
+          "group_id": "showroom-a453"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:19",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:44",
+          "group_id": "showroom-b394"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:32",
+          "group_id": "showroom-a170"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:31",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:22",
+          "group_id": "showroom-a352"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:3",
+          "group_id": "showroom-a353"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:49",
+          "group_id": "showroom-b394"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:7",
+          "group_id": "showroom-a061"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:5",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:8",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:39",
+          "group_id": "showroom-a407"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:26",
+          "group_id": "showroom-a012"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:2",
+          "group_id": "showroom-a230"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:48",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:1",
+          "group_id": "showroom-a001"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:18",
+          "group_id": "showroom-b118"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:8",
+          "group_id": "showroom-a358"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:22",
+          "group_id": "showroom-a404"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:24",
+          "group_id": "showroom-c024"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:20",
+          "group_id": "showroom-b019"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:9",
+          "group_id": "showroom-b425"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:8",
+          "group_id": "showroom-b425"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:1",
+          "group_id": "showroom-a401"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:30",
+          "group_id": "showroom-b316"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:9",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:27",
+          "group_id": "showroom-a412"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:6",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:38",
+          "group_id": "showroom-a351"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:29",
+          "group_id": "showroom-a388"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:17",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:11",
+          "group_id": "showroom-a061"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:17",
+          "group_id": "showroom-a091"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:26",
+          "group_id": "showroom-a325"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:40",
+          "group_id": "showroom-b390"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:32",
+          "group_id": "showroom-a082"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:48",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:43",
+          "group_id": "showroom-a417"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:29",
+          "group_id": "showroom-a351"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:2",
+          "group_id": "showroom-a352"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:24",
+          "group_id": "showroom-c024"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:30",
+          "group_id": "showroom-a115"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:15",
+          "group_id": "showroom-a415"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:15",
+          "group_id": "showroom-a189"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:10",
+          "group_id": "showroom-c460"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:28",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:9",
+          "group_id": "showroom-a109"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:10",
+          "group_id": "showroom-a401"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:23",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:13",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:49",
+          "group_id": "showroom-b149"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:5",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:26",
+          "group_id": "showroom-a231"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:1",
+          "group_id": "showroom-b201"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:16",
+          "group_id": "showroom-b216"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:17",
+          "group_id": "showroom-a356"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:15",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:34",
+          "group_id": "showroom-a484"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:26",
+          "group_id": "showroom-a108"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:22",
+          "group_id": "showroom-a216"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:49",
+          "group_id": "showroom-a082"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:5",
+          "group_id": "showroom-a441"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:24",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:41",
+          "group_id": "showroom-a394"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:41",
+          "group_id": "showroom-a491"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:14",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:31",
+          "group_id": "showroom-a239"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:14",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:17",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:5",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:42",
+          "group_id": "showroom-a492"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:25",
+          "group_id": "showroom-b325"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:38",
+          "group_id": "showroom-a115"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:9",
+          "group_id": "showroom-a065"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:3",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:21",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:44",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:23",
+          "group_id": "showroom-a230"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:27",
+          "group_id": "showroom-a262"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:41",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:15",
+          "group_id": "showroom-a001"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:28",
+          "group_id": "showroom-a328"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:5",
+          "group_id": "showroom-a022"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:19",
+          "group_id": "showroom-a019"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:33",
+          "group_id": "showroom-a321"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:50",
+          "group_id": "showroom-b300"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:47",
+          "group_id": "showroom-a497"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:40",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:38",
+          "group_id": "showroom-a488"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:3",
+          "group_id": "showroom-a003"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:29",
+          "group_id": "showroom-a082"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:30",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:4",
+          "group_id": "showroom-a454"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:19",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:45",
+          "group_id": "showroom-a357"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:48",
+          "group_id": "showroom-c148"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:40",
+          "group_id": "showroom-a390"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:8",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:3",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:45",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:31",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:10",
+          "group_id": "showroom-a081"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:22",
+          "group_id": "showroom-b301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:31",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:44",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:28",
+          "group_id": "showroom-a228"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:40",
+          "group_id": "showroom-a407"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:39",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:41",
+          "group_id": "showroom-a390"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:33",
+          "group_id": "showroom-a283"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:26",
+          "group_id": "showroom-a476"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:36",
+          "group_id": "showroom-a022"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:49",
+          "group_id": "showroom-a474"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:6",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:30",
+          "group_id": "showroom-a063"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:18",
+          "group_id": "showroom-a172"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:50",
+          "group_id": "showroom-a281"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:37",
+          "group_id": "showroom-a217"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:26",
+          "group_id": "showroom-a262"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:24",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:34",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:17",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:21",
+          "group_id": "showroom-a368"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:7",
+          "group_id": "showroom-a022"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:1",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:7",
+          "group_id": "showroom-a486"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:1",
+          "group_id": "showroom-c401"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:23",
+          "group_id": "showroom-a323"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:30",
+          "group_id": "showroom-a461"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:43",
+          "group_id": "showroom-a421"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:7",
+          "group_id": "showroom-a061"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:23",
+          "group_id": "showroom-a188"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:4",
+          "group_id": "showroom-a146"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:48",
+          "group_id": "showroom-c348"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:15",
+          "group_id": "showroom-a461"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:43",
+          "group_id": "showroom-a343"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:6",
+          "group_id": "showroom-b404"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:49",
+          "group_id": "showroom-c399"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:40",
+          "group_id": "showroom-a407"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:18",
+          "group_id": "showroom-a193"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:8",
+          "group_id": "showroom-a100"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:18",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:27",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:43",
+          "group_id": "showroom-a193"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:18",
+          "group_id": "showroom-a014"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:44",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:26",
+          "group_id": "showroom-a115"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:47",
+          "group_id": "showroom-a484"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:10",
+          "group_id": "showroom-a170"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:13",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:41",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:47",
+          "group_id": "showroom-a443"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:37",
+          "group_id": "showroom-a185"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:42",
+          "group_id": "showroom-a411"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:38",
+          "group_id": "showroom-a388"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:27",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:31",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:32",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:10",
+          "group_id": "showroom-a086"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:1",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:40",
+          "group_id": "showroom-a405"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:4",
+          "group_id": "showroom-a169"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:16",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:48",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:15",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:11",
+          "group_id": "showroom-a411"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:49",
+          "group_id": "showroom-b191"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:25",
+          "group_id": "showroom-a112"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:31",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:33",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:17",
+          "group_id": "showroom-a141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:17",
+          "group_id": "showroom-a417"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:32",
+          "group_id": "showroom-a482"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:20",
+          "group_id": "showroom-a224"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:48",
+          "group_id": "showroom-c098"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:8",
+          "group_id": "showroom-a456"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:16",
+          "group_id": "showroom-a216"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:33",
+          "group_id": "showroom-a113"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:17",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:20",
+          "group_id": "showroom-a412"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:30",
+          "group_id": "showroom-a253"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:40",
+          "group_id": "showroom-a040"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:40",
+          "group_id": "showroom-a381"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:14",
+          "group_id": "showroom-a411"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:7",
+          "group_id": "showroom-a143"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:39",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:11",
+          "group_id": "showroom-b455"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:32",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:46",
+          "group_id": "showroom-a086"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:3",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:19",
+          "group_id": "showroom-b219"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:32",
+          "group_id": "showroom-a301"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:37",
+          "group_id": "showroom-b187"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:11",
+          "group_id": "showroom-b449"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:26",
+          "group_id": "showroom-a021"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:39",
+          "group_id": "showroom-a413"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:10",
+          "group_id": "showroom-a323"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:5",
+          "group_id": "showroom-a173"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:35",
+          "group_id": "showroom-a021"
+        }
+      ]
+    },
+    "dev": {
+      "records": 126,
+      "intents": {
+        "inform": 42,
+        "request_flow": 40,
+        "UNK": 10,
+        "deny": 5,
+        "affirm": 6,
+        "greet": 3,
+        "request_stop": 7,
+        "request_quit": 7,
+        "request_resume": 6
+      },
+      "slots": {
+        "choice": 5,
+        "theme": 21,
+        "part": 24,
+        "flow_ref": 15,
+        "name": 19
+      },
+      "rows": [
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:10",
+          "group_id": "showroom-a272"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:14",
+          "group_id": "showroom-b499"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:16",
+          "group_id": "showroom-a084"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:50",
+          "group_id": "showroom-c050"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:22",
+          "group_id": "showroom-a272"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:24",
+          "group_id": "showroom-a024"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:22",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:37",
+          "group_id": "showroom-a375"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:14",
+          "group_id": "showroom-a214"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:27",
+          "group_id": "showroom-a272"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:50",
+          "group_id": "showroom-c050"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:29",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:34",
+          "group_id": "showroom-c484"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:21",
+          "group_id": "showroom-a062"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:2",
+          "group_id": "showroom-a002"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:13",
+          "group_id": "showroom-b499"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:39",
+          "group_id": "showroom-a084"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:48",
+          "group_id": "showroom-a191"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:17",
+          "group_id": "showroom-a248"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:26",
+          "group_id": "showroom-b326"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:13",
+          "group_id": "showroom-a313"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:29",
+          "group_id": "showroom-a002"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:13",
+          "group_id": "showroom-a391"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:41",
+          "group_id": "showroom-a391"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:13",
+          "group_id": "showroom-b499"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:11",
+          "group_id": "showroom-a025"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:50",
+          "group_id": "showroom-c050"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:45",
+          "group_id": "showroom-a446"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:43",
+          "group_id": "showroom-a416"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:12",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:44",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:19",
+          "group_id": "showroom-a419"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:30",
+          "group_id": "showroom-a025"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:50",
+          "group_id": "showroom-c050"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:26",
+          "group_id": "showroom-a062"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:13",
+          "group_id": "showroom-b499"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:48",
+          "group_id": "showroom-a248"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:12",
+          "group_id": "showroom-b499"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:15",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:24",
+          "group_id": "showroom-c073"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:32",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:37",
+          "group_id": "showroom-a287"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:15",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:24",
+          "group_id": "showroom-a324"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:42",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:13",
+          "group_id": "showroom-a084"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:41",
+          "group_id": "showroom-a062"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:16",
+          "group_id": "showroom-a002"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:7",
+          "group_id": "showroom-a084"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:37",
+          "group_id": "showroom-a375"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:4",
+          "group_id": "showroom-c354"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:35",
+          "group_id": "showroom-a025"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:17",
+          "group_id": "showroom-a024"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:37",
+          "group_id": "showroom-a324"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:15",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:10",
+          "group_id": "showroom-a416"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:25",
+          "group_id": "showroom-a025"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:38",
+          "group_id": "showroom-a375"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:50",
+          "group_id": "showroom-c050"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:18",
+          "group_id": "showroom-b268"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:15",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:50",
+          "group_id": "showroom-c050"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:27",
+          "group_id": "showroom-a272"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:16",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:6",
+          "group_id": "showroom-a006"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:50",
+          "group_id": "showroom-c050"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:35",
+          "group_id": "showroom-a324"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:32",
+          "group_id": "showroom-a432"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:33",
+          "group_id": "showroom-a062"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:46",
+          "group_id": "showroom-c146"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:10",
+          "group_id": "showroom-a025"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:49",
+          "group_id": "showroom-b499"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:50",
+          "group_id": "showroom-c050"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:15",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:16",
+          "group_id": "showroom-a025"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:5",
+          "group_id": "showroom-a062"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:30",
+          "group_id": "showroom-b130"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:7",
+          "group_id": "showroom-a062"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:17",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:19",
+          "group_id": "showroom-b268"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:42",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:34",
+          "group_id": "showroom-a084"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:25",
+          "group_id": "showroom-c073"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:7",
+          "group_id": "showroom-a025"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:47",
+          "group_id": "showroom-a446"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:1",
+          "group_id": "showroom-a002"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:41",
+          "group_id": "showroom-a191"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:9",
+          "group_id": "showroom-a084"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:27",
+          "group_id": "showroom-a272"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:47",
+          "group_id": "showroom-c497"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:24",
+          "group_id": "showroom-a463"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:12",
+          "group_id": "showroom-b262"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:50",
+          "group_id": "showroom-c050"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:14",
+          "group_id": "showroom-b499"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:12",
+          "group_id": "showroom-a362"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:25",
+          "group_id": "showroom-a375"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:16",
+          "group_id": "showroom-a416"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:19",
+          "group_id": "showroom-a006"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:9",
+          "group_id": "showroom-a062"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:16",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:18",
+          "group_id": "showroom-a025"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:41",
+          "group_id": "showroom-a391"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:38",
+          "group_id": "showroom-a338"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:34",
+          "group_id": "showroom-a024"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:13",
+          "group_id": "showroom-a463"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:45",
+          "group_id": "showroom-a084"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:21",
+          "group_id": "showroom-a214"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:44",
+          "group_id": "showroom-a214"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:23",
+          "group_id": "showroom-a062"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:21",
+          "group_id": "showroom-b121"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:50",
+          "group_id": "showroom-c050"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:46",
+          "group_id": "showroom-a446"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:12",
+          "group_id": "showroom-a062"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:35",
+          "group_id": "showroom-a324"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:35",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:23",
+          "group_id": "showroom-c073"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:41",
+          "group_id": "showroom-a391"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:40",
+          "group_id": "showroom-a391"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:48",
+          "group_id": "showroom-a298"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:21",
+          "group_id": "showroom-a214"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:6",
+          "group_id": "showroom-a416"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:16",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:20",
+          "group_id": "showroom-a062"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:23",
+          "group_id": "showroom-a062"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:2",
+          "group_id": "showroom-a142"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p07.jsonl:32",
+          "group_id": "showroom-b332"
+        }
+      ]
+    },
+    "test": {
+      "records": 125,
+      "intents": {
+        "request_flow": 32,
+        "greet": 18,
+        "inform": 37,
+        "affirm": 6,
+        "UNK": 7,
+        "request_quit": 7,
+        "request_resume": 6,
+        "request_stop": 7,
+        "deny": 5
+      },
+      "slots": {
+        "theme": 25,
+        "flow_ref": 17,
+        "name": 16,
+        "part": 23,
+        "choice": 9
+      },
+      "rows": [
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:19",
+          "group_id": "showroom-a092"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:3",
+          "group_id": "showroom-a054"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:30",
+          "group_id": "showroom-a292"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:25",
+          "group_id": "showroom-a212"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:32",
+          "group_id": "showroom-a305"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:45",
+          "group_id": "showroom-a120"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:31",
+          "group_id": "showroom-a331"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:27",
+          "group_id": "showroom-a069"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:35",
+          "group_id": "showroom-a340"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:19",
+          "group_id": "showroom-c019"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:6",
+          "group_id": "showroom-a043"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:3",
+          "group_id": "showroom-a258"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:32",
+          "group_id": "showroom-a305"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:20",
+          "group_id": "showroom-a305"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:6",
+          "group_id": "showroom-a043"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:19",
+          "group_id": "showroom-a176"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:48",
+          "group_id": "showroom-a485"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:32",
+          "group_id": "showroom-a305"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:14",
+          "group_id": "showroom-a444"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:47",
+          "group_id": "showroom-a190"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:25",
+          "group_id": "showroom-a425"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:7",
+          "group_id": "showroom-a069"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:9",
+          "group_id": "showroom-a385"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:19",
+          "group_id": "showroom-a069"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p01.jsonl:26",
+          "group_id": "showroom-a258"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:10",
+          "group_id": "showroom-b210"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:36",
+          "group_id": "showroom-b089"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:10",
+          "group_id": "showroom-a010"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:16",
+          "group_id": "showroom-a385"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:31",
+          "group_id": "showroom-a444"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:12",
+          "group_id": "showroom-a120"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:43",
+          "group_id": "showroom-a043"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:36",
+          "group_id": "showroom-b089"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:20",
+          "group_id": "showroom-a120"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:42",
+          "group_id": "showroom-a292"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:49",
+          "group_id": "showroom-c499"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:35",
+          "group_id": "showroom-a340"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:6",
+          "group_id": "showroom-b206"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:18",
+          "group_id": "showroom-a087"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:35",
+          "group_id": "showroom-a385"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:48",
+          "group_id": "showroom-a385"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:21",
+          "group_id": "showroom-c321"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:24",
+          "group_id": "showroom-a240"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:44",
+          "group_id": "showroom-a444"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:30",
+          "group_id": "showroom-a292"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p02.jsonl:39",
+          "group_id": "showroom-b089"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:26",
+          "group_id": "showroom-b276"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:43",
+          "group_id": "showroom-a240"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:13",
+          "group_id": "showroom-a120"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:4",
+          "group_id": "showroom-a004"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:38",
+          "group_id": "showroom-a054"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p03.jsonl:45",
+          "group_id": "showroom-a145"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:8",
+          "group_id": "showroom-a258"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:42",
+          "group_id": "showroom-a092"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:29",
+          "group_id": "showroom-a292"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:40",
+          "group_id": "showroom-a190"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:26",
+          "group_id": "showroom-a258"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:4",
+          "group_id": "showroom-a054"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:5",
+          "group_id": "showroom-a305"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:41",
+          "group_id": "showroom-c141"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:40",
+          "group_id": "showroom-a340"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:43",
+          "group_id": "showroom-a425"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:12",
+          "group_id": "showroom-a212"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p01.jsonl:15",
+          "group_id": "showroom-a015"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:31",
+          "group_id": "showroom-a305"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:8",
+          "group_id": "showroom-a092"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:32",
+          "group_id": "showroom-a305"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:47",
+          "group_id": "showroom-a240"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:44",
+          "group_id": "showroom-a087"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:39",
+          "group_id": "showroom-a339"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:1",
+          "group_id": "showroom-c251"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:25",
+          "group_id": "showroom-a385"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:50",
+          "group_id": "showroom-a340"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:38",
+          "group_id": "showroom-a145"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:46",
+          "group_id": "showroom-a444"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:50",
+          "group_id": "showroom-a240"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p07.jsonl:14",
+          "group_id": "showroom-a120"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:18",
+          "group_id": "showroom-a444"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p04.jsonl:48",
+          "group_id": "showroom-a485"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:44",
+          "group_id": "showroom-c144"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:48",
+          "group_id": "showroom-a145"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:8",
+          "group_id": "showroom-a069"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p09.jsonl:6",
+          "group_id": "showroom-a043"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:5",
+          "group_id": "showroom-a043"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:46",
+          "group_id": "showroom-a292"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:32",
+          "group_id": "showroom-a305"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:6",
+          "group_id": "showroom-a145"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:36",
+          "group_id": "showroom-a190"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:49",
+          "group_id": "showroom-a292"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:40",
+          "group_id": "showroom-a240"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:12",
+          "group_id": "showroom-b212"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:26",
+          "group_id": "showroom-a176"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p09.jsonl:13",
+          "group_id": "showroom-a054"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p07.jsonl:12",
+          "group_id": "showroom-a305"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:40",
+          "group_id": "showroom-a440"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p08.jsonl:7",
+          "group_id": "showroom-a069"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p05.jsonl:2",
+          "group_id": "showroom-c202"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:15",
+          "group_id": "showroom-a145"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:23",
+          "group_id": "showroom-a240"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p03.jsonl:5",
+          "group_id": "showroom-a054"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p08.jsonl:9",
+          "group_id": "showroom-a359"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p01.jsonl:17",
+          "group_id": "showroom-a292"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:30",
+          "group_id": "showroom-a430"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p05.jsonl:25",
+          "group_id": "showroom-a145"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p02.jsonl:46",
+          "group_id": "showroom-a444"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:43",
+          "group_id": "showroom-a425"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:27",
+          "group_id": "showroom-a258"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:46",
+          "group_id": "showroom-a190"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p10.jsonl:50",
+          "group_id": "showroom-b500"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:26",
+          "group_id": "showroom-a258"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:32",
+          "group_id": "showroom-a305"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:25",
+          "group_id": "showroom-a240"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p04.jsonl:49",
+          "group_id": "showroom-a190"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p05.jsonl:41",
+          "group_id": "showroom-a240"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p06.jsonl:15",
+          "group_id": "showroom-a258"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p10.jsonl:29",
+          "group_id": "showroom-a292"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p03.jsonl:5",
+          "group_id": "showroom-a385"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p09.jsonl:50",
+          "group_id": "showroom-a444"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:24",
+          "group_id": "showroom-a176"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p06.jsonl:36",
+          "group_id": "showroom-b089"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p08.jsonl:7",
+          "group_id": "showroom-a258"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p02.jsonl:37",
+          "group_id": "showroom-a087"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T134430608299Z_s111510_p04.jsonl:27",
+          "group_id": "showroom-a258"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T123953698713Z_s44082_p06.jsonl:47",
+          "group_id": "showroom-b297"
+        },
+        {
+          "source": "data/showroom/raw/showroom_20261030T103220259528Z_s163172_p10.jsonl:35",
+          "group_id": "showroom-a485"
+        }
+      ]
+    }
+  }
+}

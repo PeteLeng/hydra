@@ -1,0 +1,50 @@
+{"text":"Start a showroom presentation","intent":"request_flow","slots":[]}
+{"text":"Can I try one of the demos?","intent":"request_flow","slots":[]}
+{"text":"Turn on the headlights demo","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":22}]}
+{"text":"Can you show me the massaging chairs?","intent":"request_flow","slots":[{"type":"flow_ref","start":20,"end":36}],"alias_proposals":[{"slot":0,"value":"massage_seats"}]}
+{"text":"Let's see the privacy windows work","intent":"request_flow","slots":[{"type":"flow_ref","start":14,"end":29}]}
+{"text":"Run the mobile theater inside for entertainment","intent":"request_flow","slots":[{"type":"flow_ref","start":8,"end":22},{"type":"part","start":23,"end":29},{"type":"theme","start":34,"end":47}]}
+{"text":"Show me what's inside the vehicle","intent":"request_flow","slots":[{"type":"part","start":15,"end":21}]}
+{"text":"Can you run an outside demo?","intent":"request_flow","slots":[{"type":"part","start":15,"end":22}]}
+{"text":"Let's check out the interior demos","intent":"request_flow","slots":[{"type":"part","start":20,"end":28}]}
+{"text":"Could you show me an entertainment feature?","intent":"request_flow","slots":[{"type":"theme","start":21,"end":34}]}
+{"text":"Demonstrate the privacy options","intent":"request_flow","slots":[{"type":"theme","start":16,"end":23}]}
+{"text":"Run a family-friendly demo inside","intent":"request_flow","slots":[{"type":"theme","start":6,"end":21},{"type":"part","start":27,"end":33}]}
+{"text":"What exterior features are for entertainment?","intent":"request_flow","slots":[{"type":"part","start":5,"end":13},{"type":"theme","start":31,"end":44}]}
+{"text":"Show me privacy features in the cabin","intent":"request_flow","slots":[{"type":"theme","start":8,"end":15},{"type":"part","start":32,"end":37}]}
+{"text":"I'm Yara Al-Mansoor","intent":"inform","slots":[{"type":"name","start":4,"end":19}]}
+{"text":"Call me Sebastian","intent":"inform","slots":[{"type":"name","start":8,"end":17}]}
+{"text":"My name is Kofi Mensah","intent":"inform","slots":[{"type":"name","start":11,"end":22}]}
+{"text":"I'd go with the privacy glass","intent":"inform","slots":[{"type":"flow_ref","start":16,"end":29}]}
+{"text":"The headlights please","intent":"inform","slots":[{"type":"flow_ref","start":4,"end":14}]}
+{"text":"In-car cinema","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":13}]}
+{"text":"The outside","intent":"inform","slots":[{"type":"part","start":4,"end":11}]}
+{"text":"I'd like the cabin","intent":"inform","slots":[{"type":"part","start":13,"end":18}]}
+{"text":"Exterior is fine","intent":"inform","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"I prefer family-friendly options","intent":"inform","slots":[{"type":"theme","start":9,"end":24}]}
+{"text":"Focus on privacy","intent":"inform","slots":[{"type":"theme","start":9,"end":16}]}
+{"text":"I'll take the seventh one","intent":"inform","slots":[{"type":"choice","start":14,"end":25}]}
+{"text":"Choose 9","intent":"inform","slots":[{"type":"choice","start":7,"end":8}]}
+{"text":"The 1st option","intent":"inform","slots":[{"type":"choice","start":4,"end":14}]}
+{"text":"Hi! How's your day going?","intent":"greet","slots":[]}
+{"text":"Good day","intent":"greet","slots":[]}
+{"text":"Hello, I am Ingrid Bergman","intent":"greet","slots":[{"type":"name","start":12,"end":26}]}
+{"text":"Hey! My name is Dante","intent":"greet","slots":[{"type":"name","start":16,"end":21}]}
+{"text":"Yup","intent":"affirm","slots":[]}
+{"text":"Agreed","intent":"affirm","slots":[]}
+{"text":"Yes, that sounds great","intent":"affirm","slots":[]}
+{"text":"No, cancel that","intent":"deny","slots":[]}
+{"text":"Not what I wanted","intent":"deny","slots":[]}
+{"text":"Uh-uh, no","intent":"deny","slots":[]}
+{"text":"Stop the flow please","intent":"request_stop","slots":[]}
+{"text":"Pause right there","intent":"request_stop","slots":[]}
+{"text":"Hold on a second, stop","intent":"request_stop","slots":[]}
+{"text":"Okay, unpause","intent":"request_resume","slots":[]}
+{"text":"Keep playing the demo","intent":"request_resume","slots":[]}
+{"text":"Resume the current flow","intent":"request_resume","slots":[]}
+{"text":"Quit the showroom session","intent":"request_quit","slots":[]}
+{"text":"We can end it here","intent":"request_quit","slots":[]}
+{"text":"Exit now please","intent":"request_quit","slots":[]}
+{"text":"Where do I sign the purchase paperwork?","intent":"UNK","slots":[]}
+{"text":"Convert 100 euros to US dollars","intent":"UNK","slots":[]}
+{"text":"quasar 339 bingle hop","intent":"UNK","slots":[]}

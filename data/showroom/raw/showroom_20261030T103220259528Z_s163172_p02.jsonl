@@ -1,0 +1,50 @@
+{"text":"could I see the DLP Headlights","intent":"request_flow","slots":[{"type":"flow_ref","start":16,"end":30}]}
+{"text":"let's view the headlights","intent":"request_flow","slots":[{"type":"flow_ref","start":15,"end":25}]}
+{"text":"may I see Cabin Cinema","intent":"request_flow","slots":[{"type":"flow_ref","start":10,"end":22}]}
+{"text":"put on the in-car cinema","intent":"request_flow","slots":[{"type":"flow_ref","start":11,"end":24}]}
+{"text":"can we try Massaging Seats","intent":"request_flow","slots":[{"type":"flow_ref","start":11,"end":26}]}
+{"text":"I want to experience seat massage","intent":"request_flow","slots":[{"type":"flow_ref","start":21,"end":33}]}
+{"text":"show massage seats next","intent":"request_flow","slots":[{"type":"flow_ref","start":5,"end":18}]}
+{"text":"let me see privacy glass","intent":"request_flow","slots":[{"type":"flow_ref","start":11,"end":24}]}
+{"text":"could we try the Privacy Window","intent":"request_flow","slots":[{"type":"flow_ref","start":17,"end":31}]}
+{"text":"bring up privacy windows","intent":"request_flow","slots":[{"type":"flow_ref","start":9,"end":24}]}
+{"text":"show me features inside","intent":"request_flow","slots":[{"type":"part","start":17,"end":23}]}
+{"text":"anything in the interior","intent":"request_flow","slots":[{"type":"part","start":16,"end":24}]}
+{"text":"what can I try in the cabin","intent":"request_flow","slots":[{"type":"part","start":22,"end":27}]}
+{"text":"demos for the interior please","intent":"request_flow","slots":[{"type":"part","start":14,"end":22}]}
+{"text":"let's look inside","intent":"request_flow","slots":[{"type":"part","start":11,"end":17}]}
+{"text":"show cabin features","intent":"request_flow","slots":[{"type":"part","start":5,"end":10}]}
+{"text":"anything indoors worth seeing","intent":"request_flow","slots":[{"type":"part","start":9,"end":16}],"alias_proposals":[{"slot":0,"value":"inside"}]}
+{"text":"I want interior demos","intent":"request_flow","slots":[{"type":"part","start":7,"end":15}]}
+{"text":"can you show the cabin","intent":"request_flow","slots":[{"type":"part","start":17,"end":22}]}
+{"text":"what's available inside","intent":"request_flow","slots":[{"type":"part","start":17,"end":23}]}
+{"text":"anything on the exterior","intent":"request_flow","slots":[{"type":"part","start":16,"end":24}]}
+{"text":"show outside features","intent":"request_flow","slots":[{"type":"part","start":5,"end":12}]}
+{"text":"what is there on the exterior","intent":"request_flow","slots":[{"type":"part","start":21,"end":29}]}
+{"text":"can I see exterior demos","intent":"request_flow","slots":[{"type":"part","start":10,"end":18}]}
+{"text":"walk me through the outside","intent":"request_flow","slots":[{"type":"part","start":20,"end":27}]}
+{"text":"got anything for the exterior","intent":"request_flow","slots":[{"type":"part","start":21,"end":29}]}
+{"text":"show me the outside of the car","intent":"request_flow","slots":[{"type":"part","start":12,"end":19}]}
+{"text":"exterior features please","intent":"request_flow","slots":[{"type":"part","start":0,"end":8}]}
+{"text":"can we browse outdoors","intent":"request_flow","slots":[{"type":"part","start":14,"end":22}],"alias_proposals":[{"slot":0,"value":"outside"}]}
+{"text":"I'd like an exterior tour","intent":"request_flow","slots":[{"type":"part","start":12,"end":20}]}
+{"text":"any family features to try","intent":"request_flow","slots":[{"type":"theme","start":4,"end":10}]}
+{"text":"something family-friendly please","intent":"request_flow","slots":[{"type":"theme","start":10,"end":25}]}
+{"text":"demos for families","intent":"request_flow","slots":[{"type":"theme","start":10,"end":18}]}
+{"text":"I want a family demo","intent":"request_flow","slots":[{"type":"theme","start":9,"end":15}]}
+{"text":"what's good for the family","intent":"request_flow","slots":[{"type":"theme","start":20,"end":26}]}
+{"text":"show family oriented demos","intent":"request_flow","slots":[{"type":"theme","start":5,"end":20}],"alias_proposals":[{"slot":0,"value":"family"}]}
+{"text":"anything for families","intent":"request_flow","slots":[{"type":"theme","start":13,"end":21}]}
+{"text":"show me entertainment features","intent":"request_flow","slots":[{"type":"theme","start":8,"end":21}]}
+{"text":"I want an entertainment demo","intent":"request_flow","slots":[{"type":"theme","start":10,"end":23}]}
+{"text":"what entertainment options are there","intent":"request_flow","slots":[{"type":"theme","start":5,"end":18}]}
+{"text":"let's see entertainment stuff","intent":"request_flow","slots":[{"type":"theme","start":10,"end":23}]}
+{"text":"pull up entertainment demos","intent":"request_flow","slots":[{"type":"theme","start":8,"end":21}]}
+{"text":"got any entertainment features","intent":"request_flow","slots":[{"type":"theme","start":8,"end":21}]}
+{"text":"anything about privacy","intent":"request_flow","slots":[{"type":"theme","start":15,"end":22}]}
+{"text":"I want a privacy demo","intent":"request_flow","slots":[{"type":"theme","start":9,"end":16}]}
+{"text":"demos focused on privacy","intent":"request_flow","slots":[{"type":"theme","start":17,"end":24}]}
+{"text":"what do you have for privacy","intent":"request_flow","slots":[{"type":"theme","start":21,"end":28}]}
+{"text":"let's try privacy options","intent":"request_flow","slots":[{"type":"theme","start":10,"end":17}]}
+{"text":"something more private please","intent":"request_flow","slots":[{"type":"theme","start":15,"end":22}],"alias_proposals":[{"slot":0,"value":"privacy"}]}
+{"text":"can I see something for privacy","intent":"request_flow","slots":[{"type":"theme","start":24,"end":31}]}

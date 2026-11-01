@@ -1,0 +1,50 @@
+{"text":"I'm thinking inside","intent":"inform","slots":[{"type":"part","start":13,"end":19}]}
+{"text":"indoors","intent":"inform","slots":[{"type":"part","start":0,"end":7}],"alias_proposals":[{"slot":0,"value":"inside"}]}
+{"text":"I'll take outside","intent":"inform","slots":[{"type":"part","start":10,"end":17}]}
+{"text":"outdoors","intent":"inform","slots":[{"type":"part","start":0,"end":8}],"alias_proposals":[{"slot":0,"value":"outside"}]}
+{"text":"family","intent":"inform","slots":[{"type":"theme","start":0,"end":6}]}
+{"text":"family-friendly","intent":"inform","slots":[{"type":"theme","start":0,"end":15}]}
+{"text":"families","intent":"inform","slots":[{"type":"theme","start":0,"end":8}]}
+{"text":"I prefer family","intent":"inform","slots":[{"type":"theme","start":9,"end":15}]}
+{"text":"I prefer family-friendly","intent":"inform","slots":[{"type":"theme","start":9,"end":24}]}
+{"text":"I'll go with families","intent":"inform","slots":[{"type":"theme","start":13,"end":21}]}
+{"text":"the family one","intent":"inform","slots":[{"type":"theme","start":4,"end":10}]}
+{"text":"I like family-friendly","intent":"inform","slots":[{"type":"theme","start":7,"end":22}]}
+{"text":"families it is","intent":"inform","slots":[{"type":"theme","start":0,"end":8}]}
+{"text":"family-friendly for me","intent":"inform","slots":[{"type":"theme","start":0,"end":15}]}
+{"text":"entertainment","intent":"inform","slots":[{"type":"theme","start":0,"end":13}]}
+{"text":"I'm into entertainment","intent":"inform","slots":[{"type":"theme","start":9,"end":22}]}
+{"text":"make it entertainment","intent":"inform","slots":[{"type":"theme","start":8,"end":21}]}
+{"text":"entertainment sounds right","intent":"inform","slots":[{"type":"theme","start":0,"end":13}]}
+{"text":"leaning toward entertainment","intent":"inform","slots":[{"type":"theme","start":15,"end":28}]}
+{"text":"pick entertainment","intent":"inform","slots":[{"type":"theme","start":5,"end":18}]}
+{"text":"entertainment it is","intent":"inform","slots":[{"type":"theme","start":0,"end":13}]}
+{"text":"how about entertainment","intent":"inform","slots":[{"type":"theme","start":10,"end":23}]}
+{"text":"we should do entertainment","intent":"inform","slots":[{"type":"theme","start":12,"end":25}]}
+{"text":"privacy","intent":"inform","slots":[{"type":"theme","start":0,"end":7}]}
+{"text":"just privacy","intent":"inform","slots":[{"type":"theme","start":5,"end":12}]}
+{"text":"let's stick with privacy","intent":"inform","slots":[{"type":"theme","start":17,"end":24}]}
+{"text":"I'd rather have privacy","intent":"inform","slots":[{"type":"theme","start":16,"end":23}]}
+{"text":"privacy is my preference","intent":"inform","slots":[{"type":"theme","start":0,"end":7}]}
+{"text":"a privacy preference","intent":"inform","slots":[{"type":"theme","start":2,"end":9}]}
+{"text":"thinking privacy today","intent":"inform","slots":[{"type":"theme","start":9,"end":16}]}
+{"text":"privacy works better","intent":"inform","slots":[{"type":"theme","start":0,"end":7}]}
+{"text":"privacy all the way","intent":"inform","slots":[{"type":"theme","start":0,"end":7}]}
+{"text":"one","intent":"inform","slots":[{"type":"choice","start":0,"end":3}]}
+{"text":"two","intent":"inform","slots":[{"type":"choice","start":0,"end":3}]}
+{"text":"three","intent":"inform","slots":[{"type":"choice","start":0,"end":5}]}
+{"text":"four","intent":"inform","slots":[{"type":"choice","start":0,"end":4}]}
+{"text":"five","intent":"inform","slots":[{"type":"choice","start":0,"end":4}]}
+{"text":"six","intent":"inform","slots":[{"type":"choice","start":0,"end":3}]}
+{"text":"seven","intent":"inform","slots":[{"type":"choice","start":0,"end":5}]}
+{"text":"eight","intent":"inform","slots":[{"type":"choice","start":0,"end":5}]}
+{"text":"nine","intent":"inform","slots":[{"type":"choice","start":0,"end":4}]}
+{"text":"ten","intent":"inform","slots":[{"type":"choice","start":0,"end":3}]}
+{"text":"the first one","intent":"inform","slots":[{"type":"choice","start":4,"end":13}]}
+{"text":"second one","intent":"inform","slots":[{"type":"choice","start":0,"end":10}]}
+{"text":"the third one","intent":"inform","slots":[{"type":"choice","start":4,"end":13}]}
+{"text":"option two","intent":"inform","slots":[{"type":"choice","start":0,"end":10}]}
+{"text":"option 4","intent":"inform","slots":[{"type":"choice","start":0,"end":8}]}
+{"text":"number 3","intent":"inform","slots":[{"type":"choice","start":0,"end":8}]}
+{"text":"number 7","intent":"inform","slots":[{"type":"choice","start":0,"end":8}]}
+{"text":"2nd option","intent":"inform","slots":[{"type":"choice","start":0,"end":10}]}

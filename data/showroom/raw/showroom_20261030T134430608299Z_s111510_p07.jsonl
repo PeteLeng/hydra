@@ -1,0 +1,50 @@
+{"text":"Could we launch a demo now?","intent":"request_flow","slots":[]}
+{"text":"Show me what this car can do","intent":"request_flow","slots":[]}
+{"text":"Can I test out the seat massage?","intent":"request_flow","slots":[{"type":"flow_ref","start":19,"end":31}]}
+{"text":"Run the dimming windows demo","intent":"request_flow","slots":[{"type":"flow_ref","start":8,"end":23}],"alias_proposals":[{"slot":0,"value":"privacy_window"}]}
+{"text":"Let's try the in-car cinema","intent":"request_flow","slots":[{"type":"flow_ref","start":14,"end":27}]}
+{"text":"Show me the DLP lights for entertainment","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":22},{"type":"theme","start":27,"end":40}]}
+{"text":"What demos do you have on the outside?","intent":"request_flow","slots":[{"type":"part","start":30,"end":37}]}
+{"text":"Please show me an inside feature","intent":"request_flow","slots":[{"type":"part","start":18,"end":24}]}
+{"text":"Let's try an exterior walkthrough","intent":"request_flow","slots":[{"type":"part","start":13,"end":21}]}
+{"text":"Show me a demo about privacy","intent":"request_flow","slots":[{"type":"theme","start":21,"end":28}]}
+{"text":"Can we see the family demos?","intent":"request_flow","slots":[{"type":"theme","start":15,"end":21}]}
+{"text":"Are there any family-friendly demos on the exterior?","intent":"request_flow","slots":[{"type":"theme","start":14,"end":29},{"type":"part","start":43,"end":51}]}
+{"text":"Play an entertainment demo in the cabin","intent":"request_flow","slots":[{"type":"theme","start":8,"end":21},{"type":"part","start":34,"end":39}]}
+{"text":"Let's see the outside features for privacy","intent":"request_flow","slots":[{"type":"part","start":14,"end":21},{"type":"theme","start":35,"end":42}]}
+{"text":"My name is Tessa Montgomery","intent":"inform","slots":[{"type":"name","start":11,"end":27}]}
+{"text":"I am Rohan","intent":"inform","slots":[{"type":"name","start":5,"end":10}]}
+{"text":"You can call me Jean-Luc","intent":"inform","slots":[{"type":"name","start":16,"end":24}]}
+{"text":"DLP headlights please","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":14}]}
+{"text":"I'd prefer the theater","intent":"inform","slots":[{"type":"flow_ref","start":15,"end":22}]}
+{"text":"Massage seats","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":13}]}
+{"text":"Definitely the interior","intent":"inform","slots":[{"type":"part","start":15,"end":23}]}
+{"text":"Outside the car","intent":"inform","slots":[{"type":"part","start":0,"end":7}]}
+{"text":"I'm interested in the cabin","intent":"inform","slots":[{"type":"part","start":22,"end":27}]}
+{"text":"Family is what matters to me","intent":"inform","slots":[{"type":"theme","start":0,"end":6}]}
+{"text":"Something for entertainment","intent":"inform","slots":[{"type":"theme","start":14,"end":27}]}
+{"text":"The sixth one","intent":"inform","slots":[{"type":"choice","start":4,"end":13}]}
+{"text":"Show me option 1","intent":"inform","slots":[{"type":"choice","start":8,"end":16}]}
+{"text":"Number eight","intent":"inform","slots":[{"type":"choice","start":0,"end":12}]}
+{"text":"Hello, nice to meet you!","intent":"greet","slots":[]}
+{"text":"Hey, how are things?","intent":"greet","slots":[]}
+{"text":"Hi there, I'm Clara Oswald","intent":"greet","slots":[{"type":"name","start":14,"end":26}]}
+{"text":"Hello, my name is Nikolai","intent":"greet","slots":[{"type":"name","start":18,"end":25}]}
+{"text":"Yes, of course","intent":"affirm","slots":[]}
+{"text":"That's the one","intent":"affirm","slots":[]}
+{"text":"Sure, why not","intent":"affirm","slots":[]}
+{"text":"No, let's not","intent":"deny","slots":[]}
+{"text":"Not quite","intent":"deny","slots":[]}
+{"text":"I disagree","intent":"deny","slots":[]}
+{"text":"Pause the video right here","intent":"request_stop","slots":[]}
+{"text":"Stop the current walkthrough","intent":"request_stop","slots":[]}
+{"text":"Wait, hold the presentation","intent":"request_stop","slots":[]}
+{"text":"Resume the presentation please","intent":"request_resume","slots":[]}
+{"text":"Keep going with the flow","intent":"request_resume","slots":[]}
+{"text":"You can continue now","intent":"request_resume","slots":[]}
+{"text":"Let's exit the showroom experience","intent":"request_quit","slots":[]}
+{"text":"Shut down the demo session","intent":"request_quit","slots":[]}
+{"text":"I'd like to quit","intent":"request_quit","slots":[]}
+{"text":"What is the towing capacity of this model?","intent":"UNK","slots":[]}
+{"text":"Set an alarm for 6:30 AM","intent":"UNK","slots":[]}
+{"text":"snickerdoodle 505 hypercube","intent":"UNK","slots":[]}

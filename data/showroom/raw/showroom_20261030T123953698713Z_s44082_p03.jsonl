@@ -1,0 +1,50 @@
+{"text":"stop","intent":"request_stop","slots":[]}
+{"text":"stop it","intent":"request_stop","slots":[]}
+{"text":"pause","intent":"request_stop","slots":[]}
+{"text":"pause it","intent":"request_stop","slots":[]}
+{"text":"halt the demo","intent":"request_stop","slots":[]}
+{"text":"would you stop","intent":"request_stop","slots":[]}
+{"text":"stop playing","intent":"request_stop","slots":[]}
+{"text":"end the demo","intent":"request_stop","slots":[]}
+{"text":"cut it off","intent":"request_stop","slots":[]}
+{"text":"can you stop","intent":"request_stop","slots":[]}
+{"text":"stop this","intent":"request_stop","slots":[]}
+{"text":"pause the show","intent":"request_stop","slots":[]}
+{"text":"freeze it","intent":"request_stop","slots":[]}
+{"text":"stop now","intent":"request_stop","slots":[]}
+{"text":"can we pause","intent":"request_stop","slots":[]}
+{"text":"halt","intent":"request_stop","slots":[]}
+{"text":"stop the presentation","intent":"request_stop","slots":[]}
+{"text":"turn it off","intent":"request_stop","slots":[]}
+{"text":"cancel the demo","intent":"request_stop","slots":[]}
+{"text":"stop running that","intent":"request_stop","slots":[]}
+{"text":"pause everything","intent":"request_stop","slots":[]}
+{"text":"I want this to stop","intent":"request_stop","slots":[]}
+{"text":"stop playback","intent":"request_stop","slots":[]}
+{"text":"hold the demo","intent":"request_stop","slots":[]}
+{"text":"bring the demo to a halt","intent":"request_stop","slots":[]}
+{"text":"enough of the demo","intent":"request_stop","slots":[]}
+{"text":"pause the demonstration","intent":"request_stop","slots":[]}
+{"text":"stop this demo now","intent":"request_stop","slots":[]}
+{"text":"can you pause it","intent":"request_stop","slots":[]}
+{"text":"halt playback","intent":"request_stop","slots":[]}
+{"text":"resume","intent":"request_resume","slots":[]}
+{"text":"continue","intent":"request_resume","slots":[]}
+{"text":"keep going","intent":"request_resume","slots":[]}
+{"text":"back to the demo","intent":"request_resume","slots":[]}
+{"text":"continue the demo","intent":"request_resume","slots":[]}
+{"text":"pick up where we left off","intent":"request_resume","slots":[]}
+{"text":"go on","intent":"request_resume","slots":[]}
+{"text":"unpause","intent":"request_resume","slots":[]}
+{"text":"please unpause it","intent":"request_resume","slots":[]}
+{"text":"resume playback","intent":"request_resume","slots":[]}
+{"text":"on with the demo","intent":"request_resume","slots":[]}
+{"text":"let's continue","intent":"request_resume","slots":[]}
+{"text":"start it back up","intent":"request_resume","slots":[]}
+{"text":"resume the show","intent":"request_resume","slots":[]}
+{"text":"carry on please","intent":"request_resume","slots":[]}
+{"text":"keep playing","intent":"request_resume","slots":[]}
+{"text":"continue from there","intent":"request_resume","slots":[]}
+{"text":"resume now","intent":"request_resume","slots":[]}
+{"text":"let's pick it back up","intent":"request_resume","slots":[]}
+{"text":"I'd like to continue","intent":"request_resume","slots":[]}

@@ -1,0 +1,50 @@
+{"text":"hello","intent":"greet","slots":[]}
+{"text":"hi","intent":"greet","slots":[]}
+{"text":"hey","intent":"greet","slots":[]}
+{"text":"good morning","intent":"greet","slots":[]}
+{"text":"good afternoon","intent":"greet","slots":[]}
+{"text":"good evening","intent":"greet","slots":[]}
+{"text":"hey there","intent":"greet","slots":[]}
+{"text":"hi there","intent":"greet","slots":[]}
+{"text":"howdy","intent":"greet","slots":[]}
+{"text":"greetings","intent":"greet","slots":[]}
+{"text":"hiya","intent":"greet","slots":[]}
+{"text":"morning","intent":"greet","slots":[]}
+{"text":"yo","intent":"greet","slots":[]}
+{"text":"good day","intent":"greet","slots":[]}
+{"text":"hello again","intent":"greet","slots":[]}
+{"text":"hi again","intent":"greet","slots":[]}
+{"text":"hey how's it going","intent":"greet","slots":[]}
+{"text":"hello nice to meet you","intent":"greet","slots":[]}
+{"text":"hey folks","intent":"greet","slots":[]}
+{"text":"hi everyone","intent":"greet","slots":[]}
+{"text":"hi I'm Alex","intent":"greet","slots":[{"type":"name","start":7,"end":11}]}
+{"text":"hello I'm Jordan Lee","intent":"greet","slots":[{"type":"name","start":10,"end":20}]}
+{"text":"hey I'm Priya","intent":"greet","slots":[{"type":"name","start":8,"end":13}]}
+{"text":"good morning I'm Samir Patel","intent":"greet","slots":[{"type":"name","start":17,"end":28}]}
+{"text":"hi, I'm Casey","intent":"greet","slots":[{"type":"name","start":8,"end":13}]}
+{"text":"hello, I'm Morgan Blake","intent":"greet","slots":[{"type":"name","start":11,"end":23}]}
+{"text":"hey, I'm Riley Chen","intent":"greet","slots":[{"type":"name","start":9,"end":19}]}
+{"text":"good afternoon, I'm Taylor","intent":"greet","slots":[{"type":"name","start":20,"end":26}]}
+{"text":"greetings, I'm Quinn","intent":"greet","slots":[{"type":"name","start":15,"end":20}]}
+{"text":"hiya I'm Avery Brooks","intent":"greet","slots":[{"type":"name","start":9,"end":21}]}
+{"text":"morning, I'm Jamie","intent":"greet","slots":[{"type":"name","start":13,"end":18}]}
+{"text":"hey there, I'm Noah Kim","intent":"greet","slots":[{"type":"name","start":15,"end":23}]}
+{"text":"hello, I'm Harper","intent":"greet","slots":[{"type":"name","start":11,"end":17}]}
+{"text":"hi I'm Elena Vasquez","intent":"greet","slots":[{"type":"name","start":7,"end":20}]}
+{"text":"good evening, I'm Chris","intent":"greet","slots":[{"type":"name","start":18,"end":23}]}
+{"text":"hey I'm Dana Okonkwo","intent":"greet","slots":[{"type":"name","start":8,"end":20}]}
+{"text":"hi, I'm Reese","intent":"greet","slots":[{"type":"name","start":8,"end":13}]}
+{"text":"hello I'm Malik Johnson","intent":"greet","slots":[{"type":"name","start":10,"end":23}]}
+{"text":"hey, I'm Skyler","intent":"greet","slots":[{"type":"name","start":9,"end":15}]}
+{"text":"good morning, I'm Amara Singh","intent":"greet","slots":[{"type":"name","start":18,"end":29}]}
+{"text":"yes","intent":"affirm","slots":[]}
+{"text":"yeah","intent":"affirm","slots":[]}
+{"text":"yep","intent":"affirm","slots":[]}
+{"text":"sure","intent":"affirm","slots":[]}
+{"text":"okay","intent":"affirm","slots":[]}
+{"text":"correct","intent":"affirm","slots":[]}
+{"text":"that's correct","intent":"affirm","slots":[]}
+{"text":"absolutely","intent":"affirm","slots":[]}
+{"text":"sounds good","intent":"affirm","slots":[]}
+{"text":"agreed","intent":"affirm","slots":[]}
