@@ -73,9 +73,10 @@ def evaluate(model: JointModel, batches: Iterable[Batch], device: torch.device) 
 
 
 def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
-          learning_rate: float = 5e-5, seed: int = 1234, test: bool = False) -> Path:
-    if batch_size < 1 or eval_every < 1 or (steps is not None and steps < 1) or learning_rate <= 0:
-        raise ValueError("Batch size, evaluation interval, step limit, and learning rate must be positive")
+          learning_rate: float = 5e-5, seed: int = 1234, test: bool = False, epochs: int = 1) -> Path:
+    if (batch_size < 1 or eval_every < 1 or epochs < 1 or learning_rate <= 0
+            or (steps is not None and steps < 1)):
+        raise ValueError("Batch size, epochs, evaluation interval, step limit, and learning rate must be positive")
     started = time.perf_counter()
     torch.manual_seed(seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -92,11 +93,12 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
     train_loader = DataLoader(training, batch_size=batch_size, shuffle=True, collate_fn=collate,
                               generator=torch.Generator().manual_seed(seed))
     dev_loader = DataLoader(development, batch_size=32, collate_fn=collate)
-    total_steps = len(train_loader) if steps is None else steps
-    if total_steps > len(train_loader):
-        raise ValueError(f"One epoch has {len(train_loader)} batches; choose a smaller --steps")
+    available_steps = epochs * len(train_loader)
+    total_steps = available_steps if steps is None else steps
+    if total_steps > available_steps:
+        raise ValueError(f"{epochs} epoch(s) have {available_steps} batches; increase --epochs or reduce --steps")
     print(f"      {len(training):,} train / {len(development):,} dev; batch {batch_size}; "
-          f"{len(train_loader)} batches available; executing {total_steps} updates")
+          f"{epochs} epoch(s), {len(train_loader)} batches/epoch; executing {total_steps} updates")
 
     print("\n[2/5] Construct cached BERT + two new heads", flush=True)
     encoder = BertModel.from_pretrained("bert-base-uncased", revision=REVISION, cache_dir=CACHE, local_files_only=True)
@@ -108,34 +110,39 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
     best_loss, best_step = initial.loss, 0
     save_checkpoint(model, run_dir / "best.pt")
     history = []
-    evaluations = [{"step": 0, **asdict(initial)}]
+    evaluations = [{"step": 0, "epoch": 0, **asdict(initial)}]
     used_lines: list[int] = []
 
     print("\n[3/5] Forward -> losses -> backward -> clip -> optimizer -> scheduler", flush=True)
-    for step, batch in enumerate(train_loader, start=1):
-        model.train()  # Mode flag: enable dropout. This does not execute a training update.
-        batch = batch.to(device)
-        optimizer.zero_grad(set_to_none=True)
-        predictions = model(input_ids=batch.input_ids, attention_mask=batch.attention_mask)
-        losses = compute_loss(predictions, intent_ids=batch.intent_ids, slot_ids=batch.slot_ids)
-        losses.total.backward()
-        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-        rate = optimizer.param_groups[0]["lr"]
-        optimizer.step()
-        scheduler.step()
-        used_lines.extend(batch.line_ids)
-        history.append({"step": step, "intent": losses.intent.item(), "slot": losses.slot.item(),
-                        "total": losses.total.item(), "learning_rate": rate})
-        if total_steps < 30 or step % eval_every == 0 or step == total_steps:
-            print(f"      Update {step}/{total_steps}: intent={losses.intent.item():.4f}, "
-                  f"slot={losses.slot.item():.4f}, total={losses.total.item():.4f}, lr={rate:.7f}")
-        if step % eval_every == 0 or step == total_steps:
-            metrics = evaluate(model, dev_loader, device)
-            evaluations.append({"step": step, **asdict(metrics)})
-            print(f"      Dev: loss={metrics.loss:.4f}, intent={metrics.intent_accuracy:.3f}, slot F1={metrics.slot_f1:.3f}")
-            if metrics.loss < best_loss:
-                best_loss, best_step = metrics.loss, step
-                save_checkpoint(model, run_dir / "best.pt")
+    step = 0
+    for epoch in range(1, epochs + 1):
+        for batch in train_loader:
+            step += 1
+            model.train()  # Mode flag: enable dropout. This does not execute a training update.
+            batch = batch.to(device)
+            optimizer.zero_grad(set_to_none=True)
+            predictions = model(input_ids=batch.input_ids, attention_mask=batch.attention_mask)
+            losses = compute_loss(predictions, intent_ids=batch.intent_ids, slot_ids=batch.slot_ids)
+            losses.total.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+            rate = optimizer.param_groups[0]["lr"]
+            optimizer.step()
+            scheduler.step()
+            used_lines.extend(batch.line_ids)
+            history.append({"step": step, "epoch": epoch, "intent": losses.intent.item(), "slot": losses.slot.item(),
+                            "total": losses.total.item(), "learning_rate": rate})
+            if total_steps < 30 or step % eval_every == 0 or step == total_steps:
+                print(f"      Epoch {epoch}/{epochs}, update {step}/{total_steps}: intent={losses.intent.item():.4f}, "
+                      f"slot={losses.slot.item():.4f}, total={losses.total.item():.4f}, lr={rate:.7f}")
+            if step % eval_every == 0 or step == total_steps:
+                metrics = evaluate(model, dev_loader, device)
+                evaluations.append({"step": step, "epoch": epoch, **asdict(metrics)})
+                print(f"      Dev: loss={metrics.loss:.4f}, intent={metrics.intent_accuracy:.3f}, slot F1={metrics.slot_f1:.3f}")
+                if metrics.loss < best_loss:
+                    best_loss, best_step = metrics.loss, step
+                    save_checkpoint(model, run_dir / "best.pt")
+            if step == total_steps:
+                break
         if step == total_steps:
             break
 
@@ -166,7 +173,7 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
                   for name in ("seq.in", "seq.out", "label")]
     data_files += [DATA / "intent_label.txt", DATA / "slot_label.txt"]
     report = {"seed": seed, "batch_size": batch_size, "max_length": 50, "learning_rate": learning_rate,
-              "step_limit": steps, "eval_every": eval_every, "slot_weight": 1.0,
+              "epochs": epochs, "step_limit": steps, "eval_every": eval_every, "slot_weight": 1.0,
               "model_revision": REVISION, "device": str(device), "elapsed_seconds": time.perf_counter() - started,
               "gpu": torch.cuda.get_device_name(device) if device.type == "cuda" else None, "cuda_runtime": torch.version.cuda,
               "train_examples": len(training), "dev_examples": len(development), "available_batches": len(train_loader),
@@ -176,17 +183,18 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
               "python": sys.version, "packages": {name: version(name) for name in ("torch", "transformers", "seqeval")},
               "data_sha256": {str(p.relative_to(DATA)): hashlib.sha256(p.read_bytes()).hexdigest() for p in data_files}}
     (run_dir / "run.json").write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
-    print(f"      Used {len(used_lines)} / {len(training)} training examples.\n      Results: {run_dir}")
+    print(f"      Processed {len(used_lines)} examples; reached epoch {epoch}/{epochs}.\n      Results: {run_dir}")
     return run_dir
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--steps", type=int, help="Limit updates; default is one complete training epoch")
+    parser.add_argument("--epochs", type=int, default=1, help="Passes through the training split (default: 1)")
+    parser.add_argument("--steps", type=int, help="Limit total updates across all epochs")
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--eval-every", type=int, default=100)
     parser.add_argument("--learning-rate", type=float, default=5e-5)
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--test", action="store_true", help="Evaluate the dev-selected checkpoint on test once")
     args = parser.parse_args()
-    train(args.steps, args.batch_size, args.eval_every, args.learning_rate, args.seed, args.test)
+    train(args.steps, args.batch_size, args.eval_every, args.learning_rate, args.seed, args.test, epochs=args.epochs)

@@ -68,9 +68,10 @@ def _(mo: ModuleType, picker: marimo.ui.dropdown, reports: dict[str, Any]) -> tu
     **Saved run:** `{directory}` · **Device:** `{report['device']}` · **Runtime:** {report['elapsed_seconds']:.1f} s
 
     Original train/dev: **{report['train_examples']:,} / {report['dev_examples']:,}**.
-    Batch size: **{report['batch_size']}**. Available training batches: **{report['available_batches']}**.
-    Completed updates: **{len(report['history'])}**. Examples used: **{len(report['used_train_lines'])}**.
-    The training loader shuffles the full split; the step limit only stops the loop early.
+    Batch size: **{report['batch_size']}**. Batches per epoch: **{report['available_batches']}**.
+    Epochs requested: **{report.get('epochs', 1)}**. Completed updates: **{len(report['history'])}**.
+    Examples processed: **{len(report['used_train_lines'])}**, including repeats across epochs.
+    The loader reshuffles the full split each epoch; the step limit caps updates across the whole run.
     """)
     return report, directory
 
