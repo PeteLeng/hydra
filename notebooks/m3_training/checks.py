@@ -3,13 +3,15 @@
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 import torch
 from transformers.models.bert.configuration_bert import BertConfig
 from transformers.models.bert.modeling_bert import BertModel
 from transformers.models.bert.tokenization_bert_fast import BertTokenizerFast
 
-from joint_model import JointModel, compute_loss, load_checkpoint, save_checkpoint
+from joint_model import JointModel, Predictions, compute_loss, load_checkpoint, save_checkpoint
+from predict import PredictedSlot, predict
 from snips_data import Example, IGNORE_SLOT, Labels, read_examples, read_labels, tokenize_batch
 from train import PROJECT, evaluate
 
@@ -92,6 +94,35 @@ class PipelineChecks(unittest.TestCase):
         self.assertFalse(self.model.dropout.training)
         for name, value in self.model.state_dict().items():
             torch.testing.assert_close(value, before[name])
+
+    def test_prediction_decodes_first_subtokens_and_original_spans(self) -> None:
+        text = "book washington washington, washington"
+        # CLS, book, wash, ##ington, wash, ##ington, comma, wash, ##ington, SEP.
+        # Conflicting continuation/special-token tags must not affect the spans.
+        logits = torch.zeros(1, 10, 3)
+        for index, tag in enumerate([2, 0, 1, 1, 2, 1, 0, 2, 1, 2]):
+            logits[0, index, tag] = 10
+        output = Predictions(torch.tensor([[10.0, 0.0]]), logits)
+        with patch.object(self.model, "forward", return_value=output):
+            result = predict(text, self.model, self.tokenizer, max_length=16)
+        self.assertEqual(result.intent, "BookRestaurant")
+        self.assertGreater(result.confidence, 0.99)
+        self.assertEqual(result.slots, [PredictedSlot("city", "washington washington", 5, 26),
+                                       PredictedSlot("city", "washington", 28, 38)])
+        self.assertFalse(self.model.training)
+        for invalid, limit in (("  ", 16), (text, 8)):
+            with self.assertRaises(ValueError):
+                predict(invalid, self.model, self.tokenizer, max_length=limit)
+
+    def test_prediction_respects_legacy_whitespace_units(self) -> None:
+        logits = torch.zeros(1, 5, 3)  # CLS, wash, ##ington, comma, SEP.
+        logits[0, 1, 1] = 10
+        output = Predictions(torch.tensor([[10.0, 0.0]]), logits)
+        with patch.object(self.model, "forward", return_value=output):
+            showroom = predict("washington,", self.model, self.tokenizer, max_length=16)
+            legacy = predict("washington,", self.model, self.tokenizer, max_length=16, tokenization="whitespace")
+        self.assertEqual(showroom.slots, [PredictedSlot("city", "washington", 0, 10)])
+        self.assertEqual(legacy.slots, [PredictedSlot("city", "washington,", 0, 11)])
 
 
 if __name__ == "__main__":
