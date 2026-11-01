@@ -15,7 +15,7 @@ import sys
 import time
 
 PROJECT = Path(__file__).resolve().parents[1]
-DATA = PROJECT.parent / "repos" / "JointBERT" / "data" / "snips"
+DATA = PROJECT.parent / "data" / "showroom"
 CACHE = PROJECT / ".artifacts" / "huggingface" / "hub"
 REVISION = "86b5e0934494bd15c9632b12f734a8a67f723594"
 os.environ["MPLCONFIGDIR"] = str(PROJECT / ".artifacts" / "matplotlib")
@@ -83,8 +83,8 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
     run_dir = PROJECT / ".artifacts" / "m3_training" / datetime.now().strftime("fresh-%Y%m%d-%H%M%S-%f")
     run_dir.mkdir(parents=True)
 
-    print("[1/5] Read full SNIPS splits and create batches", flush=True)
-    labels = read_labels(DATA)
+    print("[1/5] Read reviewed showroom splits and create batches", flush=True)
+    labels = read_labels(DATA, include_unk_intent=True)
     training = read_examples(DATA / "train", labels)
     development = read_examples(DATA / "dev", labels)
     tokenizer = BertTokenizerFast.from_pretrained("bert-base-uncased", revision=REVISION,
@@ -172,7 +172,8 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
     data_files = [DATA / split / name for split in ("train", "dev", *(["test"] if test else []))
                   for name in ("seq.in", "seq.out", "label")]
     data_files += [DATA / "intent_label.txt", DATA / "slot_label.txt"]
-    report = {"seed": seed, "batch_size": batch_size, "max_length": 50, "learning_rate": learning_rate,
+    report = {"dataset": {"path": DATA.relative_to(PROJECT.parent).as_posix(), "tokenization": "showroom"},
+              "seed": seed, "batch_size": batch_size, "max_length": 50, "learning_rate": learning_rate,
               "epochs": epochs, "step_limit": steps, "eval_every": eval_every, "slot_weight": 1.0,
               "model_revision": REVISION, "device": str(device), "elapsed_seconds": time.perf_counter() - started,
               "gpu": torch.cuda.get_device_name(device) if device.type == "cuda" else None, "cuda_runtime": torch.version.cuda,

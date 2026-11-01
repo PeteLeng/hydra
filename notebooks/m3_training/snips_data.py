@@ -2,6 +2,8 @@
 
 from dataclasses import dataclass
 from pathlib import Path
+import re
+from typing import Any
 
 import torch
 from torch import Tensor
@@ -16,6 +18,13 @@ class Labels:
 
     intent_names: list[str]     # [num_intents]
     slot_names: list[str]       # [num_slots]
+
+
+@dataclass
+class RunDataset:
+    directory: Path
+    labels: Labels
+    tokenization: str
 
 
 @dataclass
@@ -47,12 +56,39 @@ class Batch:
         )
 
 
-def read_labels(directory: Path) -> Labels:
+def read_labels(directory: Path, *, include_unk_intent: bool = False) -> Labels:
     intent_names = (directory / "intent_label.txt").read_text(encoding="utf-8").splitlines()
     slot_names = (directory / "slot_label.txt").read_text(encoding="utf-8").splitlines()
-    # UNK/PAD are repo bookkeeping entries, not observed SNIPS target classes.
-    return Labels(intent_names=[name for name in intent_names if name != "UNK"],
+    # Showroom uses UNK as a real intent; SNIPS uses it only for bookkeeping.
+    return Labels(intent_names=[name for name in intent_names if include_unk_intent or name != "UNK"],
                   slot_names=[name for name in slot_names if name not in {"PAD", "UNK"}])
+
+
+def text_units(text: str, convention: str = "showroom") -> list[tuple[str, int, int]]:
+    """Original-text input units; showroom matches m6_showroom_data.build.tokenize."""
+    patterns = {"showroom": r"\w+(?:['’\-]\w+)*|[^\w\s]", "whitespace": r"\S+"}
+    if convention not in patterns:
+        raise ValueError(f"Unknown input tokenization: {convention}")
+    return [(match.group(), match.start(), match.end()) for match in re.finditer(patterns[convention], text)]
+
+
+def read_run_dataset(report: dict[str, Any], root: Path) -> RunDataset:
+    """Resolve new run metadata or match the label vocabulary of a legacy run."""
+    labels = Labels(report["labels"]["intents"], report["labels"]["slots"])
+    if "dataset" in report:
+        metadata = report["dataset"]
+        candidates = [(root / metadata["path"], metadata["tokenization"])]
+    else:
+        candidates = [(root / "data/showroom", "showroom"),
+                      (root / "repos/JointBERT/data/snips", "whitespace")]
+    for directory, convention in candidates:
+        if not (directory / "intent_label.txt").is_file():
+            continue
+        available = read_labels(directory, include_unk_intent="UNK" in labels.intent_names)
+        if available == labels:
+            text_units("", convention)  # Validate the saved convention before using it.
+            return RunDataset(directory, labels, convention)
+    raise ValueError("No local dataset matches this run's recorded path and label vocabulary")
 
 
 def read_examples(directory: Path, labels: Labels) -> list[Example]:

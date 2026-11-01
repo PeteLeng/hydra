@@ -14,7 +14,7 @@ with app.setup:
     import torch
     from transformers.models.bert.tokenization_bert_fast import BertTokenizerFast
     from joint_model import JointModel, load_checkpoint
-    from snips_data import Example, Labels, read_examples, read_labels
+    from snips_data import Example, RunDataset, read_examples, read_run_dataset, text_units
 
     @lru_cache(maxsize=2)
     def checkpoint_assets(path: Path, modified: int) -> tuple[JointModel, BertTokenizerFast]:
@@ -23,13 +23,11 @@ with app.setup:
 
 
 @app.cell(hide_code=True)
-def _() -> tuple[ModuleType, ModuleType, Path, Path, Labels]:
+def _() -> tuple[ModuleType, ModuleType, Path]:
     import json
     import marimo as mo
     runs = mo.notebook_dir().parent / ".artifacts" / "m3_training"
-    data = mo.notebook_dir().parents[1] / "repos" / "JointBERT" / "data" / "snips"
-    labels = read_labels(data)
-    return json, mo, runs, data, labels
+    return json, mo, runs
 
 
 @app.cell(hide_code=True)
@@ -66,6 +64,7 @@ def _(mo: ModuleType, picker: marimo.ui.dropdown, reports: dict[str, Any]) -> tu
     report = reports[picker.value]
     mo.md(f"""
     **Saved run:** `{directory}` · **Device:** `{report['device']}` · **Runtime:** {report['elapsed_seconds']:.1f} s
+    Dataset: `{report.get('dataset', {}).get('path', 'legacy run; inferred from saved labels')}`.
 
     Original train/dev: **{report['train_examples']:,} / {report['dev_examples']:,}**.
     Batch size: **{report['batch_size']}**. Batches per epoch: **{report['available_batches']}**.
@@ -108,14 +107,26 @@ def _(mo: ModuleType, reports: dict[str, Any]) -> tuple[marimo.ui.dropdown, mari
 
 
 @app.cell(hide_code=True)
-def _(data: Path, labels: Labels, mo: ModuleType, source: marimo.ui.dropdown) -> tuple[
+def _(checkpoint_a: marimo.ui.dropdown, mo: ModuleType, reports: dict[str, Any]) -> tuple[RunDataset]:
+    _settings = reports[str(Path(checkpoint_a.value).parent)]
+    try:
+        run_dataset = read_run_dataset(_settings, mo.notebook_dir().parents[1])
+    except (OSError, ValueError) as _error:
+        mo.stop(True, mo.md(str(_error)).callout(kind="warn"))
+    mo.md(f"Reference dataset for **checkpoint A**: `{run_dataset.directory}`")
+    return (run_dataset,)
+
+
+@app.cell(hide_code=True)
+def _(run_dataset: RunDataset, mo: ModuleType, source: marimo.ui.dropdown) -> tuple[
     list[Example], marimo.ui.number | marimo.ui.text_area, marimo.ui.run_button,
 ]:
     if source.value == "Custom text":
         examples = []
-        sample = mo.ui.text_area(value="book a spot for 3 in mt", label="Text")
+        _default = "show me family features inside" if run_dataset.tokenization == "showroom" else "book a spot for 3 in mt"
+        sample = mo.ui.text_area(value=_default, label="Text")
     else:
-        examples = read_examples(data / source.value, labels)
+        examples = read_examples(run_dataset.directory / source.value, run_dataset.labels)
         sample = mo.ui.number(start=1, stop=len(examples), step=1, value=1, label="Dataset line (1-based)")
     compare = mo.ui.run_button(label="Compare")
     mo.hstack([sample, compare])
@@ -124,17 +135,19 @@ def _(data: Path, labels: Labels, mo: ModuleType, source: marimo.ui.dropdown) ->
 
 @app.cell(hide_code=True)
 def _(checkpoint_a: marimo.ui.dropdown, checkpoint_b: marimo.ui.dropdown, compare: marimo.ui.run_button,
-      examples: list[Example], labels: Labels, mo: ModuleType, reports: dict[str, Any],
+      examples: list[Example], run_dataset: RunDataset, mo: ModuleType, reports: dict[str, Any],
       sample: marimo.ui.number | marimo.ui.text_area, source: marimo.ui.dropdown) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     mo.stop(not compare.value, mo.md("Choose a sample and checkpoints, then click **Compare**."))
+    _other = read_run_dataset(reports[str(Path(checkpoint_b.value).parent)], mo.notebook_dir().parents[1])
+    mo.stop(_other != run_dataset, mo.md("Choose checkpoints from the same dataset and input convention to compare.").callout(kind="warn"))
     if source.value == "Custom text":
-        _words = str(sample.value or "").split()
+        _words = [word for word, _, _ in text_units(str(sample.value or ""), run_dataset.tokenization)]
         _intent, _slots = "—", ["—"] * len(_words)
     else:
         mo.stop(sample.value not in range(1, len(examples) + 1), mo.md("Choose a valid dataset line."))
         _example = examples[int(sample.value) - 1]
-        _words, _intent = _example.words, labels.intent_names[_example.intent_id]
-        _slots = [labels.slot_names[i] for i in _example.slot_ids]
+        _words, _intent = _example.words, run_dataset.labels.intent_names[_example.intent_id]
+        _slots = [run_dataset.labels.slot_names[i] for i in _example.slot_ids]
     mo.stop(not _words, mo.md("Enter some text to compare."))
     slot_rows = [{"word": word, "reference": tag} for word, tag in zip(_words, _slots)]
     intent_rows = []

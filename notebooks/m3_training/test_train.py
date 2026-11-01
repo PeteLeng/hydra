@@ -56,6 +56,9 @@ class TrainingChecks(unittest.TestCase):
                 directory = train.train(epochs=2, steps=limit, batch_size=2, eval_every=3, test=True)
                 report = json.loads((directory / "run.json").read_text(encoding="utf-8"))
                 self.assertEqual(report["epochs"], 2)
+                self.assertEqual(report["dataset"], {"path": self.data.relative_to(self.directory.parent).as_posix(),
+                                                    "tokenization": "showroom"})
+                self.assertIn("UNK", report["labels"]["intents"])
                 self.assertEqual([row["step"] for row in report["history"]], list(range(1, updates + 1)))
                 self.assertEqual([row["epoch"] for row in report["history"]], [1, 1, 1] + [2] * (updates - 3))
                 self.assertEqual([(row["step"], row["epoch"]) for row in report["evaluations"]],
