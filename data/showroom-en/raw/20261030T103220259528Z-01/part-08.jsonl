@@ -1,0 +1,50 @@
+{"text": "no", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000351"}
+{"text": "nope", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000352"}
+{"text": "nah", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000353"}
+{"text": "no way", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000354"}
+{"text": "incorrect", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000355"}
+{"text": "that's wrong", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000356"}
+{"text": "I disagree", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000357"}
+{"text": "not really", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000358"}
+{"text": "no thank you", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000359"}
+{"text": "negative", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000360"}
+{"text": "that's incorrect", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000361"}
+{"text": "I don't think so", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000362"}
+{"text": "not quite", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000363"}
+{"text": "no that's wrong", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000364"}
+{"text": "absolutely not", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000365"}
+{"text": "no I don't", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000366"}
+{"text": "wrong", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000367"}
+{"text": "not this one", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000368"}
+{"text": "I don't agree", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000369"}
+{"text": "no chance", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000370"}
+{"text": "that's not it", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000371"}
+{"text": "nope, sorry", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000372"}
+{"text": "not correct", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000373"}
+{"text": "no, not that", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000374"}
+{"text": "I don't want that", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000375"}
+{"text": "not at all", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000376"}
+{"text": "no sir", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000377"}
+{"text": "that's false", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000378"}
+{"text": "uh no", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000379"}
+{"text": "no, incorrect", "intent": "deny", "slots": [], "record_id": "20261030T103220259528Z-01-000380"}
+{"text": "stop", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000381"}
+{"text": "please stop", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000382"}
+{"text": "stop it", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000383"}
+{"text": "pause the demo", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000384"}
+{"text": "halt the demonstration", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000385"}
+{"text": "stop this demo", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000386"}
+{"text": "can you stop", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000387"}
+{"text": "pause please", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000388"}
+{"text": "stop the current demo", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000389"}
+{"text": "hold on, stop", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000390"}
+{"text": "freeze the demo", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000391"}
+{"text": "stop playing", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000392"}
+{"text": "pause this", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000393"}
+{"text": "cut the demo", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000394"}
+{"text": "stop now", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000395"}
+{"text": "would you pause", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000396"}
+{"text": "stop that demo", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000397"}
+{"text": "halt it please", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000398"}
+{"text": "pause the show", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000399"}
+{"text": "stop the playback", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000400"}

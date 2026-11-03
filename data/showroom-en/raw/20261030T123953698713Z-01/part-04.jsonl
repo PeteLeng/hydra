@@ -1,0 +1,50 @@
+{"text": "can we resume", "intent": "request_resume", "slots": [], "record_id": "20261030T123953698713Z-01-000151"}
+{"text": "continue on", "intent": "request_resume", "slots": [], "record_id": "20261030T123953698713Z-01-000152"}
+{"text": "resume it", "intent": "request_resume", "slots": [], "record_id": "20261030T123953698713Z-01-000153"}
+{"text": "unpause the demo", "intent": "request_resume", "slots": [], "record_id": "20261030T123953698713Z-01-000154"}
+{"text": "let's pick up again", "intent": "request_resume", "slots": [], "record_id": "20261030T123953698713Z-01-000155"}
+{"text": "please continue the demo", "intent": "request_resume", "slots": [], "record_id": "20261030T123953698713Z-01-000156"}
+{"text": "carry on with the demo", "intent": "request_resume", "slots": [], "record_id": "20261030T123953698713Z-01-000157"}
+{"text": "resume from here", "intent": "request_resume", "slots": [], "record_id": "20261030T123953698713Z-01-000158"}
+{"text": "keep going please", "intent": "request_resume", "slots": [], "record_id": "20261030T123953698713Z-01-000159"}
+{"text": "continue the demonstration", "intent": "request_resume", "slots": [], "record_id": "20261030T123953698713Z-01-000160"}
+{"text": "quit", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000161"}
+{"text": "exit", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000162"}
+{"text": "I want to leave", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000163"}
+{"text": "end session", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000164"}
+{"text": "close this", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000165"}
+{"text": "I'm done", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000166"}
+{"text": "time to leave", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000167"}
+{"text": "log out", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000168"}
+{"text": "end the session", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000169"}
+{"text": "I want to quit", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000170"}
+{"text": "please exit", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000171"}
+{"text": "close the showroom", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000172"}
+{"text": "leave the session", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000173"}
+{"text": "session over", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000174"}
+{"text": "sign me out", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000175"}
+{"text": "exit now", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000176"}
+{"text": "I need to exit", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000177"}
+{"text": "I'm heading out", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000178"}
+{"text": "I need to go", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000179"}
+{"text": "close out", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000180"}
+{"text": "terminate the session", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000181"}
+{"text": "I'd like to exit", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000182"}
+{"text": "let me out", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000183"}
+{"text": "ready to leave", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000184"}
+{"text": "done with the showroom", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000185"}
+{"text": "leave now", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000186"}
+{"text": "end showroom", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000187"}
+{"text": "exit the showroom", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000188"}
+{"text": "close the session", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000189"}
+{"text": "I want out", "intent": "request_quit", "slots": [], "record_id": "20261030T123953698713Z-01-000190"}
+{"text": "book a flight to Denver", "intent": "UNK", "slots": [], "record_id": "20261030T123953698713Z-01-000191"}
+{"text": "what's the weather tomorrow", "intent": "UNK", "slots": [], "record_id": "20261030T123953698713Z-01-000192"}
+{"text": "order me a pizza", "intent": "UNK", "slots": [], "record_id": "20261030T123953698713Z-01-000193"}
+{"text": "set a reminder for three", "intent": "UNK", "slots": [], "record_id": "20261030T123953698713Z-01-000194"}
+{"text": "play music on the radio", "intent": "UNK", "slots": [], "record_id": "20261030T123953698713Z-01-000195"}
+{"text": "I want to buy this car", "intent": "UNK", "slots": [], "record_id": "20261030T123953698713Z-01-000196"}
+{"text": "how much does the car cost", "intent": "UNK", "slots": [], "record_id": "20261030T123953698713Z-01-000197"}
+{"text": "schedule a test drive", "intent": "UNK", "slots": [], "record_id": "20261030T123953698713Z-01-000198"}
+{"text": "call my mechanic", "intent": "UNK", "slots": [], "record_id": "20261030T123953698713Z-01-000199"}
+{"text": "navigate to the dealership", "intent": "UNK", "slots": [], "record_id": "20261030T123953698713Z-01-000200"}

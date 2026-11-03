@@ -1,0 +1,50 @@
+{"text": "enough, stop", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000401"}
+{"text": "please pause the demo", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000402"}
+{"text": "stop running it", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000403"}
+{"text": "I need this to stop", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000404"}
+{"text": "pause for a second", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000405"}
+{"text": "kill the demo", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000406"}
+{"text": "stop right there", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000407"}
+{"text": "can we pause", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000408"}
+{"text": "halt the demo now", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000409"}
+{"text": "that's enough, pause", "intent": "request_stop", "slots": [], "record_id": "20261030T103220259528Z-01-000410"}
+{"text": "resume", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000411"}
+{"text": "continue", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000412"}
+{"text": "carry on please", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000413"}
+{"text": "resume please", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000414"}
+{"text": "keep going", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000415"}
+{"text": "continue the demo", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000416"}
+{"text": "pick up where we left off", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000417"}
+{"text": "resume the demonstration", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000418"}
+{"text": "go on", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000419"}
+{"text": "let's continue", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000420"}
+{"text": "unpause", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000421"}
+{"text": "continue please", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000422"}
+{"text": "resume it", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000423"}
+{"text": "carry on with the demo", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000424"}
+{"text": "keep playing", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000425"}
+{"text": "start it back up", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000426"}
+{"text": "please continue", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000427"}
+{"text": "resume where we stopped", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000428"}
+{"text": "go ahead and continue", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000429"}
+{"text": "back to the demo", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000430"}
+{"text": "continue from there", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000431"}
+{"text": "let's resume", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000432"}
+{"text": "unpause the demo", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000433"}
+{"text": "carry on with it", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000434"}
+{"text": "resume playback", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000435"}
+{"text": "continue where we left off", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000436"}
+{"text": "please resume", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000437"}
+{"text": "keep the demo going", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000438"}
+{"text": "go on with the demo", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000439"}
+{"text": "I'd like to continue", "intent": "request_resume", "slots": [], "record_id": "20261030T103220259528Z-01-000440"}
+{"text": "quit", "intent": "request_quit", "slots": [], "record_id": "20261030T103220259528Z-01-000441"}
+{"text": "exit", "intent": "request_quit", "slots": [], "record_id": "20261030T103220259528Z-01-000442"}
+{"text": "I want to quit", "intent": "request_quit", "slots": [], "record_id": "20261030T103220259528Z-01-000443"}
+{"text": "end the session", "intent": "request_quit", "slots": [], "record_id": "20261030T103220259528Z-01-000444"}
+{"text": "close this session", "intent": "request_quit", "slots": [], "record_id": "20261030T103220259528Z-01-000445"}
+{"text": "exit the showroom", "intent": "request_quit", "slots": [], "record_id": "20261030T103220259528Z-01-000446"}
+{"text": "quit the session", "intent": "request_quit", "slots": [], "record_id": "20261030T103220259528Z-01-000447"}
+{"text": "I'd like to exit", "intent": "request_quit", "slots": [], "record_id": "20261030T103220259528Z-01-000448"}
+{"text": "leave this session", "intent": "request_quit", "slots": [], "record_id": "20261030T103220259528Z-01-000449"}
+{"text": "end our session", "intent": "request_quit", "slots": [], "record_id": "20261030T103220259528Z-01-000450"}

@@ -1,0 +1,50 @@
+{"text": "play the DLP headlamps for me", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 9, "end": 22}], "record_id": "20261030T123953698713Z-01-000401", "slot_hints": [{"slot": 0, "value": "dlp_headlights"}]}
+{"text": "walk me through the headlights", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 20, "end": 30}], "record_id": "20261030T123953698713Z-01-000402"}
+{"text": "show DLP Headlights on the outside", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 5, "end": 19}, {"type": "part", "start": 27, "end": 34}], "record_id": "20261030T123953698713Z-01-000403"}
+{"text": "demo the headlights for family", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 9, "end": 19}, {"type": "theme", "start": 24, "end": 30}], "record_id": "20261030T123953698713Z-01-000404"}
+{"text": "try DLP lights outside for entertainment", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 4, "end": 14}, {"type": "part", "start": 15, "end": 22}, {"type": "theme", "start": 27, "end": 40}], "record_id": "20261030T123953698713Z-01-000405"}
+{"text": "mind showing the mobile theater", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 17, "end": 31}], "record_id": "20261030T123953698713Z-01-000406"}
+{"text": "queue up the in-cabin theater", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 13, "end": 29}], "record_id": "20261030T123953698713Z-01-000407", "slot_hints": [{"slot": 0, "value": "cabin_cinema"}]}
+{"text": "Cabin Cinema inside would be great", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 0, "end": 12}, {"type": "part", "start": 13, "end": 19}], "record_id": "20261030T123953698713Z-01-000408"}
+{"text": "demo the mobile theater for families", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 9, "end": 23}, {"type": "theme", "start": 28, "end": 36}], "record_id": "20261030T123953698713Z-01-000409"}
+{"text": "in-car cinema inside for entertainment", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 0, "end": 13}, {"type": "part", "start": 14, "end": 20}, {"type": "theme", "start": 25, "end": 38}], "record_id": "20261030T123953698713Z-01-000410"}
+{"text": "bring up the seat massager", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 13, "end": 26}], "record_id": "20261030T123953698713Z-01-000411", "slot_hints": [{"slot": 0, "value": "massage_seats"}]}
+{"text": "how about a Massaging Seats demo", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 12, "end": 27}], "record_id": "20261030T123953698713Z-01-000412"}
+{"text": "put on the massage seats", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 11, "end": 24}], "record_id": "20261030T123953698713Z-01-000413"}
+{"text": "seat massage in the cabin please", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 0, "end": 12}, {"type": "part", "start": 20, "end": 25}], "record_id": "20261030T123953698713Z-01-000414"}
+{"text": "demo Massaging Seats for entertainment", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 5, "end": 20}, {"type": "theme", "start": 25, "end": 38}], "record_id": "20261030T123953698713Z-01-000415"}
+{"text": "bring up the privacy windows", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 13, "end": 28}], "record_id": "20261030T123953698713Z-01-000416"}
+{"text": "how about privacy glass", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 10, "end": 23}], "record_id": "20261030T123953698713Z-01-000417"}
+{"text": "queue the Privacy Window", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 10, "end": 24}], "record_id": "20261030T123953698713Z-01-000418"}
+{"text": "Privacy Window on the exterior", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 0, "end": 14}, {"type": "part", "start": 22, "end": 30}], "record_id": "20261030T123953698713Z-01-000419"}
+{"text": "run privacy windows for privacy", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 4, "end": 19}, {"type": "theme", "start": 24, "end": 31}], "record_id": "20261030T123953698713Z-01-000420"}
+{"text": "show me features inside", "intent": "request_flow", "slots": [{"type": "part", "start": 17, "end": 23}], "record_id": "20261030T123953698713Z-01-000421"}
+{"text": "what demos are in the cabin", "intent": "request_flow", "slots": [{"type": "part", "start": 22, "end": 27}], "record_id": "20261030T123953698713Z-01-000422"}
+{"text": "anything for the interior", "intent": "request_flow", "slots": [{"type": "part", "start": 17, "end": 25}], "record_id": "20261030T123953698713Z-01-000423"}
+{"text": "can I see cabin demos", "intent": "request_flow", "slots": [{"type": "part", "start": 10, "end": 15}], "record_id": "20261030T123953698713Z-01-000424"}
+{"text": "run something inside", "intent": "request_flow", "slots": [{"type": "part", "start": 14, "end": 20}], "record_id": "20261030T123953698713Z-01-000425"}
+{"text": "let's look at interior features", "intent": "request_flow", "slots": [{"type": "part", "start": 14, "end": 22}], "record_id": "20261030T123953698713Z-01-000426"}
+{"text": "I'd like an inside demo", "intent": "request_flow", "slots": [{"type": "part", "start": 12, "end": 18}], "record_id": "20261030T123953698713Z-01-000427"}
+{"text": "play a cabin demonstration", "intent": "request_flow", "slots": [{"type": "part", "start": 7, "end": 12}], "record_id": "20261030T123953698713Z-01-000428"}
+{"text": "walk me through the interior", "intent": "request_flow", "slots": [{"type": "part", "start": 20, "end": 28}], "record_id": "20261030T123953698713Z-01-000429"}
+{"text": "got any demos for inside", "intent": "request_flow", "slots": [{"type": "part", "start": 18, "end": 24}], "record_id": "20261030T123953698713Z-01-000430"}
+{"text": "show the cabin stuff", "intent": "request_flow", "slots": [{"type": "part", "start": 9, "end": 14}], "record_id": "20261030T123953698713Z-01-000431"}
+{"text": "interior demos please", "intent": "request_flow", "slots": [{"type": "part", "start": 0, "end": 8}], "record_id": "20261030T123953698713Z-01-000432"}
+{"text": "anything inside today", "intent": "request_flow", "slots": [{"type": "part", "start": 9, "end": 15}], "record_id": "20261030T123953698713Z-01-000433"}
+{"text": "take me through outside options", "intent": "request_flow", "slots": [{"type": "part", "start": 16, "end": 23}], "record_id": "20261030T123953698713Z-01-000434"}
+{"text": "are there exterior demos", "intent": "request_flow", "slots": [{"type": "part", "start": 10, "end": 18}], "record_id": "20261030T123953698713Z-01-000435"}
+{"text": "I want to see the outside ones", "intent": "request_flow", "slots": [{"type": "part", "start": 18, "end": 25}], "record_id": "20261030T123953698713Z-01-000436"}
+{"text": "demo something on the exterior", "intent": "request_flow", "slots": [{"type": "part", "start": 22, "end": 30}], "record_id": "20261030T123953698713Z-01-000437"}
+{"text": "could we do an outside walkthrough", "intent": "request_flow", "slots": [{"type": "part", "start": 15, "end": 22}], "record_id": "20261030T123953698713Z-01-000438"}
+{"text": "exterior features if you have them", "intent": "request_flow", "slots": [{"type": "part", "start": 0, "end": 8}], "record_id": "20261030T123953698713Z-01-000439"}
+{"text": "pull up outside demonstrations", "intent": "request_flow", "slots": [{"type": "part", "start": 8, "end": 15}], "record_id": "20261030T123953698713Z-01-000440"}
+{"text": "what's available on the exterior", "intent": "request_flow", "slots": [{"type": "part", "start": 24, "end": 32}], "record_id": "20261030T123953698713Z-01-000441"}
+{"text": "show outside stuff please", "intent": "request_flow", "slots": [{"type": "part", "start": 5, "end": 12}], "record_id": "20261030T123953698713Z-01-000442"}
+{"text": "any exterior demo you recommend", "intent": "request_flow", "slots": [{"type": "part", "start": 4, "end": 12}], "record_id": "20261030T123953698713Z-01-000443"}
+{"text": "I fancy an outside demo", "intent": "request_flow", "slots": [{"type": "part", "start": 11, "end": 18}], "record_id": "20261030T123953698713Z-01-000444"}
+{"text": "let's tour the exterior", "intent": "request_flow", "slots": [{"type": "part", "start": 15, "end": 23}], "record_id": "20261030T123953698713Z-01-000445"}
+{"text": "show me the family features", "intent": "request_flow", "slots": [{"type": "theme", "start": 12, "end": 18}], "record_id": "20261030T123953698713Z-01-000446"}
+{"text": "any family-friendly demos", "intent": "request_flow", "slots": [{"type": "theme", "start": 4, "end": 19}], "record_id": "20261030T123953698713Z-01-000447"}
+{"text": "what do you have for families", "intent": "request_flow", "slots": [{"type": "theme", "start": 21, "end": 29}], "record_id": "20261030T123953698713Z-01-000448"}
+{"text": "run a family demo", "intent": "request_flow", "slots": [{"type": "theme", "start": 6, "end": 12}], "record_id": "20261030T123953698713Z-01-000449"}
+{"text": "let's see family-friendly options", "intent": "request_flow", "slots": [{"type": "theme", "start": 10, "end": 25}], "record_id": "20261030T123953698713Z-01-000450"}

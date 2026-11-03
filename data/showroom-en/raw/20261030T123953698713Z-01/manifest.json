@@ -1,0 +1,19 @@
+{
+  "record_prefix": "20261030T123953698713Z-01",
+  "model": "opencode/grok-4.7",
+  "variant": "",
+  "expected_records": 500,
+  "instructions_origin": "Checked-in brief at 9afe429; per-agent instruction snapshot was not recorded.",
+  "original_files": {
+    "raw/showroom_20261030T123953698713Z_s44082_p01.jsonl": "c0c88ef9dc196347c54aede42241e0e244f946d12c6b044956becd0e804eb8bf",
+    "raw/showroom_20261030T123953698713Z_s44082_p02.jsonl": "0971fbb9e0d50d749e1d595d9b3a81c199de8e4efc50e526bd161b4223bfdd99",
+    "raw/showroom_20261030T123953698713Z_s44082_p03.jsonl": "ec987577c8c0f681f8b85c7f9936e51506bce98e54e224dc20e5e8f854a40ba4",
+    "raw/showroom_20261030T123953698713Z_s44082_p04.jsonl": "c07728db1f47f72cacd7b5d5d3a316c65d95c3f304a578a648329dc87dab085b",
+    "raw/showroom_20261030T123953698713Z_s44082_p05.jsonl": "f53560695acf931390194a5d32acd19bf7117d77c62fce7f3a038482c17443c5",
+    "raw/showroom_20261030T123953698713Z_s44082_p06.jsonl": "20b0f04f0a60eadcf7d8aec75e7d1c3edd8cba148c0967f929dc4078d01e8387",
+    "raw/showroom_20261030T123953698713Z_s44082_p07.jsonl": "f384c70c9708869420b2df141ff014dc1f845e848883847319bd9188d12f33cc",
+    "raw/showroom_20261030T123953698713Z_s44082_p08.jsonl": "1fb648651d96b5f2970b705490d9a270be1a7b21d8909d8285c6902a1efdd4cf",
+    "raw/showroom_20261030T123953698713Z_s44082_p09.jsonl": "5505bcef7352f83f34c41002576ae89ae6667ccbf0ad87e92f08f1d57d05cff4",
+    "raw/showroom_20261030T123953698713Z_s44082_p10.jsonl": "cd57d1ef225427f2ae343ccbf6e1619f0c0feca8f2a2e371b646e5d8b1d77a41"
+  }
+}

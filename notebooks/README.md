@@ -6,6 +6,7 @@ the milestones; there is no parent Python project at `nlu/`.
 | Milestone | Guide | Executable code |
 | --- | --- | --- |
 | M3 · Training | [Standalone joint NLU model](m3_training/README.md) | `m3_training/train.py` |
+| M6 · Showroom data | [English](m6_showroom_data/gen.md) · [Chinese](m6_showroom_data/gen-zh.md) · [Arbitrate](m6_showroom_data/arbiter.md) · [Workflow](m6_showroom_data/README.md) | `m6_showroom_data/workspace.py` + `review.py` + `build.py` |
 
 M3 imports only its local data/model modules and installed libraries. The
 `repos/JointBERT/data/snips/` directory supplies data; its Python trainer is not

@@ -1,0 +1,50 @@
+{"text": "Show me one of the interactive demos", "intent": "request_flow", "slots": [], "record_id": "20261030T134430608299Z-01-000401"}
+{"text": "Let's start a feature presentation", "intent": "request_flow", "slots": [], "record_id": "20261030T134430608299Z-01-000402"}
+{"text": "Could you start the cabin cinema?", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 20, "end": 32}], "record_id": "20261030T134430608299Z-01-000403"}
+{"text": "Run a demo of the massage seats", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 18, "end": 31}], "record_id": "20261030T134430608299Z-01-000404"}
+{"text": "Let's check out the DLP lights", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 20, "end": 30}], "record_id": "20261030T134430608299Z-01-000405"}
+{"text": "Demonstrate the privacy glass outside for privacy", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 16, "end": 29}, {"type": "part", "start": 30, "end": 37}, {"type": "theme", "start": 42, "end": 49}], "record_id": "20261030T134430608299Z-01-000406"}
+{"text": "Show me something on the exterior", "intent": "request_flow", "slots": [{"type": "part", "start": 25, "end": 33}], "record_id": "20261030T134430608299Z-01-000407"}
+{"text": "Can I see the cabin demos?", "intent": "request_flow", "slots": [{"type": "part", "start": 14, "end": 19}], "record_id": "20261030T134430608299Z-01-000408"}
+{"text": "Play an outside feature walkthrough", "intent": "request_flow", "slots": [{"type": "part", "start": 8, "end": 15}], "record_id": "20261030T134430608299Z-01-000409"}
+{"text": "Show me a demo geared toward families", "intent": "request_flow", "slots": [{"type": "theme", "start": 29, "end": 37}], "record_id": "20261030T134430608299Z-01-000410"}
+{"text": "Can you run a privacy walkthrough?", "intent": "request_flow", "slots": [{"type": "theme", "start": 14, "end": 21}], "record_id": "20261030T134430608299Z-01-000411"}
+{"text": "Let's see outside features for the family", "intent": "request_flow", "slots": [{"type": "part", "start": 10, "end": 17}, {"type": "theme", "start": 35, "end": 41}], "record_id": "20261030T134430608299Z-01-000412"}
+{"text": "Can you run an interior demo for entertainment?", "intent": "request_flow", "slots": [{"type": "part", "start": 15, "end": 23}, {"type": "theme", "start": 33, "end": 46}], "record_id": "20261030T134430608299Z-01-000413"}
+{"text": "Show me exterior features focused on privacy", "intent": "request_flow", "slots": [{"type": "part", "start": 8, "end": 16}, {"type": "theme", "start": 37, "end": 44}], "record_id": "20261030T134430608299Z-01-000414"}
+{"text": "My name is Ananya Sharma", "intent": "inform", "slots": [{"type": "name", "start": 11, "end": 24}], "record_id": "20261030T134430608299Z-01-000415"}
+{"text": "I'm Sterling", "intent": "inform", "slots": [{"type": "name", "start": 4, "end": 12}], "record_id": "20261030T134430608299Z-01-000416"}
+{"text": "Call me Lucia Fernandez", "intent": "inform", "slots": [{"type": "name", "start": 8, "end": 23}], "record_id": "20261030T134430608299Z-01-000417"}
+{"text": "I'd prefer the massaging seats", "intent": "inform", "slots": [{"type": "flow_ref", "start": 15, "end": 30}], "record_id": "20261030T134430608299Z-01-000418"}
+{"text": "The tinted glass", "intent": "inform", "slots": [{"type": "flow_ref", "start": 4, "end": 16}], "record_id": "20261030T134430608299Z-01-000419", "slot_hints": [{"slot": 0, "value": "privacy_window"}]}
+{"text": "I want the DLP headlights", "intent": "inform", "slots": [{"type": "flow_ref", "start": 11, "end": 25}], "record_id": "20261030T134430608299Z-01-000420"}
+{"text": "Inside is what I want", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 6}], "record_id": "20261030T134430608299Z-01-000421"}
+{"text": "I'm looking at the exterior", "intent": "inform", "slots": [{"type": "part", "start": 19, "end": 27}], "record_id": "20261030T134430608299Z-01-000422"}
+{"text": "Cabin please", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 5}], "record_id": "20261030T134430608299Z-01-000423"}
+{"text": "Something family-friendly", "intent": "inform", "slots": [{"type": "theme", "start": 10, "end": 25}], "record_id": "20261030T134430608299Z-01-000424"}
+{"text": "My focus is entertainment", "intent": "inform", "slots": [{"type": "theme", "start": 12, "end": 25}], "record_id": "20261030T134430608299Z-01-000425"}
+{"text": "I'd choose privacy", "intent": "inform", "slots": [{"type": "theme", "start": 11, "end": 18}], "record_id": "20261030T134430608299Z-01-000426"}
+{"text": "Show me the 4th option", "intent": "inform", "slots": [{"type": "choice", "start": 12, "end": 22}], "record_id": "20261030T134430608299Z-01-000427"}
+{"text": "Option seven", "intent": "inform", "slots": [{"type": "choice", "start": 0, "end": 12}], "record_id": "20261030T134430608299Z-01-000428"}
+{"text": "Hello! Pleasure to meet you", "intent": "greet", "slots": [], "record_id": "20261030T134430608299Z-01-000429"}
+{"text": "Hey, good morning", "intent": "greet", "slots": [], "record_id": "20261030T134430608299Z-01-000430"}
+{"text": "Hi, I'm Desmond Miles", "intent": "greet", "slots": [{"type": "name", "start": 8, "end": 21}], "record_id": "20261030T134430608299Z-01-000431"}
+{"text": "Hello, I am Soraya", "intent": "greet", "slots": [{"type": "name", "start": 12, "end": 18}], "record_id": "20261030T134430608299Z-01-000432"}
+{"text": "Yes, sounds good", "intent": "affirm", "slots": [], "record_id": "20261030T134430608299Z-01-000433"}
+{"text": "Exactly", "intent": "affirm", "slots": [], "record_id": "20261030T134430608299Z-01-000434"}
+{"text": "Affirmative", "intent": "affirm", "slots": [], "record_id": "20261030T134430608299Z-01-000435"}
+{"text": "No, skip it", "intent": "deny", "slots": [], "record_id": "20261030T134430608299Z-01-000436"}
+{"text": "That is not what I asked for", "intent": "deny", "slots": [], "record_id": "20261030T134430608299Z-01-000437"}
+{"text": "No, never mind", "intent": "deny", "slots": [], "record_id": "20261030T134430608299Z-01-000438"}
+{"text": "Can you stop the demo?", "intent": "request_stop", "slots": [], "record_id": "20261030T134430608299Z-01-000439"}
+{"text": "Pause the demonstration please", "intent": "request_stop", "slots": [], "record_id": "20261030T134430608299Z-01-000440"}
+{"text": "Stop this walkthrough", "intent": "request_stop", "slots": [], "record_id": "20261030T134430608299Z-01-000441"}
+{"text": "Let's resume the demo", "intent": "request_resume", "slots": [], "record_id": "20261030T134430608299Z-01-000442"}
+{"text": "Continue from here", "intent": "request_resume", "slots": [], "record_id": "20261030T134430608299Z-01-000443"}
+{"text": "Unpause it please", "intent": "request_resume", "slots": [], "record_id": "20261030T134430608299Z-01-000444"}
+{"text": "Close out the showroom demo", "intent": "request_quit", "slots": [], "record_id": "20261030T134430608299Z-01-000445"}
+{"text": "I'd like to end the session", "intent": "request_quit", "slots": [], "record_id": "20261030T134430608299Z-01-000446"}
+{"text": "Let's exit now", "intent": "request_quit", "slots": [], "record_id": "20261030T134430608299Z-01-000447"}
+{"text": "Does this vehicle come with a spare tire?", "intent": "UNK", "slots": [], "record_id": "20261030T134430608299Z-01-000448"}
+{"text": "What is the capital of Mongolia?", "intent": "UNK", "slots": [], "record_id": "20261030T134430608299Z-01-000449"}
+{"text": "flibble 8900 toaster wave", "intent": "UNK", "slots": [], "record_id": "20261030T134430608299Z-01-000450"}

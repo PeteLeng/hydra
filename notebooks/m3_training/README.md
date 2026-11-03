@@ -11,6 +11,20 @@ All commands below are **Git Bash, from your opened `notebooks/` folder**.
 
 ## Start here
 
+Select a completed timestamped dataset build with `--dataset`. From `notebooks/`,
+replace `<timestamp>` with the build you want to train on:
+
+```bash
+uv run --locked --offline --env-file local.env python m3_training/train.py \
+  --dataset "../data/showroom-en/build/<timestamp>" --steps 1
+```
+
+The build manifest resolves its compiled `dataset/` directory. Training records
+the build path and manifest hash, and the viewer checks that same reference.
+Without `--dataset`, commands use the existing English pilot at
+`data/showroom-en/build/20261103T115913654808Z/` (995 train / 126 dev / 125 test).
+See the [dataset workflow](../m6_showroom_data/README.md) to create another build.
+
 ```bash
 # One update: follow optimization and dev evaluation.
 uv run --locked --offline --env-file local.env python m3_training/train.py --steps 1

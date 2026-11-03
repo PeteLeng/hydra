@@ -1,0 +1,50 @@
+{"text": "the headlights", "intent": "inform", "slots": [{"type": "flow_ref", "start": 4, "end": 14}], "record_id": "20261030T103220259528Z-01-000201"}
+{"text": "DLP lights for me", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 10}], "record_id": "20261030T103220259528Z-01-000202"}
+{"text": "my choice is DLP Headlights", "intent": "inform", "slots": [{"type": "flow_ref", "start": 13, "end": 27}], "record_id": "20261030T103220259528Z-01-000203"}
+{"text": "the mobile theater", "intent": "inform", "slots": [{"type": "flow_ref", "start": 4, "end": 18}], "record_id": "20261030T103220259528Z-01-000204"}
+{"text": "cinema setup", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 12}], "record_id": "20261030T103220259528Z-01-000205", "slot_hints": [{"slot": 0, "value": "cabin_cinema"}]}
+{"text": "Cabin Cinema is my choice", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 12}], "record_id": "20261030T103220259528Z-01-000206"}
+{"text": "the seat massage", "intent": "inform", "slots": [{"type": "flow_ref", "start": 4, "end": 16}], "record_id": "20261030T103220259528Z-01-000207"}
+{"text": "Massaging Seats is my pick", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 15}], "record_id": "20261030T103220259528Z-01-000208"}
+{"text": "I'll go with massage seats", "intent": "inform", "slots": [{"type": "flow_ref", "start": 13, "end": 26}], "record_id": "20261030T103220259528Z-01-000209"}
+{"text": "the privacy glass", "intent": "inform", "slots": [{"type": "flow_ref", "start": 4, "end": 17}], "record_id": "20261030T103220259528Z-01-000210"}
+{"text": "privacy windows", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 15}], "record_id": "20261030T103220259528Z-01-000211"}
+{"text": "Privacy Window is the one", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 14}], "record_id": "20261030T103220259528Z-01-000212"}
+{"text": "the inside", "intent": "inform", "slots": [{"type": "part", "start": 4, "end": 10}], "record_id": "20261030T103220259528Z-01-000213"}
+{"text": "I want inside", "intent": "inform", "slots": [{"type": "part", "start": 7, "end": 13}], "record_id": "20261030T103220259528Z-01-000214"}
+{"text": "interior it is", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 8}], "record_id": "20261030T103220259528Z-01-000215"}
+{"text": "stick with the cabin", "intent": "inform", "slots": [{"type": "part", "start": 15, "end": 20}], "record_id": "20261030T103220259528Z-01-000216"}
+{"text": "inside is my pick", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 6}], "record_id": "20261030T103220259528Z-01-000217"}
+{"text": "in-cabin is better", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 8}], "record_id": "20261030T103220259528Z-01-000218", "slot_hints": [{"slot": 0, "value": "inside"}]}
+{"text": "the outside", "intent": "inform", "slots": [{"type": "part", "start": 4, "end": 11}], "record_id": "20261030T103220259528Z-01-000219"}
+{"text": "I'll take the exterior", "intent": "inform", "slots": [{"type": "part", "start": 14, "end": 22}], "record_id": "20261030T103220259528Z-01-000220"}
+{"text": "outside it is", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 7}], "record_id": "20261030T103220259528Z-01-000221"}
+{"text": "stick with outside", "intent": "inform", "slots": [{"type": "part", "start": 11, "end": 18}], "record_id": "20261030T103220259528Z-01-000222"}
+{"text": "exterior is my pick", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 8}], "record_id": "20261030T103220259528Z-01-000223"}
+{"text": "the car's exterior", "intent": "inform", "slots": [{"type": "part", "start": 10, "end": 18}], "record_id": "20261030T103220259528Z-01-000224"}
+{"text": "family", "intent": "inform", "slots": [{"type": "theme", "start": 0, "end": 6}], "record_id": "20261030T103220259528Z-01-000225"}
+{"text": "families", "intent": "inform", "slots": [{"type": "theme", "start": 0, "end": 8}], "record_id": "20261030T103220259528Z-01-000226"}
+{"text": "family-friendly", "intent": "inform", "slots": [{"type": "theme", "start": 0, "end": 15}], "record_id": "20261030T103220259528Z-01-000227"}
+{"text": "I prefer family", "intent": "inform", "slots": [{"type": "theme", "start": 9, "end": 15}], "record_id": "20261030T103220259528Z-01-000228"}
+{"text": "something family-friendly", "intent": "inform", "slots": [{"type": "theme", "start": 10, "end": 25}], "record_id": "20261030T103220259528Z-01-000229"}
+{"text": "for families", "intent": "inform", "slots": [{"type": "theme", "start": 4, "end": 12}], "record_id": "20261030T103220259528Z-01-000230"}
+{"text": "family is my preference", "intent": "inform", "slots": [{"type": "theme", "start": 0, "end": 6}], "record_id": "20261030T103220259528Z-01-000231"}
+{"text": "I like family-friendly things", "intent": "inform", "slots": [{"type": "theme", "start": 7, "end": 22}], "record_id": "20261030T103220259528Z-01-000232"}
+{"text": "make it families", "intent": "inform", "slots": [{"type": "theme", "start": 8, "end": 16}], "record_id": "20261030T103220259528Z-01-000233"}
+{"text": "entertainment", "intent": "inform", "slots": [{"type": "theme", "start": 0, "end": 13}], "record_id": "20261030T103220259528Z-01-000234"}
+{"text": "I prefer entertainment", "intent": "inform", "slots": [{"type": "theme", "start": 9, "end": 22}], "record_id": "20261030T103220259528Z-01-000235"}
+{"text": "entertainment is my pick", "intent": "inform", "slots": [{"type": "theme", "start": 0, "end": 13}], "record_id": "20261030T103220259528Z-01-000236"}
+{"text": "go with entertainment", "intent": "inform", "slots": [{"type": "theme", "start": 8, "end": 21}], "record_id": "20261030T103220259528Z-01-000237"}
+{"text": "entertainment for me", "intent": "inform", "slots": [{"type": "theme", "start": 0, "end": 13}], "record_id": "20261030T103220259528Z-01-000238"}
+{"text": "entertainment works", "intent": "inform", "slots": [{"type": "theme", "start": 0, "end": 13}], "record_id": "20261030T103220259528Z-01-000239"}
+{"text": "I want entertainment", "intent": "inform", "slots": [{"type": "theme", "start": 7, "end": 20}], "record_id": "20261030T103220259528Z-01-000240"}
+{"text": "I'm after entertainment", "intent": "inform", "slots": [{"type": "theme", "start": 10, "end": 23}], "record_id": "20261030T103220259528Z-01-000241"}
+{"text": "privacy", "intent": "inform", "slots": [{"type": "theme", "start": 0, "end": 7}], "record_id": "20261030T103220259528Z-01-000242"}
+{"text": "privacy is what I want", "intent": "inform", "slots": [{"type": "theme", "start": 0, "end": 7}], "record_id": "20261030T103220259528Z-01-000243"}
+{"text": "go with privacy", "intent": "inform", "slots": [{"type": "theme", "start": 8, "end": 15}], "record_id": "20261030T103220259528Z-01-000244"}
+{"text": "privacy for me", "intent": "inform", "slots": [{"type": "theme", "start": 0, "end": 7}], "record_id": "20261030T103220259528Z-01-000245"}
+{"text": "privacy works for me", "intent": "inform", "slots": [{"type": "theme", "start": 0, "end": 7}], "record_id": "20261030T103220259528Z-01-000246"}
+{"text": "I want privacy", "intent": "inform", "slots": [{"type": "theme", "start": 7, "end": 14}], "record_id": "20261030T103220259528Z-01-000247"}
+{"text": "make it privacy", "intent": "inform", "slots": [{"type": "theme", "start": 8, "end": 15}], "record_id": "20261030T103220259528Z-01-000248"}
+{"text": "something private", "intent": "inform", "slots": [{"type": "theme", "start": 10, "end": 17}], "record_id": "20261030T103220259528Z-01-000249", "slot_hints": [{"slot": 0, "value": "privacy"}]}
+{"text": "I'm after privacy", "intent": "inform", "slots": [{"type": "theme", "start": 10, "end": 17}], "record_id": "20261030T103220259528Z-01-000250"}

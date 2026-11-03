@@ -15,7 +15,7 @@ import sys
 import time
 
 PROJECT = Path(__file__).resolve().parents[1]
-DATA = PROJECT.parent / "data" / "showroom"
+DATA = PROJECT.parent / "data/showroom-en/build/20261103T115913654808Z"
 CACHE = PROJECT / ".artifacts" / "huggingface" / "hub"
 REVISION = "86b5e0934494bd15c9632b12f734a8a67f723594"
 os.environ["MPLCONFIGDIR"] = str(PROJECT / ".artifacts" / "matplotlib")
@@ -30,7 +30,7 @@ from transformers.models.bert.modeling_bert import BertModel
 from transformers.models.bert.tokenization_bert_fast import BertTokenizerFast
 
 from joint_model import JointModel, compute_loss, load_checkpoint, save_checkpoint
-from snips_data import Batch, IGNORE_SLOT, read_examples, read_labels, tokenize_batch
+from snips_data import Batch, IGNORE_SLOT, read_examples, read_labels, resolve_dataset, tokenize_batch
 
 
 @dataclass
@@ -73,10 +73,18 @@ def evaluate(model: JointModel, batches: Iterable[Batch], device: torch.device) 
 
 
 def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
-          learning_rate: float = 5e-5, seed: int = 1234, test: bool = False, epochs: int = 1) -> Path:
+          learning_rate: float = 5e-5, seed: int = 1234, test: bool = False, epochs: int = 1,
+          dataset: Path | None = None) -> Path:
     if (batch_size < 1 or eval_every < 1 or epochs < 1 or learning_rate <= 0
             or (steps is not None and steps < 1)):
         raise ValueError("Batch size, epochs, evaluation interval, step limit, and learning rate must be positive")
+    selected_dataset = (dataset or DATA).resolve()
+    data, convention = resolve_dataset(selected_dataset)
+    root = PROJECT.parent.resolve()
+    dataset_info = {"path": (selected_dataset.relative_to(root) if selected_dataset.is_relative_to(root)
+                             else selected_dataset).as_posix(), "tokenization": convention}
+    if data != selected_dataset:
+        dataset_info["manifest_sha256"] = hashlib.sha256((selected_dataset / "manifest.json").read_bytes()).hexdigest()
     started = time.perf_counter()
     torch.manual_seed(seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -84,9 +92,9 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
     run_dir.mkdir(parents=True)
 
     print("[1/5] Read reviewed showroom splits and create batches", flush=True)
-    labels = read_labels(DATA, include_unk_intent=True)
-    training = read_examples(DATA / "train", labels)
-    development = read_examples(DATA / "dev", labels)
+    labels = read_labels(data, include_unk_intent=True)
+    training = read_examples(data / "train", labels)
+    development = read_examples(data / "dev", labels)
     tokenizer = BertTokenizerFast.from_pretrained("bert-base-uncased", revision=REVISION,
                                                   cache_dir=CACHE, local_files_only=True)
     collate = partial(tokenize_batch, tokenizer=tokenizer, max_length=50)
@@ -152,7 +160,7 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
     test_metrics = None
     if test:
         selected = load_checkpoint(run_dir / "best.pt", device)
-        test_loader = DataLoader(read_examples(DATA / "test", labels), batch_size=32, collate_fn=collate)
+        test_loader = DataLoader(read_examples(data / "test", labels), batch_size=32, collate_fn=collate)
         test_metrics = asdict(evaluate(selected, test_loader, device))
         print(f"      Test (dev-selected step {best_step}): {test_metrics}")
 
@@ -169,10 +177,10 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
     (run_dir / "source").mkdir()
     for source in [*sources, PROJECT / "uv.lock"]:
         shutil.copy2(source, run_dir / "source" / source.name)
-    data_files = [DATA / split / name for split in ("train", "dev", *(["test"] if test else []))
+    data_files = [data / split / name for split in ("train", "dev", *(["test"] if test else []))
                   for name in ("seq.in", "seq.out", "label")]
-    data_files += [DATA / "intent_label.txt", DATA / "slot_label.txt"]
-    report = {"dataset": {"path": DATA.relative_to(PROJECT.parent).as_posix(), "tokenization": "showroom"},
+    data_files += [data / "intent_label.txt", data / "slot_label.txt"]
+    report = {"dataset": dataset_info,
               "seed": seed, "batch_size": batch_size, "max_length": 50, "learning_rate": learning_rate,
               "epochs": epochs, "step_limit": steps, "eval_every": eval_every, "slot_weight": 1.0,
               "model_revision": REVISION, "device": str(device), "elapsed_seconds": time.perf_counter() - started,
@@ -182,7 +190,7 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
               "history": history, "evaluations": evaluations,
               "best_step": best_step, "test": test_metrics,
               "python": sys.version, "packages": {name: version(name) for name in ("torch", "transformers", "seqeval")},
-              "data_sha256": {str(p.relative_to(DATA)): hashlib.sha256(p.read_bytes()).hexdigest() for p in data_files}}
+               "data_sha256": {str(p.relative_to(data)): hashlib.sha256(p.read_bytes()).hexdigest() for p in data_files}}
     (run_dir / "run.json").write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"      Processed {len(used_lines)} examples; reached epoch {epoch}/{epochs}.\n      Results: {run_dir}")
     return run_dir
@@ -197,5 +205,7 @@ if __name__ == "__main__":
     parser.add_argument("--learning-rate", type=float, default=5e-5)
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--test", action="store_true", help="Evaluate the dev-selected checkpoint on test once")
+    parser.add_argument("--dataset", type=Path, help="Completed build root (default: existing English pilot build)")
     args = parser.parse_args()
-    train(args.steps, args.batch_size, args.eval_every, args.learning_rate, args.seed, args.test, epochs=args.epochs)
+    train(args.steps, args.batch_size, args.eval_every, args.learning_rate, args.seed, args.test,
+          epochs=args.epochs, dataset=args.dataset)

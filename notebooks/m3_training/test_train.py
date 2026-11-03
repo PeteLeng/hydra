@@ -2,9 +2,11 @@
 
 from contextlib import ExitStack, redirect_stdout
 import io
+import hashlib
 import json
 from pathlib import Path
 import tempfile
+import shutil
 import unittest
 from unittest.mock import patch
 
@@ -15,6 +17,7 @@ from transformers.models.bert.tokenization_bert_fast import BertTokenizerFast
 
 import train
 from joint_model import load_checkpoint
+from snips_data import read_run_dataset
 
 
 class TrainingChecks(unittest.TestCase):
@@ -74,6 +77,25 @@ class TrainingChecks(unittest.TestCase):
                 self.assertEqual(load_checkpoint(directory / "last.pt").labels.intent_names,
                                  report["labels"]["intents"])
                 self.assertTrue((directory / "tokenizer" / "tokenizer.json").is_file())
+
+    def test_completed_build_trains_and_viewer_resolves_exact_dataset(self) -> None:
+        build = self.directory / "build" / "fixture"
+        data = build / "dataset"
+        shutil.copytree(self.data, data)
+        metadata = {"version": 1, "kind": "build", "status": "complete", "dataset": "dataset",
+                    "tokenization": "showroom", "dataset_files": {
+                        path.relative_to(build).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest()
+                        for path in data.rglob("*") if path.is_file()}}
+        (build / "manifest.json").write_text(json.dumps(metadata), encoding="utf-8")
+        with redirect_stdout(io.StringIO()):
+            directory = train.train(steps=1, dataset=build, test=True)
+        report = json.loads((directory / "run.json").read_text(encoding="utf-8"))
+        self.assertEqual(report["dataset"]["path"], build.relative_to(self.directory.parent).as_posix())
+        self.assertIn("manifest_sha256", report["dataset"])
+        self.assertEqual(read_run_dataset(report, self.directory.parent).directory, data)
+        (data / "train/seq.in").write_text("changed\n", encoding="utf-8")
+        with self.assertRaises(ValueError):
+            read_run_dataset(report, self.directory.parent)
 
     def test_rejects_invalid_epoch_and_step_limits(self) -> None:
         for settings in ({"epochs": 0}, {"epochs": 2, "steps": 0}, {"epochs": 2, "steps": 7}):

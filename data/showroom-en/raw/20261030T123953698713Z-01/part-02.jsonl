@@ -1,0 +1,50 @@
+{"text": "definitely", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000051"}
+{"text": "that works", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000052"}
+{"text": "confirmed", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000053"}
+{"text": "yes that's fine", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000054"}
+{"text": "yeah sure", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000055"}
+{"text": "of course", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000056"}
+{"text": "you bet", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000057"}
+{"text": "alright", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000058"}
+{"text": "exactly", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000059"}
+{"text": "that's it", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000060"}
+{"text": "perfect", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000061"}
+{"text": "will do", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000062"}
+{"text": "sure thing", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000063"}
+{"text": "yes I agree", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000064"}
+{"text": "affirmative", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000065"}
+{"text": "indeed", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000066"}
+{"text": "great", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000067"}
+{"text": "yes correct", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000068"}
+{"text": "ok", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000069"}
+{"text": "right", "intent": "affirm", "slots": [], "record_id": "20261030T123953698713Z-01-000070"}
+{"text": "no", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000071"}
+{"text": "nope", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000072"}
+{"text": "nah", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000073"}
+{"text": "no way", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000074"}
+{"text": "incorrect", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000075"}
+{"text": "that's wrong", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000076"}
+{"text": "not really", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000077"}
+{"text": "I disagree", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000078"}
+{"text": "negative", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000079"}
+{"text": "no I don't", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000080"}
+{"text": "that's incorrect", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000081"}
+{"text": "absolutely not", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000082"}
+{"text": "no that's wrong", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000083"}
+{"text": "I don't think so", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000084"}
+{"text": "not quite", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000085"}
+{"text": "wrong", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000086"}
+{"text": "false", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000087"}
+{"text": "not at all", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000088"}
+{"text": "I'd rather not", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000089"}
+{"text": "no thank you", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000090"}
+{"text": "no chance", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000091"}
+{"text": "no that's not it", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000092"}
+{"text": "I said no", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000093"}
+{"text": "definitely not", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000094"}
+{"text": "no I disagree", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000095"}
+{"text": "that's not it", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000096"}
+{"text": "nope not that", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000097"}
+{"text": "I don't agree", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000098"}
+{"text": "no definitely not", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000099"}
+{"text": "not correct", "intent": "deny", "slots": [], "record_id": "20261030T123953698713Z-01-000100"}

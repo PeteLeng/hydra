@@ -1,0 +1,19 @@
+{
+  "record_prefix": "20261030T134430608299Z-01",
+  "model": "opencode/gemini-4-argon",
+  "variant": "",
+  "expected_records": 500,
+  "instructions_origin": "Checked-in brief at 9afe429; per-agent instruction snapshot was not recorded.",
+  "original_files": {
+    "raw/showroom_20261030T134430608299Z_s111510_p01.jsonl": "e109ebb9d28beb8e3f2592753e51e49b4e7c2aae38213fdff17f57c8638c9eb6",
+    "raw/showroom_20261030T134430608299Z_s111510_p02.jsonl": "21f40b06a1656cd03c3f6c007dc14c09910823fc6f521ec5b3ab8f15eef852a3",
+    "raw/showroom_20261030T134430608299Z_s111510_p03.jsonl": "eb805832e5cb614bc1bd6397ce1548b860914f4dc3b78f0d53a6dfab232c453a",
+    "raw/showroom_20261030T134430608299Z_s111510_p04.jsonl": "ac671f92442ed7e170537cd93aa038d26cfb5e6cd4a098b4c90ae7edd25b3f83",
+    "raw/showroom_20261030T134430608299Z_s111510_p05.jsonl": "caf7a053bf0655e7345d5ce97616661ebc423d6ecfa0226e8d7f744507af09b7",
+    "raw/showroom_20261030T134430608299Z_s111510_p06.jsonl": "aba8fe81fbcfbb22d554edc385cd6d67872ce38e3d28f276e1f61f0b68708273",
+    "raw/showroom_20261030T134430608299Z_s111510_p07.jsonl": "5c3603e66a78c964e0679a8fb4b9e2af2bbd4efb7fd8b837476bc63786ef504e",
+    "raw/showroom_20261030T134430608299Z_s111510_p08.jsonl": "c944a70e16e922c1750dbe553d8400cbdd9f898ccde7a22354d042badf94103b",
+    "raw/showroom_20261030T134430608299Z_s111510_p09.jsonl": "4557f76b682c98699b7b50de1449373e736c4b57439bdd7a44039173dcae9aba",
+    "raw/showroom_20261030T134430608299Z_s111510_p10.jsonl": "757de3d1b6c7e60f0fe46b3e7e2a4e7bbfab29efce054c0d7f40cc67e54a7acb"
+  }
+}

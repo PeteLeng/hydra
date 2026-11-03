@@ -1,0 +1,583 @@
+{
+  "review_date": "2026-10-30",
+  "summary": {
+    "input_records": 1500,
+    "accepted": 1246,
+    "semantic_rejections": 64,
+    "duplicates_removed": 190,
+    "corrected_candidates": 18,
+    "corrected_accepted": 18,
+    "groups": 315,
+    "intents": {
+      "request_flow": 355,
+      "inform": 379,
+      "greet": 98,
+      "affirm": 60,
+      "deny": 50,
+      "request_stop": 78,
+      "request_resume": 62,
+      "request_quit": 76,
+      "UNK": 88
+    },
+    "rejection_reasons": {
+      "Ambiguous multi-value preference/fragment without a clear demo or discovery request; inform permits one slot only.": 29,
+      "User declined indoors/outdoors as vehicle-part aliases: may refer to the building or surroundings.": 8,
+      "User declined capability-dependent alias; equivalence is not established by the pilot vocabulary.": 6,
+      "Physical movement versus demo browsing is unresolved: take me outside.": 1,
+      "Unnatural or label-like wording; omitted rather than inventing a replacement utterance.": 7,
+      "Affirmation followed by resume control violates the one-act contract.": 4,
+      "Denial combined with skip/cancel/never-mind has ambiguous control ownership.": 4,
+      "Internal flow terminology is unrepresentative user speech in this batch.": 5
+    },
+    "disposition_by_batch": {
+      "A": {
+        "accept": 473,
+        "reject": 27
+      },
+      "B": {
+        "duplicate": 130,
+        "accept": 351,
+        "reject": 19
+      },
+      "C": {
+        "accept": 422,
+        "duplicate": 60,
+        "reject": 18
+      }
+    },
+    "raw_sha256": {
+      "showroom_20261030T103220259528Z_s163172_p01.jsonl": "fc689e59552a0e3c2cb4f1e706c8d8e9e521686a73feb1f738e21b40c48a3206",
+      "showroom_20261030T103220259528Z_s163172_p02.jsonl": "c9e6bdaf1bac2655e4b04e49a3e0277f09a8701b955dff92acc0a16e9f4d1da2",
+      "showroom_20261030T103220259528Z_s163172_p03.jsonl": "5fb57cec924b606e04715a2ea2abe09bc0f9ab61dd455d682a41c5dd1b33b819",
+      "showroom_20261030T103220259528Z_s163172_p04.jsonl": "028fe7a144196b445a854765f6aa66dfb3dd9178e18673a3126c7f8e692d6529",
+      "showroom_20261030T103220259528Z_s163172_p05.jsonl": "aa3a5170c5646b50aa2a35f8508efb2e25bddd177b67148211eba88bc887e589",
+      "showroom_20261030T103220259528Z_s163172_p06.jsonl": "b5e655d0641b908f7ed4c96b5ae44200e240deae1d4bf2f75abd0c3ac6912f32",
+      "showroom_20261030T103220259528Z_s163172_p07.jsonl": "574f73dd613ceff028fe3643beb520132c98d624e26adc2289393fbf37f18b4d",
+      "showroom_20261030T103220259528Z_s163172_p08.jsonl": "1e01cafe4ae8a6bb2d993a48daa8429e155d6930819ee45eadb118305d28fa6d",
+      "showroom_20261030T103220259528Z_s163172_p09.jsonl": "749dd0260bc59d1e95bb1fe2f621fc1cb8903e97c60e17ad8cae5e68b46e7b90",
+      "showroom_20261030T103220259528Z_s163172_p10.jsonl": "2b921a1933723662b5c3ac8e9c0757f381b748b27491ff4c047d8e7f016f68af",
+      "showroom_20261030T123953698713Z_s44082_p01.jsonl": "c0c88ef9dc196347c54aede42241e0e244f946d12c6b044956becd0e804eb8bf",
+      "showroom_20261030T123953698713Z_s44082_p02.jsonl": "0971fbb9e0d50d749e1d595d9b3a81c199de8e4efc50e526bd161b4223bfdd99",
+      "showroom_20261030T123953698713Z_s44082_p03.jsonl": "ec987577c8c0f681f8b85c7f9936e51506bce98e54e224dc20e5e8f854a40ba4",
+      "showroom_20261030T123953698713Z_s44082_p04.jsonl": "c07728db1f47f72cacd7b5d5d3a316c65d95c3f304a578a648329dc87dab085b",
+      "showroom_20261030T123953698713Z_s44082_p05.jsonl": "f53560695acf931390194a5d32acd19bf7117d77c62fce7f3a038482c17443c5",
+      "showroom_20261030T123953698713Z_s44082_p06.jsonl": "20b0f04f0a60eadcf7d8aec75e7d1c3edd8cba148c0967f929dc4078d01e8387",
+      "showroom_20261030T123953698713Z_s44082_p07.jsonl": "f384c70c9708869420b2df141ff014dc1f845e848883847319bd9188d12f33cc",
+      "showroom_20261030T123953698713Z_s44082_p08.jsonl": "1fb648651d96b5f2970b705490d9a270be1a7b21d8909d8285c6902a1efdd4cf",
+      "showroom_20261030T123953698713Z_s44082_p09.jsonl": "5505bcef7352f83f34c41002576ae89ae6667ccbf0ad87e92f08f1d57d05cff4",
+      "showroom_20261030T123953698713Z_s44082_p10.jsonl": "cd57d1ef225427f2ae343ccbf6e1619f0c0feca8f2a2e371b646e5d8b1d77a41",
+      "showroom_20261030T134430608299Z_s111510_p01.jsonl": "e109ebb9d28beb8e3f2592753e51e49b4e7c2aae38213fdff17f57c8638c9eb6",
+      "showroom_20261030T134430608299Z_s111510_p02.jsonl": "21f40b06a1656cd03c3f6c007dc14c09910823fc6f521ec5b3ab8f15eef852a3",
+      "showroom_20261030T134430608299Z_s111510_p03.jsonl": "eb805832e5cb614bc1bd6397ce1548b860914f4dc3b78f0d53a6dfab232c453a",
+      "showroom_20261030T134430608299Z_s111510_p04.jsonl": "ac671f92442ed7e170537cd93aa038d26cfb5e6cd4a098b4c90ae7edd25b3f83",
+      "showroom_20261030T134430608299Z_s111510_p05.jsonl": "caf7a053bf0655e7345d5ce97616661ebc423d6ecfa0226e8d7f744507af09b7",
+      "showroom_20261030T134430608299Z_s111510_p06.jsonl": "aba8fe81fbcfbb22d554edc385cd6d67872ce38e3d28f276e1f61f0b68708273",
+      "showroom_20261030T134430608299Z_s111510_p07.jsonl": "5c3603e66a78c964e0679a8fb4b9e2af2bbd4efb7fd8b837476bc63786ef504e",
+      "showroom_20261030T134430608299Z_s111510_p08.jsonl": "c944a70e16e922c1750dbe553d8400cbdd9f898ccde7a22354d042badf94103b",
+      "showroom_20261030T134430608299Z_s111510_p09.jsonl": "4557f76b682c98699b7b50de1449373e736c4b57439bdd7a44039173dcae9aba",
+      "showroom_20261030T134430608299Z_s111510_p10.jsonl": "757de3d1b6c7e60f0fe46b3e7e2a4e7bbfab29efce054c0d7f40cc67e54a7acb"
+    }
+  },
+  "accepted": {
+    "records": 1246,
+    "intents": {
+      "request_flow": 355,
+      "inform": 379,
+      "greet": 98,
+      "affirm": 60,
+      "deny": 50,
+      "request_stop": 78,
+      "request_resume": 62,
+      "request_quit": 76,
+      "UNK": 88
+    },
+    "slots": {
+      "flow_ref": 170,
+      "part": 219,
+      "theme": 223,
+      "name": 144,
+      "choice": 76
+    },
+    "missing_intents": [],
+    "missing_slots": [],
+    "buckets": {
+      "request_flow/no_slots": 54,
+      "request_flow/flow_ref": 100,
+      "inform/flow_ref": 70,
+      "request_flow/flow_ref_with_filters": 19,
+      "request_flow/part": 69,
+      "inform/part": 71,
+      "request_flow/theme": 64,
+      "inform/theme": 78,
+      "request_flow/part+theme": 68,
+      "inform/name": 84,
+      "inform/choice": 76,
+      "greet/no_slots": 38,
+      "greet/name": 60
+    },
+    "canonical_values": {
+      "flow_ref": {
+        "dlp_headlights": 46,
+        "cabin_cinema": 42,
+        "massage_seats": 43,
+        "privacy_window": 39
+      },
+      "part": {
+        "outside": 112,
+        "inside": 107
+      },
+      "theme": {
+        "entertainment": 75,
+        "family": 76,
+        "privacy": 72
+      }
+    },
+    "canonical_values_by_intent": {
+      "request_flow/flow_ref": {
+        "dlp_headlights": 27,
+        "cabin_cinema": 24,
+        "massage_seats": 25,
+        "privacy_window": 24
+      },
+      "inform/flow_ref": {
+        "dlp_headlights": 19,
+        "cabin_cinema": 18,
+        "massage_seats": 18,
+        "privacy_window": 15
+      },
+      "request_flow/part": {
+        "outside": 74,
+        "inside": 74
+      },
+      "request_flow/theme": {
+        "entertainment": 48,
+        "family": 52,
+        "privacy": 45
+      },
+      "inform/part": {
+        "outside": 38,
+        "inside": 33
+      },
+      "inform/theme": {
+        "family": 24,
+        "privacy": 27,
+        "entertainment": 27
+      }
+    },
+    "bio_counts": {
+      "O": 4059,
+      "B-flow_ref": 170,
+      "I-flow_ref": 147,
+      "B-part": 219,
+      "B-theme": 223,
+      "I-theme": 2,
+      "B-name": 144,
+      "I-name": 75,
+      "B-choice": 76,
+      "I-choice": 64
+    },
+    "missing_observed_bio_tags": []
+  },
+  "splits": {
+    "train": {
+      "records": 995,
+      "intents": {
+        "request_resume": 50,
+        "request_flow": 283,
+        "affirm": 48,
+        "UNK": 71,
+        "inform": 300,
+        "greet": 77,
+        "request_stop": 64,
+        "deny": 40,
+        "request_quit": 62
+      },
+      "slots": {
+        "part": 172,
+        "flow_ref": 138,
+        "name": 109,
+        "theme": 177,
+        "choice": 62
+      },
+      "missing_intents": [],
+      "missing_slots": [],
+      "buckets": {
+        "request_flow/part": 53,
+        "request_flow/flow_ref": 81,
+        "request_flow/no_slots": 43,
+        "inform/part": 58,
+        "greet/no_slots": 28,
+        "greet/name": 49,
+        "inform/theme": 63,
+        "request_flow/theme": 51,
+        "request_flow/part+theme": 55,
+        "inform/choice": 62,
+        "request_flow/flow_ref_with_filters": 14,
+        "inform/flow_ref": 57,
+        "inform/name": 60
+      },
+      "canonical_values": {
+        "flow_ref": {
+          "cabin_cinema": 34,
+          "privacy_window": 29,
+          "dlp_headlights": 41,
+          "massage_seats": 34
+        },
+        "part": {
+          "outside": 85,
+          "inside": 87
+        },
+        "theme": {
+          "family": 68,
+          "privacy": 52,
+          "entertainment": 57
+        }
+      },
+      "canonical_values_by_intent": {
+        "request_flow/part": {
+          "outside": 54,
+          "inside": 60
+        },
+        "request_flow/flow_ref": {
+          "cabin_cinema": 18,
+          "privacy_window": 20,
+          "dlp_headlights": 23,
+          "massage_seats": 20
+        },
+        "inform/part": {
+          "outside": 31,
+          "inside": 27
+        },
+        "inform/theme": {
+          "family": 22,
+          "entertainment": 22,
+          "privacy": 19
+        },
+        "request_flow/theme": {
+          "privacy": 33,
+          "entertainment": 35,
+          "family": 46
+        },
+        "inform/flow_ref": {
+          "dlp_headlights": 18,
+          "privacy_window": 9,
+          "cabin_cinema": 16,
+          "massage_seats": 14
+        }
+      },
+      "bio_counts": {
+        "O": 3180,
+        "B-part": 172,
+        "B-flow_ref": 138,
+        "I-flow_ref": 118,
+        "B-name": 109,
+        "B-theme": 177,
+        "I-name": 62,
+        "B-choice": 62,
+        "I-choice": 50,
+        "I-theme": 2
+      },
+      "missing_observed_bio_tags": []
+    },
+    "dev": {
+      "records": 126,
+      "intents": {
+        "inform": 42,
+        "request_flow": 40,
+        "UNK": 10,
+        "deny": 5,
+        "affirm": 6,
+        "greet": 3,
+        "request_stop": 7,
+        "request_quit": 7,
+        "request_resume": 6
+      },
+      "slots": {
+        "choice": 5,
+        "theme": 21,
+        "part": 24,
+        "flow_ref": 15,
+        "name": 19
+      },
+      "missing_intents": [],
+      "missing_slots": [],
+      "buckets": {
+        "inform/choice": 5,
+        "request_flow/part+theme": 7,
+        "request_flow/theme": 7,
+        "inform/flow_ref": 6,
+        "inform/name": 18,
+        "inform/part": 6,
+        "request_flow/part": 11,
+        "request_flow/no_slots": 6,
+        "inform/theme": 7,
+        "greet/name": 1,
+        "request_flow/flow_ref": 9,
+        "greet/no_slots": 2
+      },
+      "canonical_values": {
+        "flow_ref": {
+          "dlp_headlights": 2,
+          "massage_seats": 5,
+          "cabin_cinema": 3,
+          "privacy_window": 5
+        },
+        "part": {
+          "inside": 11,
+          "outside": 13
+        },
+        "theme": {
+          "privacy": 10,
+          "entertainment": 6,
+          "family": 5
+        }
+      },
+      "canonical_values_by_intent": {
+        "request_flow/theme": {
+          "privacy": 6,
+          "entertainment": 4,
+          "family": 4
+        },
+        "request_flow/part": {
+          "inside": 8,
+          "outside": 10
+        },
+        "inform/flow_ref": {
+          "dlp_headlights": 1,
+          "privacy_window": 2,
+          "massage_seats": 2,
+          "cabin_cinema": 1
+        },
+        "inform/part": {
+          "inside": 3,
+          "outside": 3
+        },
+        "inform/theme": {
+          "entertainment": 2,
+          "privacy": 4,
+          "family": 1
+        },
+        "request_flow/flow_ref": {
+          "massage_seats": 3,
+          "cabin_cinema": 2,
+          "dlp_headlights": 1,
+          "privacy_window": 3
+        }
+      },
+      "bio_counts": {
+        "O": 415,
+        "B-choice": 5,
+        "I-choice": 5,
+        "B-theme": 21,
+        "B-part": 24,
+        "B-flow_ref": 15,
+        "B-name": 19,
+        "I-name": 10,
+        "I-flow_ref": 13
+      },
+      "missing_observed_bio_tags": [
+        "I-theme"
+      ]
+    },
+    "test": {
+      "records": 125,
+      "intents": {
+        "request_flow": 32,
+        "greet": 18,
+        "inform": 37,
+        "affirm": 6,
+        "UNK": 7,
+        "request_quit": 7,
+        "request_resume": 6,
+        "request_stop": 7,
+        "deny": 5
+      },
+      "slots": {
+        "theme": 25,
+        "flow_ref": 17,
+        "name": 16,
+        "part": 23,
+        "choice": 9
+      },
+      "missing_intents": [],
+      "missing_slots": [],
+      "buckets": {
+        "request_flow/theme": 6,
+        "request_flow/flow_ref": 10,
+        "greet/no_slots": 8,
+        "inform/flow_ref": 7,
+        "greet/name": 10,
+        "request_flow/part+theme": 6,
+        "request_flow/part": 5,
+        "request_flow/flow_ref_with_filters": 5,
+        "inform/choice": 9,
+        "inform/part": 7,
+        "request_flow/no_slots": 5,
+        "inform/theme": 8,
+        "inform/name": 6
+      },
+      "canonical_values": {
+        "flow_ref": {
+          "cabin_cinema": 5,
+          "privacy_window": 5,
+          "massage_seats": 4,
+          "dlp_headlights": 3
+        },
+        "part": {
+          "outside": 14,
+          "inside": 9
+        },
+        "theme": {
+          "privacy": 10,
+          "entertainment": 12,
+          "family": 3
+        }
+      },
+      "canonical_values_by_intent": {
+        "request_flow/theme": {
+          "privacy": 6,
+          "entertainment": 9,
+          "family": 2
+        },
+        "request_flow/flow_ref": {
+          "cabin_cinema": 4,
+          "massage_seats": 2,
+          "dlp_headlights": 3,
+          "privacy_window": 1
+        },
+        "inform/flow_ref": {
+          "privacy_window": 4,
+          "massage_seats": 2,
+          "cabin_cinema": 1
+        },
+        "request_flow/part": {
+          "outside": 10,
+          "inside": 6
+        },
+        "inform/part": {
+          "outside": 4,
+          "inside": 3
+        },
+        "inform/theme": {
+          "entertainment": 3,
+          "privacy": 4,
+          "family": 1
+        }
+      },
+      "bio_counts": {
+        "O": 464,
+        "B-theme": 25,
+        "B-flow_ref": 17,
+        "I-flow_ref": 16,
+        "B-name": 16,
+        "B-part": 23,
+        "B-choice": 9,
+        "I-choice": 9,
+        "I-name": 3
+      },
+      "missing_observed_bio_tags": [
+        "I-theme"
+      ]
+    }
+  },
+  "group_sizes": {
+    "7": 9,
+    "4": 27,
+    "5": 23,
+    "1": 121,
+    "2": 47,
+    "8": 14,
+    "3": 35,
+    "39": 1,
+    "6": 15,
+    "9": 4,
+    "11": 1,
+    "14": 4,
+    "10": 7,
+    "31": 1,
+    "29": 1,
+    "18": 1,
+    "23": 1,
+    "30": 1,
+    "46": 1,
+    "49": 1
+  },
+  "alias_inventory": {
+    "flow_ref": {
+      "dlp_headlights": [
+        "dlp headlights",
+        "dlp lights",
+        "headlights",
+        "dlp headlamps"
+      ],
+      "cabin_cinema": [
+        "cabin cinema",
+        "mobile theater",
+        "theater",
+        "in-car cinema",
+        "movie theater",
+        "cinema setup",
+        "movie setup",
+        "in-cabin theater"
+      ],
+      "massage_seats": [
+        "massaging seats",
+        "massage seats",
+        "seat massage",
+        "seat massager",
+        "massaging chairs"
+      ],
+      "privacy_window": [
+        "privacy window",
+        "privacy windows",
+        "privacy glass"
+      ]
+    },
+    "part": {
+      "inside": [
+        "inside",
+        "interior",
+        "cabin",
+        "in-cabin"
+      ],
+      "outside": [
+        "outside",
+        "exterior"
+      ]
+    },
+    "theme": {
+      "family": [
+        "family",
+        "families",
+        "family-friendly",
+        "family oriented"
+      ],
+      "entertainment": [
+        "entertainment"
+      ],
+      "privacy": [
+        "privacy",
+        "private"
+      ]
+    }
+  },
+  "checks": {
+    "annotation_errors": 0,
+    "duplicate_utterances": 0,
+    "cross_split_groups": 0,
+    "cross_split_normalized_texts": 0,
+    "all_sources_accounted_for": true
+  },
+  "user_decisions": {
+    "discovery": "Include clear demo/feature discovery as request_flow; single-value preferences are inform.",
+    "uncertain_aliases": "Omit six capability-dependent feature aliases and indoors/outdoors part aliases.",
+    "vague_quit": "Keep generated request_quit labels for vague finish/close/exit utterances for this pilot.",
+    "splitting": "Balance label coverage while keeping groups intact."
+  },
+  "export_checks": {
+    "row_provenance_matches": true,
+    "all_bio_tokens_match": true,
+    "raw_sources_accounted_for": 1500,
+    "all_canonical_values_in_each_split": true
+  }
+}

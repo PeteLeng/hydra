@@ -1,6 +1,8 @@
 """SNIPS text files -> examples -> token-aligned batches. No JointBERT imports."""
 
 from dataclasses import dataclass
+import hashlib
+import json
 from pathlib import Path
 import re
 from typing import Any
@@ -72,18 +74,44 @@ def text_units(text: str, convention: str = "showroom") -> list[tuple[str, int, 
     return [(match.group(), match.start(), match.end()) for match in re.finditer(patterns[convention], text)]
 
 
+def resolve_dataset(directory: Path, convention: str = "showroom") -> tuple[Path, str]:
+    """Resolve a completed build, or a legacy directory containing label files."""
+    manifest_path = directory / "manifest.json"
+    if manifest_path.is_file():
+        metadata = json.loads(manifest_path.read_text(encoding="utf-8"))
+        if metadata.get("kind") == "build":
+            if metadata.get("version") != 1 or metadata.get("status") != "complete":
+                raise ValueError(f"Dataset build is not complete: {directory}")
+            for name, digest in metadata["dataset_files"].items():
+                if hashlib.sha256((directory / name).read_bytes()).hexdigest() != digest:
+                    raise ValueError(f"Dataset build file changed: {directory / name}")
+            convention = metadata["tokenization"]
+            directory = directory / metadata["dataset"]
+    if not (directory / "intent_label.txt").is_file() or not (directory / "slot_label.txt").is_file():
+        raise ValueError(f"No compiled label inventories: {directory}")
+    text_units("", convention)
+    return directory, convention
+
+
 def read_run_dataset(report: dict[str, Any], root: Path) -> RunDataset:
     """Resolve new run metadata or match the label vocabulary of a legacy run."""
     labels = Labels(report["labels"]["intents"], report["labels"]["slots"])
     if "dataset" in report:
         metadata = report["dataset"]
+        if "manifest_sha256" in metadata:
+            path = root / metadata["path"] / "manifest.json"
+            if hashlib.sha256(path.read_bytes()).hexdigest() != metadata["manifest_sha256"]:
+                raise ValueError("Dataset build manifest differs from this training run")
         candidates = [(root / metadata["path"], metadata["tokenization"])]
     else:
-        candidates = [(root / "data/showroom", "showroom"),
+        candidates = [(root / "data/showroom-en/build/20261103T115913654808Z/dataset", "showroom"),
                       (root / "repos/JointBERT/data/snips", "whitespace")]
     for directory, convention in candidates:
-        if not (directory / "intent_label.txt").is_file():
+        if not directory.is_dir() or ("dataset" not in report and not (directory / "intent_label.txt").is_file()):
             continue
+        directory, actual_convention = resolve_dataset(directory, convention)
+        if actual_convention != convention:
+            raise ValueError("Dataset tokenization differs from this training run")
         available = read_labels(directory, include_unk_intent="UNK" in labels.intent_names)
         if available == labels:
             text_units("", convention)  # Validate the saved convention before using it.

@@ -1,0 +1,50 @@
+{"text": "headlights", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 10}], "record_id": "20261030T123953698713Z-01-000251"}
+{"text": "the DLP Headlights", "intent": "inform", "slots": [{"type": "flow_ref", "start": 4, "end": 18}], "record_id": "20261030T123953698713Z-01-000252"}
+{"text": "I prefer headlights", "intent": "inform", "slots": [{"type": "flow_ref", "start": 9, "end": 19}], "record_id": "20261030T123953698713Z-01-000253"}
+{"text": "let's use DLP lights", "intent": "inform", "slots": [{"type": "flow_ref", "start": 10, "end": 20}], "record_id": "20261030T123953698713Z-01-000254"}
+{"text": "I'll pick the headlights", "intent": "inform", "slots": [{"type": "flow_ref", "start": 14, "end": 24}], "record_id": "20261030T123953698713Z-01-000255"}
+{"text": "Cabin Cinema", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 12}], "record_id": "20261030T123953698713Z-01-000256"}
+{"text": "the mobile theater", "intent": "inform", "slots": [{"type": "flow_ref", "start": 4, "end": 18}], "record_id": "20261030T123953698713Z-01-000257"}
+{"text": "theater", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 7}], "record_id": "20261030T123953698713Z-01-000258"}
+{"text": "in-car cinema", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 13}], "record_id": "20261030T123953698713Z-01-000259"}
+{"text": "I like the Cabin Cinema", "intent": "inform", "slots": [{"type": "flow_ref", "start": 11, "end": 23}], "record_id": "20261030T123953698713Z-01-000260"}
+{"text": "mobile theater for me", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 14}], "record_id": "20261030T123953698713Z-01-000261"}
+{"text": "for me it's the theater", "intent": "inform", "slots": [{"type": "flow_ref", "start": 16, "end": 23}], "record_id": "20261030T123953698713Z-01-000262"}
+{"text": "Massaging Seats", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 15}], "record_id": "20261030T123953698713Z-01-000263"}
+{"text": "massage seats", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 13}], "record_id": "20261030T123953698713Z-01-000264"}
+{"text": "seat massage", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 12}], "record_id": "20261030T123953698713Z-01-000265"}
+{"text": "the massage seats", "intent": "inform", "slots": [{"type": "flow_ref", "start": 4, "end": 17}], "record_id": "20261030T123953698713Z-01-000266"}
+{"text": "give me seat massage", "intent": "inform", "slots": [{"type": "flow_ref", "start": 8, "end": 20}], "record_id": "20261030T123953698713Z-01-000267"}
+{"text": "Massaging Seats for sure", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 15}], "record_id": "20261030T123953698713Z-01-000268"}
+{"text": "seat massage works for me", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 12}], "record_id": "20261030T123953698713Z-01-000269"}
+{"text": "Privacy Window", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 14}], "record_id": "20261030T123953698713Z-01-000270"}
+{"text": "privacy windows", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 15}], "record_id": "20261030T123953698713Z-01-000271"}
+{"text": "privacy glass", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 13}], "record_id": "20261030T123953698713Z-01-000272"}
+{"text": "the privacy glass", "intent": "inform", "slots": [{"type": "flow_ref", "start": 4, "end": 17}], "record_id": "20261030T123953698713Z-01-000273"}
+{"text": "Privacy Window sounds good", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 14}], "record_id": "20261030T123953698713Z-01-000274"}
+{"text": "privacy windows it is", "intent": "inform", "slots": [{"type": "flow_ref", "start": 0, "end": 15}], "record_id": "20261030T123953698713Z-01-000275"}
+{"text": "I'll stick with privacy glass", "intent": "inform", "slots": [{"type": "flow_ref", "start": 16, "end": 29}], "record_id": "20261030T123953698713Z-01-000276"}
+{"text": "inside", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 6}], "record_id": "20261030T123953698713Z-01-000277"}
+{"text": "interior", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 8}], "record_id": "20261030T123953698713Z-01-000278"}
+{"text": "cabin", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 5}], "record_id": "20261030T123953698713Z-01-000279"}
+{"text": "the inside", "intent": "inform", "slots": [{"type": "part", "start": 4, "end": 10}], "record_id": "20261030T123953698713Z-01-000280"}
+{"text": "the interior", "intent": "inform", "slots": [{"type": "part", "start": 4, "end": 12}], "record_id": "20261030T123953698713Z-01-000281"}
+{"text": "the cabin", "intent": "inform", "slots": [{"type": "part", "start": 4, "end": 9}], "record_id": "20261030T123953698713Z-01-000282"}
+{"text": "I prefer inside", "intent": "inform", "slots": [{"type": "part", "start": 9, "end": 15}], "record_id": "20261030T123953698713Z-01-000283"}
+{"text": "I prefer the interior", "intent": "inform", "slots": [{"type": "part", "start": 13, "end": 21}], "record_id": "20261030T123953698713Z-01-000284"}
+{"text": "I like the cabin", "intent": "inform", "slots": [{"type": "part", "start": 11, "end": 16}], "record_id": "20261030T123953698713Z-01-000285"}
+{"text": "let's do inside", "intent": "inform", "slots": [{"type": "part", "start": 9, "end": 15}], "record_id": "20261030T123953698713Z-01-000286"}
+{"text": "interior is my call", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 8}], "record_id": "20261030T123953698713Z-01-000287"}
+{"text": "cabin for me", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 5}], "record_id": "20261030T123953698713Z-01-000288"}
+{"text": "exterior", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 8}], "record_id": "20261030T123953698713Z-01-000289"}
+{"text": "the outside", "intent": "inform", "slots": [{"type": "part", "start": 4, "end": 11}], "record_id": "20261030T123953698713Z-01-000290"}
+{"text": "the exterior", "intent": "inform", "slots": [{"type": "part", "start": 4, "end": 12}], "record_id": "20261030T123953698713Z-01-000291"}
+{"text": "outside is fine", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 7}], "record_id": "20261030T123953698713Z-01-000292"}
+{"text": "the exterior is good", "intent": "inform", "slots": [{"type": "part", "start": 4, "end": 12}], "record_id": "20261030T123953698713Z-01-000293"}
+{"text": "outside is what I want", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 7}], "record_id": "20261030T123953698713Z-01-000294"}
+{"text": "exterior would be nice", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 8}], "record_id": "20261030T123953698713Z-01-000295"}
+{"text": "put me down for outside", "intent": "inform", "slots": [{"type": "part", "start": 16, "end": 23}], "record_id": "20261030T123953698713Z-01-000296"}
+{"text": "I'd say exterior", "intent": "inform", "slots": [{"type": "part", "start": 8, "end": 16}], "record_id": "20261030T123953698713Z-01-000297"}
+{"text": "mark it outside", "intent": "inform", "slots": [{"type": "part", "start": 8, "end": 15}], "record_id": "20261030T123953698713Z-01-000298"}
+{"text": "outside works", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 7}], "record_id": "20261030T123953698713Z-01-000299"}
+{"text": "for me it's exterior", "intent": "inform", "slots": [{"type": "part", "start": 12, "end": 20}], "record_id": "20261030T123953698713Z-01-000300"}

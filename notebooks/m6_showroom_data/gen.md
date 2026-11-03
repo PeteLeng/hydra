@@ -1,4 +1,4 @@
-# Showroom NLU — generation brief v1
+# Showroom NLU — English generation brief v2
 
 Generate **500 English utterances** with one intent label and character-based slot
 annotations per utterance. These examples will train an intent-and-BIO-slot model.
@@ -8,31 +8,22 @@ natural speaking patterns. This document is the complete generation assignment.
 Write chunks directly to the destination; do not inspect the repository or list
 directories. The arbiter will review the generated files.
 
-## 1. Name your batch
+## 1. Output location and record IDs
 
-If the caller supplies a timestamp, batch seed, and output prefix, use those.
-Use any supplied timestamp/seed even when no prefix is supplied. Otherwise obtain
-the current **UTC date/time** and choose a random integer as the **batch seed**.
-Name the output:
+The caller supplies an **output directory** and **record-ID prefix**, allocated
+for this agent run. Ask for them if missing; do not invent either.
 
-```text
-showroom_<UTC-YYYYMMDDTHHMMSSffffffZ>_s<batch-seed>.jsonl
-```
+Write **ten files of 50 records each**, named `part-01.jsonl` through
+`part-10.jsonl`, inside that directory. Meet the quotas **across the whole
+500-example batch**, not separately per chunk.
 
-Use the actual timestamp and seed, not these placeholders or a fixed agent name.
-If you have workspace access, save it under `data/showroom/raw/`. Otherwise return
-the named file, or JSONL content for the caller to save. If you cannot access a
-clock/random-number source, ask the caller to supply the timestamp and seed.
+Every record needs `record_id`: `<supplied-prefix>-000001` through
+`<supplied-prefix>-000500`. Number across the entire batch, not from one again in
+each chunk. IDs identify records permanently; do not renumber existing records
+when resuming. Do not overwrite the caller's manifest or instruction snapshot.
 
-The seed identifies this generation run; use it with a generation API if that API
-supports seeding. A filename seed alone does not make an LLM response reproducible.
-It is separate from the later train/dev/test split seed.
-
-Write **ten files of 50 records each**, keeping the same timestamp and seed and
-appending `_p01` through `_p10` before `.jsonl`. Meet the quotas **across the whole
-500-example batch**, not separately per chunk. Write the actual files when file
-tools are available; a chat response alone is not the dataset. Work independently;
-do not copy another generator's batch.
+Write the actual files when file tools are available. Work independently; do not
+copy another generator's batch.
 
 ## 2. Business vocabulary
 
@@ -70,7 +61,7 @@ but favor natural names/aliases over machine IDs in the generated utterances.
 
 Vary the surrounding sentences freely. You may propose other natural expressions
 for the listed feature, part, and theme values. You may include their intended
-meaning as optional `alias_proposals` hints; the arbiter reviews aliases in context.
+meaning as optional `slot_hints`; the arbiter reviews aliases in context.
 Use only the listed canonical values, and avoid inventing feature capabilities.
 
 ### Attributes are not automatically utterance slots
@@ -90,7 +81,7 @@ Use only the listed canonical values, and avoid inventing feature capabilities.
 | `greet` | Greeting, optionally followed by self-introduction | Zero slots, or one `name` | `hello`; `hi I'm Sam` |
 | `affirm` | Bare agreement or confirmation | None | `yes please`; `that's right` |
 | `deny` | Bare disagreement or denial | None | `no thanks`; `that's not right` |
-| `inform` | Supply a value, preference, or offered-list selection | Exactly one of `name`, `flow_ref`, `part`, `theme`, `choice` | `my name is Sam`; `inside`; `the second one` |
+| `inform` | Supply values, preferences, or an offered-list selection | One or more of `name`, `flow_ref`, `part`, `theme`, `choice`, at most one of each | `my name is Sam`; `the second one`; `I prefer family features inside` |
 | `request_flow` | Ask to see/try/run a showroom demo | Optional `flow_ref`, `part`, `theme`, at most one of each | `show me a demo`; `can I try the mobile theater` |
 | `request_stop` | Stop the current demo | None | `stop the demo`; `pause it` |
 | `request_resume` | Continue the interrupted demo | None | `resume the demo`; `carry on` |
@@ -100,6 +91,8 @@ Use only the listed canonical values, and avoid inventing feature capabilities.
 ### Labeling decisions
 
 - `I prefer family features` → `inform` with a theme.
+- `I prefer family features inside` → `inform` with theme and part. One inform
+  can supply several fields; one intent does not imply one slot.
 - `show me family features` → `request_flow` with a theme.
 - A bare feature name such as `mobile theater` → `inform` with `flow_ref`.
 - `the second one`, `choose option two`, and `show me the second one` → **`inform`
@@ -111,8 +104,9 @@ Use only the listed canonical values, and avoid inventing feature capabilities.
 - Use one act per example, except the greeting-then-self-introduction convention.
   Leave out combinations such as `yes, choose the second one`, `no, I'm Sam`,
   `hello, show me the headlights`, and reversed introduction-then-greeting.
-- Leave out multi-value/excluded preferences and personal facts requiring inferred
-  preferences. Use explicit, span-based expressions for the supported fields.
+- Leave out multiple values for the same slot type, excluded preferences, and
+  personal facts requiring inferred preferences. Different slot types may occur
+  together; use explicit, span-based expressions for the supported fields.
 - For `UNK`, mix unrelated tasks, unsupported showroom operations (e.g. buying a
   car), and some uninterpretable text. A valid demo request with an unknown feature
   is not automatically `UNK`; leave unresolved-feature requests out of this pilot.
@@ -143,46 +137,48 @@ headings, enclosing array, comments, or explanatory lines in the data file.
 Required fields:
 
 ```json
-{"text":"show me the mobile theater","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":26}]}
+{"record_id":"example-000001","text":"show me the mobile theater","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":26}]}
 ```
 
 Each slot contains only `type`, `start`, and `end`. Do not repeat the surface text
-or add normalized values to slot annotations. IDs, source metadata, review groups,
-BIO tags, and dataset splits are handled later by the dataset pipeline.
+or add normalized values to slot annotations. Supply `record_id` as described
+above; the example IDs here are illustrative. Review groups, BIO tags, and splits
+are handled later by the dataset pipeline.
 
 You may optionally explain a **new alias** of a finite-vocabulary slot by supplying
 its intended canonical value. `slot` is the zero-based index into this record's
 `slots` array:
 
 ```json
-{"text":"show me the movie setup","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":23}],"alias_proposals":[{"slot":0,"value":"cabin_cinema"}]}
+{"record_id":"example-000002","text":"show me the movie setup","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":23}],"slot_hints":[{"slot":0,"value":"cabin_cinema"}]}
 ```
 
-`alias_proposals` is optional and only for `flow_ref`, `part`, and `theme`. Each
-proposal refers to one annotated span and one listed canonical value. Do not use
-it for names or choices. Its inclusion requests review; it is not automatic approval.
+`slot_hints` is optional and only for `flow_ref`, `part`, and `theme`. Each hint
+explains the generator's intended canonical value for one annotated span. Do not
+use it for names or choices. A hint is subject to review, not an accepted mapping.
 
 ### Worked annotation examples
 
 These illustrate formatting and boundaries. Do not copy them into your batch.
 
 ```jsonl
-{"text":"hello there","intent":"greet","slots":[]}
-{"text":"hi I'm Sam","intent":"greet","slots":[{"type":"name","start":7,"end":10}]}
-{"text":"yes please","intent":"affirm","slots":[]}
-{"text":"no thanks","intent":"deny","slots":[]}
-{"text":"my name is Sam Lee","intent":"inform","slots":[{"type":"name","start":11,"end":18}]}
-{"text":"the second one","intent":"inform","slots":[{"type":"choice","start":4,"end":14}]}
-{"text":"I prefer privacy","intent":"inform","slots":[{"type":"theme","start":9,"end":16}]}
-{"text":"outside","intent":"inform","slots":[{"type":"part","start":0,"end":7}]}
-{"text":"mobile theater","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":14}]}
-{"text":"show me a demo","intent":"request_flow","slots":[]}
-{"text":"show me the mobile theater","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":26}]}
-{"text":"show me family features inside","intent":"request_flow","slots":[{"type":"theme","start":8,"end":14},{"type":"part","start":24,"end":30}]}
-{"text":"stop the demo","intent":"request_stop","slots":[]}
-{"text":"resume the demo","intent":"request_resume","slots":[]}
-{"text":"quit this session","intent":"request_quit","slots":[]}
-{"text":"book me a restaurant","intent":"UNK","slots":[]}
+{"record_id":"example-000003","text":"hello there","intent":"greet","slots":[]}
+{"record_id":"example-000004","text":"hi I'm Sam","intent":"greet","slots":[{"type":"name","start":7,"end":10}]}
+{"record_id":"example-000005","text":"yes please","intent":"affirm","slots":[]}
+{"record_id":"example-000006","text":"no thanks","intent":"deny","slots":[]}
+{"record_id":"example-000007","text":"my name is Sam Lee","intent":"inform","slots":[{"type":"name","start":11,"end":18}]}
+{"record_id":"example-000008","text":"the second one","intent":"inform","slots":[{"type":"choice","start":4,"end":14}]}
+{"record_id":"example-000009","text":"I prefer privacy","intent":"inform","slots":[{"type":"theme","start":9,"end":16}]}
+{"record_id":"example-000010","text":"outside","intent":"inform","slots":[{"type":"part","start":0,"end":7}]}
+{"record_id":"example-000011","text":"mobile theater","intent":"inform","slots":[{"type":"flow_ref","start":0,"end":14}]}
+{"record_id":"example-000012","text":"show me a demo","intent":"request_flow","slots":[]}
+{"record_id":"example-000013","text":"show me the mobile theater","intent":"request_flow","slots":[{"type":"flow_ref","start":12,"end":26}]}
+{"record_id":"example-000014","text":"show me family features inside","intent":"request_flow","slots":[{"type":"theme","start":8,"end":14},{"type":"part","start":24,"end":30}]}
+{"record_id":"example-000015","text":"stop the demo","intent":"request_stop","slots":[]}
+{"record_id":"example-000016","text":"resume the demo","intent":"request_resume","slots":[]}
+{"record_id":"example-000017","text":"quit this session","intent":"request_quit","slots":[]}
+{"record_id":"example-000018","text":"book me a restaurant","intent":"UNK","slots":[]}
+{"record_id":"example-000019","text":"I prefer family features inside","intent":"inform","slots":[{"type":"theme","start":9,"end":15},{"type":"part","start":25,"end":31}]}
 ```
 
 ## 6. Coverage for the complete 500-example batch
@@ -200,8 +196,10 @@ These illustrate formatting and boundaries. Do not copy them into your batch.
 | `UNK` | 30 |
 | **Total** | **500** |
 
-- **Inform:** 28 examples per slot type. Within `flow_ref`, cover all four features;
-  within `part` and `theme`, spread examples across all allowed values.
+- **Inform:** spread coverage across all five slot types within the 140 examples.
+  Include both single-slot and multi-slot informs, such as part + theme. Within
+  `flow_ref`, cover all four features; within `part` and `theme`, spread examples
+  across all allowed values.
 - **Greet:** 20 greetings alone and 20 greeting-plus-self-introduction examples.
 - **Request flow:** 20 without slots; 40 containing a feature reference; 25 part
   only; 25 theme only; 30 part + theme. Spread the 40 feature-reference requests
