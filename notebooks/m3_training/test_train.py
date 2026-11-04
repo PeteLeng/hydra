@@ -17,7 +17,7 @@ from transformers.models.bert.tokenization_bert_fast import BertTokenizerFast
 
 import train
 from joint_model import load_checkpoint
-from snips_data import read_run_dataset
+from snips_data import read_run_dataset, read_span_examples, tokenize_span_batch
 
 
 class TrainingChecks(unittest.TestCase):
@@ -39,16 +39,17 @@ class TrainingChecks(unittest.TestCase):
             (folder / "seq.out").write_text("O B-name\n" * size, encoding="utf-8")
             (folder / "label").write_text("greet\n" * size, encoding="utf-8")
         vocabulary = self.directory / "vocab.txt"
-        vocabulary.write_text("[PAD]\n[UNK]\n[CLS]\n[SEP]\n[MASK]\nhello\nsam\n", encoding="utf-8")
+        vocabulary.write_text("[PAD]\n[UNK]\n[CLS]\n[SEP]\n[MASK]\nhello\nsam\n你\n好\n小\n王\n", encoding="utf-8")
         tokenizer = BertTokenizerFast(vocab_file=str(vocabulary))
-        config = BertConfig(vocab_size=7, hidden_size=8, num_hidden_layers=1, num_attention_heads=2,
+        self.load_tokenizer = BertTokenizerFast.from_pretrained
+        config = BertConfig(vocab_size=len(tokenizer), hidden_size=8, num_hidden_layers=1, num_attention_heads=2,
                             intermediate_size=16, max_position_embeddings=64)
         stack = self.enterContext(ExitStack())
         stack.enter_context(patch.object(train, "PROJECT", self.directory))
         stack.enter_context(patch.object(train, "DATA", self.data))
         stack.enter_context(patch.object(train.torch.cuda, "is_available", return_value=False))
-        stack.enter_context(patch.object(train.BertTokenizerFast, "from_pretrained", return_value=tokenizer))
-        stack.enter_context(patch.object(train.BertModel, "from_pretrained", side_effect=lambda *a, **k: BertModel(config)))
+        self.tokenizer_loader = stack.enter_context(patch.object(train.BertTokenizerFast, "from_pretrained", return_value=tokenizer))
+        self.encoder_loader = stack.enter_context(patch.object(train.BertModel, "from_pretrained", side_effect=lambda *a, **k: BertModel(config)))
         threads = torch.get_num_threads()
         torch.set_num_threads(1)
         self.addCleanup(torch.set_num_threads, threads)
@@ -60,7 +61,7 @@ class TrainingChecks(unittest.TestCase):
                 report = json.loads((directory / "run.json").read_text(encoding="utf-8"))
                 self.assertEqual(report["epochs"], 2)
                 self.assertEqual(report["dataset"], {"path": self.data.relative_to(self.directory.parent).as_posix(),
-                                                    "tokenization": "showroom"})
+                                                    "tokenization": "showroom", "format": "snips"})
                 self.assertIn("UNK", report["labels"]["intents"])
                 self.assertEqual([row["step"] for row in report["history"]], list(range(1, updates + 1)))
                 self.assertEqual([row["epoch"] for row in report["history"]], [1, 1, 1] + [2] * (updates - 3))
@@ -98,10 +99,64 @@ class TrainingChecks(unittest.TestCase):
             read_run_dataset(report, self.directory.parent)
 
     def test_rejects_invalid_epoch_and_step_limits(self) -> None:
-        for settings in ({"epochs": 0}, {"epochs": 2, "steps": 0}, {"epochs": 2, "steps": 7}):
+        for settings in ({"epochs": 0}, {"epochs": 2, "steps": 0}, {"epochs": 2, "steps": 7},
+                         {"max_length": 2}, {"max_length": 65}):
             with self.subTest(settings=settings), redirect_stdout(io.StringIO()), self.assertRaises(ValueError):
                 train.train(batch_size=2, **settings)
 
+    def span_build(self) -> Path:
+        build = self.directory / "build" / "span-fixture"
+        data = build / "dataset"
+        data.mkdir(parents=True)
+        for name in ("intent_label.txt", "slot_label.txt"):
+            shutil.copy2(self.data / name, data / name)
+        for split, size in (("train", 5), ("dev", 2), ("test", 2)):
+            folder = data / split
+            folder.mkdir()
+            rows = [{"record_id": f"{split}-{i}", "group_id": f"{split}-group-{i}",
+                     "text": "你好小王", "intent": "greet", "slots": [{"type": "name", "start": 2, "end": 4}]}
+                    for i in range(1, size + 1)]
+            (folder / "records.jsonl").write_text(
+                "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows), encoding="utf-8")
+        metadata = {"version": 1, "kind": "build", "status": "complete", "dataset": "dataset",
+                    "format": "span-jsonl", "tokenization": None, "dataset_files": {
+                        path.relative_to(build).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest()
+                        for path in data.rglob("*") if path.is_file()}}
+        (build / "manifest.json").write_text(json.dumps(metadata), encoding="utf-8")
+        return build
+
+    def test_span_build_trains_and_reloads_matching_tokenizer_and_checkpoint(self) -> None:
+        build = self.span_build()
+        model_name, revision = "hfl/chinese-macbert-base", "a986e004d2a7f2a1c2f5a3edef4e20604a974ed1"
+        with redirect_stdout(io.StringIO()):
+            directory = train.train(steps=1, batch_size=2, dataset=build, model_name=model_name,
+                                    revision=revision, max_length=12, test=True)
+        for loader in (self.tokenizer_loader, self.encoder_loader):
+            loader.assert_called_once_with(model_name, revision=revision, cache_dir=train.CACHE, local_files_only=True)
+        report = json.loads((directory / "run.json").read_text(encoding="utf-8"))
+        self.assertEqual((report["model"], report["model_revision"], report["max_length"]), (model_name, revision, 12))
+        self.assertEqual(report["dataset"]["format"], "span-jsonl")
+        self.assertIsNone(report["dataset"]["tokenization"])
+        self.assertEqual(len(report["history"]), 1)
+        self.assertIsNotNone(report["test"])
+        self.assertEqual({Path(name).as_posix() for name in report["data_sha256"]},
+                         {"train/records.jsonl", "dev/records.jsonl", "test/records.jsonl",
+                          "intent_label.txt", "slot_label.txt"})
+        resolved = read_run_dataset(report, self.directory.parent)
+        self.assertEqual((resolved.directory, resolved.tokenization, resolved.format), (build / "dataset", None, "span-jsonl"))
+        tokenizer = self.load_tokenizer(directory / "tokenizer", local_files_only=True)
+        batch = tokenize_span_batch(read_span_examples(resolved.directory / "dev", resolved.labels),
+                                    tokenizer, resolved.labels, report["max_length"])
+        self.assertEqual(batch.slot_ids.tolist(), [[-100, 0, 0, 1, 2, -100] + [-100] * 6] * 2)
+        model = load_checkpoint(directory / "last.pt")
+        with torch.inference_mode():
+            output = model(input_ids=batch.input_ids, attention_mask=batch.attention_mask)
+        self.assertEqual(output.slot_logits.shape, (2, 12, 3))
+        self.assertTrue(torch.isfinite(output.intent_logits).all())
+        self.assertTrue(torch.isfinite(output.slot_logits).all())
+        report["dataset"]["format"] = "snips"
+        with self.assertRaisesRegex(ValueError, "format/tokenization differs"):
+            read_run_dataset(report, self.directory.parent)
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

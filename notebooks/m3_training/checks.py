@@ -1,6 +1,10 @@
 """Offline checks using a tiny BERT and local fixtures, not downloaded weights."""
 
+from contextlib import redirect_stdout
+import io
+import json
 from pathlib import Path
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -11,7 +15,7 @@ from transformers.models.bert.modeling_bert import BertModel
 from transformers.models.bert.tokenization_bert_fast import BertTokenizerFast
 
 from joint_model import JointModel, Predictions, compute_loss, load_checkpoint, save_checkpoint
-from predict import PredictedSlot, predict
+from predict import PredictedSlot, main as predict_main, predict
 from snips_data import Example, IGNORE_SLOT, Labels, read_examples, read_labels, tokenize_batch
 from train import PROJECT, evaluate
 
@@ -23,12 +27,13 @@ class PipelineChecks(unittest.TestCase):
         self.temporary = tempfile.TemporaryDirectory(dir=root)
         self.directory = Path(self.temporary.name)
         vocabulary = self.directory / "vocab.txt"
-        vocabulary.write_text("[PAD]\n[UNK]\n[CLS]\n[SEP]\n[MASK]\nbook\nwash\n##ington\n", encoding="utf-8")
+        vocabulary.write_text("[PAD]\n[UNK]\n[CLS]\n[SEP]\n[MASK]\nbook\nwash\n##ington\n"
+                              "我\n想\n看\n车\n内\n的\n大\n灯\n。\n，\ndl\n##p\n𠮷\n野\n", encoding="utf-8")
         self.tokenizer = BertTokenizerFast(vocab_file=str(vocabulary))
         self.labels = Labels(intent_names=["BookRestaurant", "GetWeather"], slot_names=["O", "B-city", "I-city"])
         self.example = Example(line_id=1, words=["book", "washington"], intent_id=0, slot_ids=[0, 1])
         self.batch = tokenize_batch([self.example], self.tokenizer, max_length=8)
-        config = BertConfig(vocab_size=8, hidden_size=16, num_hidden_layers=1, num_attention_heads=2,
+        config = BertConfig(vocab_size=len(self.tokenizer), hidden_size=16, num_hidden_layers=1, num_attention_heads=2,
                             intermediate_size=32, max_position_embeddings=16)
         torch.manual_seed(1234)
         self.model = JointModel(BertModel(config), self.labels)
@@ -123,6 +128,67 @@ class PipelineChecks(unittest.TestCase):
             legacy = predict("washington,", self.model, self.tokenizer, max_length=16, tokenization="whitespace")
         self.assertEqual(showroom.slots, [PredictedSlot("city", "washington", 0, 10)])
         self.assertEqual(legacy.slots, [PredictedSlot("city", "washington,", 0, 11)])
+
+    def test_span_prediction_decodes_chinese_and_latin_slots(self) -> None:
+        text = "我想看车内的DLP大灯。"
+        labels = Labels(["request_flow", "greet"], ["O", "B-part", "I-part", "B-flow_ref", "I-flow_ref"])
+        model = JointModel(self.model.encoder, labels)
+        # CLS, 我 想 看 车 内 的 dl ##p 大 灯 。, SEP. Specials deliberately predict slots.
+        logits = torch.zeros(1, 13, 5)
+        for position, tag in enumerate([4, 0, 0, 0, 1, 2, 0, 3, 4, 4, 4, 0, 3]):
+            logits[0, position, tag] = 10
+        with patch.object(model, "forward", return_value=Predictions(torch.tensor([[10.0, 0.0]]), logits)):
+            result = predict(text, model, self.tokenizer, max_length=13, format="span-jsonl")
+        self.assertEqual(result.intent, "request_flow")
+        self.assertGreater(result.confidence, 0.99)
+        self.assertEqual(result.slots, [PredictedSlot("part", "车内", 3, 5),
+                                       PredictedSlot("flow_ref", "DLP大灯", 6, 11)])
+        for invalid, limit in ((text, 12), ("  ", 13), ("\x00", 13)):
+            with self.subTest(text=invalid), patch.object(model, "forward") as forward:
+                with self.assertRaises(ValueError):
+                    predict(invalid, model, self.tokenizer, max_length=limit, format="span-jsonl")
+                forward.assert_not_called()
+
+    def test_span_prediction_preserves_unicode_spaces_and_repairs_stray_i_tags(self) -> None:
+        text = "🙂𠮷野 Washington，车内"
+        labels = Labels(["inform"], ["O", "B-name", "I-name", "B-part", "I-part"])
+        model = JointModel(self.model.encoder, labels)
+        # CLS, UNK(emoji), 𠮷, 野, wash, ##ington, comma, 车, 内, SEP.
+        logits = torch.zeros(1, 10, 5)
+        for position, tag in enumerate([1, 0, 2, 2, 2, 2, 0, 4, 4, 3]):
+            logits[0, position, tag] = 10
+        with patch.object(model, "forward", return_value=Predictions(torch.tensor([[10.0]]), logits)):
+            result = predict(text, model, self.tokenizer, max_length=16, format="span-jsonl")
+        self.assertEqual(result.slots, [PredictedSlot("name", "𠮷野 Washington", 1, 14),
+                                       PredictedSlot("part", "车内", 15, 17)])
+
+    def test_span_prediction_uses_latin_continuation_tags(self) -> None:
+        logits = torch.zeros(1, 4, 3)  # CLS, wash, ##ington, SEP.
+        logits[0, 1, 1] = 10          # B-city on wash; O on ##ington must end the slot.
+        output = Predictions(torch.tensor([[10.0, 0.0]]), logits)
+        with patch.object(self.model, "forward", return_value=output):
+            result = predict("Washington", self.model, self.tokenizer, format="span-jsonl")
+        self.assertEqual(result.slots, [PredictedSlot("city", "Wash", 0, 4)])
+
+    def test_prediction_cli_loads_span_format_from_saved_run(self) -> None:
+        checkpoint = self.directory / "best.pt"
+        with torch.no_grad():
+            self.model.intent_head.weight.zero_()
+            self.model.intent_head.bias.copy_(torch.tensor([10.0, 0.0]))
+            self.model.slot_head.weight.zero_()
+            self.model.slot_head.bias.copy_(torch.tensor([10.0, 0.0, 0.0]))
+        save_checkpoint(self.model, checkpoint)
+        self.tokenizer.save_pretrained(self.directory / "tokenizer")
+        (self.directory / "run.json").write_text(json.dumps({
+            "dataset": {"format": "span-jsonl", "tokenization": None}, "max_length": 7,
+        }), encoding="utf-8")
+        captured = io.StringIO()
+        with patch.object(sys, "argv", ["predict.py", "我想看车内", "--checkpoint", str(checkpoint)]), redirect_stdout(captured):
+            predict_main()
+        result = json.loads(captured.getvalue())
+        self.assertEqual(result["intent"], "BookRestaurant")
+        self.assertGreater(result["confidence"], 0.99)
+        self.assertEqual(result["slots"], [])
 
 
 if __name__ == "__main__":

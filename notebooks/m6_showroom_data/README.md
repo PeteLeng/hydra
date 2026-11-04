@@ -138,9 +138,9 @@ Training resolves `dataset/` through the completed build manifest. Its run repor
 records the build path and manifest hash; the results viewer resolves that same
 build.
 
-Chinese span-JSONL generation, arbitration, and export are ready. The Chinese
-span reader, model-token offset alignment, encoder configuration, and prediction
-changes are a subsequent training task; the current trainer consumes SNIPS only.
+Chinese span-JSONL builds also feed the trainer through original-text tokenizer
+offsets. See [Chinese training and MacBERT setup](../m3_training/README.md#chinese-span-jsonl-training).
+Chinese prediction decoding is supported; live viewer comparisons are a subsequent task.
 
 ## Existing English data
 

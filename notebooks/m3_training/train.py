@@ -17,7 +17,9 @@ import time
 PROJECT = Path(__file__).resolve().parents[1]
 DATA = PROJECT.parent / "data/showroom-en/build/20261103T115913654808Z"
 CACHE = PROJECT / ".artifacts" / "huggingface" / "hub"
+MODEL = "bert-base-uncased"
 REVISION = "86b5e0934494bd15c9632b12f734a8a67f723594"
+MAX_LENGTH = 50
 os.environ["MPLCONFIGDIR"] = str(PROJECT / ".artifacts" / "matplotlib")
 
 import matplotlib
@@ -30,7 +32,8 @@ from transformers.models.bert.modeling_bert import BertModel
 from transformers.models.bert.tokenization_bert_fast import BertTokenizerFast
 
 from joint_model import JointModel, compute_loss, load_checkpoint, save_checkpoint
-from snips_data import Batch, IGNORE_SLOT, read_examples, read_labels, resolve_dataset, tokenize_batch
+from snips_data import (Batch, IGNORE_SLOT, read_examples, read_labels, read_span_examples,
+                       resolve_dataset, tokenize_batch, tokenize_span_batch)
 
 
 @dataclass
@@ -43,7 +46,7 @@ class Metrics:
 
 @torch.no_grad()
 def evaluate(model: JointModel, batches: Iterable[Batch], device: torch.device) -> Metrics:
-    """Forward passes and metrics only. Loss averages over examples/supervised words."""
+    """Forward passes and metrics only. Loss averages over examples/supervised tokens."""
     model.eval()
     examples = words = intent_correct = frame_correct = 0
     intent_sum = slot_sum = 0.0
@@ -74,30 +77,30 @@ def evaluate(model: JointModel, batches: Iterable[Batch], device: torch.device) 
 
 def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
           learning_rate: float = 5e-5, seed: int = 1234, test: bool = False, epochs: int = 1,
-          dataset: Path | None = None) -> Path:
+          dataset: Path | None = None, model_name: str = MODEL,
+          revision: str = REVISION, max_length: int = MAX_LENGTH) -> Path:
     if (batch_size < 1 or eval_every < 1 or epochs < 1 or learning_rate <= 0
             or (steps is not None and steps < 1)):
         raise ValueError("Batch size, epochs, evaluation interval, step limit, and learning rate must be positive")
     selected_dataset = (dataset or DATA).resolve()
-    data, convention = resolve_dataset(selected_dataset)
+    data, convention, format = resolve_dataset(selected_dataset)
     root = PROJECT.parent.resolve()
     dataset_info = {"path": (selected_dataset.relative_to(root) if selected_dataset.is_relative_to(root)
-                             else selected_dataset).as_posix(), "tokenization": convention}
+                             else selected_dataset).as_posix(), "tokenization": convention, "format": format}
     if data != selected_dataset:
         dataset_info["manifest_sha256"] = hashlib.sha256((selected_dataset / "manifest.json").read_bytes()).hexdigest()
     started = time.perf_counter()
     torch.manual_seed(seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    run_dir = PROJECT / ".artifacts" / "m3_training" / datetime.now().strftime("fresh-%Y%m%d-%H%M%S-%f")
-    run_dir.mkdir(parents=True)
-
     print("[1/5] Read reviewed showroom splits and create batches", flush=True)
     labels = read_labels(data, include_unk_intent=True)
-    training = read_examples(data / "train", labels)
-    development = read_examples(data / "dev", labels)
-    tokenizer = BertTokenizerFast.from_pretrained("bert-base-uncased", revision=REVISION,
-                                                  cache_dir=CACHE, local_files_only=True)
-    collate = partial(tokenize_batch, tokenizer=tokenizer, max_length=50)
+    reader = read_span_examples if format == "span-jsonl" else read_examples
+    training = reader(data / "train", labels)
+    development = reader(data / "dev", labels)
+    tokenizer = BertTokenizerFast.from_pretrained(model_name, revision=revision,
+                                                 cache_dir=CACHE, local_files_only=True)
+    collate = (partial(tokenize_span_batch, tokenizer=tokenizer, labels=labels, max_length=max_length)
+               if format == "span-jsonl" else partial(tokenize_batch, tokenizer=tokenizer, max_length=max_length))
     train_loader = DataLoader(training, batch_size=batch_size, shuffle=True, collate_fn=collate,
                               generator=torch.Generator().manual_seed(seed))
     dev_loader = DataLoader(development, batch_size=32, collate_fn=collate)
@@ -109,8 +112,12 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
           f"{epochs} epoch(s), {len(train_loader)} batches/epoch; executing {total_steps} updates")
 
     print("\n[2/5] Construct cached BERT + two new heads", flush=True)
-    encoder = BertModel.from_pretrained("bert-base-uncased", revision=REVISION, cache_dir=CACHE, local_files_only=True)
+    encoder = BertModel.from_pretrained(model_name, revision=revision, cache_dir=CACHE, local_files_only=True)
+    if max_length > encoder.config.max_position_embeddings:
+        raise ValueError(f"max_length exceeds the encoder's {encoder.config.max_position_embeddings}-token limit")
     model = JointModel(encoder, labels).to(device)
+    run_dir = PROJECT / ".artifacts" / "m3_training" / datetime.now().strftime("fresh-%Y%m%d-%H%M%S-%f")
+    run_dir.mkdir(parents=True)
     optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate, weight_decay=0.0)
     scheduler = torch.optim.lr_scheduler.LinearLR(optimizer, start_factor=1.0, end_factor=0.0, total_iters=total_steps)
     print(f"      Device: {device}; {len(labels.intent_names)} intent classes / {len(labels.slot_names)} slot classes")
@@ -160,7 +167,7 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
     test_metrics = None
     if test:
         selected = load_checkpoint(run_dir / "best.pt", device)
-        test_loader = DataLoader(read_examples(data / "test", labels), batch_size=32, collate_fn=collate)
+        test_loader = DataLoader(reader(data / "test", labels), batch_size=32, collate_fn=collate)
         test_metrics = asdict(evaluate(selected, test_loader, device))
         print(f"      Test (dev-selected step {best_step}): {test_metrics}")
 
@@ -177,13 +184,14 @@ def train(steps: int | None = None, batch_size: int = 8, eval_every: int = 100,
     (run_dir / "source").mkdir()
     for source in [*sources, PROJECT / "uv.lock"]:
         shutil.copy2(source, run_dir / "source" / source.name)
-    data_files = [data / split / name for split in ("train", "dev", *(["test"] if test else []))
-                  for name in ("seq.in", "seq.out", "label")]
+    split_files = ("records.jsonl",) if format == "span-jsonl" else ("seq.in", "seq.out", "label")
+    data_files = [data / split / name for split in ("train", "dev", *(["test"] if test else [])) for name in split_files]
     data_files += [data / "intent_label.txt", data / "slot_label.txt"]
     report = {"dataset": dataset_info,
-              "seed": seed, "batch_size": batch_size, "max_length": 50, "learning_rate": learning_rate,
+              "seed": seed, "batch_size": batch_size, "max_length": max_length, "learning_rate": learning_rate,
               "epochs": epochs, "step_limit": steps, "eval_every": eval_every, "slot_weight": 1.0,
-              "model_revision": REVISION, "device": str(device), "elapsed_seconds": time.perf_counter() - started,
+              "model": model_name, "model_revision": revision,
+              "device": str(device), "elapsed_seconds": time.perf_counter() - started,
               "gpu": torch.cuda.get_device_name(device) if device.type == "cuda" else None, "cuda_runtime": torch.version.cuda,
               "train_examples": len(training), "dev_examples": len(development), "available_batches": len(train_loader),
               "used_train_lines": used_lines, "labels": {"intents": labels.intent_names, "slots": labels.slot_names},
@@ -206,6 +214,11 @@ if __name__ == "__main__":
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--test", action="store_true", help="Evaluate the dev-selected checkpoint on test once")
     parser.add_argument("--dataset", type=Path, help="Completed build root (default: existing English pilot build)")
+    parser.add_argument("--model", default=MODEL, help="BERT-compatible encoder ID")
+    parser.add_argument("--revision", default=REVISION, help="Model/tokenizer revision belonging to --model")
+    parser.add_argument("--max-length", type=int, default=MAX_LENGTH,
+                        help=f"Input token limit including specials (default: {MAX_LENGTH})")
     args = parser.parse_args()
     train(args.steps, args.batch_size, args.eval_every, args.learning_rate, args.seed, args.test,
-          epochs=args.epochs, dataset=args.dataset)
+          epochs=args.epochs, dataset=args.dataset, model_name=args.model, revision=args.revision,
+          max_length=args.max_length)

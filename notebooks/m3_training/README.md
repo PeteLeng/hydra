@@ -43,11 +43,67 @@ still on disk, in their original directories; they use the earlier report format
 **Without `--steps`, the script trains one full epoch.** At batch 8, that means
 1,636 updates for 13,084 examples (the last batch has 4 examples).
 
+## Chinese span-JSONL training
+
+Compile a reviewed Chinese build with `--format span-jsonl`. Training selects its
+reader and batch adapter from the build manifest:
+
+```text
+records.jsonl → read_span_examples() → tokenize_span_batch() → Batch → JointModel
+```
+
+The tokenizer receives each original sentence directly. Unicode code-point spans
+are aligned using tokenizer offsets: first token `B-type`, remaining span tokens
+`I-type`, other text tokens `O`, specials/padding `-100`. Latin continuation pieces
+are supervised too. Internal spaces are preserved in the original annotations.
+The batch adapter checks spans when the DataLoader requests a batch: boundaries
+inside tokens, unrepresentable spans, and overlength inputs raise errors with record ID/line.
+`--max-length` includes `[CLS]` and `[SEP]` and must fit the encoder's position limit.
+
+Cache MacBERT once (online setup, from `notebooks/`):
+
+```bash
+uv run --locked --env-file local.env python -c "import os; os.environ['HF_HUB_OFFLINE']='0'; from huggingface_hub import snapshot_download; snapshot_download('hfl/chinese-macbert-base', revision='a986e004d2a7f2a1c2f5a3edef4e20604a974ed1', cache_dir='.artifacts/huggingface/hub', allow_patterns=['config.json','pytorch_model.bin','tokenizer_config.json','tokenizer.json','vocab.txt','special_tokens_map.json','added_tokens.json'])"
+```
+
+Then train offline:
+
+```bash
+uv run --locked --offline --env-file local.env python m3_training/train.py \
+  --dataset "../data/showroom-zh/build/<timestamp>" \
+  --model hfl/chinese-macbert-base \
+  --revision a986e004d2a7f2a1c2f5a3edef4e20604a974ed1 \
+  --max-length 128 --steps 1
+```
+
+`MODEL`, `REVISION`, and `MAX_LENGTH` at the top of `train.py` supply the defaults.
+Override model and revision together for MacBERT, as above. Tokenizer and encoder
+use the same revision. The run records model ID, revision,
+dataset format, maximum length, and span-file hashes. Chinese support covers
+training/evaluation/checkpoints and original-text span decoding in `predict.py`.
+Live Chinese notebook comparisons are the next integration step.
+
+## Command-line prediction
+
+From `notebooks/`, use the latest completed run's `best.pt`:
+
+```bash
+uv run --locked --offline --env-file local.env python m3_training/predict.py "show me family features inside"
+```
+
+Output is JSON with the intent, softmax confidence, and decoded slot text with
+start-inclusive/end-exclusive character offsets. Use `--checkpoint PATH` to select
+a particular run's `best.pt` or `last.pt`. Python callers can reuse
+`predict(text, model, tokenizer, max_length=50)` with already-loaded assets.
+For span-trained models, pass `format="span-jsonl"`; prediction uses every text
+token's offsets and returns slices of the original input. The CLI selects this
+path automatically from `run.json` and uses the saved tokenizer and length limit.
+
 ## Source map: four files to follow
 
 | File | Read these definitions |
 | --- | --- |
-| `snips_data.py` | `Labels`, `Example`, `Batch`, `read_examples`, `tokenize_batch` |
+| `snips_data.py` | `Labels`, `Example` / `SpanExample`, `Batch`, `read_examples` / `read_span_examples`, `tokenize_batch` / `tokenize_span_batch` |
 | `joint_model.py` | `Predictions`, `Losses`, `JointModel.forward`, `compute_loss`, checkpoint save/load |
 | `train.py` | `train`: explicit setup and optimizer loop; `evaluate`: no-gradient forward passes and metrics |
 | `notebook.py` | Read saved metrics/plots; select samples and checkpoints for live predictions |
@@ -64,7 +120,7 @@ example, and `L` = padded/truncated token length including special tokens. `Labe
 holds `intent_names` / `slot_names`; `Example` holds scalar `line_id` / `intent_id`
 and word-aligned `slot_ids [W]`. `Batch` holds `line_ids [B]`, `intent_ids [B]`,
 token-aligned `slot_ids [B, L]`, and `word_ids [B, L]` mapping tokens to original
-word indices (`None` for specials/padding). Batch inputs and targets are tensors;
+word indices (`None` for specials/padding); span batches have `word_ids=None`. Batch inputs and targets are tensors;
 line IDs and word mappings are Python lists. Prediction shapes are
 `intent_logits [B, num_intents]` and `slot_logits [B, L, num_slots]`.
 
@@ -153,7 +209,7 @@ rate; the scheduler sets zero afterward. Weight decay is zero, seed 1234.
 
 `evaluate()` sets eval mode, disables gradient recording, and uses the **full dev
 split**. It reports intent accuracy, exact slot-span F1, and exact-frame accuracy.
-Its loss is example-weighted intent CE + supervised-word-weighted slot CE, so the
+Its loss is example-weighted intent CE + supervised-token-weighted slot CE, so the
 last partial batch does not distort the mean. Empty predicted entity sets receive
 F1=0 via `zero_division=0`. The lowest dev loss selects `best.pt`, including the
 initial step-0 model as a candidate. The next training batch restores train mode.
@@ -211,7 +267,7 @@ optional; test is not used in optimization or checkpoint selection.
 
 Use the existing Python 3.12 environment in `notebooks/.venv/`. Both pretrained
 loads specify **`local_files_only=True`**, the project-local Hugging Face cache,
-and revision `86b5e0934494bd15c9632b12f734a8a67f723594`. Missing cache files cause an
+and the selected revision (English default: `86b5e0934494bd15c9632b12f734a8a67f723594`). Missing cache files cause an
 immediate error instead of HTTP retries. `local.env` also enables `HF_HUB_OFFLINE=1`.
 
 The required snapshot is in
@@ -229,6 +285,7 @@ Inspect `batch`, `predictions`, `losses`, and `model.intent_head.weight.grad`.
 
 ```bash
 uv run --locked --offline --env-file local.env python m3_training/checks.py
+uv run --locked --offline --env-file local.env python -m unittest discover -s m3_training -p 'test_*.py' -v
 uv run --locked --offline marimo check m3_training/notebook.py
 ```
 

@@ -1,4 +1,4 @@
-"""SNIPS text files -> examples -> token-aligned batches. No JointBERT imports."""
+"""SNIPS files or original-text spans -> token-aligned batches. No JointBERT imports."""
 
 from dataclasses import dataclass
 import hashlib
@@ -26,7 +26,8 @@ class Labels:
 class RunDataset:
     directory: Path
     labels: Labels
-    tokenization: str
+    tokenization: str | None
+    format: str = "snips"
 
 
 @dataclass
@@ -40,6 +41,22 @@ class Example:
 
 
 @dataclass
+class SlotSpan:
+    type: str
+    start: int                # Inclusive Unicode code-point offset in original text
+    end: int                  # Exclusive
+
+
+@dataclass
+class SpanExample:
+    line_id: int              # 1-based line in the compiled split's records.jsonl
+    record_id: str
+    text: str                 # Original text, without segmentation or normalization
+    intent_id: int
+    slots: list[SlotSpan]
+
+
+@dataclass
 class Batch:
     """B = batch size; L = padded/truncated token length, including special tokens."""
 
@@ -48,7 +65,7 @@ class Batch:
     intent_ids: Tensor         # int64 [B]; one intent-class ID per example
     slot_ids: Tensor           # int64 [B, L]; token-aligned, IGNORE_SLOT (-100) where unsupervised
     line_ids: list[int]        # [B]; original split line numbers
-    word_ids: list[list[int | None]]  # [B, L]; token -> word index, None for specials/padding
+    word_ids: list[list[int | None]] | None = None  # [B, L] for word inputs; absent for span inputs
 
     def to(self, device: torch.device | str) -> "Batch":
         return Batch(
@@ -74,7 +91,8 @@ def text_units(text: str, convention: str = "showroom") -> list[tuple[str, int, 
     return [(match.group(), match.start(), match.end()) for match in re.finditer(patterns[convention], text)]
 
 
-def resolve_dataset(directory: Path, convention: str = "showroom") -> tuple[Path, str]:
+def resolve_dataset(directory: Path, convention: str | None = "showroom", *,
+                    format: str = "snips") -> tuple[Path, str | None, str]:
     """Resolve a completed build, or a legacy directory containing label files."""
     manifest_path = directory / "manifest.json"
     if manifest_path.is_file():
@@ -86,11 +104,15 @@ def resolve_dataset(directory: Path, convention: str = "showroom") -> tuple[Path
                 if hashlib.sha256((directory / name).read_bytes()).hexdigest() != digest:
                     raise ValueError(f"Dataset build file changed: {directory / name}")
             convention = metadata["tokenization"]
+            format = metadata.get("format", "snips")
             directory = directory / metadata["dataset"]
     if not (directory / "intent_label.txt").is_file() or not (directory / "slot_label.txt").is_file():
         raise ValueError(f"No compiled label inventories: {directory}")
-    text_units("", convention)
-    return directory, convention
+    if format == "snips":
+        text_units("", convention)
+    elif format != "span-jsonl" or convention is not None:
+        raise ValueError(f"Unsupported dataset format/tokenization: {format!r}/{convention!r}")
+    return directory, convention, format
 
 
 def read_run_dataset(report: dict[str, Any], root: Path) -> RunDataset:
@@ -102,20 +124,19 @@ def read_run_dataset(report: dict[str, Any], root: Path) -> RunDataset:
             path = root / metadata["path"] / "manifest.json"
             if hashlib.sha256(path.read_bytes()).hexdigest() != metadata["manifest_sha256"]:
                 raise ValueError("Dataset build manifest differs from this training run")
-        candidates = [(root / metadata["path"], metadata["tokenization"])]
+        candidates = [(root / metadata["path"], metadata["tokenization"], metadata.get("format", "snips"))]
     else:
-        candidates = [(root / "data/showroom-en/build/20261103T115913654808Z/dataset", "showroom"),
-                      (root / "repos/JointBERT/data/snips", "whitespace")]
-    for directory, convention in candidates:
+        candidates = [(root / "data/showroom-en/build/20261103T115913654808Z/dataset", "showroom", "snips"),
+                      (root / "repos/JointBERT/data/snips", "whitespace", "snips")]
+    for directory, convention, format in candidates:
         if not directory.is_dir() or ("dataset" not in report and not (directory / "intent_label.txt").is_file()):
             continue
-        directory, actual_convention = resolve_dataset(directory, convention)
-        if actual_convention != convention:
-            raise ValueError("Dataset tokenization differs from this training run")
+        directory, actual_convention, actual_format = resolve_dataset(directory, convention, format=format)
+        if (actual_convention, actual_format) != (convention, format):
+            raise ValueError("Dataset format/tokenization differs from this training run")
         available = read_labels(directory, include_unk_intent="UNK" in labels.intent_names)
         if available == labels:
-            text_units("", convention)  # Validate the saved convention before using it.
-            return RunDataset(directory, labels, convention)
+            return RunDataset(directory, labels, convention, format)
     raise ValueError("No local dataset matches this run's recorded path and label vocabulary")
 
 
@@ -135,6 +156,94 @@ def read_examples(directory: Path, labels: Labels) -> list[Example]:
         examples.append(Example(line_id=line_id, words=words, intent_id=intent_name_to_id[intent.strip()],
                                 slot_ids=[slot_name_to_id[tag] for tag in word_tags]))
     return examples
+
+
+def read_span_examples(directory: Path, labels: Labels) -> list[SpanExample]:
+    """Read compiled span records; retain original text, annotations, and row identity."""
+    path = directory / "records.jsonl"
+    examples: list[SpanExample] = []
+    for line_id, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+        context = f"{path}:{line_id}"
+        try:
+            row = json.loads(line)
+            if not isinstance(row, dict):
+                raise ValueError("Record must be an object")
+            record_id, text = row["record_id"], row["text"]
+            context += f" ({record_id})"
+            if not isinstance(record_id, str) or not record_id:
+                raise ValueError("Need a nonempty record_id")
+            if not isinstance(text, str) or not text.strip():
+                raise ValueError("Need nonempty original text")
+            intent_id = labels.intent_names.index(row["intent"])
+            if not isinstance(row["slots"], list):
+                raise ValueError("slots must be a list")
+            slots = []
+            previous_end = 0
+            for slot in row["slots"]:
+                span = SlotSpan(slot["type"], slot["start"], slot["end"])
+                if (type(span.start) is not int or type(span.end) is not int
+                        or not previous_end <= span.start < span.end <= len(text)):
+                    raise ValueError(f"Invalid, unordered, or overlapping span: {span}")
+                if any(f"{prefix}-{span.type}" not in labels.slot_names for prefix in ("B", "I")):
+                    raise ValueError(f"Unknown slot type: {span.type!r}")
+                slots.append(span)
+                previous_end = span.end
+            examples.append(SpanExample(line_id, record_id, text, intent_id, slots))
+        except (ValueError, KeyError, TypeError) as error:
+            raise ValueError(f"{context}: {error}") from error
+    return examples
+
+
+def tokenize_span_batch(
+    examples: list[SpanExample], tokenizer: BertTokenizerFast, labels: Labels, max_length: int = 50,
+) -> Batch:
+    """Align spans to every text token; reject lossy boundaries and overlength inputs."""
+    if not examples or max_length < 3:
+        raise ValueError("Need examples and room for at least one token plus [CLS]/[SEP]")
+    # Keep lists until length validation: overlength rows must not be truncated or tensorized.
+    encoded = tokenizer(
+        [example.text for example in examples], padding="max_length", truncation=False,
+        max_length=max_length, return_offsets_mapping=True, return_special_tokens_mask=True,
+    )
+    tag_ids = {name: i for i, name in enumerate(labels.slot_names)}
+    targets = []
+    for i, example in enumerate(examples):
+        context = f"{example.record_id} (line {example.line_id})"
+        if len(encoded["input_ids"][i]) > max_length:
+            raise ValueError(f"{context}: input exceeds {max_length} tokens including specials")
+        tags = [IGNORE_SLOT] * len(encoded["input_ids"][i])
+        tokens = []
+        previous_end = 0
+        for position, ((start, end), special, attended) in enumerate(zip(
+            encoded["offset_mapping"][i], encoded["special_tokens_mask"][i], encoded["attention_mask"][i],
+        )):
+            if special or not attended:
+                continue
+            if not previous_end <= start < end <= len(example.text):
+                raise ValueError(f"{context}: invalid token offsets [{start}, {end})")
+            tokens.append((position, start, end))
+            tags[position] = tag_ids["O"]
+            previous_end = end
+        if not tokens:
+            raise ValueError(f"{context}: tokenizer produced no text tokens")
+        for span in example.slots:
+            covered = [(p, start, end) for p, start, end in tokens if start < span.end and end > span.start]
+            if not covered or covered[0][1] != span.start or covered[-1][2] != span.end:
+                raise ValueError(f"{context}: span {span} must align to complete model tokens")
+            cursor = span.start
+            for j, (position, start, end) in enumerate(covered):
+                # Spaces inside names/phrases have no tokens; slicing the original span preserves them.
+                if example.text[cursor:start].strip():
+                    raise ValueError(f"{context}: span {span} contains text missing from token offsets")
+                tags[position] = tag_ids[f"{'B' if j == 0 else 'I'}-{span.type}"]
+                cursor = end
+        targets.append(tags)
+    return Batch(
+        input_ids=torch.tensor(encoded["input_ids"], dtype=torch.long),
+        attention_mask=torch.tensor(encoded["attention_mask"], dtype=torch.long),
+        intent_ids=torch.tensor([example.intent_id for example in examples], dtype=torch.long),
+        slot_ids=torch.tensor(targets, dtype=torch.long), line_ids=[example.line_id for example in examples],
+    )
 
 
 def tokenize_batch(
