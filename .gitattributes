@@ -2,3 +2,7 @@ notebooks/m6_showroom_data/generate.sh text eol=lf
 # Timestamped artifacts carry byte hashes; preserve snapshots on every platform.
 data/*/raw/** -text whitespace=cr-at-eol
 data/*/build/** -text whitespace=cr-at-eol
+models/**/*.pt filter=lfs diff=lfs merge=lfs -text
+# Keep exported run metadata and tokenizer files byte-identical across platforms.
+models/showroom-zh/run.json -text whitespace=cr-at-eol
+models/showroom-zh/tokenizer/** -text whitespace=cr-at-eol
