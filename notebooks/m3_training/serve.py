@@ -11,16 +11,7 @@ from transformers.models.bert.tokenization_bert_fast import BertTokenizerFast
 from joint_model import load_checkpoint
 from predict import predict
 
-
-def resolve_checkpoint(explicit):
-    if explicit is not None:
-        return explicit
-    runs = Path(__file__).resolve().parents[1] / ".artifacts/m3_training"
-    candidates = sorted(p for p in runs.glob("fresh-*/best.pt")
-                        if (p.parent / "run.json").is_file() and (p.parent / "tokenizer").is_dir())
-    if not candidates:
-        raise SystemExit("No completed training run found; supply --checkpoint")
-    return candidates[-1]
+DEFAULT_CHECKPOINT = Path(__file__).resolve().parents[2] / "models" / "showroom-zh" / "best.pt"
 
 
 class ServedModel:
@@ -28,15 +19,18 @@ class ServedModel:
         settings = json.loads((checkpoint.parent / "run.json").read_text(encoding="utf-8"))
         self.tokenizer = BertTokenizerFast.from_pretrained(checkpoint.parent / "tokenizer", local_files_only=True)
         self.model = load_checkpoint(checkpoint)
+        dataset = settings.get("dataset", {})
         self.max_length = settings["max_length"]
         # Legacy showroom runs retain UNK; the standalone SNIPS trainer excluded it.
-        self.tokenization = settings.get("dataset", {}).get("tokenization",
+        self.tokenization = dataset.get("tokenization",
                      "showroom" if "UNK" in self.model.labels.intent_names else "whitespace")
+        self.format = dataset.get("format", "snips")
         self.lock = threading.Lock()
 
     def parse(self, text):
         with self.lock:
-            return predict(text, self.model, self.tokenizer, self.max_length, tokenization=self.tokenization)
+            return predict(text, self.model, self.tokenizer, self.max_length,
+                           tokenization=self.tokenization, format=self.format)
 
 
 def handler(model):
@@ -82,16 +76,18 @@ def handler(model):
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("text", nargs="?", help=argparse.SUPPRESS)
-    parser.add_argument("--checkpoint", type=Path, help="Defaults to best.pt from the latest completed run")
+    parser.add_argument("--checkpoint", type=Path, default=DEFAULT_CHECKPOINT,
+                        help=f"Defaults to {DEFAULT_CHECKPOINT}")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8756)
     args = parser.parse_args()
     if args.text:
         parser.error("This is a server; predict.py classifies single sentences")
-    checkpoint = resolve_checkpoint(args.checkpoint)
-    model = ServedModel(checkpoint)
+    if not args.checkpoint.is_file():
+        raise SystemExit(f"Checkpoint not found: {args.checkpoint}; supply --checkpoint")
+    model = ServedModel(args.checkpoint)
     server = ThreadingHTTPServer((args.host, args.port), handler(model))
-    print(f"serving {checkpoint} on http://{args.host}:{args.port}", flush=True)
+    print(f"serving {args.checkpoint} on http://{args.host}:{args.port}", flush=True)
     server.serve_forever()
 
 
