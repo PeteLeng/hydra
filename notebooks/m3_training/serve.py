@@ -75,14 +75,11 @@ def handler(model):
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("text", nargs="?", help=argparse.SUPPRESS)
     parser.add_argument("--checkpoint", type=Path, default=DEFAULT_CHECKPOINT,
                         help=f"Defaults to {DEFAULT_CHECKPOINT}")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8756)
     args = parser.parse_args()
-    if args.text:
-        parser.error("This is a server; predict.py classifies single sentences")
     if not args.checkpoint.is_file():
         raise SystemExit(f"Checkpoint not found: {args.checkpoint}; supply --checkpoint")
     model = ServedModel(args.checkpoint)
