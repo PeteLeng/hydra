@@ -1,0 +1,52 @@
+{
+  "raw": 1500,
+  "reviewed": 1500,
+  "rejected": 9,
+  "corrected_before_dedup": 32,
+  "duplicates_removed": 121,
+  "duplicate_reasons": {
+    "punctuation-only variant": 7,
+    "exact text": 114
+  },
+  "accepted": 1370,
+  "groups": 276,
+  "accepted_by_attempt": {
+    "1": 500,
+    "2": 480,
+    "3": 390
+  },
+  "corrected_retained": 31,
+  "intents": {
+    "greet": 103,
+    "affirm": 68,
+    "deny": 65,
+    "request_flow": 415,
+    "inform": 387,
+    "request_stop": 87,
+    "request_resume": 82,
+    "request_quit": 79,
+    "UNK": 84
+  },
+  "largest_groups": [
+    56,
+    45,
+    34,
+    32,
+    28,
+    26,
+    26,
+    24,
+    20,
+    19,
+    19,
+    18,
+    18,
+    17,
+    17,
+    17,
+    17,
+    17,
+    16,
+    16
+  ]
+}

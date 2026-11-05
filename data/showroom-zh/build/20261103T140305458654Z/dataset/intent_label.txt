@@ -1,0 +1,9 @@
+UNK
+greet
+affirm
+deny
+inform
+request_flow
+request_stop
+request_resume
+request_quit

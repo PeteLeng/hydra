@@ -1,0 +1,500 @@
+2:001 | greet | 你好 | 
+2:002 | greet | 您好 | 
+2:003 | greet | 嗨 | 
+2:004 | greet | 早上好 | 
+2:005 | greet | 下午好 | 
+2:006 | greet | 晚上好 | 
+2:007 | greet | 你好啊 | 
+2:008 | greet | 早 | 
+2:009 | greet | 嘿 | 
+2:010 | greet | 大家好 | 
+2:011 | greet | 哈喽 | 
+2:012 | greet | 中午好 | 
+2:013 | greet | 嗨你好 | 
+2:014 | greet | 您好，我到了 | 
+2:015 | greet | 早安 | 
+2:016 | greet | 小周你好 | 
+2:017 | greet | 很高兴见到你 | 
+2:018 | greet | 嗨，在吗 | 
+2:019 | greet | 你好，我来了 | 
+2:020 | greet | 您好，请问有人吗 | 
+2:021 | greet | 嗨，我叫小周 | name=小周@4:6
+2:022 | greet | 你好，我叫陈静 | name=陈静@5:7
+2:023 | greet | 您好我是张伟 | name=张伟@4:6
+2:024 | greet | 早上好，我叫王芳 | name=王芳@6:8
+2:025 | greet | 你好啊，我是赵磊 | name=赵磊@6:8
+2:026 | greet | 您好，我叫欧阳晨 | name=欧阳晨@5:8
+2:027 | greet | 嗨我是小李 | name=小李@3:5
+2:028 | greet | 大家好，我叫周婷 | name=周婷@6:8
+2:029 | greet | 你好我是林晓燕 | name=林晓燕@4:7
+2:030 | greet | 嗨，我叫Alex | name=Alex@4:8
+2:031 | greet | 早上好我姓陈 | name=陈@5:6
+2:032 | greet | 您好呀，我叫吴佳 | name=吴佳@6:8
+2:033 | greet | 哈喽，我是郑凯 | name=郑凯@5:7
+2:034 | greet | 你好啊我叫黄丽 | name=黄丽@5:7
+2:035 | greet | 嗨你好，我叫Emma | name=Emma@6:10
+2:036 | greet | 你好，我是马超 | name=马超@5:7
+2:037 | greet | 您好我叫何静 | name=何静@4:6
+2:038 | greet | 早上好，我叫Tom | name=Tom@6:9
+2:039 | greet | 嗨，我是孙浩 | name=孙浩@4:6
+2:040 | greet | 你好呀，我叫陈晓 | name=陈晓@6:8
+2:041 | affirm | 对的 | 
+2:042 | affirm | 可以啊 | 
+2:043 | affirm | 好的 | 
+2:044 | affirm | 是的 | 
+2:045 | affirm | 没错 | 
+2:046 | affirm | 行 | 
+2:047 | affirm | 可以 | 
+2:048 | affirm | 对 | 
+2:049 | affirm | 嗯对 | 
+2:050 | affirm | 好 | 
+2:051 | affirm | 没问题 | 
+2:052 | affirm | 同意 | 
+2:053 | affirm | 是啊 | 
+2:054 | affirm | 就这么定 | 
+2:055 | affirm | 没意见 | 
+2:056 | affirm | 嗯 | 
+2:057 | affirm | 说得对 | 
+2:058 | affirm | 好的，可以 | 
+2:059 | affirm | 是 | 
+2:060 | affirm | 行，没问题 | 
+2:061 | affirm | 我同意 | 
+2:062 | affirm | 是这样 | 
+2:063 | affirm | 没问题的 | 
+2:064 | affirm | 我赞成 | 
+2:065 | affirm | 好嘞 | 
+2:066 | affirm | 嗯，可以 | 
+2:067 | affirm | 完全同意 | 
+2:068 | affirm | 当然可以 | 
+2:069 | affirm | 好，没问题 | 
+2:070 | affirm | 对，就是这样 | 
+2:071 | deny | 不是 | 
+2:072 | deny | 不对 | 
+2:073 | deny | 不行 | 
+2:074 | deny | 不要 | 
+2:075 | deny | 没有 | 
+2:076 | deny | 不是的 | 
+2:077 | deny | 不同意 | 
+2:078 | deny | 不是这样 | 
+2:079 | deny | 不对的 | 
+2:080 | deny | 不是啊 | 
+2:081 | deny | 不行啊 | 
+2:082 | deny | 不 | 
+2:083 | deny | 不是这个 | 
+2:084 | deny | 我不同意 | 
+2:085 | deny | 不是这样的 | 
+2:086 | deny | 不行的 | 
+2:087 | deny | 不认可 | 
+2:088 | deny | 不是这个意思 | 
+2:089 | deny | 不对不对 | 
+2:090 | deny | 我不要这个 | 
+2:091 | deny | 不是啦 | 
+2:092 | deny | 不是那样 | 
+2:093 | deny | 不同意的 | 
+2:094 | deny | 没有的 | 
+2:095 | deny | 不是哦 | 
+2:096 | deny | 我不接受 | 
+2:097 | deny | 不对哦 | 
+2:098 | deny | 不是这个选项 | 
+2:099 | deny | 我反对 | 
+2:100 | deny | 完全不是 | 
+2:101 | request_stop | 暂停一下先 | 
+2:102 | request_stop | 暂停 | 
+2:103 | request_stop | 暂停一下 | 
+2:104 | request_stop | 暂停当前演示 | 
+2:105 | request_stop | 把演示暂停一下 | 
+2:106 | request_stop | 先暂停 | 
+2:107 | request_stop | 暂停演示 | 
+2:108 | request_stop | 演示先暂停一下 | 
+2:109 | request_stop | 帮我暂停一下演示 | 
+2:110 | request_stop | 先把演示暂停 | 
+2:111 | request_stop | 当前演示先暂停 | 
+2:112 | request_stop | 暂停一下这个演示 | 
+2:113 | request_stop | 我想暂停一下。 | 
+2:114 | request_stop | 把当前演示暂停 | 
+2:115 | request_stop | 先让演示停一下 | 
+2:116 | request_stop | 先停住这个演示 | 
+2:117 | request_stop | 帮我把演示暂停 | 
+2:118 | request_stop | 当前这个演示暂停一下 | 
+2:119 | request_stop | 先暂停当前这个演示 | 
+2:120 | request_stop | 把正在进行的演示暂停 | 
+2:121 | request_stop | 演示先停一下 | 
+2:122 | request_stop | 我想先暂停演示 | 
+2:123 | request_stop | 暂停播放当前演示 | 
+2:124 | request_stop | 先把这个演示停住 | 
+2:125 | request_stop | 这个演示先暂停 | 
+2:126 | request_stop | 帮我暂停当前演示 | 
+2:127 | request_stop | 演示暂时停一下 | 
+2:128 | request_stop | 先暂停正在看的演示 | 
+2:129 | request_stop | 把演示先停住 | 
+2:130 | request_stop | 暂停一下当前的演示 | 
+2:131 | request_resume | 接着放刚才的演示 | 
+2:132 | request_resume | 继续 | 
+2:133 | request_resume | 接着放 | 
+2:134 | request_resume | 继续演示 | 
+2:135 | request_resume | 把演示继续一下 | 
+2:136 | request_resume | 继续刚才那个 | 
+2:137 | request_resume | 接着演示 | 
+2:138 | request_resume | 继续播放 | 
+2:139 | request_resume | 把刚才的演示继续 | 
+2:140 | request_resume | 接着刚才的演示 | 
+2:141 | request_resume | 演示继续一下 | 
+2:142 | request_resume | 帮我继续演示 | 
+2:143 | request_resume | 把演示接着放 | 
+2:144 | request_resume | 继续当前演示 | 
+2:145 | request_resume | 我想继续刚才的演示 | 
+2:146 | request_resume | 继续播放刚才的 | 
+2:147 | request_resume | 把中断的演示继续 | 
+2:148 | request_resume | 刚才的演示继续一下 | 
+2:149 | request_resume | 帮我接着放演示 | 
+2:150 | request_resume | 继续刚才暂停的演示 | 
+2:151 | request_resume | 把演示继续播放 | 
+2:152 | request_resume | 继续那个演示 | 
+2:153 | request_resume | 我想接着看刚才的演示 | 
+2:154 | request_resume | 接着刚才那个继续放 | 
+2:155 | request_resume | 演示接着放 | 
+2:156 | request_resume | 继续之前的演示 | 
+2:157 | request_resume | 把刚才停下的演示继续 | 
+2:158 | request_resume | 接着播放演示 | 
+2:159 | request_resume | 我想继续这个演示 | 
+2:160 | request_resume | 从刚才停下的地方继续演示 | 
+2:161 | request_quit | 退出本次体验 | 
+2:162 | request_quit | 退出 | 
+2:163 | request_quit | 我要退出 | 
+2:164 | request_quit | 退出展厅体验 | 
+2:165 | request_quit | 结束这次展厅体验 | 
+2:166 | request_quit | 退出整个体验 | 
+2:167 | request_quit | 我要离开展厅 | 
+2:168 | request_quit | 帮我退出本次体验 | 
+2:169 | request_quit | 退出展厅 | 
+2:170 | request_quit | 我想退出了 | 
+2:171 | request_quit | 我要退出这次体验 | 
+2:172 | request_quit | 结束全部体验 | 
+2:173 | request_quit | 帮我退出展厅 | 
+2:174 | request_quit | 退出这次展厅体验 | 
+2:175 | request_quit | 我要退出展厅。 | 
+2:176 | request_quit | 退出整个展厅体验 | 
+2:177 | request_quit | 这次体验我要退出 | 
+2:178 | request_quit | 结束展厅体验 | 
+2:179 | request_quit | 我想退出整个体验 | 
+2:180 | request_quit | 帮我结束这次展厅体验 | 
+2:181 | request_quit | 离开展厅体验 | 
+2:182 | request_quit | 我要结束展厅体验并退出 | 
+2:183 | request_quit | 整个体验我退出 | 
+2:184 | request_quit | 退出当前这场体验 | 
+2:185 | request_quit | 不想留了，退出体验 | 
+2:186 | request_quit | 请帮我退出展厅 | 
+2:187 | request_quit | 我要离开这次体验 | 
+2:188 | request_quit | 展厅体验我要退出 | 
+2:189 | request_quit | 我退出全部体验 | 
+2:190 | request_quit | 我想结束并退出这次体验 | 
+2:191 | UNK | 附近帮我订一家火锅 | 
+2:192 | UNK | 蓝色星期三搬走味道 | 
+2:193 | UNK | 这车多少钱？ | 
+2:194 | UNK | 我想买这辆车 | 
+2:195 | UNK | 今天天气怎么样？ | 
+2:196 | UNK | 导航去机场 | 
+2:197 | UNK | 帮我订一张机票 | 
+2:198 | UNK | 播放周杰伦的歌 | 
+2:199 | UNK | 把空调调到26度 | 
+2:200 | UNK | 打开车窗 | 
+2:201 | UNK | 这辆车油耗多少 | 
+2:202 | UNK | 有贷款方案吗？ | 
+2:203 | UNK | 帮我预约试驾 | 
+2:204 | UNK | 量子蘑菇在星期二跳舞 | 
+2:205 | UNK | 附近有充电桩吗？ | 
+2:206 | UNK | 帮我查一下路况 | 
+2:207 | UNK | 能便宜点吗？ | 
+2:208 | UNK | 玻璃海鸥吃掉了星期一 | 
+2:209 | UNK | 帮我发个微信 | 
+2:210 | UNK | 这车保修几年 | 
+2:211 | UNK | 帮我算一下月供 | 
+2:212 | UNK | 打开天窗 | 
+2:213 | UNK | 帮我对比一下别的品牌 | 
+2:214 | UNK | 帮我订酒店 | 
+2:215 | UNK | 能分期付款吗？ | 
+2:216 | UNK | 明天早上七点叫我 | 
+2:217 | UNK | 这车有现车吗？ | 
+2:218 | UNK | 帮我看看股票 | 
+2:219 | UNK | 把收音机打开 | 
+2:220 | UNK | 西瓜钢琴融化在云里 | 
+2:221 | request_flow | 有哪些可以体验的 | 
+2:222 | request_flow | 能体验什么 | 
+2:223 | request_flow | 有哪些演示可以看 | 
+2:224 | request_flow | 我想看看有什么功能 | 
+2:225 | request_flow | 展厅里能体验些什么 | 
+2:226 | request_flow | 给我介绍一下可以体验的 | 
+2:227 | request_flow | 现在有什么能试的 | 
+2:228 | request_flow | 有啥演示 | 
+2:229 | request_flow | 我想体验一下 | 
+2:230 | request_flow | 可以看看演示吗 | 
+2:231 | request_flow | 有哪些功能能体验 | 
+2:232 | request_flow | 帮我看看有什么可以试 | 
+2:233 | request_flow | 今天能体验什么 | 
+2:234 | request_flow | 演示有哪些 | 
+2:235 | request_flow | 这里有什么可以看的 | 
+2:236 | request_flow | 能给我演示一下吗 | 
+2:237 | request_flow | 我想了解能体验的功能 | 
+2:238 | request_flow | 先看看有什么演示 | 
+2:239 | request_flow | 有什么可以试一试的 | 
+2:240 | request_flow | 展厅演示都有哪些 | 
+2:241 | request_flow | 我想体验DLP大灯 | flow_ref=DLP大灯@4:9
+2:242 | request_flow | DLP车灯给我演示一下 | flow_ref=DLP车灯@0:5
+2:243 | request_flow | 大灯能看吗 | flow_ref=大灯@0:2
+2:244 | request_flow | 把DLP大灯演示放出来看看 | flow_ref=DLP大灯@1:6
+2:245 | request_flow | 怎么体验DLP车灯 | flow_ref=DLP车灯@4:9
+2:246 | request_flow | 大灯我想试一试 | flow_ref=大灯@0:2
+2:247 | request_flow | 有大灯的演示吗 | flow_ref=大灯@1:3
+2:248 | request_flow | 能看看DLP灯吗 | flow_ref=DLP灯@3:7->dlp_headlights
+2:249 | request_flow | 座舱影院我想体验 | flow_ref=座舱影院@0:4
+2:250 | request_flow | 车载影院可以看一下不 | flow_ref=车载影院@0:4
+2:251 | request_flow | 移动影院演示给我看 | flow_ref=移动影院@0:4
+2:252 | request_flow | 座舱影院是怎么体验的 | flow_ref=座舱影院@0:4
+2:253 | request_flow | 车载影院我打算试试 | flow_ref=车载影院@0:4
+2:254 | request_flow | 移动影院这边有演示吗 | flow_ref=移动影院@0:4
+2:255 | request_flow | 帮我把座舱电影院打开看看 | flow_ref=座舱电影院@3:8->cabin_cinema
+2:256 | request_flow | 我想看看车里的电影院 | flow_ref=车里的电影院@4:10->cabin_cinema
+2:257 | request_flow | 按摩座椅体验一下 | flow_ref=按摩座椅@0:4
+2:258 | request_flow | 座椅按摩能试一下吗 | flow_ref=座椅按摩@0:4
+2:259 | request_flow | 按摩座椅给我看看效果 | flow_ref=按摩座椅@0:4
+2:260 | request_flow | 座椅按摩的演示在哪 | flow_ref=座椅按摩@0:4
+2:261 | request_flow | 按摩座椅怎么体验啊 | flow_ref=按摩座椅@0:4
+2:262 | request_flow | 我想试试按摩椅 | flow_ref=按摩椅@4:7->massage_seats
+2:263 | request_flow | 来一段座椅按摩的演示 | flow_ref=座椅按摩@3:7
+2:264 | request_flow | 隐私车窗我想体验下 | flow_ref=隐私车窗@0:4
+2:265 | request_flow | 隐私玻璃能看看吗 | flow_ref=隐私玻璃@0:4
+2:266 | request_flow | 隐私车窗演示给我看 | flow_ref=隐私车窗@0:4
+2:267 | request_flow | 隐私玻璃我想试一试 | flow_ref=隐私玻璃@0:4
+2:268 | request_flow | 隐私车窗要怎么演示 | flow_ref=隐私车窗@0:4
+2:269 | request_flow | 能体验一下隐私窗吗 | flow_ref=隐私窗@5:8->privacy_window
+2:270 | request_flow | 隐私玻璃打开演示看看 | flow_ref=隐私玻璃@0:4
+2:271 | request_flow | 车外的DLP大灯给我看看 | part=车外@0:2; flow_ref=DLP大灯@3:8
+2:272 | request_flow | 我想体验车内的座舱影院 | part=车内@4:6; flow_ref=座舱影院@7:11
+2:273 | request_flow | 娱乐向的按摩座椅能演示吗 | theme=娱乐@0:2; flow_ref=按摩座椅@4:8
+2:274 | request_flow | 车外的隐私玻璃怎么体验 | part=车外@0:2; flow_ref=隐私玻璃@3:7
+2:275 | request_flow | 适合家庭的座舱影院我想看 | theme=家庭@2:4; flow_ref=座舱影院@5:9
+2:276 | request_flow | 外饰上的DLP车灯能演示吗 | part=外饰@0:2; flow_ref=DLP车灯@4:9
+2:277 | request_flow | 座舱里那个按摩座椅我想试试 | part=座舱里@0:3; flow_ref=按摩座椅@5:9
+2:278 | request_flow | 给我看看私密主题的隐私车窗 | theme=私密@4:6; flow_ref=隐私车窗@9:13
+2:279 | request_flow | 车内那个娱乐的移动影院能看吗 | part=车内@0:2; theme=娱乐@4:6; flow_ref=移动影院@7:11
+2:280 | request_flow | 给全家看的车载影院演示一下 | theme=全家@1:3; flow_ref=车载影院@5:9
+2:281 | request_flow | 车内有什么可以体验的 | part=车内@0:2
+2:282 | request_flow | 车内的功能我想看看 | part=车内@0:2
+2:283 | request_flow | 内饰这边有演示吗 | part=内饰@0:2
+2:284 | request_flow | 座舱里能体验什么 | part=座舱里@0:3
+2:285 | request_flow | 车内的演示给我过一遍 | part=车内@0:2
+2:286 | request_flow | 内饰方面哪些能试 | part=内饰@0:2
+2:287 | request_flow | 把座舱里的功能演示一下 | part=座舱里@1:4
+2:288 | request_flow | 车内可以体验哪些呀 | part=车内@0:2
+2:289 | request_flow | 内饰相关的我想体验 | part=内饰@0:2
+2:290 | request_flow | 座舱里能看的有哪些 | part=座舱里@0:3
+2:291 | request_flow | 车内能体验的帮我找找 | part=车内@0:2
+2:292 | request_flow | 内饰演示都有啥 | part=内饰@0:2
+2:293 | request_flow | 车内这块先演示一下 | part=车内@0:2
+2:294 | request_flow | 车外能体验的都有什么 | part=车外@0:2
+2:295 | request_flow | 外饰能演示些什么 | part=外饰@0:2
+2:296 | request_flow | 车外的功能我想了解一下 | part=车外@0:2
+2:297 | request_flow | 车外都有哪些演示 | part=车外@0:2
+2:298 | request_flow | 外饰这边给我看看 | part=外饰@0:2
+2:299 | request_flow | 车外可以体验什么呢 | part=车外@0:2
+2:300 | request_flow | 外饰有哪些能试的 | part=外饰@0:2
+2:301 | request_flow | 我想体验车外面的 | part=车外面@4:7->outside
+2:302 | request_flow | 把车外的演示列一下 | part=车外@1:3
+2:303 | request_flow | 外饰能体验的有吗 | part=外饰@0:2
+2:304 | request_flow | 车外这块给我演示看看 | part=车外@0:2
+2:305 | request_flow | 跟外饰相关的可以看什么 | part=外饰@1:3
+2:306 | request_flow | 家庭相关的有什么可以体验 | theme=家庭@0:2
+2:307 | request_flow | 适合全家的功能演示一下 | theme=全家@2:4
+2:308 | request_flow | 有什么家用的可以体验 | theme=家用@3:5
+2:309 | request_flow | 家庭功能我想看看 | theme=家庭@0:2
+2:310 | request_flow | 全家适用的演示有哪些 | theme=全家@0:2
+2:311 | request_flow | 家用功能能体验吗 | theme=家用@0:2
+2:312 | request_flow | 有适合家庭的演示吗 | theme=家庭@3:5
+2:313 | request_flow | 全家能体验的给我看看 | theme=全家@0:2
+2:314 | request_flow | 家用方向有什么可以看 | theme=家用@0:2
+2:315 | request_flow | 娱乐这块有什么能体验 | theme=娱乐@0:2
+2:316 | request_flow | 有娱乐演示可以看吗 | theme=娱乐@1:3
+2:317 | request_flow | 我想看娱乐相关的功能 | theme=娱乐@3:5
+2:318 | request_flow | 娱乐方面能试什么 | theme=娱乐@0:2
+2:319 | request_flow | 把娱乐功能演示一下 | theme=娱乐@1:3
+2:320 | request_flow | 能试的娱乐有哪些 | theme=娱乐@3:5
+2:321 | request_flow | 娱乐的演示给我介绍下 | theme=娱乐@0:2
+2:322 | request_flow | 我想体验娱乐类的 | theme=娱乐@4:6
+2:323 | request_flow | 隐私相关能体验什么 | theme=隐私@0:2
+2:324 | request_flow | 私密的演示有吗 | theme=私密@0:2
+2:325 | request_flow | 我想了解隐私功能 | theme=隐私@4:6
+2:326 | request_flow | 私密方面有什么能试 | theme=私密@0:2
+2:327 | request_flow | 隐私相关的先给我看看 | theme=隐私@0:2
+2:328 | request_flow | 能体验的隐私有哪些 | theme=隐私@4:6
+2:329 | request_flow | 隐私演示都有什么 | theme=隐私@0:2
+2:330 | request_flow | 私密的我想体验一下 | theme=私密@0:2
+2:331 | request_flow | 车内适合家庭的功能有什么能体验的 | part=车内@0:2; theme=家庭@4:6
+2:332 | request_flow | 内饰里全家能用的演示有吗 | part=内饰@0:2; theme=全家@3:5
+2:333 | request_flow | 座舱里那些家用功能我想试试 | part=座舱里@0:3; theme=家用@5:7
+2:334 | request_flow | 家庭方面的车内功能给我看看 | theme=家庭@0:2; part=车内@5:7
+2:335 | request_flow | 有适合全家的内饰演示吗 | theme=全家@3:5; part=内饰@6:8
+2:336 | request_flow | 座舱里娱乐这块演示一下 | part=座舱里@0:3; theme=娱乐@3:5
+2:337 | request_flow | 内饰有娱乐相关的吗 | part=内饰@0:2; theme=娱乐@3:5
+2:338 | request_flow | 想体验车内娱乐方面的 | part=车内@3:5; theme=娱乐@5:7
+2:339 | request_flow | 娱乐的，座舱里有什么能看 | theme=娱乐@0:2; part=座舱里@4:7
+2:340 | request_flow | 车内有哪些娱乐可以体验 | part=车内@0:2; theme=娱乐@5:7
+2:341 | request_flow | 车内隐私相关的能体验吗 | part=车内@0:2; theme=隐私@2:4
+2:342 | request_flow | 座舱里有私密功能可以看吗 | part=座舱里@0:3; theme=私密@4:6
+2:343 | request_flow | 内饰的隐私演示给我看一个 | part=内饰@0:2; theme=隐私@3:5
+2:344 | request_flow | 私密一点的，车内有什么 | theme=私密@0:2; part=车内@6:8
+2:345 | request_flow | 想看看座舱里的隐私功能 | part=座舱里@3:6; theme=隐私@7:9
+2:346 | request_flow | 车外适合家庭的有什么可以体验 | part=车外@0:2; theme=家庭@4:6
+2:347 | request_flow | 外饰有全家适用的演示吗 | part=外饰@0:2; theme=全家@3:5
+2:348 | request_flow | 家用的车外功能我想看看 | theme=家用@0:2; part=车外@3:5
+2:349 | request_flow | 车外那些适合全家的演示一下 | part=车外@0:2; theme=全家@6:8
+2:350 | request_flow | 有没有外饰方面的家庭演示 | part=外饰@3:5; theme=家庭@8:10
+2:351 | request_flow | 车外那些娱乐的能体验吗 | part=车外@0:2; theme=娱乐@4:6
+2:352 | request_flow | 外饰娱乐相关的给我看看 | part=外饰@0:2; theme=娱乐@2:4
+2:353 | request_flow | 娱乐方面车外有什么演示 | theme=娱乐@0:2; part=车外@4:6
+2:354 | request_flow | 想试车外那些娱乐功能 | part=车外@2:4; theme=娱乐@6:8
+2:355 | request_flow | 外饰有没有娱乐可以体验的 | part=外饰@0:2; theme=娱乐@5:7
+2:356 | request_flow | 车外隐私这块有演示吗 | part=车外@0:2; theme=隐私@2:4
+2:357 | request_flow | 外饰私密相关的演示一下 | part=外饰@0:2; theme=私密@2:4
+2:358 | request_flow | 隐私方面车外能看什么 | theme=隐私@0:2; part=车外@4:6
+2:359 | request_flow | 车外有私密功能吗我想体验 | part=车外@0:2; theme=私密@3:5
+2:360 | request_flow | 私密的外饰演示有哪些 | theme=私密@0:2; part=外饰@3:5
+2:361 | inform | 我叫李娜。 | name=李娜@2:4
+2:362 | inform | 我是张强 | name=张强@2:4
+2:363 | inform | 我姓王 | name=王@2:3
+2:364 | inform | 叫我小陈就行 | name=小陈@2:4
+2:365 | inform | 我的名字是欧阳娜 | name=欧阳娜@5:8
+2:366 | inform | 我是刘洋 | name=刘洋@2:4
+2:367 | inform | 名字叫王磊 | name=王磊@3:5
+2:368 | inform | 你可以叫我小赵 | name=小赵@5:7
+2:369 | inform | 我叫周洋 | name=周洋@2:4
+2:370 | inform | 我是林雪 | name=林雪@2:4
+2:371 | inform | 我叫Jack | name=Jack@2:6
+2:372 | inform | 我姓李 | name=李@2:3
+2:373 | inform | 我叫做孙悦 | name=孙悦@3:5
+2:374 | inform | 我是赵敏 | name=赵敏@2:4
+2:375 | inform | 叫我阿强 | name=阿强@2:4
+2:376 | inform | 我叫Lisa | name=Lisa@2:6
+2:377 | inform | 我就是陈浩 | name=陈浩@3:5
+2:378 | inform | 我叫吴迪 | name=吴迪@2:4
+2:379 | inform | 我姓张 | name=张@2:3
+2:380 | inform | 我叫Sophie | name=Sophie@2:8
+2:381 | inform | 就座舱影院 | flow_ref=座舱影院@1:5
+2:382 | inform | 隐私玻璃 | flow_ref=隐私玻璃@0:4
+2:383 | inform | 按摩座椅 | flow_ref=按摩座椅@0:4
+2:384 | inform | DLP大灯 | flow_ref=DLP大灯@0:5
+2:385 | inform | 我更喜欢车载影院 | flow_ref=车载影院@4:8
+2:386 | inform | 就DLP车灯吧 | flow_ref=DLP车灯@1:6
+2:387 | inform | 座椅按摩 | flow_ref=座椅按摩@0:4
+2:388 | inform | 隐私车窗 | flow_ref=隐私车窗@0:4
+2:389 | inform | 移动影院吧 | flow_ref=移动影院@0:4
+2:390 | inform | 我选大灯 | flow_ref=大灯@2:4
+2:391 | inform | 我倾向于座舱影院 | flow_ref=座舱影院@4:8
+2:392 | inform | 车载影院 | flow_ref=车载影院@0:4
+2:393 | inform | 按摩座椅吧 | flow_ref=按摩座椅@0:4
+2:394 | inform | 我偏好隐私玻璃 | flow_ref=隐私玻璃@3:7
+2:395 | inform | DLP车灯 | flow_ref=DLP车灯@0:5
+2:396 | inform | 就移动影院 | flow_ref=移动影院@1:5
+2:397 | inform | 座椅按摩比较好 | flow_ref=座椅按摩@0:4
+2:398 | inform | 隐私车窗吧 | flow_ref=隐私车窗@0:4
+2:399 | inform | 大灯比较合适 | flow_ref=大灯@0:2
+2:400 | inform | 座舱影院就行 | flow_ref=座舱影院@0:4
+2:401 | inform | 车载电影院 | flow_ref=车载电影院@0:5->cabin_cinema
+2:402 | inform | 按摩椅 | flow_ref=按摩椅@0:3->massage_seats
+2:403 | inform | DLP灯吧 | flow_ref=DLP灯@0:4->dlp_headlights
+2:404 | inform | 隐私窗 | flow_ref=隐私窗@0:3->privacy_window
+2:405 | inform | 移动电影院比较有意思 | flow_ref=移动电影院@0:5->cabin_cinema
+2:406 | inform | 车内吧 | part=车内@0:2
+2:407 | inform | 我更喜欢车内 | part=车内@4:6
+2:408 | inform | 外饰 | part=外饰@0:2
+2:409 | inform | 座舱里 | part=座舱里@0:3
+2:410 | inform | 车外的 | part=车外@0:2
+2:411 | inform | 内饰吧 | part=内饰@0:2
+2:412 | inform | 我偏向车外 | part=车外@3:5
+2:413 | inform | 座舱内 | part=座舱内@0:3->inside
+2:414 | inform | 就外饰 | part=外饰@1:3
+2:415 | inform | 车内 | part=车内@0:2
+2:416 | inform | 我偏好内饰 | part=内饰@3:5
+2:417 | inform | 车外吧 | part=车外@0:2
+2:418 | inform | 外饰比较好 | part=外饰@0:2
+2:419 | inform | 就车内 | part=车内@1:3
+2:420 | inform | 车厢里 | part=车厢里@0:3->inside
+2:421 | inform | 家庭的 | theme=家庭@0:2
+2:422 | inform | 我喜欢娱乐 | theme=娱乐@3:5
+2:423 | inform | 隐私吧 | theme=隐私@0:2
+2:424 | inform | 家用的 | theme=家用@0:2
+2:425 | inform | 私密 | theme=私密@0:2
+2:426 | inform | 就娱乐 | theme=娱乐@1:3
+2:427 | inform | 全家的吧 | theme=全家@0:2
+2:428 | inform | 我偏好隐私 | theme=隐私@3:5
+2:429 | inform | 娱乐比较好 | theme=娱乐@0:2
+2:430 | inform | 私密的 | theme=私密@0:2
+2:431 | inform | 家用 | theme=家用@0:2
+2:432 | inform | 就家庭 | theme=家庭@1:3
+2:433 | inform | 娱乐 | theme=娱乐@0:2
+2:434 | inform | 隐私比较好 | theme=隐私@0:2
+2:435 | inform | 一家人的 | theme=一家人@0:3->family
+2:436 | inform | 第一个 | choice=第一个@0:3
+2:437 | inform | 就第二个 | choice=第二个@1:4
+2:438 | inform | 第三个 | choice=第三个@0:3
+2:439 | inform | 就第四个 | choice=第四个@1:4
+2:440 | inform | 第五个吧 | choice=第五个@0:3
+2:441 | inform | 第六个 | choice=第六个@0:3
+2:442 | inform | 第七个 | choice=第七个@0:3
+2:443 | inform | 就第八个 | choice=第八个@1:4
+2:444 | inform | 第九个吧 | choice=第九个@0:3
+2:445 | inform | 第十个 | choice=第十个@0:3
+2:446 | inform | 第1个 | choice=第1个@0:3
+2:447 | inform | 选第2个 | choice=第2个@1:4
+2:448 | inform | 第4个 | choice=第4个@0:3
+2:449 | inform | 选第6个 | choice=第6个@1:4
+2:450 | inform | 我要第8个 | choice=第8个@2:5
+2:451 | inform | 第10个吧 | choice=第10个@0:4
+2:452 | inform | 选项一 | choice=选项一@0:3
+2:453 | inform | 选项三 | choice=选项三@0:3
+2:454 | inform | 选项六 | choice=选项六@0:3
+2:455 | inform | 1号 | choice=1号@0:2
+2:456 | inform | 就2号 | choice=2号@1:3
+2:457 | inform | 3号 | choice=3号@0:2
+2:458 | inform | 就5号 | choice=5号@1:3
+2:459 | inform | 7号吧 | choice=7号@0:2
+2:460 | inform | 给我看看第9个 | choice=第9个@4:7
+2:461 | inform | 车内适合家庭的我更倾向 | part=车内@0:2; theme=家庭@4:6
+2:462 | inform | 车外的娱乐吧 | part=车外@0:2; theme=娱乐@3:5
+2:463 | inform | 内饰私密的比较好 | part=内饰@0:2; theme=私密@2:4
+2:464 | inform | 我偏好座舱里的家用功能 | part=座舱里@3:6; theme=家用@7:9
+2:465 | inform | 外饰隐私的 | part=外饰@0:2; theme=隐私@2:4
+2:466 | inform | 车内娱乐就行 | part=车内@0:2; theme=娱乐@2:4
+2:467 | inform | 全家的，车外那种 | theme=全家@0:2; part=车外@4:6
+2:468 | inform | 我喜欢内饰的家庭功能 | part=内饰@3:5; theme=家庭@6:8
+2:469 | inform | 座舱里私密一点的 | part=座舱里@0:3; theme=私密@3:5
+2:470 | inform | 车外家用的吧 | part=车外@0:2; theme=家用@2:4
+2:471 | inform | 娱乐的外饰比较好 | theme=娱乐@0:2; part=外饰@3:5
+2:472 | inform | 车内的隐私我更喜欢 | part=车内@0:2; theme=隐私@3:5
+2:473 | inform | 适合全家的内饰 | theme=全家@2:4; part=内饰@5:7
+2:474 | inform | 座舱里的娱乐 | part=座舱里@0:3; theme=娱乐@4:6
+2:475 | inform | 外饰方面家庭的 | part=外饰@0:2; theme=家庭@4:6
+2:476 | inform | 车内的座舱影院 | part=车内@0:2; flow_ref=座舱影院@3:7
+2:477 | inform | 我更喜欢车外的DLP大灯 | part=车外@4:6; flow_ref=DLP大灯@7:12
+2:478 | inform | 座舱里的按摩座椅吧 | part=座舱里@0:3; flow_ref=按摩座椅@4:8
+2:479 | inform | 外饰的隐私玻璃 | part=外饰@0:2; flow_ref=隐私玻璃@3:7
+2:480 | inform | 就车内的移动影院 | part=车内@1:3; flow_ref=移动影院@4:8
+2:481 | inform | 家庭的座舱影院 | theme=家庭@0:2; flow_ref=座舱影院@3:7
+2:482 | inform | 我喜欢娱乐的按摩座椅 | theme=娱乐@3:5; flow_ref=按摩座椅@6:10
+2:483 | inform | 私密的隐私车窗吧 | theme=私密@0:2; flow_ref=隐私车窗@3:7
+2:484 | inform | 全家适用的车载影院 | theme=全家@0:2; flow_ref=车载影院@5:9
+2:485 | inform | 娱乐向的DLP大灯 | theme=娱乐@0:2; flow_ref=DLP大灯@4:9
+2:486 | inform | 我叫陈晨，更喜欢车内的 | name=陈晨@2:4; part=车内@8:10
+2:487 | inform | 我是高远，想要娱乐的 | name=高远@2:4; theme=娱乐@7:9
+2:488 | inform | 我叫David，选座舱影院 | name=David@2:7; flow_ref=座舱影院@9:13
+2:489 | inform | 我姓赵，要第二个 | name=赵@2:3; choice=第二个@5:8
+2:490 | inform | 我叫许娜，偏好隐私 | name=许娜@2:4; theme=隐私@7:9
+2:491 | inform | 车内适合家庭的座舱影院 | part=车内@0:2; theme=家庭@4:6; flow_ref=座舱影院@7:11
+2:492 | inform | 外饰娱乐的DLP车灯吧 | part=外饰@0:2; theme=娱乐@2:4; flow_ref=DLP车灯@5:10
+2:493 | inform | 我喜欢车外私密的隐私玻璃 | part=车外@3:5; theme=私密@5:7; flow_ref=隐私玻璃@8:12
+2:494 | inform | 第二个，车内的 | choice=第二个@0:3; part=车内@4:6
+2:495 | inform | 我选第3个，娱乐的 | choice=第3个@2:5; theme=娱乐@6:8
+2:496 | inform | 4号，隐私玻璃 | choice=4号@0:2; flow_ref=隐私玻璃@3:7
+2:497 | inform | 就第一个，家庭的 | choice=第一个@1:4; theme=家庭@5:7
+2:498 | inform | 我叫彭飞，喜欢车内家庭的 | name=彭飞@2:4; part=车内@7:9; theme=家庭@9:11
+2:499 | inform | 我是Anna，要外饰娱乐的 | name=Anna@2:6; part=外饰@8:10; theme=娱乐@10:12
+2:500 | inform | 我叫韩雪，偏好座舱里私密的 | name=韩雪@2:4; part=座舱里@7:10; theme=私密@10:12

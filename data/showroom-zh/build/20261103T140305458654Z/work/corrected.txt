@@ -1,0 +1,32 @@
+1:082 | request_flow | 先看内饰这块的 | part=内饰@2:4
+1:134 | request_flow | 优先看隐私相关的 | theme=隐私@3:5
+1:166 | request_flow | 带我试试车外的隐私车窗 | part=车外@4:6; flow_ref=隐私车窗@7:11
+1:216 | request_flow | 给我演示一下车外的隐私玻璃 | part=车外@6:8; flow_ref=隐私玻璃@9:13
+1:230 | request_flow | 我想看座舱影院 | flow_ref=座舱影院@3:7
+1:282 | inform | 我想了解的是外饰方面的功能 | part=外饰@6:8
+1:283 | request_flow | 先看车内部分 | part=车内@2:4
+1:380 | inform | 我想了解的是隐私玻璃 | flow_ref=隐私玻璃@6:10
+1:443 | request_resume | 把暂停的演示重新放起来吧 | 
+1:483 | inform | 我想优先了解的是车外的功能 | part=车外@8:10
+2:094 | deny | 没有这回事 | 
+2:183 | request_quit | 这次展厅体验我就退出了 | 
+2:189 | request_quit | 我要退出整个展厅体验 | 
+2:191 | UNK | 帮我订一家附近的火锅店 | 
+2:296 | request_flow | 车外的功能我想体验一下 | part=车外@0:2
+2:320 | request_flow | 能试的娱乐功能有哪些 | theme=娱乐@3:5
+2:325 | request_flow | 我想体验隐私相关的功能 | theme=隐私@4:6
+2:328 | request_flow | 能体验的隐私功能有哪些 | theme=隐私@4:6
+2:340 | request_flow | 车内有哪些娱乐功能可以体验 | part=车内@0:2; theme=娱乐@5:7
+2:355 | request_flow | 外饰有没有娱乐功能可以体验的 | part=外饰@0:2; theme=娱乐@5:7
+2:461 | inform | 我更倾向于车内适合家庭的功能 | part=车内@5:7; theme=家庭@9:11
+3:185 | request_quit | 退出整个展厅体验 | 
+3:253 | request_flow | 帮我启动车载影院的演示 | flow_ref=车载影院@4:8
+3:308 | request_flow | 面向全家的演示有哪些 | theme=全家@2:4
+3:319 | request_flow | 有哪些娱乐演示可以看 | theme=娱乐@3:5
+3:339 | request_flow | 车里有什么娱乐功能可以体验的 | part=车里@0:2; theme=娱乐@5:7
+3:348 | request_flow | 车外面有适合全家的演示吗 | part=车外面@0:3; theme=全家@6:8
+3:355 | request_flow | 外饰的娱乐功能可以看一下吗 | part=外饰@0:2; theme=娱乐@3:5
+3:462 | inform | 适合全家的吧 | theme=全家@2:4
+3:474 | inform | 外饰方面适合家庭的功能 | part=外饰@0:2; theme=家庭@6:8
+3:483 | inform | 车内的家庭功能 | part=车内@0:2; theme=家庭@3:5
+3:496 | inform | 适合全家的DLP大灯 | theme=全家@2:4; flow_ref=DLP大灯@5:10

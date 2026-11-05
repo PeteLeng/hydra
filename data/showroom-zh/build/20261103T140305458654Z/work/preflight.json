@@ -1,0 +1,277 @@
+{
+  "checks": "passed",
+  "source_records": 1500,
+  "accepted": 1370,
+  "unique_groups": 276,
+  "record_overlap": 0,
+  "group_overlap": 0,
+  "exact_or_punctuation_duplicate_text": 0,
+  "splits": {
+    "train": {
+      "records": 1065,
+      "groups": 214,
+      "intents": {
+        "request_flow": 333,
+        "inform": 311,
+        "request_resume": 67,
+        "deny": 53,
+        "UNK": 68,
+        "request_quit": 68,
+        "request_stop": 67,
+        "greet": 45,
+        "affirm": 53
+      },
+      "slots": {
+        "flow_ref": 169,
+        "choice": 53,
+        "part": 263,
+        "theme": 264,
+        "name": 67
+      },
+      "canonical_values": {
+        "flow_ref": {
+          "cabin_cinema": 55,
+          "dlp_headlights": 44,
+          "massage_seats": 34,
+          "privacy_window": 36
+        },
+        "part": {
+          "outside": 116,
+          "inside": 147
+        },
+        "theme": {
+          "privacy": 82,
+          "family": 101,
+          "entertainment": 81
+        }
+      },
+      "missing_intents": [],
+      "missing_slots": [],
+      "missing_values": {
+        "flow_ref": [],
+        "part": [],
+        "theme": []
+      },
+      "choices": {
+        "1": 7,
+        "2": 7,
+        "3": 7,
+        "4": 5,
+        "5": 4,
+        "6": 4,
+        "7": 4,
+        "8": 6,
+        "9": 5,
+        "10": 4
+      },
+      "choice_forms": {
+        "arabic": 27,
+        "chinese": 26
+      },
+      "fraction": 0.7773722627737226,
+      "sources": {
+        "1": 397,
+        "2": 379,
+        "3": 289
+      }
+    },
+    "dev": {
+      "records": 171,
+      "groups": 35,
+      "intents": {
+        "greet": 56,
+        "request_flow": 41,
+        "inform": 38,
+        "UNK": 8,
+        "deny": 5,
+        "affirm": 6,
+        "request_resume": 7,
+        "request_stop": 5,
+        "request_quit": 5
+      },
+      "slots": {
+        "name": 68,
+        "part": 24,
+        "flow_ref": 26,
+        "choice": 13,
+        "theme": 4
+      },
+      "canonical_values": {
+        "flow_ref": {
+          "cabin_cinema": 8,
+          "dlp_headlights": 6,
+          "massage_seats": 6,
+          "privacy_window": 6
+        },
+        "part": {
+          "outside": 9,
+          "inside": 15
+        },
+        "theme": {
+          "privacy": 3,
+          "entertainment": 1
+        }
+      },
+      "missing_intents": [],
+      "missing_slots": [],
+      "missing_values": {
+        "flow_ref": [],
+        "part": [],
+        "theme": [
+          "family"
+        ]
+      },
+      "choices": {
+        "2": 2,
+        "3": 1,
+        "4": 1,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 3,
+        "10": 1
+      },
+      "choice_forms": {
+        "chinese": 7,
+        "arabic": 6
+      },
+      "fraction": 0.12481751824817518,
+      "sources": {
+        "1": 54,
+        "2": 59,
+        "3": 58
+      }
+    },
+    "test": {
+      "records": 134,
+      "groups": 27,
+      "intents": {
+        "deny": 7,
+        "request_flow": 41,
+        "inform": 38,
+        "request_resume": 8,
+        "affirm": 9,
+        "request_stop": 15,
+        "UNK": 8,
+        "greet": 2,
+        "request_quit": 6
+      },
+      "slots": {
+        "theme": 37,
+        "choice": 19,
+        "part": 18,
+        "flow_ref": 12,
+        "name": 3
+      },
+      "canonical_values": {
+        "flow_ref": {
+          "cabin_cinema": 3,
+          "dlp_headlights": 3,
+          "massage_seats": 4,
+          "privacy_window": 2
+        },
+        "part": {
+          "outside": 8,
+          "inside": 10
+        },
+        "theme": {
+          "family": 15,
+          "privacy": 13,
+          "entertainment": 9
+        }
+      },
+      "missing_intents": [],
+      "missing_slots": [],
+      "missing_values": {
+        "flow_ref": [],
+        "part": [],
+        "theme": []
+      },
+      "choices": {
+        "1": 3,
+        "2": 3,
+        "3": 1,
+        "4": 2,
+        "5": 1,
+        "6": 3,
+        "7": 2,
+        "8": 2,
+        "9": 1,
+        "10": 1
+      },
+      "choice_forms": {
+        "chinese": 8,
+        "arabic": 11
+      },
+      "fraction": 0.09781021897810219,
+      "sources": {
+        "1": 49,
+        "2": 42,
+        "3": 43
+      }
+    }
+  },
+  "overall": {
+    "records": 1370,
+    "groups": 276,
+    "intents": {
+      "greet": 103,
+      "affirm": 68,
+      "deny": 65,
+      "request_flow": 415,
+      "inform": 387,
+      "request_stop": 87,
+      "request_resume": 82,
+      "request_quit": 79,
+      "UNK": 84
+    },
+    "slots": {
+      "name": 138,
+      "flow_ref": 207,
+      "part": 305,
+      "theme": 305,
+      "choice": 85
+    },
+    "canonical_values": {
+      "flow_ref": {
+        "cabin_cinema": 66,
+        "privacy_window": 44,
+        "dlp_headlights": 53,
+        "massage_seats": 44
+      },
+      "part": {
+        "inside": 172,
+        "outside": 133
+      },
+      "theme": {
+        "family": 116,
+        "entertainment": 91,
+        "privacy": 98
+      }
+    },
+    "missing_intents": [],
+    "missing_slots": [],
+    "missing_values": {
+      "flow_ref": [],
+      "part": [],
+      "theme": []
+    },
+    "choices": {
+      "1": 10,
+      "2": 12,
+      "3": 9,
+      "4": 8,
+      "5": 7,
+      "6": 8,
+      "7": 7,
+      "8": 9,
+      "9": 9,
+      "10": 6
+    },
+    "choice_forms": {
+      "chinese": 41,
+      "arabic": 44
+    }
+  }
+}

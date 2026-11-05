@@ -1,0 +1,1646 @@
+zh-g0001 (4) 你好请问在吗 / 你好请问有人吗 / 嗨在吗
+  1:001 greet 您好，请问在吗
+  1:252 greet 你好，请问有人吗
+  1:301 greet 嗨，在吗
+  2:020 greet 您好，请问有人吗
+zh-g0002 (17) 嗨早上好 / 晚上好 / 你好上午好 / 嗨下午好 / 哈喽早上好 / 嗨晚上好 / 嗨上午好 / 你好中午好 / 哈喽下午好 / 你好早上好 / 早上好 / 下午好 / 早 / 中午好 / 早安
+  1:002 greet 嗨，早上好呀
+  1:102 greet 晚上好啊
+  1:201 greet 您好，上午好
+  1:202 greet 嗨，下午好
+  1:251 greet 哈喽，早上好
+  1:352 greet 嗨，晚上好呀
+  1:401 greet 嗨，上午好
+  1:402 greet 您好，中午好呀
+  1:451 greet 哈喽，下午好
+  1:452 greet 您好，早上好
+  2:004 greet 早上好
+  2:005 greet 下午好
+  2:006 greet 晚上好
+  2:008 greet 早
+  2:012 greet 中午好
+  2:015 greet 早安
+  3:017 greet 早上好呀
+zh-g0003 (56) 你好我是N / 嗨我叫N / 你好呀我叫N / 早上好我是N / 嗨我是N / 哈喽我叫N / 你好我叫N / 下午好我是N / 早上好我叫N / 你好啊我是N / 大家好我叫N / 哈喽我是N / 你好啊我叫N / 嗨你好我叫N / 晚上好我是N
+  1:003 greet 你好，我是陈晨
+  1:053 greet 嗨，我叫张伟
+  1:054 greet 您好，我是欧阳晨
+  1:103 greet 你好呀，我叫刘洋
+  1:104 greet 早上好，我是老陈
+  1:154 greet 嗨，我是何宇
+  1:203 greet 你好，我是司徒静
+  1:204 greet 哈喽，我叫韩梅
+  1:253 greet 您好，我是许晴
+  1:303 greet 你好，我叫唐磊
+  1:304 greet 下午好，我是Emma
+  1:353 greet 您好，我叫沈腾飞
+  1:354 greet 你好，我是David
+  1:403 greet 你好，我叫潘婷
+  1:404 greet 嗨，我是诸葛明
+  1:453 greet 你好，我是Leo
+  1:454 greet 嗨，我叫苏然
+  2:021 greet 嗨，我叫小周
+  2:022 greet 你好，我叫陈静
+  2:023 greet 您好我是张伟
+  2:024 greet 早上好，我叫王芳
+  2:025 greet 你好啊，我是赵磊
+  2:026 greet 您好，我叫欧阳晨
+  2:027 greet 嗨我是小李
+  2:028 greet 大家好，我叫周婷
+  2:029 greet 你好我是林晓燕
+  2:030 greet 嗨，我叫Alex
+  2:032 greet 您好呀，我叫吴佳
+  2:033 greet 哈喽，我是郑凯
+  2:034 greet 你好啊我叫黄丽
+  2:035 greet 嗨你好，我叫Emma
+  2:036 greet 你好，我是马超
+  2:037 greet 您好我叫何静
+  2:038 greet 早上好，我叫Tom
+  2:039 greet 嗨，我是孙浩
+  2:040 greet 你好呀，我叫陈晓
+  3:021 greet 你好，我叫小王
+  3:022 greet 您好我是李明
+  3:023 greet 嗨，我叫欧阳晨
+  3:024 greet 你好我叫张伟
+  3:025 greet 早上好，我是王芳
+  3:026 greet 您好，我叫刘洋
+  3:027 greet 嗨我是陈静
+  3:028 greet 你好，我叫Alex
+  3:029 greet 下午好，我是赵磊
+  3:030 greet 你好呀，我叫孙丽
+  3:031 greet 您好我叫周杰
+  3:032 greet 嗨，我是吴婷
+  3:033 greet 你好，我叫郑浩
+  3:034 greet 早上好我是黄敏
+  3:035 greet 您好，我叫林峰
+  3:036 greet 你好我是何雪
+  3:037 greet 嗨，我叫Tom
+  3:038 greet 你好，我叫马超
+  3:039 greet 晚上好，我是高远
+  3:040 greet 您好呀，我叫罗娜
+zh-g0004 (3) 哈喽叫我N就行 / 你好能叫我N / 你好叫我N
+  1:004 greet 哈喽，叫我Alex就行
+  1:153 greet 你好，可以叫我Lily
+  1:254 greet 你好，叫我小方吧
+zh-g0005 (7) 没错就是这样 / 对就是这个意思 / 是这样没错 / 没毛病就是这样 / 就是这样 / 是这样 / 对就是这样
+  1:005 affirm 没错，就是这样
+  1:056 affirm 对，就是这个意思
+  1:107 affirm 是这样没错
+  1:207 affirm 没毛病，就是这样
+  1:257 affirm 就是这样
+  2:062 affirm 是这样
+  2:070 affirm 对，就是这样
+zh-g0006 (7) 好
+  1:006 affirm 好的呀
+  1:457 affirm 好的呢
+  2:043 affirm 好的
+  2:050 affirm 好
+  2:065 affirm 好嘞
+  3:054 affirm 嗯，好
+  3:057 affirm 好啊
+zh-g0007 (6) 是
+  1:007 affirm 嗯，是的
+  1:206 affirm 是的呢
+  1:357 affirm 是的呀
+  2:044 affirm 是的
+  2:053 affirm 是啊
+  2:059 affirm 是
+zh-g0008 (8) 不对搞错 / 不对你说错 / 不对你理解错 / 不对理解错 / 不对弄错 / 不对搞反 / 不是的你弄错 / 不对说错
+  1:008 deny 不对，搞错了
+  1:058 deny 不对，你说错了
+  1:159 deny 不对，你理解错了
+  1:209 deny 不对，理解错了
+  1:259 deny 不对，弄错了
+  1:358 deny 不对，搞反了
+  1:359 deny 不是的，你弄错了
+  1:458 deny 不对，说错了
+zh-g0009 (7) 不是这样 / 并非如此 / 根本不是这样 / 并不是这样 / 不是那样
+  1:009 deny 不是这样的
+  1:108 deny 并非如此
+  1:210 deny 根本不是这样
+  1:460 deny 并不是这样
+  2:078 deny 不是这样
+  2:092 deny 不是那样
+  3:098 deny 不是那样的
+zh-g0010 (7) 不对 / 不对不对 / 完全不对
+  1:010 deny 不对呀
+  1:110 deny 不对不对
+  1:360 deny 完全不对
+  1:410 deny 不对哦
+  2:072 deny 不对
+  2:079 deny 不对的
+  3:076 deny 不对啊
+zh-g0011 (4) 能给我演示点哪些功能 / 能体验演示 / 能给我演示
+  1:011 request_flow 能给我演示点什么功能吗
+  2:230 request_flow 可以看看演示吗
+  2:236 request_flow 能给我演示一下吗
+  3:230 request_flow 能给我演示吗
+zh-g0012 (17) 有哪些功能能体验 / 有哪些演示能体验 / 有哪些功能演示能给我体验 / 有哪些演示功能能体验 / 能体验哪些演示功能 / 有哪些能体验 / 有哪些演示 / 演示有哪些 / 展厅演示有哪些 / 有演示能体验
+  1:012 request_flow 现在有哪些项目可以体验
+  1:061 request_flow 都有什么演示可以看的
+  1:261 request_flow 有什么功能演示能让我试试
+  1:312 request_flow 有什么演示项目可以看看的
+  1:361 request_flow 有什么功能演示可以让我看看
+  1:462 request_flow 现在都能体验哪些演示项目
+  2:221 request_flow 有哪些可以体验的
+  2:223 request_flow 有哪些演示可以看
+  2:227 request_flow 现在有什么能试的
+  2:228 request_flow 有啥演示
+  2:231 request_flow 有哪些功能能体验
+  2:234 request_flow 演示有哪些
+  2:239 request_flow 有什么可以试一试的
+  2:240 request_flow 展厅演示都有哪些
+  3:221 request_flow 有什么可以体验的
+  3:231 request_flow 有什么可以看的
+  3:238 request_flow 有演示可以看吗
+zh-g0013 (16) 给我体验F / 给我体验F效果 / 给我体验F演示 / F演示给我体验 / F给我体验效果 / F能给我体验
+  1:013 request_flow 带我体验一下座舱影院吧
+  1:065 request_flow 给我看看车头大灯的效果
+  1:115 request_flow 让我体验一下车载电影院吧
+  1:264 request_flow 让我体验一下移动影院吧
+  1:314 request_flow 给我试试隐私玻璃
+  1:365 request_flow 带我感受一下按摩座椅吧
+  1:464 request_flow 给我看看大灯的演示吧
+  1:465 request_flow 带我试试带按摩的座椅
+  2:251 request_flow 移动影院演示给我看
+  2:259 request_flow 按摩座椅给我看看效果
+  2:266 request_flow 隐私车窗演示给我看
+  3:242 request_flow 给我看看DLP大灯吧
+  3:250 request_flow 车载影院能给我看看吗
+  3:261 request_flow 帮我体验座椅按摩
+  3:266 request_flow 给我看看隐私车窗吧
+  3:270 request_flow 帮我看看隐私玻璃的演示
+zh-g0014 (28) 我想体验F / 我想体验F演示 / 我想体验F效果 / F我想体验
+  1:014 request_flow 我想试试隐私车窗
+  1:063 request_flow 我想感受一下座椅按摩
+  1:164 request_flow 我想试试大灯的演示
+  1:213 request_flow 我想体验一下大灯
+  1:215 request_flow 我想试试车内影院
+  1:230 request_flow 我想看座舱影院
+  1:263 request_flow 我想看一看DLP车灯
+  1:313 request_flow 我想看看座舱影院的效果
+  1:364 request_flow 我想试试车载影院的效果
+  1:413 request_flow 我想体验一下隐私玻璃
+  1:463 request_flow 我想体验一下隐私车窗的效果
+  2:241 request_flow 我想体验DLP大灯
+  2:246 request_flow 大灯我想试一试
+  2:249 request_flow 座舱影院我想体验
+  2:253 request_flow 车载影院我打算试试
+  2:256 request_flow 我想看看车里的电影院
+  2:262 request_flow 我想试试按摩椅
+  2:264 request_flow 隐私车窗我想体验下
+  2:267 request_flow 隐私玻璃我想试一试
+  3:244 request_flow 大灯我想试试
+  3:249 request_flow 我想体验座舱影院
+  3:251 request_flow 移动影院我想体验一下
+  3:254 request_flow 我要试试车里的电影院
+  3:255 request_flow 我想看移动影院
+  3:257 request_flow 我想体验按摩座椅
+  3:260 request_flow 按摩座椅我想感受一下
+  3:264 request_flow 我想体验隐私车窗
+  3:267 request_flow 隐私玻璃我想试一下
+zh-g0015 (10) 把F打开体验 / 给我开F / 打开F给我体验 / 把F开体验 / 能打开F体验 / 把F演示放出来体验 / 给我把F打开体验 / F打开演示体验 / 给我启动F演示
+  1:015 request_flow 把DLP车灯打开看看
+  1:114 request_flow 帮我开一下DLP大灯
+  1:165 request_flow 打开按摩座椅让我感受一下
+  1:265 request_flow 把座椅按摩开一下试试
+  1:415 request_flow 能打开DLP前大灯看看吗
+  2:244 request_flow 把DLP大灯演示放出来看看
+  2:255 request_flow 帮我把座舱电影院打开看看
+  2:270 request_flow 隐私玻璃打开演示看看
+  3:245 request_flow 帮我启动DLP大灯的演示
+  3:253 request_flow 帮我启动车载影院的演示
+zh-g0016 (7) 我想体验PF / 我想体验P那个F / P那个F我想体验 / PF我想体验
+  1:016 request_flow 我想体验车内的按摩座椅
+  1:116 request_flow 我想体验车外那个DLP车灯
+  1:366 request_flow 我想看看车内那个座舱影院
+  2:272 request_flow 我想体验车内的座舱影院
+  2:277 request_flow 座舱里那个按摩座椅我想试试
+  3:271 request_flow 我想体验车外的DLP大灯
+  3:274 request_flow 座舱里的按摩座椅我想试试
+zh-g0017 (8) 给我演示P功能 / 演示P / 给我演示P亮点功能 / 把P功能演示 / P先演示 / P给我演示体验
+  1:017 request_flow 先给我展示一下车内的功能
+  1:219 request_flow 先演示一下外饰部分吧
+  1:317 request_flow 给我演示一下座舱里的亮点功能
+  1:468 request_flow 给我演示一下车身外部的配置
+  2:287 request_flow 把座舱里的功能演示一下
+  2:293 request_flow 车内这块先演示一下
+  2:304 request_flow 车外这块给我演示看看
+  3:304 request_flow 演示一下外饰方面的
+zh-g0018 (12) P有哪些功能能体验 / P有哪些功能能给我演示 / P有哪些演示能给我体验 / P有哪些能体验 / P哪些能体验 / P能体验有哪些
+  1:018 request_flow 车外有什么功能可以看看
+  1:067 request_flow 内饰方面有什么功能可以体验
+  1:268 request_flow 车外有哪些功能可以给我演示
+  1:367 request_flow 车内有哪些功能可以给我演示
+  1:419 request_flow 车外有什么演示可以让我试试
+  2:281 request_flow 车内有什么可以体验的
+  2:286 request_flow 内饰方面哪些能试
+  2:290 request_flow 座舱里能看的有哪些
+  2:294 request_flow 车外能体验的都有什么
+  2:300 request_flow 外饰有哪些能试的
+  3:285 request_flow 车里有哪些可以体验
+  3:287 request_flow 座舱内有什么能体验的
+zh-g0019 (10) 我想体验P功能演示 / 我想体验P功能 / P功能我想体验 / P相关我想体验 / 我想体验P / 我想体验P相关演示
+  1:019 request_flow 我想看看座舱里的配置演示
+  1:119 request_flow 我想试试车里的功能演示
+  1:167 request_flow 我想体验一下座舱里的功能
+  1:368 request_flow 我想体验一下外饰部分的功能
+  1:417 request_flow 我想体验一下内饰的功能
+  2:282 request_flow 车内的功能我想看看
+  2:289 request_flow 内饰相关的我想体验
+  2:296 request_flow 车外的功能我想体验一下
+  2:301 request_flow 我想体验车外面的
+  3:284 request_flow 我想看看内饰相关的演示
+zh-g0020 (19) 有哪些T功能演示 / 有哪些T功能能体验 / 有哪些T演示能体验 / T有哪些能体验 / 有哪些T能体验 / T这块有哪些能体验 / 能体验T功能有哪些
+  1:020 request_flow 有什么适合全家的功能演示吗
+  1:169 request_flow 有什么偏向隐私的功能可以看看
+  1:221 request_flow 有什么适合家用的项目能体验
+  1:269 request_flow 有什么跟家庭相关的功能可以体验
+  1:321 request_flow 有什么休闲娱乐的功能可以看看
+  1:370 request_flow 有什么适合家用的演示可以体验
+  1:420 request_flow 有什么关于私密的功能能体验
+  1:469 request_flow 有什么适合家用的功能演示吗
+  2:306 request_flow 家庭相关的有什么可以体验
+  2:308 request_flow 有什么家用的可以体验
+  2:314 request_flow 家用方向有什么可以看
+  2:315 request_flow 娱乐这块有什么能体验
+  2:320 request_flow 能试的娱乐功能有哪些
+  2:326 request_flow 私密方面有什么能试
+  2:328 request_flow 能体验的隐私功能有哪些
+  3:306 request_flow 适合家庭的有什么可以体验
+  3:315 request_flow 娱乐的有什么可以体验
+  3:319 request_flow 有哪些娱乐演示可以看
+  3:323 request_flow 隐私相关的有什么可以体验
+zh-g0021 (4) 给我演示T功能 / 能演示T功能 / T功能演示 / 把T功能演示
+  1:021 request_flow 给我演示一下娱乐相关的项目
+  1:271 request_flow 能演示一下私密方面的配置吗
+  2:307 request_flow 适合全家的功能演示一下
+  2:319 request_flow 把娱乐功能演示一下
+zh-g0022 (18) 我想体验PT功能 / 我想体验PT功能演示 / P那些T功能我想体验 / 我想体验PT / 我想体验P那些T功能
+  1:022 request_flow 我想看看车外关于隐私的功能
+  1:073 request_flow 我想试试车内跟隐私有关的功能
+  1:123 request_flow 我想看看车外的娱乐功能演示
+  1:174 request_flow 我想试试内饰里偏向私密的功能
+  1:223 request_flow 我想试试内饰里有关私密的功能
+  1:272 request_flow 我想看看座舱里适合家用的功能
+  1:323 request_flow 我想看看外饰关于私密的设计
+  1:372 request_flow 我想看看座舱里的私密功能演示
+  1:422 request_flow 我想看看车内偏向娱乐的设计
+  1:473 request_flow 我想试试车外偏私密的功能演示
+  2:333 request_flow 座舱里那些家用功能我想试试
+  2:338 request_flow 想体验车内娱乐方面的
+  2:345 request_flow 想看看座舱里的隐私功能
+  2:354 request_flow 想试车外那些娱乐功能
+  3:334 request_flow 我想体验内饰的家用功能
+  3:338 request_flow 我想体验内饰相关的娱乐功能
+  3:344 request_flow 我想看看车里的隐私功能
+  3:349 request_flow 我想体验车外适合家用的功能
+zh-g0023 (15) P有哪些T功能能体验 / P有哪些T功能 / P有哪些T演示能体验 / P有哪些T演示 / P有哪些T功能演示 / PT功能有哪些能体验 / PT有哪些能体验
+  1:023 request_flow 座舱里有什么适合家庭的功能可以试
+  1:072 request_flow 车外有什么适合全家的功能吗
+  1:172 request_flow 车内有哪些偏向娱乐的演示可以试试
+  1:222 request_flow 座舱里有哪些娱乐配置能体验
+  1:274 request_flow 外饰部分有什么跟隐私有关的演示吗
+  1:322 request_flow 车内有什么适合家庭的功能演示吗
+  1:373 request_flow 内饰有什么适合家庭的功能可以试
+  1:423 request_flow 外饰里有什么适合全家的功能吗
+  1:472 request_flow 座舱里有什么适合全家的功能可以体验
+  2:331 request_flow 车内适合家庭的功能有什么能体验的
+  2:340 request_flow 车内有哪些娱乐功能可以体验
+  2:346 request_flow 车外适合家庭的有什么可以体验
+  3:332 request_flow 车内的家庭功能有什么能体验的
+  3:339 request_flow 车里有什么娱乐功能可以体验的
+  3:359 request_flow 车外面偏隐私的有什么可以看
+zh-g0024 (9) 给我演示PT功能 / 给我启动PT功能 / PT这块演示 / P那些T演示 / PT演示 / TP演示
+  1:024 request_flow 帮我演示一下内饰的娱乐功能
+  1:124 request_flow 帮我启动一下内饰适合家用的功能
+  1:374 request_flow 给我演示一下车外偏隐私的配置
+  2:336 request_flow 座舱里娱乐这块演示一下
+  2:349 request_flow 车外那些适合全家的演示一下
+  2:357 request_flow 外饰私密相关的演示一下
+  3:350 request_flow 外饰方面适合家庭的演示一下
+  3:354 request_flow 外饰这边娱乐的演示一下
+  3:360 request_flow 隐私方面的外饰演示一下
+zh-g0025 (34) 我叫N / 我名字是N
+  1:025 inform 我叫王磊
+  1:125 inform 我的名字是孙悦
+  1:126 inform 我叫阿杰
+  1:175 inform 我叫沈佳
+  1:225 inform 我叫高远
+  1:276 inform 我叫老刘
+  1:325 inform 我叫冯超
+  1:326 inform 我的名字叫陆瑶
+  1:375 inform 我叫秦朗
+  1:425 inform 我叫丁一
+  1:475 inform 我叫贺然
+  2:361 inform 我叫李娜。
+  2:365 inform 我的名字是欧阳娜
+  2:367 inform 名字叫王磊
+  2:369 inform 我叫周洋
+  2:371 inform 我叫Jack
+  2:373 inform 我叫做孙悦
+  2:376 inform 我叫Lisa
+  2:378 inform 我叫吴迪
+  2:380 inform 我叫Sophie
+  3:361 inform 我叫曹颖
+  3:363 inform 我叫董洁
+  3:364 inform 我的名字是袁帅
+  3:367 inform 我叫贾宁
+  3:368 inform 我名字叫魏强
+  3:370 inform 我叫叶凡
+  3:372 inform 我叫杜鹃
+  3:373 inform 我的名字是钟华
+  3:376 inform 我叫姜涛
+  3:378 inform 我叫崔丽
+  3:379 inform 我的名字叫丁磊
+  3:382 inform 我叫方慧
+  3:384 inform 我叫姚远
+  3:385 inform 我名字是顾清
+zh-g0026 (10) 你能叫我N / 叫我N / 叫我N就行
+  1:026 inform 你可以叫我小周
+  1:076 inform 叫我Kevin吧
+  1:376 inform 叫我小胡就行
+  1:426 inform 叫我Sarah吧
+  2:364 inform 叫我小陈就行
+  2:368 inform 你可以叫我小赵
+  2:375 inform 叫我阿强
+  3:365 inform 叫我蒋琳
+  3:374 inform 叫我汪洋就行
+  3:381 inform 叫我任杰
+zh-g0027 (19) 选C
+  1:027 inform 我选第一个
+  1:078 inform 我想选第4个
+  1:127 inform 选第6个吧
+  1:178 inform 选7号吧
+  1:227 inform 选第8个
+  1:279 inform 我选2号吧
+  1:328 inform 选第一项
+  1:377 inform 我选第三个
+  1:379 inform 就选选项四
+  1:428 inform 选第5个
+  1:477 inform 选第7个吧
+  2:447 inform 选第2个
+  2:449 inform 选第6个
+  3:401 inform 我选第6个
+  3:406 inform 我选选项一
+  3:407 inform 选选项二吧
+  3:414 inform 选选项九
+  3:415 inform 我选选项十
+  3:418 inform 选8号
+zh-g0028 (45) 就C / C
+  1:028 inform 就1号吧
+  1:077 inform 选项三
+  1:129 inform 8号吧
+  1:177 inform 第六个
+  1:179 inform 就第10个
+  1:228 inform 第八个吧
+  1:277 inform 第九个吧
+  1:327 inform 10号吧
+  1:378 inform 3号吧
+  1:427 inform 4号吧
+  1:479 inform 9号吧
+  2:436 inform 第一个
+  2:437 inform 就第二个
+  2:438 inform 第三个
+  2:439 inform 就第四个
+  2:440 inform 第五个吧
+  2:442 inform 第七个
+  2:443 inform 就第八个
+  2:445 inform 第十个
+  2:446 inform 第1个
+  2:448 inform 第4个
+  2:451 inform 第10个吧
+  2:452 inform 选项一
+  2:454 inform 选项六
+  2:455 inform 1号
+  2:456 inform 就2号
+  2:457 inform 3号
+  2:458 inform 就5号
+  2:459 inform 7号吧
+  3:387 inform 第二个吧
+  3:389 inform 第四个啊
+  3:390 inform 第五个
+  3:391 inform 第六个吧
+  3:393 inform 第八个
+  3:397 inform 就第2个
+  3:398 inform 第3个吧
+  3:400 inform 第5个啊
+  3:402 inform 第7个吧
+  3:403 inform 第8个
+  3:404 inform 第9个
+  3:409 inform 就选项四吧
+  3:411 inform 就选项六
+  3:412 inform 那就选项七
+  3:416 inform 就1号
+  3:417 inform 2号吧
+zh-g0029 (5) 给我看C / 我要看C / 我看C
+  1:029 inform 给我看看第3个
+  1:278 inform 我要看9号
+  1:329 inform 给我看看选项二
+  2:460 inform 给我看看第9个
+  3:413 inform 我看选项八吧
+zh-g0030 (32) F / F就行 / 就F
+  1:030 inform 车载影院吧
+  1:081 inform 按摩座椅就行
+  1:130 inform 还是DLP车灯吧
+  1:180 inform 座椅按摩吧
+  1:231 inform 大灯吧
+  1:280 inform 隐私车窗吧
+  1:381 inform DLP车灯吧
+  1:431 inform 防窥车窗吧
+  1:480 inform 还是移动影院吧
+  2:381 inform 就座舱影院
+  2:382 inform 隐私玻璃
+  2:383 inform 按摩座椅
+  2:384 inform DLP大灯
+  2:386 inform 就DLP车灯吧
+  2:387 inform 座椅按摩
+  2:388 inform 隐私车窗
+  2:389 inform 移动影院吧
+  2:392 inform 车载影院
+  2:393 inform 按摩座椅吧
+  2:395 inform DLP车灯
+  2:396 inform 就移动影院
+  2:400 inform 座舱影院就行
+  2:401 inform 车载电影院
+  2:402 inform 按摩椅
+  2:403 inform DLP灯吧
+  2:404 inform 隐私窗
+  3:421 inform 座舱影院
+  3:424 inform 车里的电影院
+  3:425 inform 那就车载影院
+  3:430 inform 大灯
+  3:434 inform 就按摩椅
+  3:439 inform 就隐私窗
+zh-g0031 (3) 我对F感兴趣
+  1:031 inform 我对隐私玻璃比较感兴趣
+  1:330 inform 我对按摩座椅比较感兴趣
+  1:481 inform 我对大灯更感兴趣
+zh-g0032 (2) 我比较关注P / 我更关注P功能
+  1:032 inform 我比较关注车外那部分
+  1:382 inform 我更关注座舱里的设计
+zh-g0033 (26) 就P / P / P就行
+  1:033 inform 还是座舱里的吧
+  1:133 inform 车外那块吧
+  1:183 inform 内饰那部分吧
+  1:233 inform 座舱里的就行
+  1:333 inform 内饰这边的吧
+  1:383 inform 还是外饰吧
+  2:406 inform 车内吧
+  2:408 inform 外饰
+  2:409 inform 座舱里
+  2:410 inform 车外的
+  2:411 inform 内饰吧
+  2:413 inform 座舱内
+  2:414 inform 就外饰
+  2:415 inform 车内
+  2:417 inform 车外吧
+  2:419 inform 就车内
+  2:420 inform 车厢里
+  3:441 inform 车内的吧
+  3:443 inform 内饰
+  3:444 inform 座舱里的
+  3:447 inform 车里吧
+  3:448 inform 车外的吧
+  3:451 inform 就车外
+  3:452 inform 车外面的
+  3:454 inform 座舱内吧
+  3:455 inform 外饰方面的
+zh-g0034 (5) 我偏好T / 我偏好T功能
+  1:034 inform 我更偏向家庭方向
+  1:135 inform 我倾向于家用的配置
+  1:384 inform 我比较偏向私密方向的
+  1:434 inform 我更偏向娱乐类的
+  2:428 inform 我偏好隐私
+zh-g0035 (26) T / T那种 / 就T / T就行 / T一起用那种
+  1:035 inform 私密方面的吧
+  1:085 inform 适合全家的那种
+  1:184 inform 还是娱乐方面的吧
+  1:234 inform 家用方向的吧
+  1:285 inform 还是适合家庭的吧
+  1:335 inform 娱乐方面的就行
+  1:435 inform 全家一起用的那种吧
+  2:421 inform 家庭的
+  2:423 inform 隐私吧
+  2:424 inform 家用的
+  2:425 inform 私密
+  2:426 inform 就娱乐
+  2:427 inform 全家的吧
+  2:430 inform 私密的
+  2:431 inform 家用
+  2:432 inform 就家庭
+  2:433 inform 娱乐
+  2:435 inform 一家人的
+  3:456 inform 家庭的吧
+  3:460 inform 隐私的
+  3:462 inform 适合全家的吧
+  3:465 inform 娱乐方面的
+  3:467 inform 私密吧
+  3:468 inform 适合家庭的
+  3:469 inform 娱乐的吧
+  3:470 inform 就私密
+zh-g0036 (5) 我对PT功能感兴趣 / PT功能我感兴趣 / 我对PT功能比较好奇 / PT功能更吸引我
+  1:036 inform 我对车内的娱乐配置更感兴趣
+  1:236 inform 车内偏向私密的功能我比较感兴趣
+  1:387 inform 外饰里偏家用的配置我比较感兴趣
+  1:436 inform 我对内饰里偏私密的功能比较好奇
+  1:437 inform 车外关于隐私的设计更吸引我
+zh-g0037 (1) 想选PT那类
+  1:037 inform 想选外饰里偏向隐私的那类
+zh-g0038 (3) 我是N想了解F / 我叫N对F感兴趣 / 我叫N选F
+  1:038 inform 我是林薇，比较想了解DLP大灯
+  1:488 inform 我叫孟楠，对隐私玻璃很感兴趣
+  2:488 inform 我叫David，选座舱影院
+zh-g0039 (11) 把这个演示暂停 / 把现在的演示停 / 把当前演示先停 / 把当前的演示暂停 / 把这个演示停 / 把当前演示暂停 / 把当前这段演示暂停 / 把这个演示停住
+  1:039 request_stop 先把这个演示暂停一下
+  1:041 request_stop 请把现在的演示停一停
+  1:339 request_stop 把当前演示先停一下
+  1:389 request_stop 先把当前的演示暂停吧
+  1:439 request_stop 先把这个演示停一停
+  1:441 request_stop 麻烦把当前演示暂停吧
+  1:489 request_stop 把当前这段演示暂停一下
+  2:114 request_stop 把当前演示暂停
+  2:124 request_stop 先把这个演示停住
+  3:125 request_stop 把这个演示暂停一下
+  3:130 request_stop 先把当前演示暂停一下
+zh-g0040 (3) 暂停当前的播放 / 暂停播放 / 把当前播放暂停
+  1:040 request_stop 暂停一下当前的播放
+  3:109 request_stop 暂停播放
+  3:121 request_stop 把当前播放暂停一下
+zh-g0041 (13) 继续刚才停下的演示 / 继续刚才未完成的演示 / 继续刚才中断的演示 / 继续刚才停下的那个演示 / 继续刚才中断的那个演示 / 继续刚才那个 / 继续刚才暂停的演示 / 继续那个演示 / 继续之前的演示 / 继续刚才的演示 / 继续没放完的演示 / 继续刚才那个演示
+  1:042 request_resume 继续刚才停下的演示吧
+  1:142 request_resume 继续刚才未完成的演示
+  1:242 request_resume 继续刚才中断的演示吧
+  1:342 request_resume 继续刚才停下的那个演示
+  1:442 request_resume 继续刚才中断的那个演示
+  2:136 request_resume 继续刚才那个
+  2:150 request_resume 继续刚才暂停的演示
+  2:152 request_resume 继续那个演示
+  2:156 request_resume 继续之前的演示
+  3:131 request_resume 继续刚才的演示
+  3:141 request_resume 继续刚才停下的演示
+  3:150 request_resume 继续没放完的演示
+  3:155 request_resume 继续刚才那个演示
+zh-g0042 (7) 把刚才的演示接着放 / 把刚才停住的演示接着放 / 把刚才停住的演示继续放 / 把刚才的演示接着往下放 / 把刚才的演示继续 / 把中断的演示继续 / 把刚才停下的演示继续
+  1:043 request_resume 把刚才的演示接着放
+  1:193 request_resume 把刚才停住的演示接着放吧
+  1:292 request_resume 把刚才停住的演示继续放吧
+  1:393 request_resume 把刚才的演示接着往下放
+  2:139 request_resume 把刚才的演示继续
+  2:147 request_resume 把中断的演示继续
+  2:157 request_resume 把刚才停下的演示继续
+zh-g0043 (2) 能恢复演示 / 能继续演示
+  1:044 request_resume 现在可以恢复演示了
+  1:394 request_resume 现在可以继续演示了
+zh-g0044 (9) 我想退出整个展厅体验 / 我要退出这次展厅互动体验 / 我想退出整个展厅的互动体验 / 我要退出这次体验 / 我要退出展厅 / 我想退出整个体验 / 我要退出整个展厅体验 / 我要退出这次的体验 / 我退出这次体验
+  1:045 request_quit 我想退出整个展厅体验
+  1:296 request_quit 我要退出这次展厅互动体验
+  1:395 request_quit 我想退出整个展厅的互动体验
+  2:171 request_quit 我要退出这次体验
+  2:175 request_quit 我要退出展厅。
+  2:179 request_quit 我想退出整个体验
+  2:189 request_quit 我要退出整个展厅体验
+  3:178 request_quit 我要退出这次的体验
+  3:182 request_quit 我退出这次体验
+zh-g0045 (4) 把这次展厅体验关掉 / 把整个展厅体验流程关掉 / 帮我关闭整个展厅体验 / 把整个展厅体验关掉
+  1:046 request_quit 把这次展厅体验关掉吧
+  1:147 request_quit 把整个展厅体验流程关掉
+  1:295 request_quit 帮我关闭整个展厅体验
+  1:446 request_quit 把整个展厅体验关掉吧
+zh-g0046 (11) 不继续参观了退出体验 / 不想继续体验了帮我退出展厅系统 / 不体验了直接退出展厅流程 / 不继续体验了退出整个流程 / 不看了帮我退出整个体验系统 / 不继续看了帮我退出展厅体验 / 不想留了退出体验 / 我不想体验了退出 / 不看了我退出整个体验 / 我不看了退出展厅 / 我不想待在展厅了退出
+  1:047 request_quit 不继续参观了，退出体验吧
+  1:097 request_quit 不想继续体验了，帮我退出展厅系统
+  1:197 request_quit 不体验了，直接退出展厅流程
+  1:297 request_quit 不继续体验了，退出整个流程吧
+  1:397 request_quit 不看了，帮我退出整个体验系统
+  1:497 request_quit 不继续看了，帮我退出展厅体验
+  2:185 request_quit 不想留了，退出体验
+  3:165 request_quit 我不想体验了，退出吧
+  3:174 request_quit 不看了，我退出整个体验
+  3:176 request_quit 我不看了，退出展厅
+  3:188 request_quit 我不想待在展厅了，退出
+zh-g0047 (2) 这台车现在落地价大概要多少 / 这车多少钱
+  1:048 UNK 这台车现在落地价大概要多少
+  2:193 UNK 这车多少钱？
+zh-g0048 (1) 帮我查今天下午会下雨吗
+  1:049 UNK 帮我查一下今天下午会下雨吗
+zh-g0049 (1) 紫色的礼拜四把声音折起来
+  1:050 UNK 紫色的礼拜四把声音折起来
+zh-g0050 (8) 你好 / 嗨你好 / 哈喽你好 / 你好你好
+  1:051 greet 你好呀
+  1:101 greet 嗨，你好
+  1:151 greet 哈喽你好
+  1:152 greet 您好呀
+  1:302 greet 你好你好
+  2:001 greet 你好
+  2:002 greet 您好
+  2:007 greet 你好啊
+zh-g0051 (3) 下午好打扰 / 你好打扰
+  1:052 greet 下午好，打扰一下
+  1:351 greet 你好，打扰了
+  3:016 greet 您好，打扰了
+zh-g0052 (5) 行没问题 / 对的没问题 / 对没问题 / 好的没问题 / 好没问题
+  1:055 affirm 行，没问题
+  1:256 affirm 对的，没问题
+  1:355 affirm 对，没问题
+  1:407 affirm 好的，没问题
+  2:069 affirm 好，没问题
+zh-g0053 (9) 能 / 当然能 / 能能
+  1:057 affirm 可以的
+  1:255 affirm 嗯，可以
+  1:356 affirm 可以呀
+  1:405 affirm 嗯，可以呀
+  1:455 affirm 嗯嗯，可以
+  2:042 affirm 可以啊
+  2:047 affirm 可以
+  2:068 affirm 当然可以
+  3:062 affirm 可以可以
+zh-g0054 (5) 不是那个 / 不是我说的那个 / 不是我要的那个 / 不是这个 / 不是这个选项
+  1:059 deny 不是那个
+  1:109 deny 不是我说的那个
+  1:459 deny 不是我要的那个
+  2:083 deny 不是这个
+  2:098 deny 不是这个选项
+zh-g0055 (10) 完全不是 / 不是
+  1:060 deny 完全不是
+  1:158 deny 不是的
+  1:208 deny 不是呀
+  1:258 deny 不是的呀
+  1:310 deny 不是啦
+  2:071 deny 不是
+  2:080 deny 不是啊
+  2:095 deny 不是哦
+  3:083 deny 不是呢
+  3:096 deny 不是的呢
+zh-g0056 (3) 给我体验这台车功能 / 我想体验你们这儿功能演示 / 能给我体验这里功能
+  1:062 request_flow 带我感受一下这台车的功能吧
+  1:162 request_flow 我想看看你们这儿的功能演示
+  1:311 request_flow 能带我体验一下这里的功能吗
+zh-g0057 (14) 能演示F / 能体验F / F能体验 / F能演示
+  1:064 request_flow 能演示一下移动影院吗
+  1:315 request_flow 能体验一下车头大灯吗
+  2:243 request_flow 大灯能看吗
+  2:248 request_flow 能看看DLP灯吗
+  2:250 request_flow 车载影院可以看一下不
+  2:258 request_flow 座椅按摩能试一下吗
+  2:265 request_flow 隐私玻璃能看看吗
+  2:269 request_flow 能体验一下隐私窗吗
+  3:243 request_flow 能演示一下DLP车灯吗
+  3:246 request_flow DLP车灯可以看一下吗
+  3:256 request_flow 可以演示车载影院吗
+  3:258 request_flow 座椅按摩能试试吗
+  3:262 request_flow 可以看看按摩椅吗
+  3:265 request_flow 隐私玻璃能演示吗
+zh-g0058 (5) 我想体验TF / TF我想体验
+  1:066 request_flow 我想看看适合家庭的座舱影院
+  1:266 request_flow 我想体验一下适合全家的DLP大灯
+  1:416 request_flow 我想体验一下娱乐方向的移动影院
+  2:275 request_flow 适合家庭的座舱影院我想看
+  3:275 request_flow 我想看适合家庭的座舱影院
+zh-g0059 (9) 给我体验P演示 / 给我体验P功能 / 给我体验P功能演示 / P演示给我过一遍 / P给我体验 / P演示给我体验 / P那些功能给我体验
+  1:068 request_flow 让我看看外饰的演示吧
+  1:217 request_flow 带我体验一下座舱里的功能
+  1:319 request_flow 带我试试车外的功能演示
+  1:418 request_flow 给我看看座舱里的功能演示
+  2:285 request_flow 车内的演示给我过一遍
+  2:298 request_flow 外饰这边给我看看
+  3:282 request_flow 给我看看车内的功能
+  3:286 request_flow 车厢里的演示给我看看
+  3:301 request_flow 车外面那些功能给我看看
+zh-g0060 (16) 我想体验T功能 / 我想体验T功能演示 / 我想体验T演示 / T功能我想体验 / 我想体验T / T我想体验
+  1:069 request_flow 我想体验一下隐私方面的设计
+  1:121 request_flow 我想体验跟娱乐有关的配置
+  1:170 request_flow 我想看看适合全家人一起用的功能
+  1:220 request_flow 我想看看隐私相关的功能演示
+  1:270 request_flow 我想试试娱乐类的演示
+  1:320 request_flow 我想体验一下适合全家的配置
+  1:421 request_flow 我想看看适合一家人的配置演示
+  1:470 request_flow 我想试试跟娱乐有关的项目
+  2:309 request_flow 家庭功能我想看看
+  2:317 request_flow 我想看娱乐相关的功能
+  2:322 request_flow 我想体验娱乐类的
+  2:325 request_flow 我想体验隐私相关的功能
+  2:330 request_flow 私密的我想体验一下
+  3:311 request_flow 我想体验一下家庭方面的
+  3:321 request_flow 想看娱乐类的演示
+  3:326 request_flow 我想体验偏隐私的
+zh-g0061 (6) T功能有哪些能演示 / T能体验哪些 / T能演示哪些
+  1:070 request_flow 家用的功能有哪些能演示
+  2:318 request_flow 娱乐方面能试什么
+  2:323 request_flow 隐私相关能体验什么
+  3:309 request_flow 家用的能体验什么
+  3:317 request_flow 娱乐方面能演示什么
+  3:325 request_flow 隐私方面能演示什么
+zh-g0062 (7) 有T功能给我体验 / T功能能体验 / 有T演示 / 有T演示能体验 / T演示有 / 有T能体验 / 有T功能能体验
+  1:071 request_flow 有没有私密一点的功能让我试试
+  2:311 request_flow 家用功能能体验吗
+  2:312 request_flow 有适合家庭的演示吗
+  2:316 request_flow 有娱乐演示可以看吗
+  2:324 request_flow 私密的演示有吗
+  3:314 request_flow 有没有偏家庭的可以看
+  3:328 request_flow 有隐私功能可以看吗
+zh-g0063 (15) 给我体验PT功能演示 / 给我体验PT功能 / 能给我体验PT功能 / PT演示给我体验一个 / PT给我体验 / 给我体验PT演示 / PT功能给我体验
+  1:074 request_flow 给我看看外饰的娱乐功能演示
+  1:173 request_flow 给我看看车外适合家庭的功能吧
+  1:273 request_flow 给我试试车内的私密功能吧
+  1:324 request_flow 能给我试试座舱里偏家用的功能吗
+  1:424 request_flow 给我体验一下座舱里有关隐私的配置
+  1:474 request_flow 能给我看看内饰里的家用功能吗
+  2:343 request_flow 内饰的隐私演示给我看一个
+  2:352 request_flow 外饰娱乐相关的给我看看
+  3:331 request_flow 给我看看车内适合家庭的功能
+  3:337 request_flow 给我看看座舱里的娱乐演示
+  3:340 request_flow 帮我看看座舱内的娱乐功能
+  3:342 request_flow 给我看看座舱里偏私密的功能
+  3:347 request_flow 给我看看外饰的家庭功能
+  3:352 request_flow 给我看看外饰方面娱乐的演示
+  3:356 request_flow 车外的隐私功能给我看看
+zh-g0064 (17) 我是N / 我就是N
+  1:075 inform 我是赵敏
+  1:176 inform 我是小宋
+  1:226 inform 我是Jason
+  1:275 inform 我是宋佳
+  1:476 inform 我是白露
+  2:362 inform 我是张强
+  2:366 inform 我是刘洋
+  2:370 inform 我是林雪
+  2:377 inform 我就是陈浩
+  3:362 inform 我是彭飞
+  3:366 inform 我是蔡文
+  3:369 inform 我是薛燕
+  3:371 inform 我是潘晓
+  3:375 inform 我是田甜
+  3:377 inform 我是Mike
+  3:380 inform 我是沈悦
+  3:383 inform 我是Anna
+zh-g0065 (10) 来C / 我要C / 给我C
+  1:079 inform 来第五个吧
+  1:128 inform 我要第七个
+  1:229 inform 我要选项九
+  1:429 inform 我要6号
+  1:478 inform 我要第九个
+  2:450 inform 我要第8个
+  3:408 inform 给我选项三
+  3:410 inform 我要选项五
+  3:419 inform 我要9号
+  3:420 inform 给我10号
+zh-g0066 (2) 我想了解是F
+  1:080 inform 我想了解的是大灯
+  1:380 inform 我想了解的是隐私玻璃
+zh-g0067 (4) 体验P / 能体验P
+  1:082 request_flow 先看内饰这块的
+  1:283 request_flow 先看车内部分
+  3:288 request_flow 能体验一下车内的吗
+  3:302 request_flow 可以体验外饰吗
+zh-g0068 (5) 选P
+  1:083 inform 我选外饰部分
+  1:433 inform 选座舱里的吧
+  1:482 inform 我选座舱里的
+  3:446 inform 我选内饰
+  3:453 inform 我选外饰
+zh-g0069 (2) 我对T比较有兴趣 / 我对T感兴趣
+  1:084 inform 我对娱乐类的比较有兴趣
+  1:484 inform 我对家用方向比较感兴趣
+zh-g0070 (17) 我喜欢PT功能 / 我偏爱PT功能 / PT功能我喜欢 / PT我喜欢 / 我喜欢PT
+  1:086 inform 我喜欢座舱里偏娱乐的设计
+  1:136 inform 我比较喜欢内饰里适合全家的配置
+  1:187 inform 我偏爱外饰里偏向娱乐的设计
+  1:237 inform 我更喜欢外饰的娱乐配置
+  1:286 inform 我更喜欢内饰里的娱乐功能
+  1:386 inform 我更喜欢车内适合全家的功能
+  1:486 inform 我比较喜欢车内偏家用的配置
+  1:487 inform 外饰里偏私密的设计我更喜欢
+  2:468 inform 我喜欢内饰的家庭功能
+  2:472 inform 车内的隐私我更喜欢
+  3:471 inform 我更喜欢车内适合家庭的功能
+  3:473 inform 我喜欢座舱里的隐私功能
+  3:476 inform 我更喜欢车外的隐私
+  3:479 inform 我喜欢车内偏私密的
+  3:482 inform 我更喜欢内饰的娱乐功能
+  3:485 inform 我喜欢外饰适合家庭的
+  3:488 inform 我更喜欢车里适合全家的
+zh-g0071 (5) PT功能更合我意 / PT那种比较好 / PT比较合我心意 / PT比较好 / TP比较好
+  1:087 inform 车外适合家用的配置更合我意
+  1:137 inform 座舱里偏隐私的那种比较好
+  1:287 inform 座舱里适合家庭的比较合我心意
+  2:463 inform 内饰私密的比较好
+  2:471 inform 娱乐的外饰比较好
+zh-g0072 (2) PF更吸引我 / P那个F我感兴趣
+  1:088 inform 车内的移动影院更吸引我
+  1:388 inform 车内那个座椅按摩我挺感兴趣的
+zh-g0073 (7) 把正在放的演示暂停 / 把正在播放的演示停 / 把正在播放的演示暂停 / 把正在进行的演示暂停 / 把正在演示的暂停
+  1:089 request_stop 把正在放的演示暂停一下
+  1:289 request_stop 先把正在播放的演示停一下
+  1:341 request_stop 麻烦把正在播放的演示暂停
+  1:391 request_stop 请把正在播放的演示暂停一下
+  2:120 request_stop 把正在进行的演示暂停
+  3:104 request_stop 把正在放的演示暂停
+  3:129 request_stop 把正在演示的暂停
+zh-g0074 (15) 这个功能演示先停 / 当前这个演示先暂停 / 演示暂停 / 这个演示先停 / 演示先暂停 / 当前演示先暂停 / 当前这个演示暂停 / 演示先停 / 这个演示先暂停 / 演示暂时停 / 当前演示先停 / 当前演示请暂停
+  1:090 request_stop 这个功能演示先停一停
+  1:141 request_stop 当前这个演示先暂停
+  1:290 request_stop 演示暂停一下吧
+  1:390 request_stop 这个演示先停一停
+  2:108 request_stop 演示先暂停一下
+  2:111 request_stop 当前演示先暂停
+  2:118 request_stop 当前这个演示暂停一下
+  2:121 request_stop 演示先停一下
+  2:125 request_stop 这个演示先暂停
+  2:127 request_stop 演示暂时停一下
+  3:105 request_stop 演示先暂停一下吧
+  3:108 request_stop 当前演示先停一下
+  3:113 request_stop 演示先暂停
+  3:120 request_stop 演示先停停
+  3:127 request_stop 当前演示请暂停
+zh-g0075 (18) 暂停当前的演示 / 暂停现在的演示 / 停现在这个功能演示 / 暂停这段演示 / 暂停这部分的演示 / 暂停这个功能演示 / 暂停当前演示 / 暂停演示 / 暂停这个演示 / 停住这个演示 / 暂停当前这个演示 / 暂停播放当前演示 / 停这个演示 / 停当前的演示
+  1:091 request_stop 麻烦暂停当前的演示
+  1:139 request_stop 先暂停现在的演示
+  1:190 request_stop 先停一下现在这个功能演示
+  1:239 request_stop 麻烦暂停一下这段演示
+  1:291 request_stop 请暂停这部分的演示
+  1:340 request_stop 先暂停这个功能演示吧
+  2:104 request_stop 暂停当前演示
+  2:107 request_stop 暂停演示
+  2:112 request_stop 暂停一下这个演示
+  2:116 request_stop 先停住这个演示
+  2:119 request_stop 先暂停当前这个演示
+  2:123 request_stop 暂停播放当前演示
+  2:130 request_stop 暂停一下当前的演示
+  3:103 request_stop 先停一下这个演示
+  3:110 request_stop 先暂停这个演示
+  3:114 request_stop 请先暂停演示
+  3:122 request_stop 先暂停一下当前这个演示
+  3:128 request_stop 停一下当前的演示
+zh-g0076 (3) 从刚才停下的地方继续演示 / 接着刚才的进度继续演示
+  1:092 request_resume 从刚才停下的地方继续演示吧
+  1:444 request_resume 接着刚才的进度继续演示
+  2:160 request_resume 从刚才停下的地方继续演示
+zh-g0077 (3) 把暂停的演示重新放起来 / 把暂停的演示恢复
+  1:093 request_resume 把暂停的演示重新放起来
+  1:443 request_resume 把暂停的演示重新放起来吧
+  3:144 request_resume 把暂停的演示恢复
+zh-g0078 (4) 继续播放刚才那个功能演示 / 继续播放刚才暂停的演示 / 继续播放刚才的 / 继续播放刚才暂停的
+  1:094 request_resume 继续播放刚才那个功能演示
+  1:392 request_resume 继续播放刚才暂停的演示
+  2:146 request_resume 继续播放刚才的
+  3:152 request_resume 继续播放刚才暂停的
+zh-g0079 (5) 我要结束整个展厅的体验 / 我想结束这次展厅体验 / 我想结束整个展厅的体验 / 我要结束整个体验
+  1:095 request_quit 我要结束整个展厅的体验了
+  1:195 request_quit 我想结束这次展厅体验
+  1:346 request_quit 我想结束整个展厅的体验
+  1:495 request_quit 我想结束这次展厅体验了
+  3:172 request_quit 我要结束整个体验
+zh-g0080 (17) 直接退出这次展厅互动 / 退出整个展厅体验系统 / 退出这次的展厅体验流程 / 直接退出整个展厅演示系统 / 退出本次体验 / 退出展厅体验 / 退出整个体验 / 退出展厅 / 退出这次展厅体验 / 退出整个展厅体验 / 退出当前这场体验 / 退出这次体验 / 退出这次的展厅体验 / 退出全部体验
+  1:096 request_quit 直接退出这次展厅互动吧
+  1:245 request_quit 现在退出整个展厅体验系统吧
+  1:345 request_quit 退出这次的展厅体验流程吧
+  1:496 request_quit 直接退出整个展厅演示系统吧
+  2:161 request_quit 退出本次体验
+  2:164 request_quit 退出展厅体验
+  2:166 request_quit 退出整个体验
+  2:169 request_quit 退出展厅
+  2:174 request_quit 退出这次展厅体验
+  2:176 request_quit 退出整个展厅体验
+  2:184 request_quit 退出当前这场体验
+  3:161 request_quit 退出这次体验
+  3:164 request_quit 退出展厅体验吧
+  3:173 request_quit 退出这次的展厅体验
+  3:177 request_quit 退出全部体验吧
+  3:189 request_quit 请退出这次展厅体验
+  3:190 request_quit 麻烦退出整个体验
+zh-g0081 (1) 这车百公里加速是几秒
+  1:098 UNK 这车百公里加速是几秒啊
+zh-g0082 (4) 帮我导航去最近的加油站 / 帮我导航到最近的地铁站 / 导航去机场 / 帮我导航去机场
+  1:099 UNK 帮我导航去最近的加油站
+  1:199 UNK 帮我导航到最近的地铁站
+  2:196 UNK 导航去机场
+  3:194 UNK 帮我导航去机场
+zh-g0083 (6) 窗户在日历上面跳舞 / 咖啡杯在云朵里写字 / 十点钟的螺丝刀在喝橘子汁 / 十九只拖鞋在天花板上游泳 / 八块石头在收音机里种花 / 柠檬味的楼梯在口袋里游泳
+  1:100 UNK 窗户在日历上面跳舞呢
+  1:150 UNK 咖啡杯在云朵里写字
+  1:250 UNK 十点钟的螺丝刀在喝橘子汁
+  1:300 UNK 十九只拖鞋在天花板上游泳
+  1:400 UNK 八块石头在收音机里种花
+  1:500 UNK 柠檬味的楼梯在口袋里游泳
+zh-g0084 (9) 对 / 对对对
+  1:105 affirm 嗯嗯，对的
+  1:156 affirm 对的呀
+  1:205 affirm 对呀
+  1:306 affirm 嗯，对
+  2:041 affirm 对的
+  2:048 affirm 对
+  3:055 affirm 对啊
+  3:060 affirm 嗯嗯，对
+  3:061 affirm 对对对
+zh-g0085 (4) 没问题
+  1:106 affirm 没问题呀
+  1:157 affirm 嗯，没问题
+  2:051 affirm 没问题
+  2:063 affirm 没问题的
+zh-g0086 (7) 给我介绍几个能体验功能 / 给我演示能体验功能 / 给我介绍能体验 / 我想了解能体验功能 / 演示能体验功能 / 我想了解能体验哪些
+  1:111 request_flow 先给我介绍几个能体验的功能吧
+  1:362 request_flow 先给我展示一下可以体验的项目吧
+  2:226 request_flow 给我介绍一下可以体验的
+  2:237 request_flow 我想了解能体验的功能
+  3:226 request_flow 给我介绍一下能体验的
+  3:232 request_flow 展示一下可以体验的功能
+  3:233 request_flow 我想了解能体验什么
+zh-g0087 (9) 这里能体验哪些功能 / 这台车有哪些功能能现场体验 / 能体验哪些 / 展厅里能体验些哪些 / 今天能体验哪些 / 这里有哪些能体验 / 能演示哪些 / 能体验哪些演示
+  1:112 request_flow 这里可以体验什么项目呀
+  1:212 request_flow 这台车有什么功能可以现场体验
+  2:222 request_flow 能体验什么
+  2:225 request_flow 展厅里能体验些什么
+  2:233 request_flow 今天能体验什么
+  2:235 request_flow 这里有什么可以看的
+  3:222 request_flow 能演示什么
+  3:227 request_flow 现在可以看什么演示
+  3:235 request_flow 可以体验哪些
+zh-g0088 (3) 我想体验F是怎么工作 / 给我体验F是怎么工作 / 给我体验F怎么用
+  1:113 request_flow 我想看看隐私玻璃是怎么工作的
+  1:214 request_flow 给我看看按摩座椅是怎么工作的
+  1:414 request_flow 给我看看座椅按摩怎么用
+zh-g0089 (11) 给我体验P有哪些亮点功能 / 体验P有哪些能演示 / 我想体验P有哪些亮点演示 / 给我体验P有哪些能体验 / 我想体验P有哪些能体验 / 我想体验P有哪些可体验 / 给我体验P能玩哪些 / 我想体验P有哪些功能 / 我想体验P有哪些 / 我想体验P能演示哪些 / 体验P有哪些功能
+  1:117 request_flow 带我看看车内有哪些亮点功能
+  1:168 request_flow 先看看车外有哪些可以演示的
+  1:218 request_flow 我想看看车内有哪些亮点演示
+  1:267 request_flow 给我看看内饰有什么可以体验的
+  1:318 request_flow 我想看看内饰有哪些能体验的
+  1:467 request_flow 我想看看车内有什么可体验的
+  3:290 request_flow 帮我看看座舱里能玩什么
+  3:292 request_flow 我想看看车里有哪些功能
+  3:295 request_flow 想体验车外的，有哪些
+  3:300 request_flow 我想看车外能演示啥
+  3:305 request_flow 看看车外有什么功能
+zh-g0090 (8) P能演示些哪些 / P能体验哪些 / 跟P相关能体验哪些 / P能演示哪些 / P能体验点哪些
+  1:118 request_flow 外饰部分能演示些什么
+  2:284 request_flow 座舱里能体验什么
+  2:288 request_flow 车内可以体验哪些呀
+  2:295 request_flow 外饰能演示些什么
+  2:299 request_flow 车外可以体验什么呢
+  2:305 request_flow 跟外饰相关的可以看什么
+  3:291 request_flow 车内可以演示什么呀
+  3:296 request_flow 外饰可以看点什么
+zh-g0091 (11) 能给我体验T功能 / 给我体验T功能 / T能体验给我体验 / T先给我体验 / 给我体验T演示
+  1:120 request_flow 能给我看看适合家庭的功能吗
+  1:171 request_flow 带我体验一下休闲娱乐类的功能
+  1:369 request_flow 给我看看跟隐私有关的功能吧
+  1:371 request_flow 带我试试影音娱乐类的功能
+  1:471 request_flow 带我看看隐私保护相关的功能
+  2:313 request_flow 全家能体验的给我看看
+  2:327 request_flow 隐私相关的先给我看看
+  3:307 request_flow 给我看看家庭相关的功能
+  3:316 request_flow 给我看看娱乐功能
+  3:324 request_flow 给我看看私密一点的功能
+  3:330 request_flow 帮我看看隐私相关的演示
+zh-g0092 (24) P有T功能能体验 / PT功能能演示 / PT能用演示有 / P有T / PT能体验 / P有T适用演示 / 有PT演示 / P那些T能体验 / PT这块有演示 / P有T功能吗我想体验 / P有T演示 / P有T能体验 / PT演示有 / P能体验T / PT功能能体验
+  1:122 request_flow 车内有没有关于私密的功能可以体验
+  1:224 request_flow 车外适合家用的配置能演示一下吗
+  2:332 request_flow 内饰里全家能用的演示有吗
+  2:337 request_flow 内饰有娱乐相关的吗
+  2:341 request_flow 车内隐私相关的能体验吗
+  2:342 request_flow 座舱里有私密功能可以看吗
+  2:347 request_flow 外饰有全家适用的演示吗
+  2:350 request_flow 有没有外饰方面的家庭演示
+  2:351 request_flow 车外那些娱乐的能体验吗
+  2:355 request_flow 外饰有没有娱乐功能可以体验的
+  2:356 request_flow 车外隐私这块有演示吗
+  2:359 request_flow 车外有私密功能吗我想体验
+  3:333 request_flow 座舱里有适合全家的演示吗
+  3:335 request_flow 车内有适合家庭的演示吗
+  3:336 request_flow 座舱里有没有娱乐的可以体验
+  3:341 request_flow 车内有隐私相关的可以体验吗
+  3:343 request_flow 内饰方面的隐私演示有吗
+  3:345 request_flow 座舱内有没有私密的可以体验
+  3:348 request_flow 车外面有适合全家的演示吗
+  3:351 request_flow 车外能体验娱乐相关的吗
+  3:353 request_flow 车外面有娱乐演示吗
+  3:355 request_flow 外饰的娱乐功能可以看一下吗
+  3:357 request_flow 外饰有私密相关的演示吗
+  3:358 request_flow 有没有车外偏隐私的演示
+zh-g0093 (7) 选F
+  1:131 inform 我想选私密车窗
+  1:181 inform 我选移动影院
+  1:281 inform 我想选车载影院
+  1:331 inform 我选前大灯
+  1:430 inform 我想选座舱影院
+  2:390 inform 我选大灯
+  3:440 inform 我选隐私玻璃
+zh-g0094 (2) 我想看P
+  1:132 inform 我更想看车内的
+  1:332 inform 我更想看车外的
+zh-g0095 (1) 优先体验T
+  1:134 request_flow 优先看隐私相关的
+zh-g0096 (2) 我叫N偏好P功能 / 我叫N喜欢P
+  1:138 inform 我叫周航，更偏好车内的配置
+  2:486 inform 我叫陈晨，更喜欢车内的
+zh-g0097 (9) 把演示先停 / 把演示暂停 / 把演示先按暂停 / 帮我把演示暂停 / 把演示先停住 / 把演示停
+  1:140 request_stop 把演示先停一下吧
+  1:189 request_stop 麻烦把演示暂停一下
+  1:241 request_stop 把演示先按暂停吧
+  2:105 request_stop 把演示暂停一下
+  2:110 request_stop 先把演示暂停
+  2:117 request_stop 帮我把演示暂停
+  2:129 request_stop 把演示先停住
+  3:111 request_stop 把演示停一下吧
+  3:116 request_stop 先把演示暂停了
+zh-g0098 (2) 把演示恢复播放 / 把演示重新恢复播放
+  1:143 request_resume 把演示恢复播放吧
+  1:343 request_resume 把演示重新恢复播放吧
+zh-g0099 (3) 咱们接着刚才的演示往下看 / 咱们接着把刚才的演示看完 / 接着把刚才的演示放完
+  1:144 request_resume 咱们接着刚才的演示往下看
+  1:344 request_resume 咱们接着把刚才的演示看完
+  3:160 request_resume 接着把刚才的演示放完
+zh-g0100 (7) 帮我退出整个展厅体验 / 直接帮我退出展厅体验 / 帮我退出本次体验 / 帮我退出展厅 / 帮我退出这次展厅体验 / 帮我退出体验
+  1:145 request_quit 帮我退出整个展厅体验
+  1:347 request_quit 直接帮我退出展厅体验吧
+  2:168 request_quit 帮我退出本次体验
+  2:173 request_quit 帮我退出展厅
+  2:186 request_quit 请帮我退出展厅
+  3:166 request_quit 帮我退出这次展厅体验
+  3:170 request_quit 请帮我退出体验
+zh-g0101 (3) 今天先逛到这退出展厅体验 / 今天先逛到这儿退出展厅体验 / 今天体验得差不多了退出系统
+  1:146 request_quit 今天先逛到这，退出展厅体验吧
+  1:247 request_quit 今天先逛到这儿，退出展厅体验吧
+  1:447 request_quit 今天体验得差不多了，退出系统吧
+zh-g0102 (1) 订车大概多久能提车
+  1:148 UNK 现在订车大概多久能提车
+zh-g0103 (3) 给我放一首周杰伦的歌 / 播放周杰伦的歌 / 播放一首轻音乐
+  1:149 UNK 给我放一首周杰伦的歌
+  2:198 UNK 播放周杰伦的歌
+  3:216 UNK 播放一首轻音乐
+zh-g0104 (3) 好呀能 / 好能 / 好的能
+  1:155 affirm 好呀，可以
+  1:305 affirm 好，可以的
+  2:058 affirm 好的，可以
+zh-g0105 (4) 没这回事不对 / 没这回事 / 不是这回事 / 没有这回事
+  1:160 deny 没这回事，不对
+  1:309 deny 没这回事
+  1:409 deny 不是这回事
+  2:094 deny 没有这回事
+zh-g0106 (3) 给我演示这车有哪些好玩 / 给我演示这车主打功能 / 给我演示这台车特色功能
+  1:161 request_flow 给我展示一下这车有什么好玩的
+  1:262 request_flow 给我展示一下这车的主打功能吧
+  1:461 request_flow 给我演示一下这台车的特色功能吧
+zh-g0107 (9) 给我演示F / F给我演示 / F体验 / 演示F / F演示
+  1:163 request_flow 给我演示一下车载影院
+  1:363 request_flow 给我演示一下DLP大灯
+  2:242 request_flow DLP车灯给我演示一下
+  2:257 request_flow 按摩座椅体验一下
+  3:248 request_flow 麻烦演示一下DLP大灯
+  3:252 request_flow 演示座舱影院吧
+  3:259 request_flow 给我演示一下按摩座椅
+  3:263 request_flow 座椅按摩演示一下
+  3:268 request_flow 演示隐私车窗
+zh-g0108 (4) 给我体验PF / 给我演示PF / PF给我体验
+  1:166 request_flow 带我试试车外的隐私车窗
+  1:216 request_flow 给我演示一下车外的隐私玻璃
+  2:271 request_flow 车外的DLP大灯给我看看
+  3:272 request_flow 给我看看车内的座舱影院
+zh-g0109 (1) 我对P感兴趣
+  1:182 inform 我对座舱里的比较感兴趣
+zh-g0110 (3) 我更看重T / 我更关注T / 我对T比较在意
+  1:185 inform 我更看重隐私
+  1:235 inform 我更关注私密性
+  1:284 inform 我对隐私方面比较在意
+zh-g0111 (2) PT功能我想了解 / PT功能我想看
+  1:186 inform 车内关于隐私的配置我更想了解
+  1:336 inform 车内关于隐私的配置我更想看
+zh-g0112 (2) 我对TF感兴趣 / TF我感兴趣
+  1:188 inform 我对娱乐方向的按摩座椅很感兴趣
+  1:338 inform 适合家庭的座舱影院我挺感兴趣的
+zh-g0113 (3) 演示先暂停我缓一缓 / 演示先暂停我系个鞋带 / 演示先暂停我看
+  1:191 request_stop 演示先暂停，我缓一缓
+  1:491 request_stop 演示先暂停，我系个鞋带
+  3:126 request_stop 演示先暂停，我看一下
+zh-g0114 (2) 能继续刚才的演示 / 能接着播放刚才的演示
+  1:192 request_resume 可以继续刚才的演示了
+  1:492 request_resume 可以接着播放刚才的演示了
+zh-g0115 (4) 重新恢复刚才的演示 / 恢复刚才的演示
+  1:194 request_resume 重新恢复刚才的演示
+  1:244 request_resume 现在恢复刚才的演示吧
+  3:135 request_resume 恢复刚才的演示
+  3:149 request_resume 恢复一下刚才的演示
+zh-g0116 (6) 关闭并退出整个展厅体验 / 我要结束并退出这次展厅体验 / 结束并退出这次展厅体验 / 我想直接结束并退出展厅体验 / 我要结束展厅体验并退出 / 我想结束并退出这次体验
+  1:196 request_quit 请关闭并退出整个展厅体验
+  1:246 request_quit 我要结束并退出这次展厅体验
+  1:396 request_quit 结束并退出这次展厅体验吧
+  1:445 request_quit 我想直接结束并退出展厅体验
+  2:182 request_quit 我要结束展厅体验并退出
+  2:190 request_quit 我想结束并退出这次体验
+zh-g0117 (1) 你们店里现在有分期免息活动吗
+  1:198 UNK 你们店里现在有分期免息活动吗
+zh-g0118 (1) 橘子味的雨刷器正在算数
+  1:200 UNK 橘子味的雨刷器正在算数
+zh-g0119 (2) 给我来个功能演示体验 / 给我安排个体验
+  1:211 request_flow 先给我来个功能演示看看
+  3:239 request_flow 给我安排个体验
+zh-g0120 (3) 我偏好P
+  1:232 inform 我更偏向内饰
+  2:412 inform 我偏向车外
+  2:416 inform 我偏好内饰
+zh-g0121 (3) 我是N想选T功能 / 我是N想要T / 我叫N偏好T
+  1:238 inform 我是阿杰，想选适合全家的功能
+  2:487 inform 我是高远，想要娱乐的
+  2:490 inform 我叫许娜，偏好隐私
+zh-g0122 (7) 停正在放的演示 / 暂停正在播的演示 / 停正在放的功能演示 / 暂停正在看的演示 / 暂停正在进行的演示 / 暂停播放中的演示
+  1:240 request_stop 先停一停正在放的演示
+  1:440 request_stop 暂停一下正在播的演示
+  1:490 request_stop 先停一下正在放的功能演示
+  2:128 request_stop 先暂停正在看的演示
+  3:112 request_stop 先暂停正在进行的演示
+  3:117 request_stop 暂停一下正在看的演示
+  3:119 request_stop 先暂停播放中的演示
+zh-g0123 (6) 把演示接着放完 / 把暂停的那个演示继续放完 / 把演示继续 / 把演示接着放 / 把演示继续播放 / 接着把演示放下去
+  1:243 request_resume 把演示接着放完
+  1:493 request_resume 把暂停的那个演示继续放完吧
+  2:135 request_resume 把演示继续一下
+  2:143 request_resume 把演示接着放
+  2:151 request_resume 把演示继续播放
+  3:142 request_resume 接着把演示放下去
+zh-g0124 (1) 问洗手间往哪边走
+  1:248 UNK 请问洗手间往哪边走
+zh-g0125 (2) 这车的电池质保是几年 / 这车保修几年
+  1:249 UNK 这车的电池质保是几年
+  2:210 UNK 这车保修几年
+zh-g0126 (1) 跟你想的不一样不对
+  1:260 deny 跟你想的不一样，不对
+zh-g0127 (2) 我想了解是P功能 / 我想优先了解是P功能
+  1:282 inform 我想了解的是外饰方面的功能
+  1:483 inform 我想优先了解的是车外的功能
+zh-g0128 (2) 我叫N想看C / 我姓N要C
+  1:288 inform 我叫林峰，想看第2个
+  2:489 inform 我姓赵，要第二个
+zh-g0129 (3) 继续播放当前的演示 / 继续当前演示 / 继续当前的演示
+  1:293 request_resume 继续播放当前的演示
+  2:144 request_resume 继续当前演示
+  3:146 request_resume 继续当前的演示
+zh-g0130 (6) 好了接着刚才的演示 / 接着放刚才的演示 / 接着刚才的演示 / 接着刚才那个继续放 / 接着看刚才的演示 / 继续看刚才的演示
+  1:294 request_resume 好了，接着刚才的演示吧
+  2:131 request_resume 接着放刚才的演示
+  2:140 request_resume 接着刚才的演示
+  2:154 request_resume 接着刚才那个继续放
+  3:143 request_resume 接着看刚才的演示
+  3:158 request_resume 继续看刚才的演示
+zh-g0131 (1) 这台车后备箱能放下几个行李箱
+  1:298 UNK 这台车后备箱能放下几个行李箱
+zh-g0132 (2) 帮我给家里人打个电话 / 帮我给王总打个电话
+  1:299 UNK 帮我给家里人打个电话
+  1:349 UNK 帮我给王总打个电话
+zh-g0133 (3) 一点没错 / 没错
+  1:307 affirm 一点没错
+  2:045 affirm 没错
+  3:064 affirm 没错啊
+zh-g0134 (2) 不对不是这个 / 不对不是那样子
+  1:308 deny 不对，不是这个
+  1:408 deny 不对，不是那样子的
+zh-g0135 (3) 我想体验PTF
+  1:316 request_flow 我想体验车内娱乐类的车载影院
+  1:466 request_flow 我想体验车外适合家庭的DLP车灯
+  3:279 request_flow 我想体验车内适合家庭的座舱影院
+zh-g0136 (5) 我喜欢T
+  1:334 inform 我比较喜欢适合全家的
+  2:422 inform 我喜欢娱乐
+  3:457 inform 我更喜欢家庭
+  3:461 inform 我喜欢私密的
+  3:466 inform 我更喜欢隐私
+zh-g0137 (3) 我偏好PT功能
+  1:337 inform 我倾向于外饰里适合家庭的功能
+  2:461 inform 我更倾向于车内适合家庭的功能
+  2:464 inform 我偏好座舱里的家用功能
+zh-g0138 (1) 买车送家用充电桩吗
+  1:348 UNK 现在买车送家用充电桩吗
+zh-g0139 (1) 绿色的闹钟把窗户吃掉
+  1:350 UNK 绿色的闹钟把窗户吃掉了
+zh-g0140 (3) T比较合我意 / T比较好
+  1:385 inform 适合家用的比较合我意
+  2:429 inform 娱乐比较好
+  2:434 inform 隐私比较好
+zh-g0141 (2) 问附近哪里有充电站 / 附近有充电桩吗
+  1:398 UNK 请问附近哪里有充电站
+  2:205 UNK 附近有充电桩吗？
+zh-g0142 (2) 这台车最快什么时候能预约道路试驾 / 帮我预约试驾
+  1:399 UNK 这台车最快什么时候能预约道路试驾
+  2:203 UNK 帮我预约试驾
+zh-g0143 (2) 对没错 / 没错对
+  1:406 affirm 对，没错
+  1:456 affirm 没错，对的
+zh-g0144 (8) 给我体验能体验些哪些 / 我想体验有哪些功能 / 给我体验有哪些能体验 / 体验有哪些演示 / 这边有哪些演示 / 我想体验有哪些演示
+  1:411 request_flow 带我看看都能体验些什么吧
+  2:224 request_flow 我想看看有什么功能
+  2:232 request_flow 帮我看看有什么可以试
+  2:238 request_flow 先看看有什么演示
+  3:223 request_flow 我想看看有哪些功能
+  3:234 request_flow 这边有什么演示
+  3:236 request_flow 帮我看看有什么能体验的
+  3:240 request_flow 想看看有哪些演示
+zh-g0145 (1) 有哪些热门功能演示推荐
+  1:412 request_flow 有什么热门的功能演示推荐吗
+zh-g0146 (3) 我喜欢P
+  1:432 inform 我比较喜欢车内的
+  2:407 inform 我更喜欢车内
+  3:449 inform 我更喜欢车外
+zh-g0147 (4) 我是N喜欢PT功能 / 我叫N喜欢PT / 我是N要PT / 我叫N偏好PT
+  1:438 inform 我是叶琳，更喜欢车内的娱乐功能
+  2:498 inform 我叫彭飞，喜欢车内家庭的
+  2:499 inform 我是Anna，要外饰娱乐的
+  2:500 inform 我叫韩雪，偏好座舱里私密的
+zh-g0148 (1) 这车的轮胎是什么品牌的
+  1:448 UNK 这车的轮胎是什么品牌的
+zh-g0149 (1) 帮我查附近有没有停车场
+  1:449 UNK 帮我查一下附近有没有停车场
+zh-g0150 (1) 方格子的风把枕头吹成了字典
+  1:450 UNK 方格子的风把枕头吹成了字典
+zh-g0151 (1) 选T
+  1:485 inform 选私密性好一点的
+zh-g0152 (3) 恢复当前的演示 / 恢复播放演示 / 恢复演示播放
+  1:494 request_resume 恢复当前的演示吧
+  3:140 request_resume 恢复播放演示
+  3:154 request_resume 恢复演示播放
+zh-g0153 (1) 这台车的购置税大概得交多少
+  1:498 UNK 这台车的购置税大概得交多少
+zh-g0154 (1) 帮我查今天北京的限行尾号
+  1:499 UNK 帮我查一下今天北京的限行尾号
+zh-g0155 (1) 嗨
+  2:003 greet 嗨
+zh-g0156 (1) 嘿
+  2:009 greet 嘿
+zh-g0157 (1) 大家好
+  2:010 greet 大家好
+zh-g0158 (1) 哈喽
+  2:011 greet 哈喽
+zh-g0159 (4) 你好我到 / 你好我来 / 嗨我来
+  2:014 greet 您好，我到了
+  2:019 greet 你好，我来了
+  3:012 greet 你好，我到了
+  3:019 greet 嗨，我来了
+zh-g0160 (1) 小周你好
+  2:016 greet 小周你好
+zh-g0161 (1) 很高兴见到你
+  2:017 greet 很高兴见到你
+zh-g0162 (1) 早上好我姓N
+  2:031 greet 早上好我姓陈
+zh-g0163 (3) 行
+  2:046 affirm 行
+  3:056 affirm 行吧
+  3:065 affirm 行啊
+zh-g0164 (4) 同意 / 我同意 / 我赞成 / 完全同意
+  2:052 affirm 同意
+  2:061 affirm 我同意
+  2:064 affirm 我赞成
+  2:067 affirm 完全同意
+zh-g0165 (1) 就这么定
+  2:054 affirm 就这么定
+zh-g0166 (1) 没意见
+  2:055 affirm 没意见
+zh-g0167 (1) 嗯
+  2:056 affirm 嗯
+zh-g0168 (1) 说得对
+  2:057 affirm 说得对
+zh-g0169 (4) 不行 / 不行不行
+  2:073 deny 不行
+  2:081 deny 不行啊
+  2:086 deny 不行的
+  3:088 deny 不行不行
+zh-g0170 (3) 没有
+  2:075 deny 没有
+  3:082 deny 没有啊
+  3:095 deny 没有呢
+zh-g0171 (5) 不同意 / 我不同意 / 我不同意这个
+  2:077 deny 不同意
+  2:084 deny 我不同意
+  2:093 deny 不同意的
+  3:092 deny 我不同意这个
+  3:099 deny 不同意啊
+zh-g0172 (1) 不
+  2:082 deny 不
+zh-g0173 (1) 不认可
+  2:087 deny 不认可
+zh-g0174 (1) 不是这个意思
+  2:088 deny 不是这个意思
+zh-g0175 (1) 我不要这个
+  2:090 deny 我不要这个
+zh-g0176 (1) 我不接受
+  2:096 deny 我不接受
+zh-g0177 (1) 我反对
+  2:099 deny 我反对
+zh-g0178 (5) 暂停先 / 暂停
+  2:101 request_stop 暂停一下先
+  2:102 request_stop 暂停
+  2:103 request_stop 暂停一下
+  2:106 request_stop 先暂停
+  3:101 request_stop 先暂停一下
+zh-g0179 (3) 帮我暂停演示 / 帮我暂停当前演示 / 帮我停当前演示
+  2:109 request_stop 帮我暂停一下演示
+  2:126 request_stop 帮我暂停当前演示
+  3:118 request_stop 帮我停一下当前演示
+zh-g0180 (2) 我想暂停 / 我想先暂停演示
+  2:113 request_stop 我想暂停一下。
+  2:122 request_stop 我想先暂停演示
+zh-g0181 (2) 让演示停 / 让演示暂停
+  2:115 request_stop 先让演示停一下
+  3:124 request_stop 先让演示暂停
+zh-g0182 (1) 继续
+  2:132 request_resume 继续
+zh-g0183 (1) 接着放
+  2:133 request_resume 接着放
+zh-g0184 (7) 继续演示 / 接着演示 / 帮我继续演示 / 帮我接着放演示 / 接着播放演示 / 继续播放演示
+  2:134 request_resume 继续演示
+  2:137 request_resume 接着演示
+  2:142 request_resume 帮我继续演示
+  2:149 request_resume 帮我接着放演示
+  2:158 request_resume 接着播放演示
+  3:133 request_resume 继续演示吧
+  3:137 request_resume 继续播放演示
+zh-g0185 (1) 继续播放
+  2:138 request_resume 继续播放
+zh-g0186 (3) 演示继续 / 演示接着放 / 演示继续播放
+  2:141 request_resume 演示继续一下
+  2:155 request_resume 演示接着放
+  3:147 request_resume 演示继续播放
+zh-g0187 (3) 我想继续刚才的演示 / 我想接着看刚才的演示 / 我想继续这个演示
+  2:145 request_resume 我想继续刚才的演示
+  2:153 request_resume 我想接着看刚才的演示
+  2:159 request_resume 我想继续这个演示
+zh-g0188 (5) 刚才的演示继续 / 刚才的演示接着放 / 刚才暂停的接着放 / 刚才那个继续演示 / 暂停的演示继续
+  2:148 request_resume 刚才的演示继续一下
+  3:138 request_resume 刚才的演示接着放
+  3:145 request_resume 刚才暂停的接着放
+  3:153 request_resume 刚才那个，继续演示
+  3:159 request_resume 暂停的演示继续一下
+zh-g0189 (1) 退出
+  2:162 request_quit 退出
+zh-g0190 (2) 我要退出 / 我想退出
+  2:163 request_quit 我要退出
+  2:170 request_quit 我想退出了
+zh-g0191 (6) 结束这次展厅体验 / 结束全部体验 / 结束展厅体验 / 结束整个体验 / 结束全部展厅体验 / 结束整个展厅体验
+  2:165 request_quit 结束这次展厅体验
+  2:172 request_quit 结束全部体验
+  2:178 request_quit 结束展厅体验
+  3:163 request_quit 结束整个体验
+  3:168 request_quit 结束全部展厅体验
+  3:187 request_quit 结束整个展厅体验
+zh-g0192 (2) 我要离开展厅 / 我要离开这个展厅
+  2:167 request_quit 我要离开展厅
+  3:167 request_quit 我要离开这个展厅
+zh-g0193 (3) 这次体验我要退出 / 这次展厅体验我就退出 / 展厅体验我要退出
+  2:177 request_quit 这次体验我要退出
+  2:183 request_quit 这次展厅体验我就退出了
+  2:188 request_quit 展厅体验我要退出
+zh-g0194 (1) 帮我结束这次展厅体验
+  2:180 request_quit 帮我结束这次展厅体验
+zh-g0195 (2) 帮我订一家附近的火锅店 / 帮我订个附近的餐厅
+  2:191 UNK 帮我订一家附近的火锅店
+  3:191 UNK 帮我订个附近的餐厅
+zh-g0196 (1) 我想买这辆车
+  2:194 UNK 我想买这辆车
+zh-g0197 (1) 今天天气怎么样
+  2:195 UNK 今天天气怎么样？
+zh-g0198 (1) 帮我订一张机票
+  2:197 UNK 帮我订一张机票
+zh-g0199 (2) 把空调调到26度 / 把空调调到二十二度
+  2:199 UNK 把空调调到26度
+  3:213 UNK 把空调调到二十二度
+zh-g0200 (4) 打开车窗 / 打开天窗 / 把收音机打开 / 把座椅加热打开
+  2:200 UNK 打开车窗
+  2:212 UNK 打开天窗
+  2:219 UNK 把收音机打开
+  3:215 UNK 把座椅加热打开
+zh-g0201 (2) 这辆车油耗多少 / 这车油耗是多少
+  2:201 UNK 这辆车油耗多少
+  3:210 UNK 这车油耗是多少
+zh-g0202 (1) 有贷款方案吗
+  2:202 UNK 有贷款方案吗？
+zh-g0203 (2) 量子蘑菇在星期二跳舞 / 量子枕头在跳舞
+  2:204 UNK 量子蘑菇在星期二跳舞
+  3:219 UNK 量子枕头在跳舞
+zh-g0204 (1) 帮我查路况
+  2:206 UNK 帮我查一下路况
+zh-g0205 (2) 能便宜点吗 / 能再便宜一点吗
+  2:207 UNK 能便宜点吗？
+  3:205 UNK 能再便宜一点吗
+zh-g0206 (1) 玻璃海鸥吃掉了星期一
+  2:208 UNK 玻璃海鸥吃掉了星期一
+zh-g0207 (2) 帮我发个微信 / 帮我发个微信给同事
+  2:209 UNK 帮我发个微信
+  3:196 UNK 帮我发个微信给同事
+zh-g0208 (1) 帮我算月供
+  2:211 UNK 帮我算一下月供
+zh-g0209 (1) 帮我对比别的品牌
+  2:213 UNK 帮我对比一下别的品牌
+zh-g0210 (2) 帮我订酒店 / 帮我订一间酒店
+  2:214 UNK 帮我订酒店
+  3:200 UNK 帮我订一间酒店
+zh-g0211 (1) 能分期付款吗
+  2:215 UNK 能分期付款吗？
+zh-g0212 (1) 明天早上七点叫我
+  2:216 UNK 明天早上七点叫我
+zh-g0213 (2) 这车有现车吗 / 还有现车吗
+  2:217 UNK 这车有现车吗？
+  3:208 UNK 还有现车吗
+zh-g0214 (1) 帮我看股票
+  2:218 UNK 帮我看看股票
+zh-g0215 (1) 西瓜钢琴融化在云里
+  2:220 UNK 西瓜钢琴融化在云里
+zh-g0216 (1) 我想体验
+  2:229 request_flow 我想体验一下
+zh-g0217 (6) 怎么体验F / F是怎么体验 / F怎么体验 / F要怎么演示 / 我想体验F怎么演示
+  2:245 request_flow 怎么体验DLP车灯
+  2:252 request_flow 座舱影院是怎么体验的
+  2:261 request_flow 按摩座椅怎么体验啊
+  2:268 request_flow 隐私车窗要怎么演示
+  3:247 request_flow 我想看大灯怎么演示
+  3:269 request_flow 隐私窗怎么体验
+zh-g0218 (2) 有F演示 / F这边有演示
+  2:247 request_flow 有大灯的演示吗
+  2:254 request_flow 移动影院这边有演示吗
+zh-g0219 (1) F演示在哪
+  2:260 request_flow 座椅按摩的演示在哪
+zh-g0220 (1) 来一段F演示
+  2:263 request_flow 来一段座椅按摩的演示
+zh-g0221 (2) TF能演示 / TF能体验
+  2:273 request_flow 娱乐向的按摩座椅能演示吗
+  3:276 request_flow 适合娱乐的按摩座椅可以体验吗
+zh-g0222 (1) PF怎么体验
+  2:274 request_flow 车外的隐私玻璃怎么体验
+zh-g0223 (2) P上F能演示 / PF能演示
+  2:276 request_flow 外饰上的DLP车灯能演示吗
+  3:273 request_flow 车外的隐私玻璃能演示吗
+zh-g0224 (4) 给我体验T主题F / 给T体验F演示 / 给我演示TF / TF演示
+  2:278 request_flow 给我看看私密主题的隐私车窗
+  2:280 request_flow 给全家看的车载影院演示一下
+  3:277 request_flow 给我演示私密一点的隐私车窗
+  3:278 request_flow 适合全家的车载影院演示一下
+zh-g0225 (1) P那个TF能体验
+  2:279 request_flow 车内那个娱乐的移动影院能看吗
+zh-g0226 (5) P有演示 / P能体验有 / 有P演示 / 有P相关体验 / P有能体验
+  2:283 request_flow 内饰这边有演示吗
+  2:303 request_flow 外饰能体验的有吗
+  3:293 request_flow 有没有座舱内的演示
+  3:299 request_flow 有外饰相关的体验吗
+  3:303 request_flow 车外有能看的吗
+zh-g0227 (3) P能体验给我找找 / 把P演示列 / 给我找找P能体验
+  2:291 request_flow 车内能体验的帮我找找
+  2:302 request_flow 把车外的演示列一下
+  3:297 request_flow 帮我找找车外面能体验的
+zh-g0228 (4) P演示有哪些 / P有哪些演示
+  2:292 request_flow 内饰演示都有啥
+  2:297 request_flow 车外都有哪些演示
+  3:289 request_flow 内饰方面有什么演示
+  3:294 request_flow 车外这边有什么演示
+zh-g0229 (4) T适用演示有哪些 / T演示有哪些
+  2:310 request_flow 全家适用的演示有哪些
+  2:329 request_flow 隐私演示都有什么
+  3:308 request_flow 面向全家的演示有哪些
+  3:327 request_flow 私密的演示有哪些
+zh-g0230 (1) T演示给我介绍下
+  2:321 request_flow 娱乐的演示给我介绍下
+zh-g0231 (2) TP功能给我体验 / TP功能我想体验
+  2:334 request_flow 家庭方面的车内功能给我看看
+  2:348 request_flow 家用的车外功能我想看看
+zh-g0232 (1) 有TP演示
+  2:335 request_flow 有适合全家的内饰演示吗
+zh-g0233 (5) TP有哪些能体验 / TP有哪些 / TP有哪些演示 / TP能体验哪些 / TP演示有哪些
+  2:339 request_flow 娱乐的，座舱里有什么能看
+  2:344 request_flow 私密一点的，车内有什么
+  2:353 request_flow 娱乐方面车外有什么演示
+  2:358 request_flow 隐私方面车外能看什么
+  2:360 request_flow 私密的外饰演示有哪些
+zh-g0234 (3) 我姓N
+  2:363 inform 我姓王
+  2:372 inform 我姓李
+  2:379 inform 我姓张
+zh-g0235 (5) 我喜欢F
+  2:385 inform 我更喜欢车载影院
+  3:423 inform 我更喜欢移动影院
+  3:427 inform 我喜欢大灯
+  3:432 inform 我更喜欢座椅按摩
+  3:437 inform 我喜欢隐私车窗
+zh-g0236 (2) 我偏好F
+  2:391 inform 我倾向于座舱影院
+  2:394 inform 我偏好隐私玻璃
+zh-g0237 (4) F比较好 / F比较合适 / F比较有意思
+  2:397 inform 座椅按摩比较好
+  2:399 inform 大灯比较合适
+  2:405 inform 移动电影院比较有意思
+  3:435 inform 按摩座椅比较好
+zh-g0238 (1) P比较好
+  2:418 inform 外饰比较好
+zh-g0239 (20) PT / PT就行 / TP那种 / TP / PT功能
+  2:462 inform 车外的娱乐吧
+  2:465 inform 外饰隐私的
+  2:466 inform 车内娱乐就行
+  2:467 inform 全家的，车外那种
+  2:469 inform 座舱里私密一点的
+  2:470 inform 车外家用的吧
+  2:473 inform 适合全家的内饰
+  2:474 inform 座舱里的娱乐
+  2:475 inform 外饰方面家庭的
+  3:472 inform 车内的娱乐吧
+  3:474 inform 外饰方面适合家庭的功能
+  3:475 inform 车外适合娱乐的
+  3:477 inform 内饰方面家用的吧
+  3:478 inform 座舱里的娱乐方面
+  3:480 inform 车外适合全家的吧
+  3:481 inform 外饰方面娱乐的
+  3:483 inform 车内的家庭功能
+  3:484 inform 车外的私密功能吧
+  3:486 inform 座舱内的娱乐吧
+  3:487 inform 车外面偏隐私的
+zh-g0240 (5) PF / 就PF
+  2:476 inform 车内的座舱影院
+  2:478 inform 座舱里的按摩座椅吧
+  2:479 inform 外饰的隐私玻璃
+  2:480 inform 就车内的移动影院
+  3:490 inform 车内的按摩座椅吧
+zh-g0241 (3) 我喜欢PF
+  2:477 inform 我更喜欢车外的DLP大灯
+  3:489 inform 我喜欢车外的DLP大灯
+  3:491 inform 我更喜欢座舱里的车载影院
+zh-g0242 (6) TF / T适用F
+  2:481 inform 家庭的座舱影院
+  2:483 inform 私密的隐私车窗吧
+  2:484 inform 全家适用的车载影院
+  2:485 inform 娱乐向的DLP大灯
+  3:494 inform 娱乐的按摩座椅吧
+  3:496 inform 适合全家的DLP大灯
+zh-g0243 (3) 我喜欢TF
+  2:482 inform 我喜欢娱乐的按摩座椅
+  3:493 inform 我喜欢适合家庭的座舱影院
+  3:495 inform 我更喜欢私密的隐私车窗
+zh-g0244 (4) PTF
+  2:491 inform 车内适合家庭的座舱影院
+  2:492 inform 外饰娱乐的DLP车灯吧
+  3:498 inform 车外适合娱乐的DLP大灯吧
+  3:500 inform 外饰偏私密的隐私玻璃
+zh-g0245 (3) 我喜欢PTF
+  2:493 inform 我喜欢车外私密的隐私玻璃
+  3:497 inform 我更喜欢车内适合家庭的座舱影院
+  3:499 inform 我喜欢座舱里适合娱乐的按摩座椅
+zh-g0246 (1) CP
+  2:494 inform 第二个，车内的
+zh-g0247 (2) 选CT / 就CT
+  2:495 inform 我选第3个，娱乐的
+  2:497 inform 就第一个，家庭的
+zh-g0248 (1) CF
+  2:496 inform 4号，隐私玻璃
+zh-g0249 (1) 你好这边
+  3:018 greet 你好，这边
+zh-g0250 (1) 确认
+  3:059 affirm 确认
+zh-g0251 (1) 好就这样
+  3:070 affirm 好，就这样
+zh-g0252 (2) 错
+  3:081 deny 错了
+  3:090 deny 错了啊
+zh-g0253 (1) 没有不是
+  3:100 deny 没有，不是
+zh-g0254 (1) 别播了暂停
+  3:107 request_stop 先别播了，暂停一下
+zh-g0255 (1) 正在演示的先暂停
+  3:123 request_stop 正在演示的先暂停
+zh-g0256 (2) 结束体验我先走 / 我要走了退出展厅
+  3:175 request_quit 结束体验，我先走了
+  3:180 request_quit 我要走了，退出展厅
+zh-g0257 (1) 附近有什么好吃的
+  3:193 UNK 附近有什么好吃的
+zh-g0258 (1) 这首歌是谁唱的
+  3:195 UNK 这首歌是谁唱的
+zh-g0259 (1) 明天上午的会议在哪
+  3:197 UNK 明天上午的会议在哪
+zh-g0260 (1) 帮我叫一辆出租车
+  3:198 UNK 帮我叫一辆出租车
+zh-g0261 (1) 查明天的航班
+  3:199 UNK 查一下明天的航班
+zh-g0262 (1) 把这句话翻译成英文
+  3:201 UNK 把这句话翻译成英文
+zh-g0263 (1) 几点
+  3:202 UNK 现在几点了
+zh-g0264 (1) 贷款方案怎么算
+  3:207 UNK 贷款方案怎么算
+zh-g0265 (1) 能开发票吗
+  3:209 UNK 能开发票吗
+zh-g0266 (1) 售后电话多少
+  3:211 UNK 售后电话多少
+zh-g0267 (1) 我想加装一个行李架
+  3:212 UNK 我想加装一个行李架
+zh-g0268 (1) 铁盒里的星期二在融化
+  3:217 UNK 铁盒里的星期二在融化
+zh-g0269 (1) 西瓜跳进月亮里
+  3:218 UNK 西瓜跳进月亮里
+zh-g0270 (1) 反向的口袋没有颜色
+  3:220 UNK 反向的口袋没有颜色
+zh-g0271 (1) 有哪些好玩能体验
+  3:224 request_flow 有什么好玩的可以体验
+zh-g0272 (1) PTF给我体验
+  3:280 request_flow 车外适合娱乐的DLP大灯给我看看
+zh-g0273 (1) P演示安排一个
+  3:298 request_flow 车外的演示安排一个
+zh-g0274 (4) T功能演示一个体验 / T给我安排 / 来个T演示 / 来个T体验
+  3:312 request_flow 家用功能演示一个看看
+  3:313 request_flow 适合全家的给我安排一下
+  3:320 request_flow 来个娱乐的演示吧
+  3:329 request_flow 来个私密方面的体验
+zh-g0275 (1) 我想找点T体验
+  3:318 request_flow 我想找点娱乐的体验
+zh-g0276 (1) 给我体验有哪些T
+  3:322 request_flow 帮我看看有什么娱乐的

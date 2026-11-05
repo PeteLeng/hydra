@@ -1,0 +1,500 @@
+1:001 | greet | 您好，请问在吗 | 
+1:002 | greet | 嗨，早上好呀 | 
+1:003 | greet | 你好，我是陈晨 | name=陈晨@5:7
+1:004 | greet | 哈喽，叫我Alex就行 | name=Alex@5:9
+1:005 | affirm | 没错，就是这样 | 
+1:006 | affirm | 好的呀 | 
+1:007 | affirm | 嗯，是的 | 
+1:008 | deny | 不对，搞错了 | 
+1:009 | deny | 不是这样的 | 
+1:010 | deny | 不对呀 | 
+1:011 | request_flow | 能给我演示点什么功能吗 | 
+1:012 | request_flow | 现在有哪些项目可以体验 | 
+1:013 | request_flow | 带我体验一下座舱影院吧 | flow_ref=座舱影院@6:10
+1:014 | request_flow | 我想试试隐私车窗 | flow_ref=隐私车窗@4:8
+1:015 | request_flow | 把DLP车灯打开看看 | flow_ref=DLP车灯@1:6
+1:016 | request_flow | 我想体验车内的按摩座椅 | part=车内@4:6; flow_ref=按摩座椅@7:11
+1:017 | request_flow | 先给我展示一下车内的功能 | part=车内@7:9
+1:018 | request_flow | 车外有什么功能可以看看 | part=车外@0:2
+1:019 | request_flow | 我想看看座舱里的配置演示 | part=座舱里@4:7
+1:020 | request_flow | 有什么适合全家的功能演示吗 | theme=全家@5:7
+1:021 | request_flow | 给我演示一下娱乐相关的项目 | theme=娱乐@6:8
+1:022 | request_flow | 我想看看车外关于隐私的功能 | part=车外@4:6; theme=隐私@8:10
+1:023 | request_flow | 座舱里有什么适合家庭的功能可以试 | part=座舱里@0:3; theme=家庭@8:10
+1:024 | request_flow | 帮我演示一下内饰的娱乐功能 | part=内饰@6:8; theme=娱乐@9:11
+1:025 | inform | 我叫王磊 | name=王磊@2:4
+1:026 | inform | 你可以叫我小周 | name=小周@5:7
+1:027 | inform | 我选第一个 | choice=第一个@2:5
+1:028 | inform | 就1号吧 | choice=1号@1:3
+1:029 | inform | 给我看看第3个 | choice=第3个@4:7
+1:030 | inform | 车载影院吧 | flow_ref=车载影院@0:4
+1:031 | inform | 我对隐私玻璃比较感兴趣 | flow_ref=隐私玻璃@2:6
+1:032 | inform | 我比较关注车外那部分 | part=车外@5:7
+1:033 | inform | 还是座舱里的吧 | part=座舱里@2:5
+1:034 | inform | 我更偏向家庭方向 | theme=家庭@4:6
+1:035 | inform | 私密方面的吧 | theme=私密@0:2
+1:036 | inform | 我对车内的娱乐配置更感兴趣 | part=车内@2:4; theme=娱乐@5:7
+1:037 | inform | 想选外饰里偏向隐私的那类 | part=外饰@2:4; theme=隐私@7:9
+1:038 | inform | 我是林薇，比较想了解DLP大灯 | name=林薇@2:4; flow_ref=DLP大灯@10:15
+1:039 | request_stop | 先把这个演示暂停一下 | 
+1:040 | request_stop | 暂停一下当前的播放 | 
+1:041 | request_stop | 请把现在的演示停一停 | 
+1:042 | request_resume | 继续刚才停下的演示吧 | 
+1:043 | request_resume | 把刚才的演示接着放 | 
+1:044 | request_resume | 现在可以恢复演示了 | 
+1:045 | request_quit | 我想退出整个展厅体验 | 
+1:046 | request_quit | 把这次展厅体验关掉吧 | 
+1:047 | request_quit | 不继续参观了，退出体验吧 | 
+1:048 | UNK | 这台车现在落地价大概要多少 | 
+1:049 | UNK | 帮我查一下今天下午会下雨吗 | 
+1:050 | UNK | 紫色的礼拜四把声音折起来 | 
+1:051 | greet | 你好呀 | 
+1:052 | greet | 下午好，打扰一下 | 
+1:053 | greet | 嗨，我叫张伟 | name=张伟@4:6
+1:054 | greet | 您好，我是欧阳晨 | name=欧阳晨@5:8
+1:055 | affirm | 行，没问题 | 
+1:056 | affirm | 对，就是这个意思 | 
+1:057 | affirm | 可以的 | 
+1:058 | deny | 不对，你说错了 | 
+1:059 | deny | 不是那个 | 
+1:060 | deny | 完全不是 | 
+1:061 | request_flow | 都有什么演示可以看的 | 
+1:062 | request_flow | 带我感受一下这台车的功能吧 | 
+1:063 | request_flow | 我想感受一下座椅按摩 | flow_ref=座椅按摩@6:10
+1:064 | request_flow | 能演示一下移动影院吗 | flow_ref=移动影院@5:9
+1:065 | request_flow | 给我看看车头大灯的效果 | flow_ref=车头大灯@4:8->dlp_headlights
+1:066 | request_flow | 我想看看适合家庭的座舱影院 | theme=家庭@6:8; flow_ref=座舱影院@9:13
+1:067 | request_flow | 内饰方面有什么功能可以体验 | part=内饰@0:2
+1:068 | request_flow | 让我看看外饰的演示吧 | part=外饰@4:6
+1:069 | request_flow | 我想体验一下隐私方面的设计 | theme=隐私@6:8
+1:070 | request_flow | 家用的功能有哪些能演示 | theme=家用@0:2
+1:071 | request_flow | 有没有私密一点的功能让我试试 | theme=私密@3:5
+1:072 | request_flow | 车外有什么适合全家的功能吗 | part=车外@0:2; theme=全家@7:9
+1:073 | request_flow | 我想试试车内跟隐私有关的功能 | part=车内@4:6; theme=隐私@7:9
+1:074 | request_flow | 给我看看外饰的娱乐功能演示 | part=外饰@4:6; theme=娱乐@7:9
+1:075 | inform | 我是赵敏 | name=赵敏@2:4
+1:076 | inform | 叫我Kevin吧 | name=Kevin@2:7
+1:077 | inform | 选项三 | choice=选项三@0:3
+1:078 | inform | 我想选第4个 | choice=第4个@3:6
+1:079 | inform | 来第五个吧 | choice=第五个@1:4
+1:080 | inform | 我想了解的是大灯 | flow_ref=大灯@6:8
+1:081 | inform | 按摩座椅就行 | flow_ref=按摩座椅@0:4
+1:082 | inform | 先看内饰这块的 | part=内饰@2:4
+1:083 | inform | 我选外饰部分 | part=外饰@2:4
+1:084 | inform | 我对娱乐类的比较有兴趣 | theme=娱乐@2:4
+1:085 | inform | 适合全家的那种 | theme=全家@2:4
+1:086 | inform | 我喜欢座舱里偏娱乐的设计 | part=座舱里@3:6; theme=娱乐@7:9
+1:087 | inform | 车外适合家用的配置更合我意 | part=车外@0:2; theme=家用@4:6
+1:088 | inform | 车内的移动影院更吸引我 | part=车内@0:2; flow_ref=移动影院@3:7
+1:089 | request_stop | 把正在放的演示暂停一下 | 
+1:090 | request_stop | 这个功能演示先停一停 | 
+1:091 | request_stop | 麻烦暂停当前的演示 | 
+1:092 | request_resume | 从刚才停下的地方继续演示吧 | 
+1:093 | request_resume | 把暂停的演示重新放起来 | 
+1:094 | request_resume | 继续播放刚才那个功能演示 | 
+1:095 | request_quit | 我要结束整个展厅的体验了 | 
+1:096 | request_quit | 直接退出这次展厅互动吧 | 
+1:097 | request_quit | 不想继续体验了，帮我退出展厅系统 | 
+1:098 | UNK | 这车百公里加速是几秒啊 | 
+1:099 | UNK | 帮我导航去最近的加油站 | 
+1:100 | UNK | 窗户在日历上面跳舞呢 | 
+1:101 | greet | 嗨，你好 | 
+1:102 | greet | 晚上好啊 | 
+1:103 | greet | 你好呀，我叫刘洋 | name=刘洋@6:8
+1:104 | greet | 早上好，我是老陈 | name=老陈@6:8
+1:105 | affirm | 嗯嗯，对的 | 
+1:106 | affirm | 没问题呀 | 
+1:107 | affirm | 是这样没错 | 
+1:108 | deny | 并非如此 | 
+1:109 | deny | 不是我说的那个 | 
+1:110 | deny | 不对不对 | 
+1:111 | request_flow | 先给我介绍几个能体验的功能吧 | 
+1:112 | request_flow | 这里可以体验什么项目呀 | 
+1:113 | request_flow | 我想看看隐私玻璃是怎么工作的 | flow_ref=隐私玻璃@4:8
+1:114 | request_flow | 帮我开一下DLP大灯 | flow_ref=DLP大灯@5:10
+1:115 | request_flow | 让我体验一下车载电影院吧 | flow_ref=车载电影院@6:11->cabin_cinema
+1:116 | request_flow | 我想体验车外那个DLP车灯 | part=车外@4:6; flow_ref=DLP车灯@8:13
+1:117 | request_flow | 带我看看车内有哪些亮点功能 | part=车内@4:6
+1:118 | request_flow | 外饰部分能演示些什么 | part=外饰@0:2
+1:119 | request_flow | 我想试试车里的功能演示 | part=车里@4:6->inside
+1:120 | request_flow | 能给我看看适合家庭的功能吗 | theme=家庭@7:9
+1:121 | request_flow | 我想体验跟娱乐有关的配置 | theme=娱乐@5:7
+1:122 | request_flow | 车内有没有关于私密的功能可以体验 | part=车内@0:2; theme=私密@7:9
+1:123 | request_flow | 我想看看车外的娱乐功能演示 | part=车外@4:6; theme=娱乐@7:9
+1:124 | request_flow | 帮我启动一下内饰适合家用的功能 | part=内饰@6:8; theme=家用@10:12
+1:125 | inform | 我的名字是孙悦 | name=孙悦@5:7
+1:126 | inform | 我叫阿杰 | name=阿杰@2:4
+1:127 | inform | 选第6个吧 | choice=第6个@1:4
+1:128 | inform | 我要第七个 | choice=第七个@2:5
+1:129 | inform | 8号吧 | choice=8号@0:2
+1:130 | inform | 还是DLP车灯吧 | flow_ref=DLP车灯@2:7
+1:131 | inform | 我想选私密车窗 | flow_ref=私密车窗@3:7->privacy_window
+1:132 | inform | 我更想看车内的 | part=车内@4:6
+1:133 | inform | 车外那块吧 | part=车外@0:2
+1:134 | inform | 优先看隐私相关的 | theme=隐私@3:5
+1:135 | inform | 我倾向于家用的配置 | theme=家用@4:6
+1:136 | inform | 我比较喜欢内饰里适合全家的配置 | part=内饰@5:7; theme=全家@10:12
+1:137 | inform | 座舱里偏隐私的那种比较好 | part=座舱里@0:3; theme=隐私@4:6
+1:138 | inform | 我叫周航，更偏好车内的配置 | name=周航@2:4; part=车内@8:10
+1:139 | request_stop | 先暂停现在的演示 | 
+1:140 | request_stop | 把演示先停一下吧 | 
+1:141 | request_stop | 当前这个演示先暂停 | 
+1:142 | request_resume | 继续刚才未完成的演示 | 
+1:143 | request_resume | 把演示恢复播放吧 | 
+1:144 | request_resume | 咱们接着刚才的演示往下看 | 
+1:145 | request_quit | 帮我退出整个展厅体验 | 
+1:146 | request_quit | 今天先逛到这，退出展厅体验吧 | 
+1:147 | request_quit | 把整个展厅体验流程关掉 | 
+1:148 | UNK | 现在订车大概多久能提车 | 
+1:149 | UNK | 给我放一首周杰伦的歌 | 
+1:150 | UNK | 咖啡杯在云朵里写字 | 
+1:151 | greet | 哈喽你好 | 
+1:152 | greet | 您好呀 | 
+1:153 | greet | 你好，可以叫我Lily | name=Lily@7:11
+1:154 | greet | 嗨，我是何宇 | name=何宇@4:6
+1:155 | affirm | 好呀，可以 | 
+1:156 | affirm | 对的呀 | 
+1:157 | affirm | 嗯，没问题 | 
+1:158 | deny | 不是的 | 
+1:159 | deny | 不对，你理解错了 | 
+1:160 | deny | 没这回事，不对 | 
+1:161 | request_flow | 给我展示一下这车有什么好玩的 | 
+1:162 | request_flow | 我想看看你们这儿的功能演示 | 
+1:163 | request_flow | 给我演示一下车载影院 | flow_ref=车载影院@6:10
+1:164 | request_flow | 我想试试大灯的演示 | flow_ref=大灯@4:6
+1:165 | request_flow | 打开按摩座椅让我感受一下 | flow_ref=按摩座椅@2:6
+1:166 | request_flow | 带我试试车外隐私方面的隐私车窗 | part=车外@4:6; theme=隐私@6:8; flow_ref=隐私车窗@11:15
+1:167 | request_flow | 我想体验一下座舱里的功能 | part=座舱里@6:9
+1:168 | request_flow | 先看看车外有哪些可以演示的 | part=车外@3:5
+1:169 | request_flow | 有什么偏向隐私的功能可以看看 | theme=隐私@5:7
+1:170 | request_flow | 我想看看适合全家人一起用的功能 | theme=全家人@6:9->family
+1:171 | request_flow | 带我体验一下休闲娱乐类的功能 | theme=休闲娱乐@6:10->entertainment
+1:172 | request_flow | 车内有哪些偏向娱乐的演示可以试试 | part=车内@0:2; theme=娱乐@7:9
+1:173 | request_flow | 给我看看车外适合家庭的功能吧 | part=车外@4:6; theme=家庭@8:10
+1:174 | request_flow | 我想试试内饰里偏向私密的功能 | part=内饰@4:6; theme=私密@9:11
+1:175 | inform | 我叫沈佳 | name=沈佳@2:4
+1:176 | inform | 我是小宋 | name=小宋@2:4
+1:177 | inform | 第六个 | choice=第六个@0:3
+1:178 | inform | 选7号吧 | choice=7号@1:3
+1:179 | inform | 就第10个 | choice=第10个@1:5
+1:180 | inform | 座椅按摩吧 | flow_ref=座椅按摩@0:4
+1:181 | inform | 我选移动影院 | flow_ref=移动影院@2:6
+1:182 | inform | 我对座舱里的比较感兴趣 | part=座舱里@2:5
+1:183 | inform | 内饰那部分吧 | part=内饰@0:2
+1:184 | inform | 还是娱乐方面的吧 | theme=娱乐@2:4
+1:185 | inform | 我更看重隐私 | theme=隐私@4:6
+1:186 | inform | 车内关于隐私的配置我更想了解 | part=车内@0:2; theme=隐私@4:6
+1:187 | inform | 我偏爱外饰里偏向娱乐的设计 | part=外饰@3:5; theme=娱乐@8:10
+1:188 | inform | 我对娱乐方向的按摩座椅很感兴趣 | theme=娱乐@2:4; flow_ref=按摩座椅@7:11
+1:189 | request_stop | 麻烦把演示暂停一下 | 
+1:190 | request_stop | 先停一下现在这个功能演示 | 
+1:191 | request_stop | 演示先暂停，我缓一缓 | 
+1:192 | request_resume | 可以继续刚才的演示了 | 
+1:193 | request_resume | 把刚才停住的演示接着放吧 | 
+1:194 | request_resume | 重新恢复刚才的演示 | 
+1:195 | request_quit | 我想结束这次展厅体验 | 
+1:196 | request_quit | 请关闭并退出整个展厅体验 | 
+1:197 | request_quit | 不体验了，直接退出展厅流程 | 
+1:198 | UNK | 你们店里现在有分期免息活动吗 | 
+1:199 | UNK | 帮我导航到最近的地铁站 | 
+1:200 | UNK | 橘子味的雨刷器正在算数 | 
+1:201 | greet | 您好，上午好 | 
+1:202 | greet | 嗨，下午好 | 
+1:203 | greet | 你好，我是司徒静 | name=司徒静@5:8
+1:204 | greet | 哈喽，我叫韩梅 | name=韩梅@5:7
+1:205 | affirm | 对呀 | 
+1:206 | affirm | 是的呢 | 
+1:207 | affirm | 没毛病，就是这样 | 
+1:208 | deny | 不是呀 | 
+1:209 | deny | 不对，理解错了 | 
+1:210 | deny | 根本不是这样 | 
+1:211 | request_flow | 先给我来个功能演示看看 | 
+1:212 | request_flow | 这台车有什么功能可以现场体验 | 
+1:213 | request_flow | 我想体验一下大灯 | flow_ref=大灯@6:8
+1:214 | request_flow | 给我看看按摩座椅是怎么工作的 | flow_ref=按摩座椅@4:8
+1:215 | request_flow | 我想试试车内影院 | flow_ref=车内影院@4:8->cabin_cinema
+1:216 | request_flow | 给我演示一下车外关于隐私的隐私玻璃 | part=车外@6:8; theme=隐私@10:12; flow_ref=隐私玻璃@13:17
+1:217 | request_flow | 带我体验一下座舱里的功能 | part=座舱里@6:9
+1:218 | request_flow | 我想看看车内有哪些亮点演示 | part=车内@4:6
+1:219 | request_flow | 先演示一下外饰部分吧 | part=外饰@5:7
+1:220 | request_flow | 我想看看隐私相关的功能演示 | theme=隐私@4:6
+1:221 | request_flow | 有什么适合家用的项目能体验 | theme=家用@5:7
+1:222 | request_flow | 座舱里有哪些娱乐配置能体验 | part=座舱里@0:3; theme=娱乐@6:8
+1:223 | request_flow | 我想试试内饰里有关私密的功能 | part=内饰@4:6; theme=私密@9:11
+1:224 | request_flow | 车外适合家用的配置能演示一下吗 | part=车外@0:2; theme=家用@4:6
+1:225 | inform | 我叫高远 | name=高远@2:4
+1:226 | inform | 我是Jason | name=Jason@2:7
+1:227 | inform | 选第8个 | choice=第8个@1:4
+1:228 | inform | 第八个吧 | choice=第八个@0:3
+1:229 | inform | 我要选项九 | choice=选项九@2:5
+1:230 | inform | 我想看座舱影院 | flow_ref=座舱影院@3:7
+1:231 | inform | 大灯吧 | flow_ref=大灯@0:2
+1:232 | inform | 我更偏向内饰 | part=内饰@4:6
+1:233 | inform | 座舱里的就行 | part=座舱里@0:3
+1:234 | inform | 家用方向的吧 | theme=家用@0:2
+1:235 | inform | 我更关注私密性 | theme=私密性@4:7->privacy
+1:236 | inform | 车内偏向私密的功能我比较感兴趣 | part=车内@0:2; theme=私密@4:6
+1:237 | inform | 我更喜欢外饰的娱乐配置 | part=外饰@4:6; theme=娱乐@7:9
+1:238 | inform | 我是阿杰，想选适合全家的功能 | name=阿杰@2:4; theme=全家@9:11
+1:239 | request_stop | 麻烦暂停一下这段演示 | 
+1:240 | request_stop | 先停一停正在放的演示 | 
+1:241 | request_stop | 把演示先按暂停吧 | 
+1:242 | request_resume | 继续刚才中断的演示吧 | 
+1:243 | request_resume | 把演示接着放完 | 
+1:244 | request_resume | 现在恢复刚才的演示吧 | 
+1:245 | request_quit | 现在退出整个展厅体验系统吧 | 
+1:246 | request_quit | 我要结束并退出这次展厅体验 | 
+1:247 | request_quit | 今天先逛到这儿，退出展厅体验吧 | 
+1:248 | UNK | 请问洗手间往哪边走 | 
+1:249 | UNK | 这车的电池质保是几年 | 
+1:250 | UNK | 十点钟的螺丝刀在喝橘子汁 | 
+1:251 | greet | 哈喽，早上好 | 
+1:252 | greet | 你好，请问有人吗 | 
+1:253 | greet | 您好，我是许晴 | name=许晴@5:7
+1:254 | greet | 你好，叫我小方吧 | name=小方@5:7
+1:255 | affirm | 嗯，可以 | 
+1:256 | affirm | 对的，没问题 | 
+1:257 | affirm | 就是这样 | 
+1:258 | deny | 不是的呀 | 
+1:259 | deny | 不对，弄错了 | 
+1:260 | deny | 跟你想的不一样，不对 | 
+1:261 | request_flow | 有什么功能演示能让我试试 | 
+1:262 | request_flow | 给我展示一下这车的主打功能吧 | 
+1:263 | request_flow | 我想看一看DLP车灯 | flow_ref=DLP车灯@5:10
+1:264 | request_flow | 让我体验一下移动影院吧 | flow_ref=移动影院@6:10
+1:265 | request_flow | 把座椅按摩开一下试试 | flow_ref=座椅按摩@1:5
+1:266 | request_flow | 我想体验一下适合全家的DLP大灯 | theme=全家@8:10; flow_ref=DLP大灯@11:16
+1:267 | request_flow | 给我看看内饰有什么可以体验的 | part=内饰@4:6
+1:268 | request_flow | 车外有哪些功能可以给我演示 | part=车外@0:2
+1:269 | request_flow | 有什么跟家庭相关的功能可以体验 | theme=家庭@4:6
+1:270 | request_flow | 我想试试娱乐类的演示 | theme=娱乐@4:6
+1:271 | request_flow | 能演示一下私密方面的配置吗 | theme=私密@5:7
+1:272 | request_flow | 我想看看座舱里适合家用的功能 | part=座舱里@4:7; theme=家用@9:11
+1:273 | request_flow | 给我试试车内的私密功能吧 | part=车内@4:6; theme=私密@7:9
+1:274 | request_flow | 外饰部分有什么跟隐私有关的演示吗 | part=外饰@0:2; theme=隐私@8:10
+1:275 | inform | 我是宋佳 | name=宋佳@2:4
+1:276 | inform | 我叫老刘 | name=老刘@2:4
+1:277 | inform | 第九个吧 | choice=第九个@0:3
+1:278 | inform | 我要看9号 | choice=9号@3:5
+1:279 | inform | 我选2号吧 | choice=2号@2:4
+1:280 | inform | 隐私车窗吧 | flow_ref=隐私车窗@0:4
+1:281 | inform | 我想选车载影院 | flow_ref=车载影院@3:7
+1:282 | inform | 我想了解外饰方面的 | part=外饰@4:6
+1:283 | inform | 先看车内部分 | part=车内@2:4
+1:284 | inform | 我对隐私方面比较在意 | theme=隐私@2:4
+1:285 | inform | 还是适合家庭的吧 | theme=家庭@4:6
+1:286 | inform | 我更喜欢内饰里的娱乐功能 | part=内饰@4:6; theme=娱乐@8:10
+1:287 | inform | 座舱里适合家庭的比较合我心意 | part=座舱里@0:3; theme=家庭@5:7
+1:288 | inform | 我叫林峰，想看第2个 | name=林峰@2:4; choice=第2个@7:10
+1:289 | request_stop | 先把正在播放的演示停一下 | 
+1:290 | request_stop | 演示暂停一下吧 | 
+1:291 | request_stop | 请暂停这部分的演示 | 
+1:292 | request_resume | 把刚才停住的演示继续放吧 | 
+1:293 | request_resume | 继续播放当前的演示 | 
+1:294 | request_resume | 好了，接着刚才的演示吧 | 
+1:295 | request_quit | 帮我关闭整个展厅体验 | 
+1:296 | request_quit | 我要退出这次展厅互动体验 | 
+1:297 | request_quit | 不继续体验了，退出整个流程吧 | 
+1:298 | UNK | 这台车后备箱能放下几个行李箱 | 
+1:299 | UNK | 帮我给家里人打个电话 | 
+1:300 | UNK | 十九只拖鞋在天花板上游泳 | 
+1:301 | greet | 嗨，在吗 | 
+1:302 | greet | 你好你好 | 
+1:303 | greet | 你好，我叫唐磊 | name=唐磊@5:7
+1:304 | greet | 下午好，我是Emma | name=Emma@6:10
+1:305 | affirm | 好，可以的 | 
+1:306 | affirm | 嗯，对 | 
+1:307 | affirm | 一点没错 | 
+1:308 | deny | 不对，不是这个 | 
+1:309 | deny | 没这回事 | 
+1:310 | deny | 不是啦 | 
+1:311 | request_flow | 能带我体验一下这里的功能吗 | 
+1:312 | request_flow | 有什么演示项目可以看看的 | 
+1:313 | request_flow | 我想看看座舱影院的效果 | flow_ref=座舱影院@4:8
+1:314 | request_flow | 给我试试隐私玻璃 | flow_ref=隐私玻璃@4:8
+1:315 | request_flow | 能体验一下车头大灯吗 | flow_ref=车头大灯@5:9->dlp_headlights
+1:316 | request_flow | 我想体验车内娱乐类的车载影院 | part=车内@4:6; theme=娱乐@6:8; flow_ref=车载影院@10:14
+1:317 | request_flow | 给我演示一下座舱里的亮点功能 | part=座舱里@6:9
+1:318 | request_flow | 我想看看内饰有哪些能体验的 | part=内饰@4:6
+1:319 | request_flow | 带我试试车外的功能演示 | part=车外@4:6
+1:320 | request_flow | 我想体验一下适合全家的配置 | theme=全家@8:10
+1:321 | request_flow | 有什么休闲娱乐的功能可以看看 | theme=休闲娱乐@3:7->entertainment
+1:322 | request_flow | 车内有什么适合家庭的功能演示吗 | part=车内@0:2; theme=家庭@7:9
+1:323 | request_flow | 我想看看外饰关于私密的设计 | part=外饰@4:6; theme=私密@8:10
+1:324 | request_flow | 能给我试试座舱里偏家用的功能吗 | part=座舱里@5:8; theme=家用@9:11
+1:325 | inform | 我叫冯超 | name=冯超@2:4
+1:326 | inform | 我的名字叫陆瑶 | name=陆瑶@5:7
+1:327 | inform | 10号吧 | choice=10号@0:3
+1:328 | inform | 选第一项 | choice=第一项@1:4
+1:329 | inform | 给我看看选项二 | choice=选项二@4:7
+1:330 | inform | 我对按摩座椅比较感兴趣 | flow_ref=按摩座椅@2:6
+1:331 | inform | 我选前大灯 | flow_ref=前大灯@2:5->dlp_headlights
+1:332 | inform | 我更想看车外的 | part=车外@4:6
+1:333 | inform | 内饰这边的吧 | part=内饰@0:2
+1:334 | inform | 我比较喜欢适合全家的 | theme=全家@7:9
+1:335 | inform | 娱乐方面的就行 | theme=娱乐@0:2
+1:336 | inform | 车内关于隐私的配置我更想看 | part=车内@0:2; theme=隐私@4:6
+1:337 | inform | 我倾向于外饰里适合家庭的功能 | part=外饰@4:6; theme=家庭@9:11
+1:338 | inform | 适合家庭的座舱影院我挺感兴趣的 | theme=家庭@2:4; flow_ref=座舱影院@5:9
+1:339 | request_stop | 把当前演示先停一下 | 
+1:340 | request_stop | 先暂停这个功能演示吧 | 
+1:341 | request_stop | 麻烦把正在播放的演示暂停 | 
+1:342 | request_resume | 继续刚才停下的那个演示 | 
+1:343 | request_resume | 把演示重新恢复播放吧 | 
+1:344 | request_resume | 咱们接着把刚才的演示看完 | 
+1:345 | request_quit | 退出这次的展厅体验流程吧 | 
+1:346 | request_quit | 我想结束整个展厅的体验 | 
+1:347 | request_quit | 直接帮我退出展厅体验吧 | 
+1:348 | UNK | 现在买车送家用充电桩吗 | 
+1:349 | UNK | 帮我给王总打个电话 | 
+1:350 | UNK | 绿色的闹钟把窗户吃掉了 | 
+1:351 | greet | 你好，打扰了 | 
+1:352 | greet | 嗨，晚上好呀 | 
+1:353 | greet | 您好，我叫沈腾飞 | name=沈腾飞@5:8
+1:354 | greet | 你好，我是David | name=David@5:10
+1:355 | affirm | 对，没问题 | 
+1:356 | affirm | 可以呀 | 
+1:357 | affirm | 是的呀 | 
+1:358 | deny | 不对，搞反了 | 
+1:359 | deny | 不是的，你弄错了 | 
+1:360 | deny | 完全不对 | 
+1:361 | request_flow | 有什么功能演示可以让我看看 | 
+1:362 | request_flow | 先给我展示一下可以体验的项目吧 | 
+1:363 | request_flow | 给我演示一下DLP大灯 | flow_ref=DLP大灯@6:11
+1:364 | request_flow | 我想试试车载影院的效果 | flow_ref=车载影院@4:8
+1:365 | request_flow | 带我感受一下按摩座椅吧 | flow_ref=按摩座椅@6:10
+1:366 | request_flow | 我想看看车内那个座舱影院 | part=车内@4:6; flow_ref=座舱影院@8:12
+1:367 | request_flow | 车内有哪些功能可以给我演示 | part=车内@0:2
+1:368 | request_flow | 我想体验一下外饰部分的功能 | part=外饰@6:8
+1:369 | request_flow | 给我看看跟隐私有关的功能吧 | theme=隐私@5:7
+1:370 | request_flow | 有什么适合家用的演示可以体验 | theme=家用@5:7
+1:371 | request_flow | 带我试试影音娱乐类的功能 | theme=影音娱乐@4:8->entertainment
+1:372 | request_flow | 我想看看座舱里的私密功能演示 | part=座舱里@4:7; theme=私密@8:10
+1:373 | request_flow | 内饰有什么适合家庭的功能可以试 | part=内饰@0:2; theme=家庭@7:9
+1:374 | request_flow | 给我演示一下车外偏隐私的配置 | part=车外@6:8; theme=隐私@9:11
+1:375 | inform | 我叫秦朗 | name=秦朗@2:4
+1:376 | inform | 叫我小胡就行 | name=小胡@2:4
+1:377 | inform | 我选第三个 | choice=第三个@2:5
+1:378 | inform | 3号吧 | choice=3号@0:2
+1:379 | inform | 就选选项四 | choice=选项四@2:5
+1:380 | inform | 我想了解隐私玻璃 | flow_ref=隐私玻璃@4:8
+1:381 | inform | DLP车灯吧 | flow_ref=DLP车灯@0:5
+1:382 | inform | 我更关注座舱里的设计 | part=座舱里@4:7
+1:383 | inform | 还是外饰吧 | part=外饰@2:4
+1:384 | inform | 我比较偏向私密方向的 | theme=私密@5:7
+1:385 | inform | 适合家用的比较合我意 | theme=家用@2:4
+1:386 | inform | 我更喜欢车内适合全家的功能 | part=车内@4:6; theme=全家@8:10
+1:387 | inform | 外饰里偏家用的配置我比较感兴趣 | part=外饰@0:2; theme=家用@4:6
+1:388 | inform | 车内那个座椅按摩我挺感兴趣的 | part=车内@0:2; flow_ref=座椅按摩@4:8
+1:389 | request_stop | 先把当前的演示暂停吧 | 
+1:390 | request_stop | 这个演示先停一停 | 
+1:391 | request_stop | 请把正在播放的演示暂停一下 | 
+1:392 | request_resume | 继续播放刚才暂停的演示 | 
+1:393 | request_resume | 把刚才的演示接着往下放 | 
+1:394 | request_resume | 现在可以继续演示了 | 
+1:395 | request_quit | 我想退出整个展厅的互动体验 | 
+1:396 | request_quit | 结束并退出这次展厅体验吧 | 
+1:397 | request_quit | 不看了，帮我退出整个体验系统 | 
+1:398 | UNK | 请问附近哪里有充电站 | 
+1:399 | UNK | 这台车最快什么时候能预约道路试驾 | 
+1:400 | UNK | 八块石头在收音机里种花 | 
+1:401 | greet | 嗨，上午好 | 
+1:402 | greet | 您好，中午好呀 | 
+1:403 | greet | 你好，我叫潘婷 | name=潘婷@5:7
+1:404 | greet | 嗨，我是诸葛明 | name=诸葛明@4:7
+1:405 | affirm | 嗯，可以呀 | 
+1:406 | affirm | 对，没错 | 
+1:407 | affirm | 好的，没问题 | 
+1:408 | deny | 不对，不是那样子的 | 
+1:409 | deny | 不是这回事 | 
+1:410 | deny | 不对哦 | 
+1:411 | request_flow | 带我看看都能体验些什么吧 | 
+1:412 | request_flow | 有什么热门的功能演示推荐吗 | 
+1:413 | request_flow | 我想体验一下隐私玻璃 | flow_ref=隐私玻璃@6:10
+1:414 | request_flow | 给我看看座椅按摩怎么用 | flow_ref=座椅按摩@4:8
+1:415 | request_flow | 能打开DLP前大灯看看吗 | flow_ref=DLP前大灯@3:9->dlp_headlights
+1:416 | request_flow | 我想体验一下娱乐方向的移动影院 | theme=娱乐@6:8; flow_ref=移动影院@11:15
+1:417 | request_flow | 我想体验一下内饰的功能 | part=内饰@6:8
+1:418 | request_flow | 给我看看座舱里的功能演示 | part=座舱里@4:7
+1:419 | request_flow | 车外有什么演示可以让我试试 | part=车外@0:2
+1:420 | request_flow | 有什么关于私密的功能能体验 | theme=私密@5:7
+1:421 | request_flow | 我想看看适合一家人的配置演示 | theme=一家人@6:9->family
+1:422 | request_flow | 我想看看车内偏向娱乐的设计 | part=车内@4:6; theme=娱乐@8:10
+1:423 | request_flow | 外饰里有什么适合全家的功能吗 | part=外饰@0:2; theme=全家@8:10
+1:424 | request_flow | 给我体验一下座舱里有关隐私的配置 | part=座舱里@6:9; theme=隐私@11:13
+1:425 | inform | 我叫丁一 | name=丁一@2:4
+1:426 | inform | 叫我Sarah吧 | name=Sarah@2:7
+1:427 | inform | 4号吧 | choice=4号@0:2
+1:428 | inform | 选第5个 | choice=第5个@1:4
+1:429 | inform | 我要6号 | choice=6号@2:4
+1:430 | inform | 我想选座舱影院 | flow_ref=座舱影院@3:7
+1:431 | inform | 防窥车窗吧 | flow_ref=防窥车窗@0:4->privacy_window
+1:432 | inform | 我比较喜欢车内的 | part=车内@5:7
+1:433 | inform | 选座舱里的吧 | part=座舱里@1:4
+1:434 | inform | 我更偏向娱乐类的 | theme=娱乐@4:6
+1:435 | inform | 全家一起用的那种吧 | theme=全家@0:2
+1:436 | inform | 我对内饰里偏私密的功能比较好奇 | part=内饰@2:4; theme=私密@6:8
+1:437 | inform | 车外关于隐私的设计更吸引我 | part=车外@0:2; theme=隐私@4:6
+1:438 | inform | 我是叶琳，更喜欢车内的娱乐功能 | name=叶琳@2:4; part=车内@8:10; theme=娱乐@11:13
+1:439 | request_stop | 先把这个演示停一停 | 
+1:440 | request_stop | 暂停一下正在播的演示 | 
+1:441 | request_stop | 麻烦把当前演示暂停吧 | 
+1:442 | request_resume | 继续刚才中断的那个演示 | 
+1:443 | request_resume | 把演示重新放起来吧 | 
+1:444 | request_resume | 接着刚才的进度继续演示 | 
+1:445 | request_quit | 我想直接结束并退出展厅体验 | 
+1:446 | request_quit | 把整个展厅体验关掉吧 | 
+1:447 | request_quit | 今天体验得差不多了，退出系统吧 | 
+1:448 | UNK | 这车的轮胎是什么品牌的 | 
+1:449 | UNK | 帮我查一下附近有没有停车场 | 
+1:450 | UNK | 方格子的风把枕头吹成了字典 | 
+1:451 | greet | 哈喽，下午好 | 
+1:452 | greet | 您好，早上好 | 
+1:453 | greet | 你好，我是Leo | name=Leo@5:8
+1:454 | greet | 嗨，我叫苏然 | name=苏然@4:6
+1:455 | affirm | 嗯嗯，可以 | 
+1:456 | affirm | 没错，对的 | 
+1:457 | affirm | 好的呢 | 
+1:458 | deny | 不对，说错了 | 
+1:459 | deny | 不是我要的那个 | 
+1:460 | deny | 并不是这样 | 
+1:461 | request_flow | 给我演示一下这台车的特色功能吧 | 
+1:462 | request_flow | 现在都能体验哪些演示项目 | 
+1:463 | request_flow | 我想体验一下隐私车窗的效果 | flow_ref=隐私车窗@6:10
+1:464 | request_flow | 给我看看大灯的演示吧 | flow_ref=大灯@4:6
+1:465 | request_flow | 带我试试带按摩的座椅 | flow_ref=带按摩的座椅@4:10->massage_seats
+1:466 | request_flow | 我想体验车外适合家庭的DLP车灯 | part=车外@4:6; theme=家庭@8:10; flow_ref=DLP车灯@11:16
+1:467 | request_flow | 我想看看车内有什么可体验的 | part=车内@4:6
+1:468 | request_flow | 给我演示一下车身外部的配置 | part=车身外部@6:10->outside
+1:469 | request_flow | 有什么适合家用的功能演示吗 | theme=家用@5:7
+1:470 | request_flow | 我想试试跟娱乐有关的项目 | theme=娱乐@5:7
+1:471 | request_flow | 带我看看隐私保护相关的功能 | theme=隐私保护@4:8->privacy
+1:472 | request_flow | 座舱里有什么适合全家的功能可以体验 | part=座舱里@0:3; theme=全家@8:10
+1:473 | request_flow | 我想试试车外偏私密的功能演示 | part=车外@4:6; theme=私密@7:9
+1:474 | request_flow | 能给我看看内饰里的家用功能吗 | part=内饰@5:7; theme=家用@9:11
+1:475 | inform | 我叫贺然 | name=贺然@2:4
+1:476 | inform | 我是白露 | name=白露@2:4
+1:477 | inform | 选第7个吧 | choice=第7个@1:4
+1:478 | inform | 我要第九个 | choice=第九个@2:5
+1:479 | inform | 9号吧 | choice=9号@0:2
+1:480 | inform | 还是移动影院吧 | flow_ref=移动影院@2:6
+1:481 | inform | 我对大灯更感兴趣 | flow_ref=大灯@2:4
+1:482 | inform | 我选座舱里的 | part=座舱里@2:5
+1:483 | inform | 先了解车外的吧 | part=车外@3:5
+1:484 | inform | 我对家用方向比较感兴趣 | theme=家用@2:4
+1:485 | inform | 选私密性好一点的 | theme=私密性@1:4->privacy
+1:486 | inform | 我比较喜欢车内偏家用的配置 | part=车内@5:7; theme=家用@8:10
+1:487 | inform | 外饰里偏私密的设计我更喜欢 | part=外饰@0:2; theme=私密@4:6
+1:488 | inform | 我叫孟楠，对隐私玻璃很感兴趣 | name=孟楠@2:4; flow_ref=隐私玻璃@6:10
+1:489 | request_stop | 把当前这段演示暂停一下 | 
+1:490 | request_stop | 先停一下正在放的功能演示 | 
+1:491 | request_stop | 演示先暂停，我系个鞋带 | 
+1:492 | request_resume | 可以接着播放刚才的演示了 | 
+1:493 | request_resume | 把暂停的那个演示继续放完吧 | 
+1:494 | request_resume | 恢复当前的演示吧 | 
+1:495 | request_quit | 我想结束这次展厅体验了 | 
+1:496 | request_quit | 直接退出整个展厅演示系统吧 | 
+1:497 | request_quit | 不继续看了，帮我退出展厅体验 | 
+1:498 | UNK | 这台车的购置税大概得交多少 | 
+1:499 | UNK | 帮我查一下今天北京的限行尾号 | 
+1:500 | UNK | 柠檬味的楼梯在口袋里游泳 | 

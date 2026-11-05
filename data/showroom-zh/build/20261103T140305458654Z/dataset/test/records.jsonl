@@ -1,0 +1,134 @@
+{"record_id": "20261103T133326307652Z-01-000010", "text": "不对呀", "intent": "deny", "slots": [], "group_id": "zh-g0010"}
+{"record_id": "20261103T133326307652Z-01-000020", "text": "有什么适合全家的功能演示吗", "intent": "request_flow", "slots": [{"type": "theme", "start": 5, "end": 7}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-01-000027", "text": "我选第一个", "intent": "inform", "slots": [{"type": "choice", "start": 2, "end": 5}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-01-000043", "text": "把刚才的演示接着放", "intent": "request_resume", "slots": [], "group_id": "zh-g0042"}
+{"record_id": "20261103T133326307652Z-01-000057", "text": "可以的", "intent": "affirm", "slots": [], "group_id": "zh-g0053"}
+{"record_id": "20261103T133326307652Z-01-000078", "text": "我想选第4个", "intent": "inform", "slots": [{"type": "choice", "start": 3, "end": 6}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-01-000083", "text": "我选外饰部分", "intent": "inform", "slots": [{"type": "part", "start": 2, "end": 4}], "group_id": "zh-g0068"}
+{"record_id": "20261103T133326307652Z-01-000090", "text": "这个功能演示先停一停", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-01-000110", "text": "不对不对", "intent": "deny", "slots": [], "group_id": "zh-g0010"}
+{"record_id": "20261103T133326307652Z-01-000127", "text": "选第6个吧", "intent": "inform", "slots": [{"type": "choice", "start": 1, "end": 4}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-01-000141", "text": "当前这个演示先暂停", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-01-000163", "text": "给我演示一下车载影院", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 6, "end": 10}], "group_id": "zh-g0107"}
+{"record_id": "20261103T133326307652Z-01-000169", "text": "有什么偏向隐私的功能可以看看", "intent": "request_flow", "slots": [{"type": "theme", "start": 5, "end": 7}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-01-000178", "text": "选7号吧", "intent": "inform", "slots": [{"type": "choice", "start": 1, "end": 3}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-01-000186", "text": "车内关于隐私的配置我更想了解", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 2}, {"type": "theme", "start": 4, "end": 6}], "group_id": "zh-g0111"}
+{"record_id": "20261103T133326307652Z-01-000193", "text": "把刚才停住的演示接着放吧", "intent": "request_resume", "slots": [], "group_id": "zh-g0042"}
+{"record_id": "20261103T133326307652Z-01-000198", "text": "你们店里现在有分期免息活动吗", "intent": "UNK", "slots": [], "group_id": "zh-g0117"}
+{"record_id": "20261103T133326307652Z-01-000221", "text": "有什么适合家用的项目能体验", "intent": "request_flow", "slots": [{"type": "theme", "start": 5, "end": 7}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-01-000227", "text": "选第8个", "intent": "inform", "slots": [{"type": "choice", "start": 1, "end": 4}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-01-000238", "text": "我是阿杰，想选适合全家的功能", "intent": "inform", "slots": [{"type": "name", "start": 2, "end": 4}, {"type": "theme", "start": 9, "end": 11}], "group_id": "zh-g0121"}
+{"record_id": "20261103T133326307652Z-01-000255", "text": "嗯，可以", "intent": "affirm", "slots": [], "group_id": "zh-g0053"}
+{"record_id": "20261103T133326307652Z-01-000269", "text": "有什么跟家庭相关的功能可以体验", "intent": "request_flow", "slots": [{"type": "theme", "start": 4, "end": 6}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-01-000279", "text": "我选2号吧", "intent": "inform", "slots": [{"type": "choice", "start": 2, "end": 4}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-01-000290", "text": "演示暂停一下吧", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-01-000292", "text": "把刚才停住的演示继续放吧", "intent": "request_resume", "slots": [], "group_id": "zh-g0042"}
+{"record_id": "20261103T133326307652Z-01-000321", "text": "有什么休闲娱乐的功能可以看看", "intent": "request_flow", "slots": [{"type": "theme", "start": 3, "end": 7}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-01-000328", "text": "选第一项", "intent": "inform", "slots": [{"type": "choice", "start": 1, "end": 4}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-01-000334", "text": "我比较喜欢适合全家的", "intent": "inform", "slots": [{"type": "theme", "start": 7, "end": 9}], "group_id": "zh-g0136"}
+{"record_id": "20261103T133326307652Z-01-000336", "text": "车内关于隐私的配置我更想看", "intent": "inform", "slots": [{"type": "part", "start": 0, "end": 2}, {"type": "theme", "start": 4, "end": 6}], "group_id": "zh-g0111"}
+{"record_id": "20261103T133326307652Z-01-000356", "text": "可以呀", "intent": "affirm", "slots": [], "group_id": "zh-g0053"}
+{"record_id": "20261103T133326307652Z-01-000360", "text": "完全不对", "intent": "deny", "slots": [], "group_id": "zh-g0010"}
+{"record_id": "20261103T133326307652Z-01-000363", "text": "给我演示一下DLP大灯", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 6, "end": 11}], "group_id": "zh-g0107"}
+{"record_id": "20261103T133326307652Z-01-000370", "text": "有什么适合家用的演示可以体验", "intent": "request_flow", "slots": [{"type": "theme", "start": 5, "end": 7}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-01-000377", "text": "我选第三个", "intent": "inform", "slots": [{"type": "choice", "start": 2, "end": 5}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-01-000379", "text": "就选选项四", "intent": "inform", "slots": [{"type": "choice", "start": 2, "end": 5}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-01-000390", "text": "这个演示先停一停", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-01-000393", "text": "把刚才的演示接着往下放", "intent": "request_resume", "slots": [], "group_id": "zh-g0042"}
+{"record_id": "20261103T133326307652Z-01-000405", "text": "嗯，可以呀", "intent": "affirm", "slots": [], "group_id": "zh-g0053"}
+{"record_id": "20261103T133326307652Z-01-000410", "text": "不对哦", "intent": "deny", "slots": [], "group_id": "zh-g0010"}
+{"record_id": "20261103T133326307652Z-01-000412", "text": "有什么热门的功能演示推荐吗", "intent": "request_flow", "slots": [], "group_id": "zh-g0145"}
+{"record_id": "20261103T133326307652Z-01-000420", "text": "有什么关于私密的功能能体验", "intent": "request_flow", "slots": [{"type": "theme", "start": 5, "end": 7}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-01-000428", "text": "选第5个", "intent": "inform", "slots": [{"type": "choice", "start": 1, "end": 4}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-01-000433", "text": "选座舱里的吧", "intent": "inform", "slots": [{"type": "part", "start": 1, "end": 4}], "group_id": "zh-g0068"}
+{"record_id": "20261103T133326307652Z-01-000450", "text": "方格子的风把枕头吹成了字典", "intent": "UNK", "slots": [], "group_id": "zh-g0150"}
+{"record_id": "20261103T133326307652Z-01-000455", "text": "嗯嗯，可以", "intent": "affirm", "slots": [], "group_id": "zh-g0053"}
+{"record_id": "20261103T133326307652Z-01-000469", "text": "有什么适合家用的功能演示吗", "intent": "request_flow", "slots": [{"type": "theme", "start": 5, "end": 7}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-01-000477", "text": "选第7个吧", "intent": "inform", "slots": [{"type": "choice", "start": 1, "end": 4}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-01-000482", "text": "我选座舱里的", "intent": "inform", "slots": [{"type": "part", "start": 2, "end": 5}], "group_id": "zh-g0068"}
+{"record_id": "20261103T133326307652Z-01-000485", "text": "选私密性好一点的", "intent": "inform", "slots": [{"type": "theme", "start": 1, "end": 4}], "group_id": "zh-g0151"}
+{"record_id": "20261103T133326307652Z-02-000009", "text": "嘿", "intent": "greet", "slots": [], "group_id": "zh-g0156"}
+{"record_id": "20261103T133326307652Z-02-000016", "text": "小周你好", "intent": "greet", "slots": [], "group_id": "zh-g0160"}
+{"record_id": "20261103T133326307652Z-02-000042", "text": "可以啊", "intent": "affirm", "slots": [], "group_id": "zh-g0053"}
+{"record_id": "20261103T133326307652Z-02-000047", "text": "可以", "intent": "affirm", "slots": [], "group_id": "zh-g0053"}
+{"record_id": "20261103T133326307652Z-02-000068", "text": "当然可以", "intent": "affirm", "slots": [], "group_id": "zh-g0053"}
+{"record_id": "20261103T133326307652Z-02-000072", "text": "不对", "intent": "deny", "slots": [], "group_id": "zh-g0010"}
+{"record_id": "20261103T133326307652Z-02-000079", "text": "不对的", "intent": "deny", "slots": [], "group_id": "zh-g0010"}
+{"record_id": "20261103T133326307652Z-02-000108", "text": "演示先暂停一下", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-02-000111", "text": "当前演示先暂停", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-02-000118", "text": "当前这个演示暂停一下", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-02-000121", "text": "演示先停一下", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-02-000125", "text": "这个演示先暂停", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-02-000127", "text": "演示暂时停一下", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-02-000138", "text": "继续播放", "intent": "request_resume", "slots": [], "group_id": "zh-g0185"}
+{"record_id": "20261103T133326307652Z-02-000139", "text": "把刚才的演示继续", "intent": "request_resume", "slots": [], "group_id": "zh-g0042"}
+{"record_id": "20261103T133326307652Z-02-000147", "text": "把中断的演示继续", "intent": "request_resume", "slots": [], "group_id": "zh-g0042"}
+{"record_id": "20261103T133326307652Z-02-000157", "text": "把刚才停下的演示继续", "intent": "request_resume", "slots": [], "group_id": "zh-g0042"}
+{"record_id": "20261103T133326307652Z-02-000165", "text": "结束这次展厅体验", "intent": "request_quit", "slots": [], "group_id": "zh-g0191"}
+{"record_id": "20261103T133326307652Z-02-000172", "text": "结束全部体验", "intent": "request_quit", "slots": [], "group_id": "zh-g0191"}
+{"record_id": "20261103T133326307652Z-02-000178", "text": "结束展厅体验", "intent": "request_quit", "slots": [], "group_id": "zh-g0191"}
+{"record_id": "20261103T133326307652Z-02-000204", "text": "量子蘑菇在星期二跳舞", "intent": "UNK", "slots": [], "group_id": "zh-g0203"}
+{"record_id": "20261103T133326307652Z-02-000217", "text": "这车有现车吗？", "intent": "UNK", "slots": [], "group_id": "zh-g0213"}
+{"record_id": "20261103T133326307652Z-02-000220", "text": "西瓜钢琴融化在云里", "intent": "UNK", "slots": [], "group_id": "zh-g0215"}
+{"record_id": "20261103T133326307652Z-02-000242", "text": "DLP车灯给我演示一下", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 0, "end": 5}], "group_id": "zh-g0107"}
+{"record_id": "20261103T133326307652Z-02-000257", "text": "按摩座椅体验一下", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 0, "end": 4}], "group_id": "zh-g0107"}
+{"record_id": "20261103T133326307652Z-02-000283", "text": "内饰这边有演示吗", "intent": "request_flow", "slots": [{"type": "part", "start": 0, "end": 2}], "group_id": "zh-g0226"}
+{"record_id": "20261103T133326307652Z-02-000291", "text": "车内能体验的帮我找找", "intent": "request_flow", "slots": [{"type": "part", "start": 0, "end": 2}], "group_id": "zh-g0227"}
+{"record_id": "20261103T133326307652Z-02-000302", "text": "把车外的演示列一下", "intent": "request_flow", "slots": [{"type": "part", "start": 1, "end": 3}], "group_id": "zh-g0227"}
+{"record_id": "20261103T133326307652Z-02-000303", "text": "外饰能体验的有吗", "intent": "request_flow", "slots": [{"type": "part", "start": 0, "end": 2}], "group_id": "zh-g0226"}
+{"record_id": "20261103T133326307652Z-02-000306", "text": "家庭相关的有什么可以体验", "intent": "request_flow", "slots": [{"type": "theme", "start": 0, "end": 2}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-02-000308", "text": "有什么家用的可以体验", "intent": "request_flow", "slots": [{"type": "theme", "start": 3, "end": 5}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-02-000314", "text": "家用方向有什么可以看", "intent": "request_flow", "slots": [{"type": "theme", "start": 0, "end": 2}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-02-000315", "text": "娱乐这块有什么能体验", "intent": "request_flow", "slots": [{"type": "theme", "start": 0, "end": 2}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-02-000320", "text": "能试的娱乐功能有哪些", "intent": "request_flow", "slots": [{"type": "theme", "start": 3, "end": 5}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-02-000326", "text": "私密方面有什么能试", "intent": "request_flow", "slots": [{"type": "theme", "start": 0, "end": 2}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-02-000328", "text": "能体验的隐私功能有哪些", "intent": "request_flow", "slots": [{"type": "theme", "start": 4, "end": 6}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-02-000422", "text": "我喜欢娱乐", "intent": "inform", "slots": [{"type": "theme", "start": 3, "end": 5}], "group_id": "zh-g0136"}
+{"record_id": "20261103T133326307652Z-02-000447", "text": "选第2个", "intent": "inform", "slots": [{"type": "choice", "start": 1, "end": 4}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-02-000449", "text": "选第6个", "intent": "inform", "slots": [{"type": "choice", "start": 1, "end": 4}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-02-000487", "text": "我是高远，想要娱乐的", "intent": "inform", "slots": [{"type": "name", "start": 2, "end": 4}, {"type": "theme", "start": 7, "end": 9}], "group_id": "zh-g0121"}
+{"record_id": "20261103T133326307652Z-02-000490", "text": "我叫许娜，偏好隐私", "intent": "inform", "slots": [{"type": "name", "start": 2, "end": 4}, {"type": "theme", "start": 7, "end": 9}], "group_id": "zh-g0121"}
+{"record_id": "20261103T133326307652Z-02-000493", "text": "我喜欢车外私密的隐私玻璃", "intent": "inform", "slots": [{"type": "part", "start": 3, "end": 5}, {"type": "theme", "start": 5, "end": 7}, {"type": "flow_ref", "start": 8, "end": 12}], "group_id": "zh-g0245"}
+{"record_id": "20261103T133326307652Z-03-000062", "text": "可以可以", "intent": "affirm", "slots": [], "group_id": "zh-g0053"}
+{"record_id": "20261103T133326307652Z-03-000076", "text": "不对啊", "intent": "deny", "slots": [], "group_id": "zh-g0010"}
+{"record_id": "20261103T133326307652Z-03-000105", "text": "演示先暂停一下吧", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-03-000108", "text": "当前演示先停一下", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-03-000113", "text": "演示先暂停", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-03-000120", "text": "演示先停停", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-03-000127", "text": "当前演示请暂停", "intent": "request_stop", "slots": [], "group_id": "zh-g0074"}
+{"record_id": "20261103T133326307652Z-03-000163", "text": "结束整个体验", "intent": "request_quit", "slots": [], "group_id": "zh-g0191"}
+{"record_id": "20261103T133326307652Z-03-000168", "text": "结束全部展厅体验", "intent": "request_quit", "slots": [], "group_id": "zh-g0191"}
+{"record_id": "20261103T133326307652Z-03-000187", "text": "结束整个展厅体验", "intent": "request_quit", "slots": [], "group_id": "zh-g0191"}
+{"record_id": "20261103T133326307652Z-03-000208", "text": "还有现车吗", "intent": "UNK", "slots": [], "group_id": "zh-g0213"}
+{"record_id": "20261103T133326307652Z-03-000211", "text": "售后电话多少", "intent": "UNK", "slots": [], "group_id": "zh-g0266"}
+{"record_id": "20261103T133326307652Z-03-000219", "text": "量子枕头在跳舞", "intent": "UNK", "slots": [], "group_id": "zh-g0203"}
+{"record_id": "20261103T133326307652Z-03-000248", "text": "麻烦演示一下DLP大灯", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 6, "end": 11}], "group_id": "zh-g0107"}
+{"record_id": "20261103T133326307652Z-03-000252", "text": "演示座舱影院吧", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 2, "end": 6}], "group_id": "zh-g0107"}
+{"record_id": "20261103T133326307652Z-03-000259", "text": "给我演示一下按摩座椅", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 6, "end": 10}], "group_id": "zh-g0107"}
+{"record_id": "20261103T133326307652Z-03-000263", "text": "座椅按摩演示一下", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 0, "end": 4}], "group_id": "zh-g0107"}
+{"record_id": "20261103T133326307652Z-03-000268", "text": "演示隐私车窗", "intent": "request_flow", "slots": [{"type": "flow_ref", "start": 2, "end": 6}], "group_id": "zh-g0107"}
+{"record_id": "20261103T133326307652Z-03-000293", "text": "有没有座舱内的演示", "intent": "request_flow", "slots": [{"type": "part", "start": 3, "end": 6}], "group_id": "zh-g0226"}
+{"record_id": "20261103T133326307652Z-03-000297", "text": "帮我找找车外面能体验的", "intent": "request_flow", "slots": [{"type": "part", "start": 4, "end": 7}], "group_id": "zh-g0227"}
+{"record_id": "20261103T133326307652Z-03-000299", "text": "有外饰相关的体验吗", "intent": "request_flow", "slots": [{"type": "part", "start": 1, "end": 3}], "group_id": "zh-g0226"}
+{"record_id": "20261103T133326307652Z-03-000303", "text": "车外有能看的吗", "intent": "request_flow", "slots": [{"type": "part", "start": 0, "end": 2}], "group_id": "zh-g0226"}
+{"record_id": "20261103T133326307652Z-03-000306", "text": "适合家庭的有什么可以体验", "intent": "request_flow", "slots": [{"type": "theme", "start": 2, "end": 4}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-03-000312", "text": "家用功能演示一个看看", "intent": "request_flow", "slots": [{"type": "theme", "start": 0, "end": 2}], "group_id": "zh-g0274"}
+{"record_id": "20261103T133326307652Z-03-000313", "text": "适合全家的给我安排一下", "intent": "request_flow", "slots": [{"type": "theme", "start": 2, "end": 4}], "group_id": "zh-g0274"}
+{"record_id": "20261103T133326307652Z-03-000315", "text": "娱乐的有什么可以体验", "intent": "request_flow", "slots": [{"type": "theme", "start": 0, "end": 2}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-03-000319", "text": "有哪些娱乐演示可以看", "intent": "request_flow", "slots": [{"type": "theme", "start": 3, "end": 5}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-03-000320", "text": "来个娱乐的演示吧", "intent": "request_flow", "slots": [{"type": "theme", "start": 2, "end": 4}], "group_id": "zh-g0274"}
+{"record_id": "20261103T133326307652Z-03-000323", "text": "隐私相关的有什么可以体验", "intent": "request_flow", "slots": [{"type": "theme", "start": 0, "end": 2}], "group_id": "zh-g0020"}
+{"record_id": "20261103T133326307652Z-03-000329", "text": "来个私密方面的体验", "intent": "request_flow", "slots": [{"type": "theme", "start": 2, "end": 4}], "group_id": "zh-g0274"}
+{"record_id": "20261103T133326307652Z-03-000401", "text": "我选第6个", "intent": "inform", "slots": [{"type": "choice", "start": 2, "end": 5}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-03-000406", "text": "我选选项一", "intent": "inform", "slots": [{"type": "choice", "start": 2, "end": 5}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-03-000407", "text": "选选项二吧", "intent": "inform", "slots": [{"type": "choice", "start": 1, "end": 4}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-03-000414", "text": "选选项九", "intent": "inform", "slots": [{"type": "choice", "start": 1, "end": 4}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-03-000415", "text": "我选选项十", "intent": "inform", "slots": [{"type": "choice", "start": 2, "end": 5}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-03-000418", "text": "选8号", "intent": "inform", "slots": [{"type": "choice", "start": 1, "end": 3}], "group_id": "zh-g0027"}
+{"record_id": "20261103T133326307652Z-03-000446", "text": "我选内饰", "intent": "inform", "slots": [{"type": "part", "start": 2, "end": 4}], "group_id": "zh-g0068"}
+{"record_id": "20261103T133326307652Z-03-000453", "text": "我选外饰", "intent": "inform", "slots": [{"type": "part", "start": 2, "end": 4}], "group_id": "zh-g0068"}
+{"record_id": "20261103T133326307652Z-03-000457", "text": "我更喜欢家庭", "intent": "inform", "slots": [{"type": "theme", "start": 4, "end": 6}], "group_id": "zh-g0136"}
+{"record_id": "20261103T133326307652Z-03-000461", "text": "我喜欢私密的", "intent": "inform", "slots": [{"type": "theme", "start": 3, "end": 5}], "group_id": "zh-g0136"}
+{"record_id": "20261103T133326307652Z-03-000466", "text": "我更喜欢隐私", "intent": "inform", "slots": [{"type": "theme", "start": 4, "end": 6}], "group_id": "zh-g0136"}
+{"record_id": "20261103T133326307652Z-03-000497", "text": "我更喜欢车内适合家庭的座舱影院", "intent": "inform", "slots": [{"type": "part", "start": 4, "end": 6}, {"type": "theme", "start": 8, "end": 10}, {"type": "flow_ref", "start": 11, "end": 15}], "group_id": "zh-g0245"}
+{"record_id": "20261103T133326307652Z-03-000499", "text": "我喜欢座舱里适合娱乐的按摩座椅", "intent": "inform", "slots": [{"type": "part", "start": 3, "end": 6}, {"type": "theme", "start": 8, "end": 10}, {"type": "flow_ref", "start": 11, "end": 15}], "group_id": "zh-g0245"}

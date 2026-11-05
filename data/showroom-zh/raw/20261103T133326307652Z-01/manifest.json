@@ -1,0 +1,6 @@
+{
+  "record_prefix": "20261103T133326307652Z-01",
+  "model": "opencode/gemini-4-argon",
+  "variant": "high",
+  "expected_records": 500
+}

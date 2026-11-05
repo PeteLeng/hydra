@@ -1,0 +1,47 @@
+{
+  "1": {
+    "records": 500,
+    "intents": {
+      "greet": 40,
+      "affirm": 30,
+      "deny": 30,
+      "request_flow": 140,
+      "inform": 140,
+      "request_stop": 30,
+      "request_resume": 30,
+      "request_quit": 30,
+      "UNK": 30
+    },
+    "invalid_records": 0
+  },
+  "2": {
+    "records": 500,
+    "intents": {
+      "greet": 40,
+      "affirm": 30,
+      "deny": 30,
+      "request_stop": 30,
+      "request_resume": 30,
+      "request_quit": 30,
+      "UNK": 30,
+      "request_flow": 140,
+      "inform": 140
+    },
+    "invalid_records": 0
+  },
+  "3": {
+    "records": 500,
+    "intents": {
+      "greet": 40,
+      "affirm": 30,
+      "deny": 30,
+      "request_stop": 30,
+      "request_resume": 30,
+      "request_quit": 30,
+      "UNK": 30,
+      "request_flow": 140,
+      "inform": 140
+    },
+    "invalid_records": 0
+  }
+}
