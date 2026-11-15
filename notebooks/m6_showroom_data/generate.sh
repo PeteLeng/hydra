@@ -12,12 +12,16 @@ pids=()
 trap 'kill "${pids[@]}" 2>/dev/null || true; exit 130' INT TERM
 generate() {
   local model=$1 variant=$2 directory=$3
-  "${OPENCODE_BIN:-opencode}" run --agent build --model "opencode/$model" --variant "$variant" \
+  local -a variant_args=()
+  if [[ -n "$variant" ]]; then
+    variant_args=(--variant "$variant")
+  fi
+  "${OPENCODE_BIN:-opencode}" run --agent build --model "opencode/$model" "${variant_args[@]}" \
     --file "$directory/gen.md" --format json \
     "Follow gen.md. Output directory: $directory. Record-ID prefix: ${directory##*/}. Generate 500 records." \
     < /dev/null > "$directory/generation.log" 2>&1
 }
-for job in 'gemini-4-argon high' 'glm-5.3 max'; do
+for job in 'gemini-4-argon high' 'grok-4.7' 'grok-4.7'; do
   read -r model variant <<< "$job"
   directory=$(uv --directory notebooks run --locked --offline python m6_showroom_data/workspace.py raw \
     --dataset "../data/$dataset" --model "opencode/$model" --variant "$variant" \

@@ -44,9 +44,11 @@ bash notebooks/m6_showroom_data/generate.sh showroom-en
 bash notebooks/m6_showroom_data/generate.sh showroom-zh notebooks/m6_showroom_data/gen-zh.md
 ```
 
-Model choices remain in `generate.sh`. One launcher execution starts multiple
-independent agents, each with its own raw directory, instruction snapshot, record
-prefix, and log. Each agent is asked for 500 examples. There are no generation
+Model choices remain in `generate.sh`. One launcher execution starts three
+independent agents: one `opencode/gemini-4-argon` (`high`) and two
+`opencode/grok-4.7` runs (default variant). Each has its own raw directory,
+instruction snapshot, record prefix, and log, and is asked for 500 examples:
+**1,500 raw examples total**, before review and deduplication. There are no generation
 seeds. The second argument selects the brief (relative to the project root, or an
 absolute path); English `gen.md` is the default. Each attempt snapshots the selected
 brief as `gen.md`. Changing only the dataset name does not change the language.
@@ -63,7 +65,8 @@ Select the raw attempts to review, replacing the placeholders with their names:
 BUILD=$(uv --directory notebooks run --locked --offline python m6_showroom_data/workspace.py build \
   --dataset ../data/showroom-zh \
   --raw "../data/showroom-zh/raw/<attempt-A>" \
-        "../data/showroom-zh/raw/<attempt-B>")
+        "../data/showroom-zh/raw/<attempt-B>" \
+        "../data/showroom-zh/raw/<attempt-C>")
 ```
 
 The command prints the new absolute build path. Give an arbiter that directory
